@@ -147,7 +147,7 @@ class CI_Email {
 	 *
 	 * @var	string
 	 */
-	public $charset		= 'UTF-8';
+	public $charset		= 'utf-8';
 
 	/**
 	 * Multipart message
@@ -408,8 +408,18 @@ class CI_Email {
 	public function __construct(array $config = array())
 	{
 		$this->charset = config_item('charset');
-		$this->initialize($config);
+
+		if (count($config) > 0)
+		{
+			$this->initialize($config);
+		}
+		else
+		{
+			$this->_smtp_auth = ! ($this->smtp_user === '' && $this->smtp_pass === '');
+		}
+
 		$this->_safe_mode = ( ! is_php('5.4') && ini_get('safe_mode'));
+		$this->charset = strtoupper($this->charset);
 
 		log_message('info', 'Email Class Initialized');
 	}
@@ -417,15 +427,28 @@ class CI_Email {
 	// --------------------------------------------------------------------
 
 	/**
+	 * Destructor - Releases Resources
+	 *
+	 * @return	void
+	 */
+	public function __destruct()
+	{
+		if (is_resource($this->_smtp_connect))
+		{
+			$this->_send_command('quit');
+		}
+	}
+
+	// --------------------------------------------------------------------
+
+	/**
 	 * Initialize preferences
 	 *
-	 * @param	array	$config
+	 * @param	array
 	 * @return	CI_Email
 	 */
-	public function initialize(array $config = array())
+	public function initialize($config = array())
 	{
-		$this->clear();
-
 		foreach ($config as $key => $val)
 		{
 			if (isset($this->$key))
@@ -442,9 +465,9 @@ class CI_Email {
 				}
 			}
 		}
+		$this->clear();
 
-		$this->charset = strtoupper($this->charset);
-		$this->_smtp_auth = isset($this->smtp_user[0], $this->smtp_pass[0]);
+		$this->_smtp_auth = ! ($this->smtp_user === '' && $this->smtp_pass === '');
 
 		return $this;
 	}
@@ -2130,11 +2153,6 @@ class CI_Email {
 			return FALSE;
 		}
 
-		if ($this->smtp_keepalive)
-		{
-			$this->_smtp_auth = FALSE;
-		}
-
 		return TRUE;
 	}
 
@@ -2324,15 +2342,4 @@ class CI_Email {
 		return 'application/x-unknown-content-type';
 	}
 
-	// --------------------------------------------------------------------
-
-	/**
-	 * Destructor
-	 *
-	 * @return	void
-	 */
-	public function __destruct()
-	{
-		is_resource($this->_smtp_connect) && $this->_send_command('quit');
-	}
 }
