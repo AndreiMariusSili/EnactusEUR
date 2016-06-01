@@ -85,40 +85,20 @@
 						<div class="separator"></div>
 						<ul class="social-links circle small clearfix margin-clear text-center animated-effect-1">
 							<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-							<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
 							<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-							<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
 							<li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
-							<li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
 							<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
 						</ul>				
 						<div class="separator mt-10"></div>
 						<ul class="nav navbar-nav text-center">
 							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="page-about.html">About</a></li>
-							<li><a href="page-services.html">Services</a></li>
-							<li><a href="portfolio-grid-2-3-col.html">Portfolio</a></li>
-							<li><a href="shop-listing-3col.html">Shop</a></li>
-							<li><a href="page-contact.html">Contact</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu Item With Submenu</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Second Level Item 1</a></li>
-									<li><a href="#">Second Level Item 2</a></li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Second Level Item With Submenu</a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Third Level Item 1</a></li>
-											<li><a href="#">Third Level Item 2</a></li>
-											<li><a href="#">Third Level Item 3</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Shop</a></li>
+							<li><a href="#">Contact</a></li>
 						</ul>
 					</nav>
-					<!-- <img src="assets/images/Logo_crane.png"> -->
-
 					<button type="button" class="offcanvas-toggle-left navbar-toggle" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
 				</section>
 				<!-- section end - offcanvas side -->
@@ -243,34 +223,46 @@
 												<div class="panel-heading">
 													<h4 class="panel-title ">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseOne-2" class="collapsed">
-															<i class="fa fa-leaf pr-10"></i>Founder
+															<i class="fa fa-lightbulb-o pr-10"></i>I have a social venture idea
 														</a>
 													</h4>
 												</div>
 												<div id="collapseOne-2" class="panel-collapse collapse">
 													<div class="panel-body">
-														<form role="form">
-															<label>Name</label>
-															<textarea class="form-control" rows="1"></textarea>
-															<label>Last name</label>
-															<textarea class="form-control" rows="1"></textarea>
-															<label>Date of birth</label>
-															<textarea class="form-control" rows="1" placeholder="dd/mm/yyyy"></textarea>
-															<label>Occupation</label>
-															<textarea class="form-control" rows="1"></textarea>
+														<form action="" method="">
 															<div class="form-group">
-																<label for="exampleInputEmail1">Email address</label>
-																<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+																<label>My name is...</label>
+																<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
+																<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
 															</div>
-															<label>Tell us your idea!</label>
-															<textarea class="form-control" rows="5"></textarea>
 															<div class="form-group">
-															<label>
-																	<input type="checkbox"> I want to receive news and updates
-															</label>
-															<br>
-															<button type="submit" class="btn btn-default">Submit</button>
-															<p></p>
+																<label>I can be reached at...</label>
+																<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
+																<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
+															</div>
+															<div class="form-group">
+																<label>I was born on...</label>
+																<input type="date" class="form-control" name="birth_date" placeholder="dd/mm/yyyy"></input>
+															</div>
+															<div class="form-group">
+																<label>I study...</label>
+																<select name="study" class="form-control">
+																	<option></option>
+																	<option value="IBA">IBA</option>
+																	<option value="IBEB">IBEB</option>
+																	<option value="IBCOM">IBCOM</option>
+																</select>
+															</div>
+															<div class="form-group">
+																<label>I have this amazing idea...</label>
+																<textarea class="form-control" rows="5" name="idea" placeholder="I see opportunity"></textarea>
+															</div>
+															<div class="form-group">
+																<label>My motivation is...</label>
+																<textarea class="form-control" rows="5" name="motivation" placeholder="I want to help people help themselves"></textarea>
+															</div>
+															<div class="form-group">
+																<button type="submit" class="btn btn-default">Submit</button>
 															</div>
 														</form>
 													</div>
@@ -280,44 +272,50 @@
 												<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseTwo-2" class="collapsed">
-															<i class="fa fa-leaf pr-10"></i>Co-founder
+															<i class="fa fa-users pr-10"></i>I want to be part of a social venture
 														</a>
 													</h4>
 												</div>
 												<div id="collapseTwo-2" class="panel-collapse collapse">
 													<div class="panel-body">
-														<form role="form">
-															<label>Name</label>
-															<textarea class="form-control" rows="1"></textarea>
-															<label>Last name</label>
-															<textarea class="form-control" rows="1"></textarea>
-															<label>Date of birth</label>
-															<textarea class="form-control" rows="1" placeholder="dd/mm/yyyy"></textarea>
-															<label>Occupation</label>
-															<textarea class="form-control" rows="1"></textarea>
+														<form action="" method="">
 															<div class="form-group">
-																<label for="exampleInputEmail1">Email address</label>
-																<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+																<label>My name is...</label>
+																<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
+																<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
 															</div>
-														</form>
-															<h5>Choose a project</h5>
-														<form role="form">
-															<select class="form-control"> 
-																<option>Select</option>
-																<option>Klik</option>
-																<option>sMaak</option>
-																<option>Organo Bike</option>
-																<option>Women helping women</option>
-																<option>Innovation team</option>
-															</select>
-															<br>
-															<label for="exampleInputFile">Upload your motivation!</label>
-																<input type="file" id="exampleInputFile">
 															<div class="form-group">
-																<label>
-																	<input type="checkbox"> I want to receive news and updates
-																</label>
-																<br>
+																<label>I can be reached at...</label>
+																<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
+																<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
+															</div>
+															<div class="form-group">
+																<label>I was born on...</label>
+																<input type="date" class="form-control" name="birth_date" placeholder="dd/mm/yyyy"></input>
+															</div>
+															<div class="form-group">
+																<label>I study...</label>
+																<select name="study" class="form-control">
+																	<option></option>
+																	<option value="IBA">IBA</option>
+																	<option value="IBEB">IBEB</option>
+																	<option value="IBCOM">IBCOM</option>
+																</select>
+															</div>
+															<div class="form-group">
+																<label>I want to join the venture...</label>
+																<select name="project" class="form-control">
+																	<option></option>
+																	<option value="sMaaK">sMaaK</option>
+																	<option value="Klik">Klik</option>
+																	<option value="WhW">WhW</option>
+																</select>
+															</div>
+															<div class="form-group">
+																<label>Because...</label>
+																<textarea class="form-control" name="motivation" rows="5" placeholder="I want to help others help themselves."></textarea>
+															</div>
+															<div class="form-group">
 																<button type="submit" class="btn btn-default">Submit</button>
 															</div>
 														</form>
@@ -328,64 +326,79 @@
 												<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseThree-2" class="collapsed">
-															<i class="fa fa-leaf pr-10"></i>Student
+															<i class="fa fa-paper-plane pr-10"></i>I want to stay up to date on what Enactus is up to
 														</a>
 													</h4>
 												</div>
-												<div id="collapseThree-2" class="panel-collapse collapse">
-													<div class="panel-body">
-														<form role="form">
-															<div class="form-group">
-																<label>Name</label>
-																<textarea class="form-control" rows="1"></textarea>
-																<label>Last name</label>
-																<textarea class="form-control" rows="1"></textarea>
-																<label>Studies</label>
-																<textarea class="form-control" rows="1"></textarea>
-																<label>Date of birth</label>
-																<textarea class="form-control" rows="1" placeholder="dd/mm/yyyy"></textarea>
-																<label for="exampleInputEmail1">Email address</label>
-																<input type="email" class="form-control" id="exampleInputEmail1">
-															</div>
-															<label>Inquiry</label>
-															<textarea class="form-control" rows="6"></textarea>
-															<label><input type="checkbox"> I want to receive news and updates</label>
-															<br>
-															<button type="submit" class="btn btn-default">Submit</button>
-														</form>
+													<div id="collapseThree-2" class="panel-collapse collapse">
+														<div class="panel-body">
+															<form action="" method="">
+																<div class="form-group">
+																	<label>My name is...</label>
+																	<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
+																	<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
+																</div>
+																<div class="form-group">
+																	<label>I can be reached at...</label>
+																	<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
+																	<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
+																</div>
+																<div class="form-group">
+																	<label>I was born on...</label>
+																	<input type="date" class="form-control" name="birthdate" placeholder="dd/mm/yyyy"></input>
+																</div>
+																<div class="form-group">
+																	<label>I study...</label>
+																	<select name="study" class="form-control">
+																		<option></option>
+																		<option value="IBA">IBA</option>
+																		<option value="IBEB">IBEB</option>
+																		<option value="IBCOM">IBCOM</option>
+																	</select>
+																</div>
+																<div class="form-group">
+																	<label>I want to stay up to date because...</label>
+																	<textarea class="form-control" rows="5" name="motivation" placeholder="I am interested in social entrepreneurship"></textarea>
+																</div>
+																<div class="form-group">
+																	<button type="submit" class="btn btn-default">Submit</button>
+																</div>
+															</form>
+														</div>
 													</div>
-												</div>
 								</div>
 								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUp" data-effect-delay="300">
 									<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFour-2" class="collapsed">
-															<i class="fa fa-leaf pr-10"></i>Business
+															<i class="fa fa-building pr-10"></i>I want to become a business partner
 														</a>
 													</h4>
 									</div>
 									<div id="collapseFour-2" class="panel-collapse collapse">
 													<div class="panel-body">
-														<form role="form">
-															<div class="form-group">
-																<label>Business name</label>
-																<textarea class="form-control" rows="1"></textarea>
-																<label>Business industry</label>
-																<textarea class="form-control" rows="1"></textarea>
-																<label>Contact name</label>
-																<textarea class="form-control" rows="1"></textarea>
-																<label>Email</label>
-																<textarea class="form-control" rows="1"></textarea>
-																<label>Phone number</label>
-																<textarea class="form-control" rows="1"></textarea>
-																<label>Inquiry</label>
-																<textarea class="form-control" rows="6"></textarea>
-																<label>
-																<input type="checkbox"> I want to receive news and updates
-																</label>
-																<br>
-																<button type="submit" class="btn btn-default">Submit</button>
-															</div>
+														<form action="" method="">
+																<div class="form-group">
+																	<label>My name is...</label>
+																	<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
+																	<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
+																</div>
+																<div class="form-group">
+																	<label>I can be reached at...</label>
+																	<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
+																	<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
+																</div>
+																<div class="form-group">
+																	<label>I represent...</label>
+																	<input type="text" class="form-control" name="organization" placeholder="HappyWorld plc."></input>
+																</div>
+																<div class="form-group">
+																	<label>I want to become a business partner because...</label>
+																	<textarea class="form-control" rows="5" name="interest" placeholder="I am interested in social entrepreneurship"></textarea>
+																</div>
+																<div class="form-group">
+																	<button type="submit" class="btn btn-default">Submit</button>
+																</div>
 														</form>
 													</div>
 									</div>

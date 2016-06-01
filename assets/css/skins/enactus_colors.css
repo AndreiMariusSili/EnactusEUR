@@ -632,8 +632,8 @@ header:not(.dark) .dropdown-menu > li.active > a i {
 #offcanvas .nav > li > a:hover,
 #offcanvas .nav > li > a:focus,
 #offcanvas .navbar-nav > li.active > a {
-  color: #515356;
-  background-color: #ffffff;
+  color: #FFFFFF;
+  background-color: #333333;
 }
 /*Nav arrows*/
 #offcanvas .dropdown > a:before {
