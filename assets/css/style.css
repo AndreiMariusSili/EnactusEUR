@@ -4299,7 +4299,7 @@ fieldset[disabled] .form-control {
   position: relative;
   overflow: hidden;
   height: 100vh;
-  width: 100vw;
+  width: 99vw;
 }
 /* Responsive iframe
 ---------------------------------- */
