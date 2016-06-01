@@ -34,6 +34,7 @@
 		<link href="assets/plugins/rs-plugin/css/settings.css" rel="stylesheet">
 		<link href="assets/plugins/rs-plugin-5/css/layers.css" rel="stylesheet">
 		<link href="assets/plugins/rs-plugin-5/css/navigation.css" rel="stylesheet">
+		<link href="assets/css/animate.css" rel="stylesheet">
 		<link href="assets/css/animations.css" rel="stylesheet">
 		<link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
 		<link href="assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
@@ -238,9 +239,9 @@
 							<h2 class="text-center">Contact <strong>Us</strong></h2>
 							<div class="separator"></div>
 							<div class="panel-group collapse-style-2" id="accordion-2">
-								<div class="panel panel-default">
+								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUp" data-effect-delay="300">
 												<div class="panel-heading">
-													<h4 class="panel-title">
+													<h4 class="panel-title ">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseOne-2" class="collapsed">
 															<i class="fa fa-leaf pr-10"></i>Founder
 														</a>
@@ -275,7 +276,7 @@
 													</div>
 												</div>
 								</div>
-								<div class="panel panel-default">
+								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUp" data-effect-delay="300">
 												<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseTwo-2" class="collapsed">
@@ -323,7 +324,7 @@
 													</div>
 												</div>
 								</div>
-								<div class="panel panel-default">
+								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUp" data-effect-delay="300">
 												<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseThree-2" class="collapsed">
@@ -355,7 +356,7 @@
 													</div>
 												</div>
 								</div>
-								<div class="panel panel-default">
+								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUp" data-effect-delay="300">
 									<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFour-2" class="collapsed">
@@ -393,7 +394,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- accordion end -->
+				<!-- section end - accordion -->
 
 			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
 			<!-- ================ -->
@@ -444,8 +445,8 @@
 		<!-- Modernizr javascript -->
 		<script type="text/javascript" src="assets/plugins/modernizr.js"></script>
 		<!-- jQuery Revolution Slider  -->
-<!-- 		<script type="text/javascript" src="assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script> -->
+		<script type="text/javascript" src="assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 		<script type="text/javascript" src="assets/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
 		<script type="text/javascript" src="assets/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
 		<!-- Jasny Bootstrap  -->
