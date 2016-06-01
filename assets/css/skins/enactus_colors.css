@@ -104,7 +104,7 @@ mark,
 .btn-default {
   color: #ffffff;
   background-color: #FFC222;
-  border-color: #515356;
+  border-color: #FFC222;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -123,7 +123,7 @@ fieldset[disabled] .btn-default {
   border-color: #515356;
 }
 .btn-default-transparent {
-  color: #777777;
+  color: #FEFEFE;
   background-color: transparent;
   border-color: #FFC222;
 }
@@ -175,7 +175,7 @@ fieldset[disabled] .btn-default {
 }
 /*White Button*/
 .btn-white {
-  color: #777777;
+  color: #FEFEFE;
   background-color: #ffffff;
   border-color: #ffffff;
 }
@@ -512,7 +512,7 @@ header:not(.dark) .dropdown-menu > li.active > a i {
   color: #FFC222;
 }
 .transparent-header .header:not(.dark) .dropdown:not(.open):not(.active) > a:before {
-  color: #777777;
+  color: #FEFEFE;
 }
 .transparent-header .header:not(.dark) .navbar-default .navbar-nav > .dropdown.open > a:before {
   color: #FFC222;
@@ -637,7 +637,7 @@ header:not(.dark) .dropdown-menu > li.active > a i {
 }
 /*Nav arrows*/
 #offcanvas .dropdown > a:before {
-  color: #777777;
+  color: #FEFEFE;
 }
 #offcanvas .dropdown.open > a:before {
   color: #FFC222;
@@ -674,7 +674,7 @@ header:not(.dark) .dropdown-menu > li.active > a i {
 }
 .default.social-links li a:hover {
   background-color: #ffffff;
-  color: #777777;
+  color: #FEFEFE;
 }
 /*Header Top Dropdowns*/
 .header-top:not(.dark) .social-links .dropdown.open > button > i:before {
