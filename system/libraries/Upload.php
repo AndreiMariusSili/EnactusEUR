@@ -286,7 +286,7 @@ class CI_Upload {
 	/**
 	 * Constructor
 	 *
-	 * @param	array	$config
+	 * @param	array	$props
 	 * @return	void
 	 */
 	public function __construct($config = array())
