@@ -91,12 +91,9 @@
 						</ul>				
 						<div class="separator mt-10"></div>
 						<ul class="nav navbar-nav text-center">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Portfolio</a></li>
-							<li><a href="#">Shop</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="/Main/ventures">Ventures</a></li>
+							<li><a href="#">Team</a></li>
+							<li><a href="#contact-us">Contact Us</a></li>
 						</ul>
 					</nav>
 					<button type="button" class="offcanvas-toggle-left navbar-toggle" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>

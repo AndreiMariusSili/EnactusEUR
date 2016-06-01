@@ -9,5 +9,8 @@ class Main extends CI_Controller
 			$this -> load -> view('landing');
 	}
 
+	public function ventures(){
+		$this->load->view('ventures');
+	}
 }
 ?>
