@@ -5577,14 +5577,14 @@ header.full-width .animated.main-navigation .dropdown-menu .open .dropdown-menu.
 }
 .offcanvas-toggle-left:after {
   font-family: "FontAwesome";
-  content: url("Logo_crane.png");
+  content: url("/assets/images/Logo_crane.png");
   font-size: 22px;
   line-height: 35px;
   text-align: center;
   color: #000000;
 }
 #offcanvas.in + .offcanvas-toggle-left:after {
-  content: url("Logo_crane_black.png");
+  content: url("/assets/images/Logo_crane_black.png");
 }
 .offcanvas-toggle-right {
   display: block;
