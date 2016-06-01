@@ -443,10 +443,10 @@ tbody {
   padding: 10px 0;
 }
 .dark .footer {
-  background-color: #222222;
+  background-color: #333333;
 }
 .dark .subfooter {
-  background-color: #373737;
+  background-color: #333333;
   border-color: #454545;
 }
 /*Transparent Header*/
@@ -771,14 +771,14 @@ tbody {
   border-bottom: 1px solid #eaeaea;
 }
 .dark-bg {
-  background-color: #373737;
-  color: #cdcdcd;
+  background-color: #333333;
+  color: #FEFEFE;
 }
 .dark-bg + .dark-bg:not(.image-box):not(.full-image-container):not(.full-text-container):not(.full-width-section) {
   background-color: #555555;
 }
 .dark-bg + .dark-bg + .dark-bg {
-  background-color: #373737;
+  background-color: #333333;
 }
 .dark-bg h1,
 .dark-bg h2,
@@ -1256,21 +1256,21 @@ tbody {
 }
 .dark-bg:not(.banner) .separator:after {
   background: #505050;
-  background: -moz-linear-gradient(left, #373737 0%, #505050 35%, #505050 70%, #373737 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #373737), color-stop(35%, #505050), color-stop(70%, #505050), color-stop(100%, #373737));
-  background: -webkit-linear-gradient(left, #373737 0%, #505050 35%, #505050 70%, #373737 100%);
-  background: -o-linear-gradient(left, #373737 0%, #505050 35%, #505050 70%, #373737 100%);
-  background: -ms-linear-gradient(left, #373737 0%, #505050 35%, #505050 70%, #373737 100%);
-  background: linear-gradient(to right, #373737 0%, #505050 35%, #505050 70%, #373737 100%);
+  background: -moz-linear-gradient(left, #333333 0%, #505050 35%, #505050 70%, #333333 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #333333), color-stop(35%, #505050), color-stop(70%, #505050), color-stop(100%, #333333));
+  background: -webkit-linear-gradient(left, #333333 0%, #505050 35%, #505050 70%, #333333 100%);
+  background: -o-linear-gradient(left, #333333 0%, #505050 35%, #505050 70%, #333333 100%);
+  background: -ms-linear-gradient(left, #333333 0%, #505050 35%, #505050 70%, #333333 100%);
+  background: linear-gradient(to right, #333333 0%, #505050 35%, #505050 70%, #333333 100%);
 }
 #footer.dark .separator:after {
   background: #505050;
-  background: -moz-linear-gradient(left, #222222 0%, #505050 35%, #505050 70%, #222222 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #222222), color-stop(35%, #505050), color-stop(70%, #505050), color-stop(100%, #222222));
-  background: -webkit-linear-gradient(left, #222222 0%, #505050 35%, #505050 70%, #222222 100%);
-  background: -o-linear-gradient(left, #222222 0%, #505050 35%, #505050 70%, #222222 100%);
-  background: -ms-linear-gradient(left, #222222 0%, #505050 35%, #505050 70%, #222222 100%);
-  background: linear-gradient(to right, #222222 0%, #505050 35%, #505050 70%, #222222 100%);
+  background: -moz-linear-gradient(left, #333333 0%, #505050 35%, #505050 70%, #333333 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #333333), color-stop(35%, #505050), color-stop(70%, #505050), color-stop(100%, #333333));
+  background: -webkit-linear-gradient(left, #333333 0%, #505050 35%, #505050 70%, #333333 100%);
+  background: -o-linear-gradient(left, #333333 0%, #505050 35%, #505050 70%, #333333 100%);
+  background: -ms-linear-gradient(left, #333333 0%, #505050 35%, #505050 70%, #333333 100%);
+  background: linear-gradient(to right, #333333 0%, #505050 35%, #505050 70%, #333333 100%);
 }
 .default-bg .separator:after,
 .dark-translucent-bg .separator:after,
@@ -1336,21 +1336,21 @@ h5 + .separator {
 }
 .dark-bg .separator-2:after {
   background: #666666;
-  background: -moz-linear-gradient(left, #666666 0%, #555555 35%, #444444 70%, #373737 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #666666), color-stop(35%, #555555), color-stop(70%, #444444), color-stop(100%, #373737));
-  background: -webkit-linear-gradient(left, #666666 0%, #555555 35%, #444444 70%, #373737 100%);
-  background: -o-linear-gradient(left, #666666 0%, #555555 35%, #444444 70%, #373737 100%);
-  background: -ms-linear-gradient(left, #666666 0%, #555555 35%, #444444 70%, #373737 100%);
-  background: linear-gradient(to right, #666666 0%, #555555 35%, #444444 70%, #373737 100%);
+  background: -moz-linear-gradient(left, #666666 0%, #555555 35%, #444444 70%, #333333 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #666666), color-stop(35%, #555555), color-stop(70%, #444444), color-stop(100%, #333333));
+  background: -webkit-linear-gradient(left, #666666 0%, #555555 35%, #444444 70%, #333333 100%);
+  background: -o-linear-gradient(left, #666666 0%, #555555 35%, #444444 70%, #333333 100%);
+  background: -ms-linear-gradient(left, #666666 0%, #555555 35%, #444444 70%, #333333 100%);
+  background: linear-gradient(to right, #666666 0%, #555555 35%, #444444 70%, #333333 100%);
 }
 #footer.dark .separator-2:after {
   background: #444444;
-  background: -moz-linear-gradient(left, #444444 0%, #393939 35%, #323232 70%, #222222 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #444444), color-stop(35%, #393939), color-stop(70%, #323232), color-stop(100%, #222222));
-  background: -webkit-linear-gradient(left, #444444 0%, #393939 35%, #323232 70%, #222222 100%);
-  background: -o-linear-gradient(left, #444444 0%, #393939 35%, #323232 70%, #222222 100%);
-  background: -ms-linear-gradient(left, #444444 0%, #393939 35%, #323232 70%, #222222 100%);
-  background: linear-gradient(to right, #444444 0%, #393939 35%, #323232 70%, #222222 100%);
+  background: -moz-linear-gradient(left, #444444 0%, #393939 35%, #323232 70%, #333333 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #444444), color-stop(35%, #393939), color-stop(70%, #323232), color-stop(100%, #333333));
+  background: -webkit-linear-gradient(left, #444444 0%, #393939 35%, #323232 70%, #333333 100%);
+  background: -o-linear-gradient(left, #444444 0%, #393939 35%, #323232 70%, #333333 100%);
+  background: -ms-linear-gradient(left, #444444 0%, #393939 35%, #323232 70%, #333333 100%);
+  background: linear-gradient(to right, #444444 0%, #393939 35%, #323232 70%, #333333 100%);
 }
 .light-translucent-bg .separator-2:after,
 .two-col-translucent-bg .container > .row > div .separator-2:after,
@@ -1404,21 +1404,21 @@ h5 + .separator {
 }
 .dark-bg .separator-3:after {
   background: #666666;
-  background: -moz-linear-gradient(right, #666666 0%, #555555 35%, #444444 70%, #373737 100%);
-  background: -webkit-gradient(linear, right top, left top, color-stop(0%, #666666), color-stop(35%, #555555), color-stop(70%, #444444), color-stop(100%, #373737));
-  background: -webkit-linear-gradient(right, #666666 0%, #555555 35%, #444444 70%, #373737 100%);
-  background: -o-linear-gradient(right, #666666 0%, #555555 35%, #444444 70%, #373737 100%);
-  background: -ms-linear-gradient(right, #666666 0%, #555555 35%, #444444 70%, #373737 100%);
-  background: linear-gradient(to left, #666666 0%, #555555 35%, #444444 70%, #373737 100%);
+  background: -moz-linear-gradient(right, #666666 0%, #555555 35%, #444444 70%, #333333 100%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(0%, #666666), color-stop(35%, #555555), color-stop(70%, #444444), color-stop(100%, #333333));
+  background: -webkit-linear-gradient(right, #666666 0%, #555555 35%, #444444 70%, #333333 100%);
+  background: -o-linear-gradient(right, #666666 0%, #555555 35%, #444444 70%, #333333 100%);
+  background: -ms-linear-gradient(right, #666666 0%, #555555 35%, #444444 70%, #333333 100%);
+  background: linear-gradient(to left, #666666 0%, #555555 35%, #444444 70%, #333333 100%);
 }
 #footer.dark .separator-3:after {
   background: #444444;
-  background: -moz-linear-gradient(right, #444444 0%, #393939 35%, #323232 70%, #222222 100%);
-  background: -webkit-gradient(linear, right top, left top, color-stop(0%, #444444), color-stop(35%, #393939), color-stop(70%, #323232), color-stop(100%, #222222));
-  background: -webkit-linear-gradient(right, #444444 0%, #393939 35%, #323232 70%, #222222 100%);
-  background: -o-linear-gradient(right, #444444 0%, #393939 35%, #323232 70%, #222222 100%);
-  background: -ms-linear-gradient(right, #444444 0%, #393939 35%, #323232 70%, #222222 100%);
-  background: linear-gradient(to left, #444444 0%, #393939 35%, #323232 70%, #222222 100%);
+  background: -moz-linear-gradient(right, #444444 0%, #393939 35%, #323232 70%, #333333 100%);
+  background: -webkit-gradient(linear, right top, left top, color-stop(0%, #444444), color-stop(35%, #393939), color-stop(70%, #323232), color-stop(100%, #333333));
+  background: -webkit-linear-gradient(right, #444444 0%, #393939 35%, #323232 70%, #333333 100%);
+  background: -o-linear-gradient(right, #444444 0%, #393939 35%, #323232 70%, #333333 100%);
+  background: -ms-linear-gradient(right, #444444 0%, #393939 35%, #323232 70%, #333333 100%);
+  background: linear-gradient(to left, #444444 0%, #393939 35%, #323232 70%, #333333 100%);
 }
 .light-translucent-bg .separator-3:after,
 .two-col-translucent-bg .container > .row > div .separator-3:after,
@@ -2365,7 +2365,7 @@ fieldset[disabled] .btn-default {
 /*Dark Button*/
 .btn-dark {
   color: #ffffff;
-  background-color: #373737;
+  background-color: #333333;
   border-color: #333333;
 }
 .btn-dark:hover,
@@ -2380,7 +2380,7 @@ fieldset[disabled] .btn-default {
 }
 .dark-bg .btn-dark {
   color: #ffffff;
-  background-color: #222222;
+  background-color: #333333;
   border-color: #171717;
 }
 .dark-bg .btn-dark:hover,
@@ -2649,7 +2649,7 @@ fieldset[disabled] .btn-default {
   height: 40px;
 }
 .nav-tabs.style-1 > li > a:hover {
-  border-color: #222222!important;
+  border-color: #333333!important;
   background-color: #333333!important;
   color: #ffffff;
 }
@@ -2695,7 +2695,7 @@ fieldset[disabled] .btn-default {
 .nav-tabs.style-1 > li.active > a:focus {
   color: #ffffff;
   cursor: default;
-  border-color: #222222;
+  border-color: #333333;
 }
 .nav-tabs.style-1 > li.active > a:after {
   border-color: transparent transparent transparent #333333;
@@ -3624,7 +3624,7 @@ fieldset[disabled] .form-control {
   box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.6);
   color: #cccccc;
   background-color: rgba(255, 255, 255, 0.1);
-  border-color: #373737;
+  border-color: #333333;
 }
 .dark .form-control:focus {
   background-color: rgba(255, 255, 255, 0.15);
@@ -3633,7 +3633,7 @@ fieldset[disabled] .form-control {
   color: #cdcdcd;
 }
 .dark .footer-content .form-control {
-  border-color: #222222;
+  border-color: #333333;
 }
 /* Validation states */
 .dark-bg .has-success .help-block,
@@ -5922,7 +5922,7 @@ header.full-width .animated.main-navigation .dropdown-menu .open .dropdown-menu.
   margin: 0 5px 5px 0;
 }
 .footer-content .social-links li a {
-  color: #777777;
+  color: #FEFEFE;
   background-color: transparent;
   border-color: #777777;
 }

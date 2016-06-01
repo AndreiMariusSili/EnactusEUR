@@ -140,7 +140,7 @@
 
 				<!-- section start - about us -->
 				<!-- ================ -->
-				<section id="services" class="main-container pv-40 clearfix">
+				<section id="about-us" class="main-container pv-40 clearfix">
 						<div class="container">
 							<div class="row">
 								<div class="col-md-12">
@@ -410,7 +410,7 @@
 										<div class="logo-footer"><img id="logo-footer" class="center-block" src="assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo vel dolorum soluta consectetur doloribus sit. Delectus non tenetur odit dicta vitae debitis suscipit doloribus. Lorem ipsum dolor sit amet, illo vel dolorum soluta consectetur.</p>
 										<ul class="list-inline mb-20">
-											<li><i class="text-default fa fa-map-marker pr-5"></i>One infinity loop, 54100</li>
+											<li><a href="https://www.google.nl/maps/place/51%C2%B055'04.0%22N+4%C2%B031'39.7%22E/@51.9178526,4.5273692,18.62z/data=!4m5!3m4!1s0x0:0x0!8m2!3d51.917766!4d4.527687?hl=en" class="link-dark"><i class="text-default fa fa-map-marker pr-5"></i>Burgemeester Oudlaan, 3062PA</li>
 											<li><a href="tel:+00 1234567890" class="link-dark"><i class="text-default fa fa-phone pl-10 pr-5"></i>+00 1234567890</a></li>
 											<li><a href="mailto:info@theproject.com" class="link-dark"><i class="text-default fa fa-envelope-o pl-10 pr-5"></i>info@theproject.com</a></li>
 										</ul>
@@ -419,7 +419,6 @@
 											<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
 											<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
 											<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-											<li class="xing"><a target="_blank" href="http://www.xing.com"><i class="fa fa-xing"></i></a></li>
 										</ul>
 										<div class="separator"></div>
 										<p class="text-center margin-clear">Copyright © 2016 The Project by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>. All Rights Reserved</p>

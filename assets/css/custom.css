@@ -26,3 +26,13 @@ vertical-align: middle;
   width: 100vw;
 }
 
+footer.dark {
+	color: #FEFEFE !important;
+}
+
+.dark .footer .link-dark {
+  color: #FEFEFE;
+}
+.dark .footer .link-dark:hover {
+  color: #FFC222;
+}
