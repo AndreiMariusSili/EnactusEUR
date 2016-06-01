@@ -405,7 +405,7 @@
 					<div class="container">
 						<div class="footer-inner">
 							<div class="row">
-								<div class="col-md-6 col-md-offset-3">
+								<div class="col-md-8 col-md-offset-2">
 									<div class="footer-content text-center padding-ver-clear">
 										<div class="logo-footer"><img id="logo-footer" class="center-block" src="assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo vel dolorum soluta consectetur doloribus sit. Delectus non tenetur odit dicta vitae debitis suscipit doloribus. Lorem ipsum dolor sit amet, illo vel dolorum soluta consectetur.</p>
