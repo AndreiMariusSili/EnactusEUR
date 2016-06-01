@@ -133,7 +133,7 @@
 									<h2 class="text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">Full Width Background Video Block</h2>
 									<div class="separator object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100"></div>
 									<p class="large text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="300">Atque ducimus velit, earum quidem, iusto dolorem. Ex ipsam totam quas blanditiis, pariatur maxime ipsa iste, doloremque neque doloribus, error. Corrupti, tenetur.</p>
-									<p class="text-center"><a href="#" class="btn btn-lg btn-gray-transparent object-non-visible" data-animation-effect="zoomIn" data-effect-delay="500">Call to Action</a></p>
+									<p class="text-center"><a href="#services" class="btn btn-lg btn-gray-transparent object-non-visible" data-animation-effect="zoomIn" data-effect-delay="500">Call to Action</a></p>
 								</div>
 							</div>
 						</div>
@@ -381,14 +381,14 @@
 					</div>
 					<br><p>Insert description of Business</p>
 					<div class="panel panel-default">
-									<div class="panel-heading">
+						<div class="panel-heading">
 										<h4 class="panel-title">
 											<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFour-2" class="collapsed">
 												<i class="fa fa-leaf pr-10"></i>Business
 											</a>
 										</h4>
-									</div>
-									<div id="collapseFour-2" class="panel-collapse collapse">
+						</div>
+						<div id="collapseFour-2" class="panel-collapse collapse">
 										<div class="panel-body">
 											<form role="form">
 												<div class="form-group">
@@ -412,26 +412,10 @@
 												</div>
 											</form>
 										</div>
-									</div>
-					</div>
-				</div>
-				<!-- accordion end -->
-			<!-- body code end -->
-
-			<!-- footer top start -->
-			<!-- ================ -->
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="call-to-action text-center">
-								<div class="row">
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!-- footer top end -->
+				<!-- accordion end -->
 
 			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
 			<!-- ================ -->
@@ -471,7 +455,6 @@
 
 			</footer>
 			<!-- footer end -->
-
 
 		</div>
 		<!-- page-wrapper end -->
