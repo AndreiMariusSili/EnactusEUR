@@ -4298,8 +4298,6 @@ fieldset[disabled] .form-control {
 .video-background-banner {
   position: relative;
   overflow: hidden;
-  height: 100vh;
-  width: 99vw;
 }
 /* Responsive iframe
 ---------------------------------- */
