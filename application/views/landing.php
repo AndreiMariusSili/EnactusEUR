@@ -142,62 +142,40 @@
 
 				<!-- section start - about us -->
 				<!-- ================ -->
-				<section id="services" class="light-gray-bg pv-30 clearfix">
+				<section id="services" class="pv-40 clearfix">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
+								<div class="col-md-12">
 									<h2 class="text-center">About <strong>Us</strong></h2>
 									<div class="separator"></div>
-									<p class="large text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam voluptas facere vero ex tempora saepe perspiciatis ducimus sequi animi.</p>
-								</div>
-								<div class="col-sm-4">
-									<div class="image-box style-2 mb-20">
-										<div class="overlay-container overlay-visible">
-											<img src="assets/images/service-1.jpg" alt="">
-											<a href="assets/images/service-1.jpg" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
-											<div class="overlay-bottom hidden-xs">
-												<div class="text">
-													<p class="lead margin-clear text-left">Who we are</p>
-												</div>
-											</div>
-										</div>
-										<div class="body padding-horizontal-clear">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ipsam nihil, adipisci rem minus? Voluptatem distinctio laborum porro aspernatur.</p>
+									<div class="row">
+									<div class="col-md-4 ">
+										<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+											<span class="icon default-bg circle"><i class="fa fa-diamond"></i></span>
+											<h3>Clean Code &amp; Design</h3>
+											<div class="separator clearfix"></div>
+											<p>Voluptatem ad provident non repudiandae beatae cupiditate amet reiciendis lorem ipsum dolor sit amet, consectetur.</p>
+											<a href="page-services.html">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 										</div>
 									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="image-box style-2 mb-20">
-										<div class="overlay-container overlay-visible">
-											<img src="assets/images/service-2.jpg" alt="">
-											<a href="assets/images/service-2.jpg" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
-											<div class="overlay-bottom hidden-xs">
-												<div class="text">
-													<p class="lead margin-clear text-left">What we do</p>
-												</div>
-											</div>
-										</div>
-										<div class="body padding-horizontal-clear">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ipsam nihil, adipisci rem minus? Voluptatem distinctio laborum porro aspernatur.</p>
+									<div class="col-md-4 ">
+										<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+											<span class="icon default-bg circle"><i class="fa fa-connectdevelop"></i></span>
+											<h3>Extremely Flexible</h3>
+											<div class="separator clearfix"></div>
+											<p>Iure sequi unde hic. Sapiente quaerat sequi inventore veritatis cumque lorem ipsum dolor sit amet, consectetur.</p>
+											<a href="page-services.html">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 										</div>
 									</div>
-								</div>
-								<div class="col-sm-4">
-									<div class="image-box style-2 mb-20">
-										<div class="overlay-container overlay-visible">
-											<img src="assets/images/service-3.jpg" alt="">
-											<a href="assets/images/service-3.jpg" class="overlay-link popup-img"><i class="fa fa-plus"></i></a>
-											<div class="overlay-bottom hidden-xs">
-												<div class="text">
-													<p class="lead margin-clear text-left">Why we do it</p>
-												</div>
-											</div>
-										</div>
-										<div class="body padding-horizontal-clear">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque ipsam nihil, adipisci rem minus? Voluptatem distinctio laborum porro aspernatur.</p>
+									<div class="col-md-4 ">
+										<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+											<span class="icon default-bg circle"><i class="icon-snow"></i></span>
+											<h3>Latest Technologies</h3>
+											<div class="separator clearfix"></div>
+											<p>Inventore dolores aut laboriosam cum consequuntur delectus sequi lorem ipsum dolor sit amet, consectetur.</p>
+											<a href="page-services.html">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 										</div>
 									</div>
-								</div>
 							</div>
 						</div>
 				</section>
