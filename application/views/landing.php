@@ -127,8 +127,8 @@
 				<!-- section start - background video -->
 				<!-- ================ -->
 				<section class="video-background pv-40 dark-translucent-bg hovered">
-						<div class="container">
-							<div class="row">
+						<div class="container video_text_c">
+							<div class="row video_text_r">
 								<div class="col-md-8 col-md-offset-2">
 									<h2 class="text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">Full Width Background Video Block</h2>
 									<div class="separator object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100"></div>
