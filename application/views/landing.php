@@ -127,16 +127,16 @@
 				<!-- section start - background video -->
 				<!-- ================ -->
 				<section class="video-background pv-40 dark-translucent-bg hovered">
-						<div class="container">
-							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
-									<h2 class="text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">Full Width Background Video Block</h2>
-									<div class="separator object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100"></div>
-									<p class="large text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="300">Atque ducimus velit, earum quidem, iusto dolorem. Ex ipsam totam quas blanditiis, pariatur maxime ipsa iste, doloremque neque doloribus, error. Corrupti, tenetur.</p>
-									<p class="text-center"><a href="#services" class="btn btn-lg btn-gray-transparent object-non-visible" data-animation-effect="zoomIn" data-effect-delay="500">Call to Action</a></p>
-								</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<h2 class="text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">Full Width Background Video Block</h2>
+							<div class="separator object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100"></div>
+								<p class="large text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="300">Atque ducimus velit, earum quidem, iusto dolorem. Ex ipsam totam quas blanditiis, pariatur maxime ipsa iste, doloremque neque doloribus, error. Corrupti, tenetur.</p>
+								<p class="text-center"><a href="#services" class="btn btn-lg btn-gray-transparent object-non-visible" data-animation-effect="zoomIn" data-effect-delay="500">Call to Action</a></p>
 							</div>
 						</div>
+					</div>
 				</section>
 				<!-- section end - background video -->
 
