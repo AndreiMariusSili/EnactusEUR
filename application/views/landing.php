@@ -75,7 +75,7 @@
 					<nav id="offcanvas" class="animated navmenu navmenu-default navmenu-fixed-left offcanvas offcanvas-left" role="navigation">
 						<!-- logo -->
 						<div class="logo">
-							<a href="landing page.html"><img id="logo" src="/assets/images/Logo_enactus.png" alt="Logo_Enactus" ></a>
+							<a href="/"><img id="logo" src="/assets/images/Logo_enactus.png" alt="Logo_Enactus" ></a>
 						</div>
 
 						<!-- name-and-slogan -->
