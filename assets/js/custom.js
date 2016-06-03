@@ -7,3 +7,13 @@
  * License URI:http://support.wrapbootstrap.com/
  * File Description: Place here your custom scripts
  */
+
+$(document).ready(function(){
+
+$(".scrollDownAboutUs").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#about-us").offset().top},
+        'slow');
+});
+
+});
