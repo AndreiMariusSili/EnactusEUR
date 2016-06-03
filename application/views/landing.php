@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Crane Logo -->
-		<link rel="shortcut icon" href="assets/images/Logo_crane.png">
+		<link rel="shortcut icon" href="/assets/images/Logo_crane.png">
 
 		<!-- Web Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -21,34 +21,34 @@
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 
 		<!-- Bootstrap core CSS -->
-		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<link href="/assets/css/bootstrap.css" rel="stylesheet">
 
 		<!-- Font Awesome CSS -->
-		<link href="assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 
 		<!-- Fontello CSS -->
-		<link href="assets/fonts/fontello/css/fontello.css" rel="stylesheet">
+		<link href="/assets/fonts/fontello/css/fontello.css" rel="stylesheet">
 
 		<!-- Plugins -->
-		<link href="assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-		<link href="assets/plugins/rs-plugin/css/settings.css" rel="stylesheet">
-		<link href="assets/plugins/rs-plugin-5/css/layers.css" rel="stylesheet">
-		<link href="assets/plugins/rs-plugin-5/css/navigation.css" rel="stylesheet">
-		<link href="assets/css/animate.css" rel="stylesheet">
-		<link href="assets/css/animations.css" rel="stylesheet">
-		<link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
-		<link href="assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
-		<link href="assets/plugins/hover/hover-min.css" rel="stylesheet">
-		<link href="assets/plugins/morphext/morphext.css" rel="stylesheet">
-		<link href="assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
+		<link href="/assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+		<link href="/assets/plugins/rs-plugin/css/settings.css" rel="stylesheet">
+		<link href="/assets/plugins/rs-plugin-5/css/layers.css" rel="stylesheet">
+		<link href="/assets/plugins/rs-plugin-5/css/navigation.css" rel="stylesheet">
+		<link href="/assets/css/animate.css" rel="stylesheet">
+		<link href="/assets/css/animations.css" rel="stylesheet">
+		<link href="/assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+		<link href="/assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+		<link href="/assets/plugins/hover/hover-min.css" rel="stylesheet">
+		<link href="/assets/plugins/morphext/morphext.css" rel="stylesheet">
+		<link href="/assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
 		
 		<!-- The Project core CSS file -->
-		<link href="assets/css/style.css" rel="stylesheet" >
+		<link href="/assets/css/style.css" rel="stylesheet" >
 		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
-		<link href="assets/css/skins/enactus_colors.css" rel="stylesheet">
+		<link href="/assets/css/skins/enactus_colors.css" rel="stylesheet">
 
 		<!-- Custom css --> 
-		<link href="assets/css/custom.css" rel="stylesheet">
+		<link href="/assets/css/custom.css" rel="stylesheet">
 	</head>
 
 	<!-- body classes:  -->
@@ -75,7 +75,7 @@
 					<nav id="offcanvas" class="animated navmenu navmenu-default navmenu-fixed-left offcanvas offcanvas-left" role="navigation">
 						<!-- logo -->
 						<div class="logo">
-							<a href="landing page.html"><img id="logo" src="assets/images/Logo_enactus.png" alt="Logo_Enactus" ></a>
+							<a href="landing page.html"><img id="logo" src="/assets/images/Logo_enactus.png" alt="Logo_Enactus" ></a>
 						</div>
 
 						<!-- name-and-slogan -->
@@ -418,7 +418,7 @@
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2">
 									<div class="footer-content text-center padding-ver-clear">
-										<div class="logo-footer"><img id="logo-footer" class="center-block" src="assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
+										<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo vel dolorum soluta consectetur doloribus sit. Delectus non tenetur odit dicta vitae debitis suscipit doloribus. Lorem ipsum dolor sit amet, illo vel dolorum soluta consectetur.</p>
 										<ul class="list-inline mb-20">
 											<li><a href="https://www.google.nl/maps/place/51%C2%B055'04.0%22N+4%C2%B031'39.7%22E/@51.9178526,4.5273692,18.62z/data=!4m5!3m4!1s0x0:0x0!8m2!3d51.917766!4d4.527687?hl=en" class="link-dark"><i class="text-default fa fa-map-marker pr-5"></i>Burgemeester Oudlaan, 3062PA</li>
@@ -450,44 +450,44 @@
 		<!-- JavaScript files placed at the end of the document so the pages load faster -->
 		<!-- ================================================== -->
 		<!-- Jquery and Bootstap core js files -->
-		<script type="text/javascript" src="assets/plugins/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
 		<!-- Modernizr javascript -->
-		<script type="text/javascript" src="assets/plugins/modernizr.js"></script>
+		<script type="text/javascript" src="/assets/plugins/modernizr.js"></script>
 		<!-- jQuery Revolution Slider  -->
-		<script type="text/javascript" src="assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-		<script type="text/javascript" src="assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-		<script type="text/javascript" src="assets/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
-		<script type="text/javascript" src="assets/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+		<script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+		<script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
 		<!-- Jasny Bootstrap  -->
-		<script type="text/javascript" src="assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
 		<!-- Isotope javascript -->
-		<script type="text/javascript" src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/isotope/isotope.pkgd.min.js"></script>
 		<!-- Magnific Popup javascript -->
-		<script type="text/javascript" src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 		<!-- Appear javascript -->
-		<script type="text/javascript" src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
 		<!-- Count To javascript -->
-		<script type="text/javascript" src="assets/plugins/jquery.countTo.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery.countTo.js"></script>
 		<!-- Parallax javascript -->
-		<script src="assets/plugins/jquery.parallax-1.1.3.js"></script>
+		<script src="/assets/plugins/jquery.parallax-1.1.3.js"></script>
 		<!-- Contact form -->
-		<script src="assets/plugins/jquery.validate.js"></script>
+		<script src="/assets/plugins/jquery.validate.js"></script>
 		<!-- Morphext -->
-		<script type="text/javascript" src="assets/plugins/morphext/morphext.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/morphext/morphext.min.js"></script>
 		<!-- Pace javascript -->
-		<script type="text/javascript" src="assets/plugins/pace/pace.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/pace/pace.min.js"></script>
 		<!-- Owl carousel javascript -->
-		<script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+		<script type="text/javascript" src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
 		<!-- SmoothScroll javascript -->
-		<script type="text/javascript" src="assets/plugins/jquery.browser.js"></script>
-		<script type="text/javascript" src="assets/plugins/SmoothScroll.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery.browser.js"></script>
+		<script type="text/javascript" src="/assets/plugins/SmoothScroll.js"></script>
 		<!-- Initialization of Plugins -->
-		<script type="text/javascript" src="assets/js/template.js"></script>
+		<script type="text/javascript" src="/assets/js/template.js"></script>
 		<!-- Background Video -->
-		<script src="assets/plugins/vide/jquery.vide.js"></script>
+		<script src="/assets/plugins/vide/jquery.vide.js"></script>
 		<!-- Custom Scripts -->
-		<script type="text/javascript" src="assets/js/custom.js"></script>
+		<script type="text/javascript" src="/assets/js/custom.js"></script>
 
 	</body>
 </html>
