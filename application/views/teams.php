@@ -23,33 +23,33 @@
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 
 		<!-- Bootstrap core CSS -->
-		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<link href="/assets/css/bootstrap.css" rel="stylesheet">
 
 		<!-- Font Awesome CSS -->
-		<link href="assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 
 		<!-- Fontello CSS -->
-		<link href="assets/fonts/fontello/css/fontello.css" rel="stylesheet">
+		<link href="/assets/fonts/fontello/css/fontello.css" rel="stylesheet">
 
 		<!-- Plugins -->
-		<link href="assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-		<link href="assets/css/animations.css" rel="stylesheet">
-		<link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
-		<link href="assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
-		<link href="assets/plugins/hover/hover-min.css" rel="stylesheet">
-		<link href="assets/plugins/rs-plugin/css/settings.css" rel="stylesheet">		
-		<link href="assets/plugins/morphext/morphext.css" rel="stylesheet">
-		<link href="assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">		
+		<link href="/assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+		<link href="/assets/css/animations.css" rel="stylesheet">
+		<link href="/assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+		<link href="/assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+		<link href="/assets/plugins/hover/hover-min.css" rel="stylesheet">
+		<link href="/assets/plugins/rs-plugin/css/settings.css" rel="stylesheet">		
+		<link href="/assets/plugins/morphext/morphext.css" rel="stylesheet">
+		<link href="/assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">		
 		
 		<!-- The Project core CSS file -->
-		<link href="assets/css/style.css" rel="stylesheet" >
+		<link href="/assets/css/style.css" rel="stylesheet" >
 		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
-		<link href="assets/css/skins/light_blue.css" rel="stylesheet">
+		<link href="/assets/css/skins/light_blue.css" rel="stylesheet">
 
 		<!-- Custom css --> 
-		<link href="assets/css/custom.css" rel="stylesheet">
+		<link href="/assets/css/custom.css" rel="stylesheet">
 		<!-- Crane Logo -->
-		<link rel="shortcut icon" href="assets/images/Logo_crane.png">
+		<link rel="shortcut icon" href="/assets/images/Logo_crane.png">
 	</head>
 
 	<!-- body classes:  -->
@@ -1208,38 +1208,38 @@
 		<!-- JavaScript files placed at the end of the document so the pages load faster -->
 		<!-- ================================================== -->
 		<!-- Jquery and Bootstap core js files -->
-		<script type="text/javascript" src="assets/plugins/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
 		<!-- Modernizr javascript -->
-		<script type="text/javascript" src="assets/plugins/modernizr.js"></script>
+		<script type="text/javascript" src="/assets/plugins/modernizr.js"></script>
 		<!-- Isotope javascript -->
-		<script type="text/javascript" src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/isotope/isotope.pkgd.min.js"></script>
 		<!-- Magnific Popup javascript -->
-		<script type="text/javascript" src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 		<!-- Appear javascript -->
-		<script type="text/javascript" src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
 		<!-- Count To javascript -->
-		<script type="text/javascript" src="assets/plugins/jquery.countTo.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery.countTo.js"></script>
 		<!-- Parallax javascript -->
-		<script src="assets/plugins/jquery.parallax-1.1.3.js"></script>
+		<script src="/assets/plugins/jquery.parallax-1.1.3.js"></script>
 		<!-- Contact form -->
-		<script src="assets/plugins/jquery.validate.js"></script>
+		<script src="/assets/plugins/jquery.validate.js"></script>
 		<!-- Owl carousel javascript -->
-		<script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+		<script type="text/javascript" src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
 		<!-- SmoothScroll javascript -->
-		<script type="text/javascript" src="assets/plugins/jquery.browser.js"></script>
-		<script type="text/javascript" src="assets/plugins/SmoothScroll.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery.browser.js"></script>
+		<script type="text/javascript" src="/assets/plugins/SmoothScroll.js"></script>
 		<!-- Initialization of Plugins -->
-		<script type="text/javascript" src="assets/js/template.js"></script>
+		<script type="text/javascript" src="/assets/js/template.js"></script>
 		<!-- Custom Scripts -->
-		<script type="text/javascript" src="assets/js/custom.js"></script>
+		<script type="text/javascript" src="/assets/js/custom.js"></script>
 		<!-- jQuery Revolution Slider  -->
-		<script type="text/javascript" src="assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 		<!-- Jasny Bootstrap  -->
-		<script type="text/javascript" src="assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
 		<!-- Morphext -->
-		<script type="text/javascript" src="assets/plugins/morphext/morphext.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/morphext/morphext.min.js"></script>
 		<!-- Pace javascript -->
-		<script type="text/javascript" src="assets/plugins/pace/pace.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/pace/pace.min.js"></script>
 	</body>
 </html>
