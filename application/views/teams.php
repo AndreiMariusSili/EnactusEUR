@@ -90,8 +90,8 @@
 						</ul>				
 						<div class="separator mt-10"></div>
 						<ul class="nav navbar-nav text-center">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="page-about.html">About</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="page-about.html">About</a></li>
 							<li><a href="page-services.html">Services</a></li>
 							<li><a href="portfolio-grid-2-3-col.html">Portfolio</a></li>
 							<li><a href="shop-listing-3col.html">Shop</a></li>
