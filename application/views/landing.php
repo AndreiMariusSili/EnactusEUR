@@ -4,7 +4,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>The Project | Home One Page</title>
+		<title> Enactus| Erasmus University Rotterdam</title>
 		<meta name="description" content="The Project a Bootstrap-based, Responsive HTML5 Template">
 		<meta name="author" content="htmlcoder.me">
 
