@@ -81,36 +81,15 @@
 						<div class="separator"></div>
 						<ul class="social-links circle small clearfix margin-clear text-center animated-effect-1">
 							<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-							<li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>
 							<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-							<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
 							<li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
-							<li class="flickr"><a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a></li>
 							<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
 						</ul>				
 						<div class="separator mt-10"></div>
 						<ul class="nav navbar-nav text-center">
-							<li><a href="index.html">Home</a></li>
-							<li class="active"><a href="page-about.html">About</a></li>
-							<li><a href="page-services.html">Services</a></li>
-							<li><a href="portfolio-grid-2-3-col.html">Portfolio</a></li>
-							<li><a href="shop-listing-3col.html">Shop</a></li>
-							<li><a href="page-contact.html">Contact</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu Item With Submenu</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Second Level Item 1</a></li>
-									<li><a href="#">Second Level Item 2</a></li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Second Level Item With Submenu</a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Third Level Item 1</a></li>
-											<li><a href="#">Third Level Item 2</a></li>
-											<li><a href="#">Third Level Item 3</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
+							<li><a href="/Main/landing">Home</a></li>
+							<li><a href="/Main/ventures">Ventures</a></li>
+							<li class="active"><a href="/Main/teams">Teams</a></li>
 						</ul>
 					</nav>
 					<!-- <img src="/assets/images/Logo_crane.png"> -->
