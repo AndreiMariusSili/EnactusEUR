@@ -75,7 +75,7 @@
 					<nav id="offcanvas" class="animated navmenu navmenu-default navmenu-fixed-left offcanvas offcanvas-left" role="navigation">
 						<!-- logo -->
 						<div class="logo">
-							<a href="landing page.html"><img id="logo" src="/assets/images/Logo_enactus.png" alt="Logo_Enactus" ></a>
+							<a href="/"><img id="logo" src="/assets/images/Logo_enactus.png" alt="Logo_Enactus" ></a>
 						</div>
 
 						<!-- name-and-slogan -->
@@ -91,9 +91,9 @@
 						</ul>				
 						<div class="separator mt-10"></div>
 						<ul class="nav navbar-nav text-center">
+							<li class="active"><a href="/">Home</a></li>
 							<li><a href="/Main/ventures">Ventures</a></li>
-							<li><a href="#">Team</a></li>
-							<li><a href="#contact-us">Contact Us</a></li>
+							<li><a href="/Main/teams">Teams</a></li>
 						</ul>
 					</nav>
 					<button type="button" class="offcanvas-toggle-left navbar-toggle" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
