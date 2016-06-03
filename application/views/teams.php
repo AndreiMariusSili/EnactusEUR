@@ -14,7 +14,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="/assets/images/favicon.ico">
 
 		<!-- Web Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -23,33 +23,33 @@
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 
 		<!-- Bootstrap core CSS -->
-		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<link href="/assets/css/bootstrap.css" rel="stylesheet">
 
 		<!-- Font Awesome CSS -->
-		<link href="assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 
 		<!-- Fontello CSS -->
-		<link href="assets/fonts/fontello/css/fontello.css" rel="stylesheet">
+		<link href="/assets/fonts/fontello/css/fontello.css" rel="stylesheet">
 
 		<!-- Plugins -->
-		<link href="assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-		<link href="assets/css/animations.css" rel="stylesheet">
-		<link href="assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
-		<link href="assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
-		<link href="assets/plugins/hover/hover-min.css" rel="stylesheet">
-		<link href="assets/plugins/rs-plugin/css/settings.css" rel="stylesheet">		
-		<link href="assets/plugins/morphext/morphext.css" rel="stylesheet">
-		<link href="assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">		
+		<link href="/assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+		<link href="/assets/css/animations.css" rel="stylesheet">
+		<link href="/assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+		<link href="/assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+		<link href="/assets/plugins/hover/hover-min.css" rel="stylesheet">
+		<link href="/assets/plugins/rs-plugin/css/settings.css" rel="stylesheet">		
+		<link href="/assets/plugins/morphext/morphext.css" rel="stylesheet">
+		<link href="/assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">		
 		
 		<!-- The Project core CSS file -->
-		<link href="assets/css/style.css" rel="stylesheet" >
+		<link href="/assets/css/style.css" rel="stylesheet" >
 		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
-		<link href="assets/css/skins/light_blue.css" rel="stylesheet">
+		<link href="/assets/css/skins/enactus_colors.css" rel="stylesheet">
 
 		<!-- Custom css --> 
-		<link href="assets/css/custom.css" rel="stylesheet">
+		<link href="/assets/css/custom.css" rel="stylesheet">
 		<!-- Crane Logo -->
-		<link rel="shortcut icon" href="assets/images/Logo_crane.png">
+		<link rel="shortcut icon" href="/assets//assets/images/Logo_crane.png">
 	</head>
 
 	<!-- body classes:  -->
@@ -71,7 +71,7 @@
 					<nav id="offcanvas" class="animated navmenu navmenu-default navmenu-fixed-left offcanvas offcanvas-left" role="navigation">
 						<!-- logo -->
 						<div class="logo">
-							<a href="landing page.html"><img id="logo" src="images/Logo_enactus.png" alt="Logo_Enactus" ></a>
+							<a href="landing page.html"><img id="logo" src="/assets/images/Logo_enactus.png" alt="Logo_Enactus" ></a>
 						</div>
 
 						<!-- name-and-slogan -->
@@ -90,8 +90,8 @@
 						</ul>				
 						<div class="separator mt-10"></div>
 						<ul class="nav navbar-nav text-center">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="page-about.html">About</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li class="active"><a href="page-about.html">About</a></li>
 							<li><a href="page-services.html">Services</a></li>
 							<li><a href="portfolio-grid-2-3-col.html">Portfolio</a></li>
 							<li><a href="shop-listing-3col.html">Shop</a></li>
@@ -113,7 +113,7 @@
 							</li>
 						</ul>
 					</nav>
-					<!-- <img src="images/Logo_crane.png"> -->
+					<!-- <img src="/assets/images/Logo_crane.png"> -->
 
 					<button type="button" class="offcanvas-toggle-left navbar-toggle" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
 				</div>
@@ -169,7 +169,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-1.jpg" alt="">
+												<img src="/assets/images/team-member-1.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
 												</div>
@@ -188,7 +188,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-2.jpg" alt="">
+												<img src="/assets/images/team-member-2.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
 												</div>
@@ -207,7 +207,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-3.jpg" alt="">
+												<img src="/assets/images/team-member-3.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
 												</div>
@@ -226,7 +226,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-4.jpg" alt="">
+												<img src="/assets/images/team-member-4.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
 												</div>
@@ -252,7 +252,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-1.jpg" alt="">
+												<img src="/assets/images/team-member-1.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
 												</div>
@@ -271,7 +271,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-2.jpg" alt="">
+												<img src="/assets/images/team-member-2.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
 												</div>
@@ -290,7 +290,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-3.jpg" alt="">
+												<img src="/assets/images/team-member-3.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
 												</div>
@@ -309,7 +309,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-4.jpg" alt="">
+												<img src="/assets/images/team-member-4.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
 												</div>
@@ -332,7 +332,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-1.jpg" alt="">
+												<img src="/assets/images/team-member-1.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
 												</div>
@@ -351,7 +351,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-2.jpg" alt="">
+												<img src="/assets/images/team-member-2.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
 												</div>
@@ -370,7 +370,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-3.jpg" alt="">
+												<img src="/assets/images/team-member-3.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
 												</div>
@@ -389,7 +389,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-4.jpg" alt="">
+												<img src="/assets/images/team-member-4.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
 												</div>
@@ -413,7 +413,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-1.jpg" alt="">
+												<img src="/assets/images/team-member-1.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
 												</div>
@@ -432,7 +432,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-2.jpg" alt="">
+												<img src="/assets/images/team-member-2.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
 												</div>
@@ -451,7 +451,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-3.jpg" alt="">
+												<img src="/assets/images/team-member-3.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
 												</div>
@@ -470,7 +470,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-4.jpg" alt="">
+												<img src="/assets/images/team-member-4.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
 												</div>
@@ -494,7 +494,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-1.jpg" alt="">
+												<img src="/assets/images/team-member-1.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
 												</div>
@@ -513,7 +513,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-2.jpg" alt="">
+												<img src="/assets/images/team-member-2.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
 												</div>
@@ -532,7 +532,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-3.jpg" alt="">
+												<img src="/assets/images/team-member-3.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
 												</div>
@@ -551,7 +551,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-4.jpg" alt="">
+												<img src="/assets/images/team-member-4.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
 												</div>
@@ -575,7 +575,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-1.jpg" alt="">
+												<img src="/assets/images/team-member-1.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
 												</div>
@@ -594,7 +594,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-2.jpg" alt="">
+												<img src="/assets/images/team-member-2.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
 												</div>
@@ -613,7 +613,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-3.jpg" alt="">
+												<img src="/assets/images/team-member-3.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
 												</div>
@@ -632,7 +632,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-4.jpg" alt="">
+												<img src="/assets/images/team-member-4.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
 												</div>
@@ -662,7 +662,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-1.jpg" alt="">
+												<img src="/assets/images/team-member-1.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
 												</div>
@@ -681,7 +681,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-2.jpg" alt="">
+												<img src="/assets/images/team-member-2.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
 												</div>
@@ -700,7 +700,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-3.jpg" alt="">
+												<img src="/assets/images/team-member-3.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
 												</div>
@@ -719,7 +719,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-4.jpg" alt="">
+												<img src="/assets/images/team-member-4.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
 												</div>
@@ -745,7 +745,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-1.jpg" alt="">
+												<img src="/assets/images/team-member-1.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
 												</div>
@@ -764,7 +764,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-2.jpg" alt="">
+												<img src="/assets/images/team-member-2.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
 												</div>
@@ -783,7 +783,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-3.jpg" alt="">
+												<img src="/assets/images/team-member-3.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
 												</div>
@@ -802,7 +802,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-4.jpg" alt="">
+												<img src="/assets/images/team-member-4.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
 												</div>
@@ -825,7 +825,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-1.jpg" alt="">
+												<img src="/assets/images/team-member-1.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
 												</div>
@@ -844,7 +844,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-2.jpg" alt="">
+												<img src="/assets/images/team-member-2.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
 												</div>
@@ -863,7 +863,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-3.jpg" alt="">
+												<img src="/assets/images/team-member-3.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
 												</div>
@@ -882,7 +882,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-4.jpg" alt="">
+												<img src="/assets/images/team-member-4.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
 												</div>
@@ -906,7 +906,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-1.jpg" alt="">
+												<img src="/assets/images/team-member-1.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
 												</div>
@@ -925,7 +925,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-2.jpg" alt="">
+												<img src="/assets/images/team-member-2.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
 												</div>
@@ -944,7 +944,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-3.jpg" alt="">
+												<img src="/assets/images/team-member-3.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
 												</div>
@@ -963,7 +963,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-4.jpg" alt="">
+												<img src="/assets/images/team-member-4.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
 												</div>
@@ -987,7 +987,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-1.jpg" alt="">
+												<img src="/assets/images/team-member-1.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
 												</div>
@@ -1006,7 +1006,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-2.jpg" alt="">
+												<img src="/assets/images/team-member-2.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
 												</div>
@@ -1025,7 +1025,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-3.jpg" alt="">
+												<img src="/assets/images/team-member-3.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
 												</div>
@@ -1044,7 +1044,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-4.jpg" alt="">
+												<img src="/assets/images/team-member-4.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
 												</div>
@@ -1068,7 +1068,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-1.jpg" alt="">
+												<img src="/assets/images/team-member-1.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
 												</div>
@@ -1087,7 +1087,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-2.jpg" alt="">
+												<img src="/assets/images/team-member-2.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
 												</div>
@@ -1106,7 +1106,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-3.jpg" alt="">
+												<img src="/assets/images/team-member-3.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
 												</div>
@@ -1125,7 +1125,7 @@
 									<div class="col-sm-6 col-md-3">
 										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 											<div class="overlay-container overlay-visible">
-												<img src="images/team-member-4.jpg" alt="">
+												<img src="/assets/images/team-member-4.jpg" alt="">
 												<div class="overlay-bottom">
 													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
 												</div>
@@ -1174,7 +1174,7 @@
 							<div class="row">
 								<div class="col-md-6 col-md-offset-3">
 									<div class="footer-content text-center padding-ver-clear">
-										<div class="logo-footer"><img id="logo-footer" class="center-block" src="images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
+										<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo vel dolorum soluta consectetur doloribus sit. Delectus non tenetur odit dicta vitae debitis suscipit doloribus. Lorem ipsum dolor sit amet, illo vel dolorum soluta consectetur.</p>
 										<ul class="list-inline mb-20">
 											<li><i class="text-default fa fa-map-marker pr-5"></i>One infinity loop, 54100</li>
@@ -1208,38 +1208,38 @@
 		<!-- JavaScript files placed at the end of the document so the pages load faster -->
 		<!-- ================================================== -->
 		<!-- Jquery and Bootstap core js files -->
-		<script type="text/javascript" src="assets/plugins/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
 		<!-- Modernizr javascript -->
-		<script type="text/javascript" src="assets/plugins/modernizr.js"></script>
+		<script type="text/javascript" src="/assets/plugins/modernizr.js"></script>
 		<!-- Isotope javascript -->
-		<script type="text/javascript" src="assets/plugins/isotope/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/isotope/isotope.pkgd.min.js"></script>
 		<!-- Magnific Popup javascript -->
-		<script type="text/javascript" src="assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 		<!-- Appear javascript -->
-		<script type="text/javascript" src="assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
 		<!-- Count To javascript -->
-		<script type="text/javascript" src="assets/plugins/jquery.countTo.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery.countTo.js"></script>
 		<!-- Parallax javascript -->
-		<script src="assets/plugins/jquery.parallax-1.1.3.js"></script>
+		<script src="/assets/plugins/jquery.parallax-1.1.3.js"></script>
 		<!-- Contact form -->
-		<script src="assets/plugins/jquery.validate.js"></script>
+		<script src="/assets/plugins/jquery.validate.js"></script>
 		<!-- Owl carousel javascript -->
-		<script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+		<script type="text/javascript" src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
 		<!-- SmoothScroll javascript -->
-		<script type="text/javascript" src="assets/plugins/jquery.browser.js"></script>
-		<script type="text/javascript" src="assets/plugins/SmoothScroll.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jquery.browser.js"></script>
+		<script type="text/javascript" src="/assets/plugins/SmoothScroll.js"></script>
 		<!-- Initialization of Plugins -->
-		<script type="text/javascript" src="assets/js/template.js"></script>
+		<script type="text/javascript" src="/assets/js/template.js"></script>
 		<!-- Custom Scripts -->
-		<script type="text/javascript" src="assets/js/custom.js"></script>
+		<script type="text/javascript" src="/assets/js/custom.js"></script>
 		<!-- jQuery Revolution Slider  -->
-		<script type="text/javascript" src="assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 		<!-- Jasny Bootstrap  -->
-		<script type="text/javascript" src="assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
+		<script type="text/javascript" src="/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
 		<!-- Morphext -->
-		<script type="text/javascript" src="assets/plugins/morphext/morphext.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/morphext/morphext.min.js"></script>
 		<!-- Pace javascript -->
-		<script type="text/javascript" src="assets/plugins/pace/pace.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/pace/pace.min.js"></script>
 	</body>
 </html>
