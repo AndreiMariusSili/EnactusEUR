@@ -72,23 +72,8 @@
 						<div class="separator mt-10"></div>
 						<ul class="nav navbar-nav text-center">
 							<li class="active"><a href="/Main/landing">Home</a></li>
-							<li><a href="#">Teams</a></li>
-							<li><a href="#">Contact</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu Item With Submenu</a>
-								<ul class="dropdown-menu">
-									<li><a href="#">Second Level Item 1</a></li>
-									<li><a href="#">Second Level Item 2</a></li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Second Level Item With Submenu</a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Third Level Item 1</a></li>
-											<li><a href="#">Third Level Item 2</a></li>
-											<li><a href="#">Third Level Item 3</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
+							<li><a href="/Main/ventures">Ventures</a></li>
+							<li><a href="/Main/teams">Teams</a></li>
 						</ul>
 					</nav>
 					<button type="button" class="offcanvas-toggle-left navbar-toggle" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
