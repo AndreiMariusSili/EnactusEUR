@@ -6,7 +6,17 @@ class Main extends CI_Controller
 
 	public function index()
 	{
-			$this -> load -> view('landing');
+			$this->load->view('landing');
+	}
+
+	public function landing()
+	{
+		$this->load->view('landing');
+	}
+
+	public function teams()
+	{
+		$this->load->view('teams');
 	}
 
 	public function ventures(){
