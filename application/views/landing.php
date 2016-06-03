@@ -91,7 +91,7 @@
 						</ul>				
 						<div class="separator mt-10"></div>
 						<ul class="nav navbar-nav text-center">
-							<li class="active"><a href="/"></a>Home</li>
+							<li class="active"><a href="/">Home</a></li>
 							<li><a href="/Main/ventures">Ventures</a></li>
 							<li><a href="/Main/teams">Teams</a></li>
 						</ul>
