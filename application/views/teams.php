@@ -44,7 +44,7 @@
 		<!-- The Project core CSS file -->
 		<link href="/assets/css/style.css" rel="stylesheet" >
 		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
-		<link href="/assets/css/skins/light_blue.css" rel="stylesheet">
+		<link href="/assets/css/skins/enactus_colors.css" rel="stylesheet">
 
 		<!-- Custom css --> 
 		<link href="/assets/css/custom.css" rel="stylesheet">
