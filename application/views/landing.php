@@ -215,6 +215,9 @@
 						<div class="row">
 							<h2 class="text-center">Contact <strong>Us</strong></h2>
 							<div class="separator"></div>
+							<div class="row text-danger">
+								<?php echo $this->session->flashdata('errors');?>
+							</div>
 							<div class="panel-group collapse-style-2" id="accordion-2">
 								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUp" data-effect-delay="300">
 												<div class="panel-heading">
@@ -226,7 +229,7 @@
 												</div>
 												<div id="collapseOne-2" class="panel-collapse collapse">
 													<div class="panel-body">
-														<form action="" method="">
+														<form action="/Form/founder" method="POST">
 															<div class="form-group">
 																<label>My name is...</label>
 																<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
@@ -235,11 +238,11 @@
 															<div class="form-group">
 																<label>I can be reached at...</label>
 																<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
-																<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
+																<input type="text" class="form-control" name="phone_number" placeholder="06 12 34 56 78">
 															</div>
 															<div class="form-group">
 																<label>I was born on...</label>
-																<input type="date" class="form-control" name="birth_date" placeholder="dd/mm/yyyy"></input>
+																<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
 															</div>
 															<div class="form-group">
 																<label>I study...</label>
@@ -252,11 +255,12 @@
 															</div>
 															<div class="form-group">
 																<label>I have this amazing idea...</label>
-																<textarea class="form-control" rows="5" name="idea" placeholder="I see opportunity"></textarea>
+																<input type="text" class="form-control" name="title" placeholder="Give your idea a catchy name" style="margin-bottom: 1rem;">
+																<textarea class="form-control" rows="5" name="idea" placeholder="Tell us about your idea in a few sentences"></textarea>
 															</div>
 															<div class="form-group">
 																<label>My motivation is...</label>
-																<textarea class="form-control" rows="5" name="motivation" placeholder="I want to help people help themselves"></textarea>
+																<textarea class="form-control" rows="5" name="motivation" placeholder="Tell us about why you want to pursue this idea in a few sentences"></textarea>
 															</div>
 															<div class="form-group">
 																<button type="submit" class="btn btn-default">Submit</button>
@@ -275,7 +279,7 @@
 												</div>
 												<div id="collapseTwo-2" class="panel-collapse collapse">
 													<div class="panel-body">
-														<form action="" method="">
+														<form action="/Form/cofounder" method="POST">
 															<div class="form-group">
 																<label>My name is...</label>
 																<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
@@ -288,7 +292,7 @@
 															</div>
 															<div class="form-group">
 																<label>I was born on...</label>
-																<input type="date" class="form-control" name="birth_date" placeholder="dd/mm/yyyy"></input>
+																<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
 															</div>
 															<div class="form-group">
 																<label>I study...</label>
@@ -301,7 +305,7 @@
 															</div>
 															<div class="form-group">
 																<label>I want to join the venture...</label>
-																<select name="project" class="form-control">
+																<select name="project_preference" class="form-control">
 																	<option></option>
 																	<option value="sMaaK">sMaaK</option>
 																	<option value="Klik">Klik</option>
@@ -329,7 +333,7 @@
 												</div>
 													<div id="collapseThree-2" class="panel-collapse collapse">
 														<div class="panel-body">
-															<form action="" method="">
+															<form action="/Form/passive" method="POST">
 																<div class="form-group">
 																	<label>My name is...</label>
 																	<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
@@ -342,7 +346,7 @@
 																</div>
 																<div class="form-group">
 																	<label>I was born on...</label>
-																	<input type="date" class="form-control" name="birthdate" placeholder="dd/mm/yyyy"></input>
+																	<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
 																</div>
 																<div class="form-group">
 																	<label>I study...</label>
@@ -374,7 +378,7 @@
 									</div>
 									<div id="collapseFour-2" class="panel-collapse collapse">
 													<div class="panel-body">
-														<form action="" method="">
+														<form action="/Form/partner" method="POST">
 																<div class="form-group">
 																	<label>My name is...</label>
 																	<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
@@ -391,7 +395,7 @@
 																</div>
 																<div class="form-group">
 																	<label>I want to become a business partner because...</label>
-																	<textarea class="form-control" rows="5" name="interest" placeholder="I am interested in social entrepreneurship"></textarea>
+																	<textarea class="form-control" rows="5" name="motivation" placeholder="I am interested in social entrepreneurship"></textarea>
 																</div>
 																<div class="form-group">
 																	<button type="submit" class="btn btn-default">Submit</button>
