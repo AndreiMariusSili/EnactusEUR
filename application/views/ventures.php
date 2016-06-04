@@ -71,9 +71,9 @@
 			</ul>				
 			<div class="separator mt-10"></div>
 			<ul class="nav navbar-nav text-center">
-				<li><a href="/landing">Home</a></li>
+				<li><a href="/">Home</a></li>
 				<li class="active"><a href="/Main/ventures">Ventures</a></li>
-				<li><a href="/teams">Teams</a></li>
+				<li><a href="/Main/teams">Teams</a></li>
 			</ul>
 		</nav>
 		<button type="button" class="offcanvas-toggle-left navbar-toggle" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
