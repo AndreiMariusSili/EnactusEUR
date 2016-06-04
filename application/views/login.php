@@ -30,28 +30,32 @@
       <div class="login_wrapper">
         <div class="form login_form">
           <section class="login_content">
-            <form>
               <h1>Login Form</h1>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Username" required="" />
-              </div>
-              <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password" required="" />
-              </div>
-              <div style="color: #FFFFFF;">
-              <button type="submit" class="btn btn-lg btn-block" style="background-color: #FFC222;">Log in</button>
-
+              <form action="/Admin/login" method="POST">
+                <div class="form-group">
+                  <input type="text" name="username" class="form-control" placeholder="Username"/>
+                </div>
+                <div class="form-group">
+                  <input type="password" name="password" class="form-control" placeholder="Password"/>
+                </div>
+                <div class="form-group" style="color: #FFFFFF;">
+                  <button type="submit" class="btn btn-lg btn-block" style="background-color: #FFC222;">Log in</button>
+                </div>
+              </form>
               <div class="clearfix">
 
               <div class="separator"></div>
               <div class="clearfix"></div>
+
+              <div class="text-danger">
+                <?php echo $this->session->flashdata('errors');?>
+              </div>
 
               <div>
                 <img class="img-responsive" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami">
               </div>
 
               </div>
-            </form>
           </section>
         </div>
                 <div class="clearfix"></div>
