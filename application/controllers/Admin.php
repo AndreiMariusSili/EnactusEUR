@@ -7,4 +7,11 @@ class Admin extends CI_Controller
 	{
 		$this->load->view('login');
 	}
+
+	public function index()
+	{
+		$this->load->library('encrypt')	
+		$crypto = $this->encrypt->encode('admin');
+		echo $crypto;
+	}
 }

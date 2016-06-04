@@ -3124,8 +3124,8 @@ a.hiddenanchor {
 .login_wrapper {
   right: 0px;
   margin: 0px auto;
-  margin-top: 5%;
-  max-width: 350px;
+  margin-top: 20vh;
+  max-width: 500px;
   position: relative; }
 
 .registration_form, .login_form {
