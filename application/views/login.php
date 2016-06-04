@@ -30,10 +30,10 @@
           <section class="login_content">
             <form>
               <h1>Login Form</h1>
-              <div>
+              <div class="from-group">
                 <input type="text" class="form-control" placeholder="Username" required="" />
               </div>
-              <div>
+              <div class="form-group">
                 <input type="password" class="form-control" placeholder="Password" required="" />
               </div>
               <div>
