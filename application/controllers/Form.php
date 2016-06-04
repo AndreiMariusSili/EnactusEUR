@@ -62,7 +62,7 @@ class Form extends CI_Controller
 		if($this->form_validation->run() == FALSE)
 		{
 			$this->session->set_flashdata('errors', validation_errors());
-			redirect("/");
+			redirect("/#contact-us");
 		}
 		else
 		{
