@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Ventures Page</title>
 	<meta charset="utf-8">
-	<meta name="description" content="The Project a Bootstrap-based, Responsive HTML5 Template">
+	<title>Ventures | Enactus EUR</title>
+	<meta name="Enactus | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
 	<meta name="author" content="htmlcoder.me">
 
 	<!-- Mobile Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="/assets/images/favicon.ico">
+	<!-- Crane Logo -->
+	<link rel="shortcut icon" href="/assets/images/Logo_crane.png">
 
 	<!-- Bootstrap core CSS -->
 	<link href="/assets/css/bootstrap.css" rel="stylesheet">
@@ -39,8 +39,6 @@
 	<link href="/assets/css/skins/enactus_colors.css" rel="stylesheet">
 	<!-- Custom css --> 
 	<link href="/assets/css/custom.css" rel="stylesheet">
-	<!-- Crane Logo -->
-	<link rel="shortcut icon" href="/images/Logo_crane.png">
 	<!-- Web Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
@@ -51,33 +49,35 @@
 	<div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
 	<div class="page-wrapper">
 		<div id="page-start"></div>
-			<div class="offcanvas-container">
-				<nav id="offcanvas" class="animated navmenu navmenu-default navmenu-fixed-left offcanvas offcanvas-left" role="navigation">
-						<!-- logo -->
-						<div class="logo">
-							<a href="landing page.html"><img id="logo" src="/assets/images/Logo_enactus.png" alt="Logo_Enactus" ></a>
-						</div>
+	
+	<!-- Section start - menu -->
+	<section class="offcanvas-container">
+		<nav id="offcanvas" class="animated navmenu navmenu-default navmenu-fixed-left offcanvas offcanvas-left" role="navigation">
+			<!-- logo -->
+			<div class="logo">
+				<a href="landing page.html"><img id="logo" src="/assets/images/Logo_enactus.png" alt="Logo_Enactus" ></a>
+			</div>
 
-						<!-- name-and-slogan -->
-						<div class="site-slogan">
-							Erasmus University Rotterdam
-						</div>
-						<div class="separator"></div>
-						<ul class="social-links circle small clearfix margin-clear text-center animated-effect-1">
-							<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-							<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-							<li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
-							<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-						</ul>				
-						<div class="separator mt-10"></div>
-						<ul class="nav navbar-nav text-center">
-							<li><a href="/Main/landing">Home</a></li>
-							<li class="active"><a href="/Main/ventures">Ventures</a></li>
-							<li><a href="/Main/teams">Teams</a></li>
-						</ul>
-					</nav>
-					<button type="button" class="offcanvas-toggle-left navbar-toggle" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
-				</div>
+			<!-- name-and-slogan -->
+			<div class="site-slogan">
+				Erasmus University Rotterdam
+			</div>
+			<div class="separator"></div>
+			<ul class="social-links circle small clearfix margin-clear text-center animated-effect-1">
+				<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+				<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+				<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+				<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>			
+			</ul>				
+			<div class="separator mt-10"></div>
+			<ul class="nav navbar-nav text-center">
+				<li><a href="/landing">Home</a></li>
+				<li class="active"><a href="/Main/ventures">Ventures</a></li>
+				<li><a href="/teams">Teams</a></li>
+			</ul>
+		</nav>
+		<button type="button" class="offcanvas-toggle-left navbar-toggle" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
+	</section>
 			</div>
 			<div class="header-container">
 				<div class="container">
@@ -445,18 +445,18 @@
 										<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo vel dolorum soluta consectetur doloribus sit. Delectus non tenetur odit dicta vitae debitis suscipit doloribus. Lorem ipsum dolor sit amet, illo vel dolorum soluta consectetur.</p>
 										<ul class="list-inline mb-20">
-											<li><i class="text-default fa fa-map-marker pr-5"></i>One infinity loop, 54100</li>
+											<li><a href="https://www.google.nl/maps/place/51%C2%B055'04.0%22N+4%C2%B031'39.7%22E/@51.9178526,4.5273692,18.62z/data=!4m5!3m4!1s0x0:0x0!8m2!3d51.917766!4d4.527687?hl=en" class="link-dark"><i class="text-default fa fa-map-marker pr-5"></i>Burgemeester Oudlaan, 3062PA</li>
 											<li><a href="tel:+00 1234567890" class="link-dark"><i class="text-default fa fa-phone pl-10 pr-5"></i>+00 1234567890</a></li>
 											<li><a href="mailto:info@theproject.com" class="link-dark"><i class="text-default fa fa-envelope-o pl-10 pr-5"></i>info@theproject.com</a></li>
 										</ul>
 										<ul class="social-links circle animated-effect-1 margin-clear">
 											<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-											<li class="instagram"><a target="_blank" href="http://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+											<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
 											<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
 											<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
 										</ul>
 										<div class="separator"></div>
-										<p class="text-center margin-clear">Copyright © 2016 The Project by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>. All Rights Reserved</p>
+										<p class="text-center margin-clear">Copyright © 2016 Enactus EUR by <a target="_blank" href="#">Turing Society</a>. All Rights Reserved</p>
 									</div>
 								</div>
 							</div>
@@ -465,11 +465,11 @@
 				</div>
 				<!-- .footer end -->
 
-			</footer>
-			<!-- ================ -->
+				</footer>
+				<!-- footer end -->
 			
-			<!-- footer top end -->
-	<!-- </div> -->
+			</div>
+			<!-- page-warpper end -->
 
 			<!-- JavaScript files placed at the end of the document so the pages load faster -->
 			<!-- ================================================== -->
