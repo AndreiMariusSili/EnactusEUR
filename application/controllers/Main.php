@@ -11,7 +11,7 @@ class Main extends CI_Controller
 
 	public function landing()
 	{
-		$this->load->view('landing');
+			$this->load->view('landing');
 	}
 
 	public function teams()
@@ -19,8 +19,14 @@ class Main extends CI_Controller
 		$this->load->view('teams');
 	}
 
-	public function ventures(){
+	public function ventures()
+	{
 		$this->load->view('ventures');
+	}
+
+	public function success()
+	{
+		$this->load->view('success');
 	}
 }
 ?>
