@@ -15,6 +15,8 @@
     <link href="/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
     <!-- Animate.css -->
     <link href="/assets/css/animate.css" rel="stylesheet">
+    <!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
+    <link href="/assets/css/skins/enactus_colors.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="/assets/css/admin.css" rel="stylesheet">
@@ -30,16 +32,14 @@
           <section class="login_content">
             <form>
               <h1>Login Form</h1>
-              <div class="from-group">
+              <div class="form-group">
                 <input type="text" class="form-control" placeholder="Username" required="" />
               </div>
               <div class="form-group">
                 <input type="password" class="form-control" placeholder="Password" required="" />
               </div>
-              <div>
-                <a class="btn btn-default submit" href="index.html">Log in</a>
-                <a class="reset_pass" href="#">Lost your password?</a>
-              </div>
+              <div style="color: #FFFFFF;">
+              <button type="submit" class="btn btn-lg btn-block" style="background-color: #FFC222;">Log in</button>
 
               <div class="clearfix">
 

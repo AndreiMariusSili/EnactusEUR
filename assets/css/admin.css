@@ -3198,10 +3198,6 @@ a.hiddenanchor {
   color: #FFC222;
   min-width: 280px; }
 
-.login_content a,
-.login_content .btn-default:hover {
-  text-decoration: none; }
-
 .login_content a:hover {
   text-decoration: underline; }
 
@@ -3249,24 +3245,6 @@ a.hiddenanchor {
   margin: 20px 0;
   position: relative; }
 
-.login_content form input[type="text"], .login_content form input[type="email"], .login_content form input[type="password"] {
-  border-radius: 3px;
-  -ms-box-shadow: 0 1px 0 #FFC222, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
-  -o-box-shadow: 0 1px 0 #FFC222, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
-  box-shadow: 0 1px 0 #FFC222, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
-  border: 1px solid #FFC222;
-  color: #FFC222;
-  margin: 0 0 20px;
-  width: 100%; }
-
-.login_content form input[type="text"]:focus, .login_content form input[type="email"]:focus, .login_content form input[type="password"]:focus {
-  -ms-box-shadow: 0 0 2px #FFC222 inset;
-  -o-box-shadow: 0 0 2px #FFC222 inset;
-  box-shadow: 0 0 2px #FFC222 inset;
-  background-color: #fff;
-  border: 1px solid #FFC222;
-  outline: none; }
-
 #username {
   background-position: 10px 10px !important; }
 
@@ -3286,7 +3264,7 @@ a.hiddenanchor {
   float: right; }
 
 .separator {
-  border-top: 1px solid #D8D8D8;
+  border-top: 1px solid #FFC222;
   margin-top: 10px;
   padding-top: 10px; }
 
@@ -3302,6 +3280,8 @@ a.hiddenanchor {
   padding: 15px 0; }
 
 .login_content form input[type="submit"], #content form .submit {
+  background-color: #FFC222;
+  color: #FFFFFF;
   float: left;
   margin-left: 38px; }
 
