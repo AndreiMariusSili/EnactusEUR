@@ -47,7 +47,7 @@
               <div class="clearfix"></div>
 
               <div>
-                <img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami">
+                <img src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami">
               </div>
 
               </div>
