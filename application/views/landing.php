@@ -4,8 +4,8 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title> Enactus| Erasmus University Rotterdam</title>
-		<meta name="description" content="The Project a Bootstrap-based, Responsive HTML5 Template">
+		<title>Home | Enactus EUR</title>
+		<meta name="Enactus | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
 		<meta name="author" content="htmlcoder.me">
 
 		<!-- Mobile Meta -->
@@ -432,7 +432,7 @@
 											<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
 										</ul>
 										<div class="separator"></div>
-										<p class="text-center margin-clear">Copyright © 2016 The Project by <a target="_blank" href="http://htmlcoder.me">HtmlCoder</a>. All Rights Reserved</p>
+										<p class="text-center margin-clear">Copyright © 2016 Enactus EUR by <a target="_blank" href="#">Turing Society</a>. All Rights Reserved</p>
 									</div>
 								</div>
 							</div>
