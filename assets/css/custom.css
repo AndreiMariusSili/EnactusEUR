@@ -36,3 +36,9 @@ footer.dark {
 .dark .footer .link-dark:hover {
   color: #FFC222;
 }
+
+.video-title {
+	font-size: 3rem;
+	font-weight: bold;
+	color: #FFC222;
+}
