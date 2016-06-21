@@ -105,11 +105,11 @@
 				<section class="video-background pv-40 dark-translucent-bg hovered">
 						<div class="container video_text_c">
 							<div class="row video_text_r">
-								<div class="col-md-8 col-md-offset-2">
-									<h2 class="text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">Europe's fastest start-up incubator</h2>
+								<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+									<h2 class="text-center object-non-visible video-title" data-animation-effect="zoomIn" data-effect-delay="100">Europe's fastest social business accelerator</h2>
 									<div class="separator object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100"></div>
-									<p class="large text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="300">Atque ducimus velit, earum quidem, iusto dolorem. Ex ipsam totam quas blanditiis, pariatur maxime ipsa iste, doloremque neque doloribus, error. Corrupti, tenetur.</p>
-									<p class="text-center"><a href="#" class="btn btn-lg btn-gray-transparent object-non-visible scrollDownAboutUs" data-animation-effect="zoomIn" data-effect-delay="500">Why Enactus?</a></p>
+									<p class="large text-center object-non-visible video-subtitle" data-animation-effect="zoomIn" data-effect-delay="300">Run by students</p>
+									<p class="text-center"><a href="#" class="btn btn-lg btn-gray-transparent object-non-visible scrollDownAboutUs" data-animation-effect="zoomIn" data-effect-delay="500">Learn More</a></p>
 								</div>
 							</div>
 						</div>

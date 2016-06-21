@@ -2330,8 +2330,8 @@ fieldset[disabled] .btn-default {
 .dark-translucent-bg .btn-gray-transparent,
 .default-translucent-bg .btn-gray-transparent,
 .default-bg .btn-gray-transparent {
-  border-color: #ffffff;
-  color: #ffffff;
+  border-color: #FFC222;
+  color: #FFC222;
 }
 .dark-translucent-bg .btn-gray-transparent:hover,
 .default-translucent-bg .btn-gray-transparent:hover,
@@ -2339,9 +2339,9 @@ fieldset[disabled] .btn-default {
 .dark-translucent-bg .btn-gray-transparent:focus,
 .default-translucent-bg .btn-gray-transparent:focus,
 .default-bg .btn-gray-transparent:focus {
-  border-color: #ffffff;
-  color: #777777;
-  background-color: #ffffff;
+  border-color: #FFC222;
+  color: #333333;
+  background-color: #FFC222;
 }
 .default-hovered:hover .btn-gray-transparent {
   border-color: #ffffff;
