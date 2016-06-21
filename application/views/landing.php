@@ -128,25 +128,25 @@
 									<div class="col-md-4 ">
 										<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
 											<span class="icon default-bg circle"><i class="fa fa-diamond"></i></span>
-											<h3>Clean Code &amp; Design</h3>
+											<h3>Ventures</h3>
 											<div class="separator clearfix"></div>
 											<p>Voluptatem ad provident non repudiandae beatae cupiditate amet reiciendis lorem ipsum dolor sit amet, consectetur.</p>
-											<a href="page-services.html">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+											<a href="/Main/ventures">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 										</div>
 									</div>
 									<div class="col-md-4 ">
 										<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
 											<span class="icon default-bg circle"><i class="fa fa-connectdevelop"></i></span>
-											<h3>Extremely Flexible</h3>
+											<h3>Teams</h3>
 											<div class="separator clearfix"></div>
 											<p>Iure sequi unde hic. Sapiente quaerat sequi inventore veritatis cumque lorem ipsum dolor sit amet, consectetur.</p>
-											<a href="page-services.html">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+											<a href="/Main/teams">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 										</div>
 									</div>
 									<div class="col-md-4 ">
 										<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
 											<span class="icon default-bg circle"><i class="icon-snow"></i></span>
-											<h3>Latest Technologies</h3>
+											<h3>Lorem Ipsum</h3>
 											<div class="separator clearfix"></div>
 											<p>Inventore dolores aut laboriosam cum consequuntur delectus sequi lorem ipsum dolor sit amet, consectetur.</p>
 											<a href="page-services.html">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
@@ -170,32 +170,25 @@
 								<div class="separator"></div>
 								<div class="stats">
 									<div class="row">
-										<div class="col-md-3 col-xs-6 text-center">
+										<div class="col-md-4 col-xs-6 text-center">
 											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeIn" data-effect-delay="300">
 												<span class="icon default-bg circle large"><i class="fa fa-diamond"></i></span>
-												<h3>Projects</h3>
+												<h3>Lives Impacted</h3>
 												<span class="counter" data-to="1525" data-speed="5000">0</span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-6 text-center">
+										<div class="col-md-4 col-xs-6 text-center">
 											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeIn" data-effect-delay="300">
 												<span class="icon default-bg circle large"><i class="fa fa-users"></i></span>
-												<h3>Clients</h3>
+												<h3>Employment Opportunities Created</h3>
 												<span class="counter" data-to="1225" data-speed="5000">0</span>
 											</div>
 										</div>
-										<div class="col-md-3 col-xs-6 text-center">
+										<div class="col-md-4 col-xs-6 text-center">
 											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeIn" data-effect-delay="300">
 												<span class="icon default-bg circle large"><i class="fa fa-cloud-download"></i></span>
-												<h3>Downloads</h3>
+												<h3>Number of Ventures</h3>
 												<span class="counter" data-to="12235" data-speed="5000">0</span>
-											</div>
-										</div>
-										<div class="col-md-3 col-xs-6 text-center">
-											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeIn" data-effect-delay="300">
-												<span class="icon default-bg circle large"><i class="fa fa-share"></i></span>
-												<h3>Shares</h3>
-												<span class="counter" data-to="15002" data-speed="5000">0</span>
 											</div>
 										</div>
 									</div>
@@ -423,20 +416,19 @@
 								<div class="col-md-8 col-md-offset-2">
 									<div class="footer-content text-center padding-ver-clear">
 										<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo vel dolorum soluta consectetur doloribus sit. Delectus non tenetur odit dicta vitae debitis suscipit doloribus. Lorem ipsum dolor sit amet, illo vel dolorum soluta consectetur.</p>
-										<ul class="list-inline mb-20">
-											<li><a href="https://www.google.nl/maps/place/51%C2%B055'04.0%22N+4%C2%B031'39.7%22E/@51.9178526,4.5273692,18.62z/data=!4m5!3m4!1s0x0:0x0!8m2!3d51.917766!4d4.527687?hl=en" class="link-dark"><i class="text-default fa fa-map-marker pr-5"></i>Burgemeester Oudlaan, 3062PA</li>
-											<li><a href="tel:+00 1234567890" class="link-dark"><i class="text-default fa fa-phone pl-10 pr-5"></i>+00 1234567890</a></li>
-											<li><a href="mailto:info@theproject.com" class="link-dark"><i class="text-default fa fa-envelope-o pl-10 pr-5"></i>info@theproject.com</a></li>
-										</ul>
-										<ul class="social-links circle animated-effect-1 margin-clear">
+										<ul class="social-links circle animated-effect-1">
 											<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
 											<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
 											<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
 											<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
 										</ul>
+										<ul class="list-inline mb-20">
+											<li><a href="https://www.google.nl/maps/place/Erasmus+Universiteit+Rotterdam/@51.9179782,4.5239854,17z/data=!3m1!4b1!4m5!3m4!1s0x47c4332163e239dd:0x589a97af738b9969!8m2!3d51.9179749!4d4.5261741?hl=en" class="link-dark"><i class="text-default fa fa-map-marker pr-5"></i>Burgemeester Oudlaan 50, 3062PA</li>
+											<li><a href="tel:+00 1234567890" class="link-dark"><i class="text-default fa fa-phone pl-10 pr-5"></i>+00 1234567890</a></li>
+											<li><a href="mailto:info@enactus-eur.nl" class="link-dark"><i class="text-default fa fa-envelope-o pl-10 pr-5"></i>info@enactus-eur.nl</a></li>
+										</ul>
 										<div class="separator"></div>
-										<p class="text-center margin-clear">Copyright © 2016 Enactus EUR by <a target="_blank" href="#">Turing Society</a>. All Rights Reserved</p>
+										<p class="text-center margin-clear">Copyright © 2016 Enactus EUR by <a target="_blank" href="http://www.tsociety.io">Turing Society</a>. All Rights Reserved</p>
 									</div>
 								</div>
 							</div>
