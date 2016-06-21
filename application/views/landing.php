@@ -96,7 +96,7 @@
 							<li><a href="/Main/teams">Teams</a></li>
 						</ul>
 					</nav>
-					<button type="button" class="offcanvas-toggle-left navbar-toggle" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
+					<button type="button" class="offcanvas-toggle-left navbar-toggle animation_loop" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
 				</section>
 				<!-- section end - offcanvas side -->
 			
@@ -126,7 +126,7 @@
 									<div class="separator"></div>
 									<div class="row">
 									<div class="col-md-4 ">
-										<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+										<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">
 											<span class="icon default-bg circle"><i class="fa fa-diamond"></i></span>
 											<h3>Ventures</h3>
 											<div class="separator clearfix"></div>
@@ -135,7 +135,7 @@
 										</div>
 									</div>
 									<div class="col-md-4 ">
-										<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+										<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">
 											<span class="icon default-bg circle"><i class="fa fa-connectdevelop"></i></span>
 											<h3>Teams</h3>
 											<div class="separator clearfix"></div>
@@ -144,7 +144,7 @@
 										</div>
 									</div>
 									<div class="col-md-4 ">
-										<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="fadeInDownSmall" data-effect-delay="100">
+										<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">
 											<span class="icon default-bg circle"><i class="icon-snow"></i></span>
 											<h3>Lorem Ipsum</h3>
 											<div class="separator clearfix"></div>
@@ -182,7 +182,7 @@
 											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 												<span class="icon default-bg circle large"><i class="fa fa-users"></i></span>
 												<div class="separator"></div>
-												<h3>Employment Opportunities Created</h3>
+												<h3>Jobs Created</h3>
 
 												<span class="counter" data-to="20" data-speed="5000"></span>
 											</div>
@@ -216,7 +216,7 @@
 								<?php echo $this->session->flashdata('errors');?>
 							</div>
 							<div class="panel-group collapse-style-2" id="accordion-2">
-								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUp" data-effect-delay="300">
+								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
 												<div class="panel-heading">
 													<h4 class="panel-title ">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseOne-2" class="collapsed">
@@ -266,7 +266,7 @@
 													</div>
 												</div>
 								</div>
-								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUp" data-effect-delay="300">
+								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
 												<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseTwo-2" class="collapsed">
@@ -320,7 +320,7 @@
 													</div>
 												</div>
 								</div>
-								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUp" data-effect-delay="300">
+								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
 												<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseThree-2" class="collapsed">
@@ -365,7 +365,7 @@
 														</div>
 													</div>
 								</div>
-								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUp" data-effect-delay="300">
+								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
 									<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFour-2" class="collapsed">
