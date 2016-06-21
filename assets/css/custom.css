@@ -48,3 +48,11 @@ footer.dark {
 	color: #FFC222 !important;
 	font-style: italic;
 }
+
+.video-button:active{
+	outline: none !important;
+}
+.video-button:focus{
+	outline: none !important;
+
+}

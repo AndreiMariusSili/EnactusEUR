@@ -109,7 +109,7 @@
 									<h2 class="text-center object-non-visible video-title" data-animation-effect="zoomIn" data-effect-delay="100">Europe's fastest social business accelerator</h2>
 									<div class="separator object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100"></div>
 									<p class="large text-center object-non-visible video-subtitle" data-animation-effect="zoomIn" data-effect-delay="300">Run by students</p>
-									<p class="text-center"><a href="#" class="btn btn-lg btn-gray-transparent object-non-visible scrollDownAboutUs" data-animation-effect="zoomIn" data-effect-delay="500">Learn More</a></p>
+									<p><button type="button" class="video-button btn btn-lg btn-gray-transparent object-non-visible scrollDownAboutUs" data-animation-effect="zoomIn" data-effect-delay="500">Learn More</button></p>
 								</div>
 							</div>
 						</div>
@@ -171,24 +171,28 @@
 								<div class="stats">
 									<div class="row">
 										<div class="col-md-4 col-xs-6 text-center">
-											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeIn" data-effect-delay="300">
+											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 												<span class="icon default-bg circle large"><i class="fa fa-diamond"></i></span>
+												<div class="separator"></div>
 												<h3>Lives Impacted</h3>
-												<span class="counter" data-to="1525" data-speed="5000">0</span>
+												<span class="counter" data-to="80" data-speed="5000"></span>
 											</div>
 										</div>
 										<div class="col-md-4 col-xs-6 text-center">
-											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeIn" data-effect-delay="300">
+											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 												<span class="icon default-bg circle large"><i class="fa fa-users"></i></span>
+												<div class="separator"></div>
 												<h3>Employment Opportunities Created</h3>
-												<span class="counter" data-to="1225" data-speed="5000">0</span>
+
+												<span class="counter" data-to="20" data-speed="5000"></span>
 											</div>
 										</div>
 										<div class="col-md-4 col-xs-6 text-center">
-											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeIn" data-effect-delay="300">
+											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 												<span class="icon default-bg circle large"><i class="fa fa-cloud-download"></i></span>
+												<div class="separator"></div>
 												<h3>Number of Ventures</h3>
-												<span class="counter" data-to="12235" data-speed="5000">0</span>
+												<span class="counter" data-to="6" data-speed="5000"></span>
 											</div>
 										</div>
 									</div>

@@ -1247,13 +1247,13 @@
 		if($(".video-background").length>0) {
 			if (Modernizr.touch) {
 				$(".video-background").vide({
-					mp4: "/assets/videos/background-video.mp4",
-					webm: "/assets/videos/background-video.webm",
-					poster: "/assets/videos/video-fallback.jpg"
+					mp4: "/assets/videos/background-video-2.mp4",
+					webm: "/assets/videos/background-video-2.webm",
+					poster: "/assets/videos/video-fallback-2.jpg"
 				}, {
 					volume: 1,
 					playbackRate: 1,
-					muted: true,
+					muted: false,
 					loop: true,
 					autoplay: true,
 					position: "50% 100%", // Similar to the CSS `background-position` property.
@@ -1262,13 +1262,13 @@
 				});
 			} else {
 				$(".video-background").vide({
-					mp4: "/assets/videos/background-video.mp4",
-					webm: "/assets/videos/background-video.webm",
-					poster: "/assets/videos/video-poster.jpg"
+					mp4: "/assets/videos/background-video-2.mp4",
+					webm: "/assets/videos/background-video-2.webm",
+					poster: "/assets/videos/video-poster-2.jpg"
 				}, {
 					volume: 1,
 					playbackRate: 1,
-					muted: true,
+					muted: false,
 					loop: true,
 					autoplay: true,
 					position: "50% 100%", // Similar to the CSS `background-position` property.
@@ -1281,7 +1281,7 @@
 		if($(".video-background-banner").length>0) {
 			if (Modernizr.touch) {
 				$(".video-background-banner").vide({
-					mp4: "/assets/videos/background-video-banner.mp4",
+					mp4: "/assets/videos/background-video-banner-.mp4",
 					webm: "/assets/videos/background-video-banner.webm",
 					poster: "/assets/videos/video-fallback.jpg"
 				}, {
