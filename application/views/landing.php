@@ -109,7 +109,7 @@
 									<h2 class="text-center object-non-visible video-title" data-animation-effect="zoomIn" data-effect-delay="100">Europe's fastest social business accelerator</h2>
 									<div class="separator object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100"></div>
 									<p class="large text-center object-non-visible video-subtitle" data-animation-effect="zoomIn" data-effect-delay="300">Run by students</p>
-									<p><button class=" btn btn-lg btn-gray-transparent object-non-visible scrollDownAboutUs" data-animation-effect="zoomIn" data-effect-delay="500">Learn More</button></p>
+									<p><button type="button" class="video-button btn btn-lg btn-gray-transparent object-non-visible scrollDownAboutUs" data-animation-effect="zoomIn" data-effect-delay="500">Learn More</button></p>
 								</div>
 							</div>
 						</div>
