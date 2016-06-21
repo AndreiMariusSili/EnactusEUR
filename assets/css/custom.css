@@ -38,7 +38,13 @@ footer.dark {
 }
 
 .video-title {
-	font-size: 3rem;
-	font-weight: bold;
-	color: #FFC222;
+	font-size: 6vh !important;
+	font-weight: bold !important;
+	color: #FFC222 !important;
+}
+
+.video-subtitle {
+	font-size: 4vh !important;
+	color: #FFC222 !important;
+	font-style: italic;
 }
