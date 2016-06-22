@@ -59,6 +59,9 @@
 	<!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
 	<body class="no-trans page-loader-1">
 
+		<!-- scrollToTop -->
+		<!-- ================ -->
+		<div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
 		
 		<!-- page wrapper start -->
 		<!-- ================ -->
