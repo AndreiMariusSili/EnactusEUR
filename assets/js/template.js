@@ -1253,7 +1253,7 @@
 				}, {
 					volume: 1,
 					playbackRate: 1,
-					muted: false,
+					muted: true,
 					loop: true,
 					autoplay: true,
 					position: "50% 100%", // Similar to the CSS `background-position` property.
@@ -1268,7 +1268,7 @@
 				}, {
 					volume: 1,
 					playbackRate: 1,
-					muted: false,
+					muted: true,
 					loop: true,
 					autoplay: true,
 					position: "50% 100%", // Similar to the CSS `background-position` property.
