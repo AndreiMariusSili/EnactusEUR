@@ -56,54 +56,46 @@
 	<!-- "transparent-header": makes the header transparent and pulls the banner to top -->
 	<!-- "gradient-background-header": applies gradient background to header -->
 	<!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
-	<body class="no-trans    ">
+	<body class="no-trans">
 		
 		<!-- page wrapper start -->
 		<!-- ================ -->
 		<div class="page-wrapper">
-			<div class="offcanvas-container">
-					<nav id="offcanvas" class="animated navmenu navmenu-default navmenu-fixed-left offcanvas offcanvas-left" role="navigation">
-						<!-- logo -->
-						<div class="logo">
-							<a href="landing page.html"><img id="logo" src="/assets/images/Logo_enactus.png" alt="Logo_Enactus" ></a>
-						</div>
 
-						<!-- name-and-slogan -->
-						<div class="site-slogan">
-							Erasmus University Rotterdam
-						</div>
-						<div class="separator"></div>
-						<ul class="social-links circle small clearfix margin-clear text-center animated-effect-1">
+		<!-- body code start -->
+		<!-- ================ -->
+
+			<!-- section start - offcanvas side -->
+			<!-- ================ -->
+			<div class="offcanvas-container">
+				<nav id="offcanvas" class="animated navmenu navmenu-default navmenu-fixed-left offcanvas offcanvas-left" role="navigation">
+					<!-- logo -->
+					<div class="logo">
+						<a href="landing page.html"><img id="logo" src="/assets/images/Logo_enactus.png" alt="Logo_Enactus" ></a>
+					</div>
+
+					<!-- name-and-slogan -->
+					<div class="site-slogan">
+						Erasmus University Rotterdam
+					</div>
+					<div class="separator"></div>
+					<ul class="social-links circle small clearfix margin-clear text-center animated-effect-1">
 							<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
 							<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
 							<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
 							<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-						</ul>				
-						</ul>				
-						<div class="separator mt-10"></div>
-						<ul class="nav navbar-nav text-center">
+					</ul>					
+					<div class="separator mt-10"></div>
+					<ul class="nav navbar-nav text-center">
 							<li><a href="/Main/landing">Home</a></li>
 							<li><a href="/Main/ventures">Ventures</a></li>
 							<li class="active"><a href="/Main/teams">Teams</a></li>
-						</ul>
-					</nav>
-					<button type="button" class="offcanvas-toggle-left navbar-toggle" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
-				</div>
+					</ul>
+				</nav>
+				<button type="button" class="offcanvas-toggle-left navbar-toggle animation_loop" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
+			</div>
 		
 			<!-- header-container start -->
-				
-				<!-- classes:  -->
-				<!-- "dark": dark version of header top e.g. class="header-top dark" -->
-				<!-- "colored": colored version of header top e.g. class="header-top colored" -->
-				<!-- ================ -->
-
-			
-				<!-- classes:  -->
-				<!-- "fixed": enables fixed navigation mode (sticky menu) e.g. class="header fixed clearfix" -->
-				<!-- "dark": dark version of header e.g. class="header dark clearfix" -->
-				<!-- "full-width": mandatory class for the full-width menu layout -->
-				<!-- "centered": mandatory class for the centered logo layout -->
-				<!-- ================ --> 
 
 			<!-- main-container start -->
 			<!-- ================ -->
@@ -119,7 +111,7 @@
 							<!-- page-title start -->
 							<!-- ================ -->
 							
-							<h1 class="page-title">Teams</h1>
+							<h1 class="page-title">Join The Enactus Family</h1>
 							<div class="separator-2"></div>
 							<!-- page-title end -->
 
@@ -128,7 +120,7 @@
 							<!-- Pull right the timeline -->
 							<div class="timeline clearfix">
 								
-								<h2 class="timeline-date-label clearfix">2015</h2>
+								<h2 class="timeline-date-label clearfix">2016/2017</h2>
 								
 								<!-- timeline grid item start -->
 								<div class="timeline-item">
@@ -151,8 +143,7 @@
 												<small>CEO</small>
 												<div class="separator mt-10"></div>
 												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
 												</ul>
 											</div>
 										</div>
@@ -170,8 +161,7 @@
 												<small>CTO</small>
 												<div class="separator mt-10"></div>
 												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
 												</ul>
 											</div>
 										</div>
@@ -189,8 +179,7 @@
 												<small>Project Manager</small>
 												<div class="separator mt-10"></div>
 												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
 												</ul>
 											</div>
 										</div>
@@ -208,8 +197,7 @@
 												<small>Project Manager</small>
 												<div class="separator mt-10"></div>
 												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
 												</ul>
 											</div>
 										</div>
@@ -627,7 +615,7 @@
 								<!-- timeline grid item end -->
 
 								<!-- timeline grid item start -->
-								<h2 class="timeline-date-label clearfix">2014</h2>
+								<h2 class="timeline-date-label clearfix">2015/2016</h2>
 								<div class="timeline-item">
 									<h3 class="page-title">The board</h3>
 								<div class="row grid-space-10">
@@ -710,468 +698,52 @@
 								</div>
 								
 								<!-- End Board-->
-								<br>
-								<!-- Teams-->
-								<h3 class="page-title">Team 1</h3>
-								<div class="row grid-space-10">
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-1.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Jane Doe</h3>
-												<small>CEO</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-2.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">John Doe</h3>
-												<small>CTO</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-3.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Anne Doe</h3>
-												<small>Project Manager</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-4.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Michael Crayz</h3>
-												<small>Project Manager</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<br>
-								<h3 class="page-title">Team 2</h3>
-								<div class="row grid-space-10">
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-1.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Jane Doe</h3>
-												<small>CEO</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-2.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">John Doe</h3>
-												<small>CTO</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-3.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Anne Doe</h3>
-												<small>Project Manager</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-4.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Michael Crayz</h3>
-												<small>Project Manager</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<br>
-								<!-- NEW TEAM -->
-								<h3 class="page-title">Team 3</h3>
-								<div class="row grid-space-10">
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-1.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Jane Doe</h3>
-												<small>CEO</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-2.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">John Doe</h3>
-												<small>CTO</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-3.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Anne Doe</h3>
-												<small>Project Manager</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-4.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Michael Crayz</h3>
-												<small>Project Manager</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<br>
-								<!-- NEW TEAM -->
-								<h3 class="page-title">Team 4</h3>
-								<div class="row grid-space-10">
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-1.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Jane Doe</h3>
-												<small>CEO</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-2.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">John Doe</h3>
-												<small>CTO</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-3.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Anne Doe</h3>
-												<small>Project Manager</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-4.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Michael Crayz</h3>
-												<small>Project Manager</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-								<br>
-								<!-- NEW TEAM -->
-								<h3 class="page-title">Team 5</h3>
-								<div class="row grid-space-10">
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-1.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Jane Doe</h3>
-												<small>CEO</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-2.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Ipsum dolor Voluptates praesentium nulla cupiditate explicabo ad!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">John Doe</h3>
-												<small>CTO</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-3.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Dolor sit amet, cupiditate molestias vero explicabo!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Anne Doe</h3>
-												<small>Project Manager</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6 col-md-3">
-										<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-											<div class="overlay-container overlay-visible">
-												<img src="/assets/images/team-member-4.jpg" alt="">
-												<div class="overlay-bottom">
-													<p class="small margin-clear">Dolor sit amet, consectet cupiditate molestias vero explicabo!</p>
-												</div>
-											</div>
-											<div class="body">
-												<h3 class="margin-clear">Michael Crayz</h3>
-												<small>Project Manager</small>
-												<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
 								<br>	
-								<h2 class="timeline-date-label clearfix">2013</h2>
+								<h2 class="timeline-date-label clearfix">2014/2015</h2>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-					<!-- footer top start -->
+
+		<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
+		<!-- ================ -->
+		<footer id="footer" class="clearfix dark">
+
+			<!-- .footer start -->
+			<!-- ================ -->
+			<div class="footer">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="call-to-action text-center">
-								<div class="row">
+					<div class="footer-inner">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<div class="footer-content text-center padding-ver-clear">
+									<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
+									<ul class="social-links circle animated-effect-1">
+										<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+										<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+										<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+										<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+									<ul class="list-inline mb-20">
+										<li><a href="https://www.google.nl/maps/place/Erasmus+Universiteit+Rotterdam/@51.9179782,4.5239854,17z/data=!3m1!4b1!4m5!3m4!1s0x47c4332163e239dd:0x589a97af738b9969!8m2!3d51.9179749!4d4.5261741?hl=en" class="link-dark"><i class="text-default fa fa-map-marker pr-5"></i>Burgemeester Oudlaan 50, 3062PA</li>
+										<li><a href="tel:+00 1234567890" class="link-dark"><i class="text-default fa fa-phone pl-10 pr-5"></i>+00 1234567890</a></li>
+										<li><a href="mailto:info@enactus-eur.nl" class="link-dark"><i class="text-default fa fa-envelope-o pl-10 pr-5"></i>info@enactus-eur.nl</a></li>
+									</ul>
+									<div class="separator"></div>
+										<p class="text-center margin-clear">Copyright © 2016 Enactus EUR by <a target="_blank" href="http://www.tsociety.io">Turing Society</a>. All Rights Reserved</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			<!-- footer top end -->
+			</div>
+			<!-- .footer end -->
 
-			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
-			<footer id="footer" class="clearfix dark">
+		</footer>
+		<!-- footer end -->
 
-				<!-- .footer start -->
-				<!-- ================ -->
-				<div class="footer">
-					<div class="container">
-						<div class="footer-inner">
-							<div class="row">
-								<div class="col-md-6 col-md-offset-3">
-									<div class="footer-content text-center padding-ver-clear">
-										<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus illo vel dolorum soluta consectetur doloribus sit. Delectus non tenetur odit dicta vitae debitis suscipit doloribus. Lorem ipsum dolor sit amet, illo vel dolorum soluta consectetur.</p>
-										<ul class="list-inline mb-20">
-											<li><a href="https://www.google.nl/maps/place/51%C2%B055'04.0%22N+4%C2%B031'39.7%22E/@51.9178526,4.5273692,18.62z/data=!4m5!3m4!1s0x0:0x0!8m2!3d51.917766!4d4.527687?hl=en" class="link-dark"><i class="text-default fa fa-map-marker pr-5"></i>Burgemeester Oudlaan, 3062PA</li>
-											<li><a href="tel:+00 1234567890" class="link-dark"><i class="text-default fa fa-phone pl-10 pr-5"></i>+00 1234567890</a></li>
-											<li><a href="mailto:info@theproject.com" class="link-dark"><i class="text-default fa fa-envelope-o pl-10 pr-5"></i>info@theproject.com</a></li>
-										</ul>
-										<ul class="social-links circle animated-effect-1 margin-clear">
-											<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-											<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-											<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-											<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-										</ul>
-										<div class="separator"></div>
-										<p class="text-center margin-clear">Copyright © 2016 Enactus EUR by <a target="_blank" href="#">Turing Society</a>. All Rights Reserved</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- .footer end -->
-
-			</footer>
-			<!-- footer top end -->
-	
 		</div>
 		<!-- page-wrapper end -->
 
