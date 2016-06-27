@@ -173,7 +173,7 @@
 								<div class="separator"></div>
 								<div class="stats">
 									<div class="row">
-										<div class="col-md-4 col-xs-6 text-center">
+										<div class="col-md-4 col-xs-12 text-center">
 											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 												<span class="icon default-bg circle large"><i class="fa fa-diamond"></i></span>
 												<div class="separator"></div>
@@ -181,7 +181,7 @@
 												<span class="counter" data-to="80" data-speed="5000"></span>
 											</div>
 										</div>
-										<div class="col-md-4 col-xs-6 text-center">
+										<div class="col-md-4 col-xs-12 text-center">
 											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 												<span class="icon default-bg circle large"><i class="fa fa-users"></i></span>
 												<div class="separator"></div>
@@ -190,12 +190,12 @@
 												<span class="counter" data-to="20" data-speed="5000"></span>
 											</div>
 										</div>
-										<div class="col-md-4 col-xs-6 text-center">
+										<div class="col-md-4 col-xs-12 text-center">
 											<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 												<span class="icon default-bg circle large"><i class="fa fa-cloud-download"></i></span>
 												<div class="separator"></div>
 												<h3>Number of Ventures</h3>
-												<span class="counter" data-to="6" data-speed="5000"></span>
+												<span class="counter" data-to=<?php echo  '"' . $ventures . '"' ?> data-speed="5000"></span>
 											</div>
 										</div>
 									</div>
@@ -265,6 +265,7 @@
 															<div class="form-group">
 																<button type="submit" class="btn btn-default">Submit</button>
 															</div>
+															<input type="hidden" name="status" value="founder"/>
 														</form>
 													</div>
 												</div>
@@ -319,6 +320,7 @@
 															<div class="form-group">
 																<button type="submit" class="btn btn-default">Submit</button>
 															</div>
+															<input type="hidden" name="status" value="cofounder"/>
 														</form>
 													</div>
 												</div>
@@ -364,6 +366,7 @@
 																<div class="form-group">
 																	<button type="submit" class="btn btn-default">Submit</button>
 																</div>
+																<input type="hidden" name="status" value="passive"/>
 															</form>
 														</div>
 													</div>

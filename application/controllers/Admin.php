@@ -48,7 +48,6 @@ class Admin extends CI_Controller
 			{
 				redirect('/Admin/login_success');
 			}
-
 		}
 	}
 
