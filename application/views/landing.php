@@ -216,7 +216,7 @@
 								<?php echo $this->session->flashdata('errors');?>
 							</div>
 							<div class="panel-group collapse-style-2" id="accordion-2">
-								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
+								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 												<div class="panel-heading">
 													<h4 class="panel-title ">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseOne-2" class="collapsed">
@@ -266,7 +266,7 @@
 													</div>
 												</div>
 								</div>
-								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
+								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 												<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseTwo-2" class="collapsed">
@@ -320,7 +320,7 @@
 													</div>
 												</div>
 								</div>
-								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
+								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 												<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseThree-2" class="collapsed">
@@ -365,7 +365,7 @@
 														</div>
 													</div>
 								</div>
-								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
+								<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 									<div class="panel-heading">
 													<h4 class="panel-title">
 														<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFour-2" class="collapsed">
