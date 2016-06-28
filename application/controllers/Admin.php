@@ -38,7 +38,7 @@ class Admin extends CI_Controller
 			$username = $this->input->post('username');
 			$password = $this->input->post('password');
 			$auth = $this->Admin_model->login($username);
-			$auth_password = $this->encrypt->decode($auth['password']);
+			$auth_password = $auth['password'];
 			if($password <> $auth_password)
 			{
 				$this->session->set_flashdata('errors', "Username and password don't match.");
@@ -46,6 +46,11 @@ class Admin extends CI_Controller
 			}
 			else
 			{
+				$data = array(
+						'username' => $username,
+						'password' => $password,
+					);
+				$this->session->set_userdata($data);
 				redirect('/Admin/login_success');
 			}
 		}
@@ -61,3 +66,5 @@ class Admin extends CI_Controller
 		$this->load->view('panel');
 	}
 }
+
+?>
