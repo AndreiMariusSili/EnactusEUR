@@ -53,7 +53,6 @@
 		<div class="page-wrapper">
 			
 			<div id="page-start"></div>
-
 			<!-- section start - offcanvas side -->
 			<!-- ================ -->
 			<section class="offcanvas-container">
@@ -136,333 +135,335 @@
 								</div>
 							</div>
 						</div>
-					</section>
-					<!-- section end - about us -->
-					<!-- section start - accomplishments -->
-					<!-- ================ -->
-					<section id="accomplishments" class="main-container dark-bg pv-40 clearfix">
-						<div class="container">
-							<div class="row">
-								<!-- main start -->
-								<!-- ================ -->
-								<div class="main col-md-12">
-									<h2 class="text-center"><strong>Our</strong> Accomplishments</h2>
-									<div class="separator"></div>
-									<div class="stats">
-										<div class="row">
-											<div class="col-md-4 col-xs-12 text-center">
-												<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
-													<span class="icon default-bg circle large"><i class="fa fa-heart"></i></span>
-													<div class="separator"></div>
-													<h3>Lives Impacted</h3>
-													<span class="counter" data-to="80" data-speed="5000"></span>
-												</div>
-											</div>
-											<div class="col-md-4 col-xs-12 text-center">
-												<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
-													<span class="icon default-bg circle large"><i class="fa fa-users"></i></span>
-													<div class="separator"></div>
-													<h3>Jobs Created</h3>
-													<span class="counter" data-to="20" data-speed="5000"></span>
-												</div>
-											</div>
-											<div class="col-md-4 col-xs-12 text-center">
-												<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
-													<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
-													<div class="separator"></div>
-													<h3>Ventures Accelerated</h3>
-													<span class="counter" data-to=<?php echo  '"' . $ventures . '"' ?> data-speed="5000"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- main end -->
-							</div>
-						</div>
-					</section>
-					<!-- section end - accomplishments -->
-					<!-- section start - accordion start -->
-					<!-- ================ -->
-					<section id="contact-us" class="main-container pv-40 clearfix">
-						<div class="container">
-							<div class="row">
-								<h2 class="text-center">Contact <strong>Us</strong></h2>
-								<div class="separator"></div>
-								<div class="row text-danger">
-									<?php echo $this->session->flashdata('errors');?>
-								</div>
-								<div class="panel-group collapse-style-2" id="accordion-2">
-									<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
-										<div class="panel-heading">
-											<h4 class="panel-title ">
-											<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseOne-2" class="collapsed">
-												<i class="fa fa-lightbulb-o pr-10"></i>I have a social venture idea
-											</a>
-											</h4>
-										</div>
-										<div id="collapseOne-2" class="panel-collapse collapse">
-											<div class="panel-body">
-												<form action="/Form/founder" method="POST">
-													<div class="form-group">
-														<label>My name is...</label>
-														<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
-														<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
-													</div>
-													<div class="form-group">
-														<label>I can be reached at...</label>
-														<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
-														<input type="text" class="form-control" name="phone_number" placeholder="06 12 34 56 78">
-													</div>
-													<div class="form-group">
-														<label>I was born on...</label>
-														<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
-													</div>
-													<div class="form-group">
-														<label>I study...</label>
-														<select name="study" class="form-control">
-															<option></option>
-															<option value="IBA">IBA</option>
-															<option value="IBEB">IBEB</option>
-															<option value="IBCOM">IBCOM</option>
-														</select>
-													</div>
-													<div class="form-group">
-														<label>I have this amazing idea...</label>
-														<input type="text" class="form-control" name="title" placeholder="Give your idea a catchy name" style="margin-bottom: 1rem;">
-														<textarea class="form-control" rows="5" name="idea" placeholder="Tell us about your idea in a few sentences"></textarea>
-													</div>
-													<div class="form-group">
-														<label>My motivation is...</label>
-														<textarea class="form-control" rows="5" name="motivation" placeholder="Tell us about why you want to pursue this idea in a few sentences"></textarea>
-													</div>
-													<div class="form-group">
-														<button type="submit" class="btn btn-default">Submit</button>
-													</div>
-													<input type="hidden" name="status" value="founder"/>
-												</form>
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseTwo-2" class="collapsed">
-												<i class="fa fa-users pr-10"></i>I want to be part of a social venture
-											</a>
-											</h4>
-										</div>
-										<div id="collapseTwo-2" class="panel-collapse collapse">
-											<div class="panel-body">
-												<form action="/Form/cofounder" method="POST">
-													<div class="form-group">
-														<label>My name is...</label>
-														<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
-														<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
-													</div>
-													<div class="form-group">
-														<label>I can be reached at...</label>
-														<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
-														<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
-													</div>
-													<div class="form-group">
-														<label>I was born on...</label>
-														<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
-													</div>
-													<div class="form-group">
-														<label>I study...</label>
-														<select name="study" class="form-control">
-															<option></option>
-															<option value="IBA">IBA</option>
-															<option value="IBEB">IBEB</option>
-															<option value="IBCOM">IBCOM</option>
-														</select>
-													</div>
-													<div class="form-group">
-														<label>I want to join the venture...</label>
-														<select name="project_preference" class="form-control">
-															<option></option>
-															<option value="sMaaK">sMaaK</option>
-															<option value="Klik">Klik</option>
-															<option value="WhW">WhW</option>
-														</select>
-													</div>
-													<div class="form-group">
-														<label>Because...</label>
-														<textarea class="form-control" name="motivation" rows="5" placeholder="I want to help others help themselves."></textarea>
-													</div>
-													<div class="form-group">
-														<button type="submit" class="btn btn-default">Submit</button>
-													</div>
-													<input type="hidden" name="status" value="cofounder"/>
-												</form>
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseThree-2" class="collapsed">
-												<i class="fa fa-paper-plane pr-10"></i>I want to stay up to date on what Enactus is up to
-											</a>
-											</h4>
-										</div>
-										<div id="collapseThree-2" class="panel-collapse collapse">
-											<div class="panel-body">
-												<form action="/Form/passive" method="POST">
-													<div class="form-group">
-														<label>My name is...</label>
-														<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
-														<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
-													</div>
-													<div class="form-group">
-														<label>I can be reached at...</label>
-														<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
-														<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
-													</div>
-													<div class="form-group">
-														<label>I was born on...</label>
-														<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
-													</div>
-													<div class="form-group">
-														<label>I study...</label>
-														<select name="study" class="form-control">
-															<option></option>
-															<option value="IBA">IBA</option>
-															<option value="IBEB">IBEB</option>
-															<option value="IBCOM">IBCOM</option>
-														</select>
-													</div>
-													<div class="form-group">
-														<label>I want to stay up to date because...</label>
-														<textarea class="form-control" rows="5" name="motivation" placeholder="I am interested in social entrepreneurship"></textarea>
-													</div>
-													<div class="form-group">
-														<button type="submit" class="btn btn-default">Submit</button>
-													</div>
-													<input type="hidden" name="status" value="passive"/>
-												</form>
-											</div>
-										</div>
-									</div>
-									<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
-										<div class="panel-heading">
-											<h4 class="panel-title">
-											<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFour-2" class="collapsed">
-												<i class="fa fa-building pr-10"></i>I want to become a business partner
-											</a>
-											</h4>
-										</div>
-										<div id="collapseFour-2" class="panel-collapse collapse">
-											<div class="panel-body">
-												<form action="/Form/partner" method="POST">
-													<div class="form-group">
-														<label>My name is...</label>
-														<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
-														<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
-													</div>
-													<div class="form-group">
-														<label>I can be reached at...</label>
-														<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
-														<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
-													</div>
-													<div class="form-group">
-														<label>I represent...</label>
-														<input type="text" class="form-control" name="organization" placeholder="HappyWorld plc."></input>
-													</div>
-													<div class="form-group">
-														<label>I want to become a business partner because...</label>
-														<textarea class="form-control" rows="5" name="motivation" placeholder="I am interested in social entrepreneurship"></textarea>
-													</div>
-													<div class="form-group">
-														<button type="submit" class="btn btn-default">Submit</button>
-													</div>
-												</form>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<!-- section end - accordion -->
-					<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
-					<!-- ================ -->
-					<footer id="footer" class="clearfix dark">
-						<!-- .footer start -->
-						<!-- ================ -->
-						<div class="footer">
-							<div class="container">
-								<div class="footer-inner">
-									<div class="row">
-										<div class="col-md-8 col-md-offset-2">
-											<div class="footer-content text-center padding-ver-clear">
-												<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
-												<ul class="social-links circle animated-effect-1">
-													<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-													<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-													<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-												</ul>
-												<ul class="list-inline mb-20">
-													<li><a href="https://www.google.nl/maps/place/Erasmus+Universiteit+Rotterdam/@51.9179782,4.5239854,17z/data=!3m1!4b1!4m5!3m4!1s0x47c4332163e239dd:0x589a97af738b9969!8m2!3d51.9179749!4d4.5261741?hl=en" class="link-dark"><i class="text-default fa fa-map-marker pr-5"></i>Burgemeester Oudlaan 50, 3062PA</li>
-													<li><a href="tel:+00 1234567890" class="link-dark"><i class="text-default fa fa-phone pl-10 pr-5"></i>+00 1234567890</a></li>
-													<li><a href="mailto:info@enactus-eur.nl" class="link-dark"><i class="text-default fa fa-envelope-o pl-10 pr-5"></i>info@enactus-eur.nl</a></li>
-												</ul>
-												<div class="separator"></div>
-												<p class="text-center margin-clear">Copyright © 2016 Enactus EUR by <a target="_blank" href="http://www.tsociety.io">Turing Society</a>. All Rights Reserved</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- .footer end -->
-					</footer>
-					<!-- footer end -->
+					</div>
 				</div>
-				<!-- page-wrapper end -->
-				<!-- JavaScript files placed at the end of the document so the pages load faster -->
-				<!-- ================================================== -->
-				<!-- Jquery and Bootstap core js files -->
-				<script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
-				<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
-				<!-- Modernizr javascript -->
-				<script type="text/javascript" src="/assets/plugins/modernizr.js"></script>
-				<!-- jQuery Revolution Slider  -->
-				<script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-				<script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-				<script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
-				<script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
-				<!-- Jasny Bootstrap  -->
-				<script type="text/javascript" src="/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
-				<!-- Isotope javascript -->
-				<script type="text/javascript" src="/assets/plugins/isotope/isotope.pkgd.min.js"></script>
-				<!-- Magnific Popup javascript -->
-				<script type="text/javascript" src="/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-				<!-- Appear javascript -->
-				<script type="text/javascript" src="/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
-				<!-- Count To javascript -->
-				<script type="text/javascript" src="/assets/plugins/jquery.countTo.js"></script>
-				<!-- Parallax javascript -->
-				<script src="/assets/plugins/jquery.parallax-1.1.3.js"></script>
-				<!-- Contact form -->
-				<script src="/assets/plugins/jquery.validate.js"></script>
-				<!-- Morphext -->
-				<script type="text/javascript" src="/assets/plugins/morphext/morphext.min.js"></script>
-				<!-- Pace javascript -->
-				<script type="text/javascript" src="/assets/plugins/pace/pace.min.js"></script>
-				<!-- Owl carousel javascript -->
-				<script type="text/javascript" src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
-				<!-- SmoothScroll javascript -->
-				<script type="text/javascript" src="/assets/plugins/jquery.browser.js"></script>
-				<script type="text/javascript" src="/assets/plugins/SmoothScroll.js"></script>
-				<!-- Initialization of Plugins -->
-				<script type="text/javascript" src="/assets/js/template.js"></script>
-				<!-- Background Video -->
-				<script src="/assets/plugins/vide/jquery.vide.js"></script>
-				<!-- Custom Scripts -->
-				<script type="text/javascript" src="/assets/js/custom.js"></script>
-			</body>
-		<!-- page wrapper end -->
-		</html>
+			</section>
+			<!-- section end - about us -->
+			<!-- section start - accomplishments -->
+			<!-- ================ -->
+			<section id="accomplishments" class="main-container dark-bg pv-40 clearfix">
+				<div class="container">
+					<div class="row">
+						<!-- main start -->
+						<!-- ================ -->
+						<div class="main col-md-12">
+							<h2 class="text-center"><strong>Our</strong> Accomplishments</h2>
+							<div class="separator"></div>
+							<div class="stats">
+								<div class="row">
+									<div class="col-md-4 col-xs-12 text-center">
+										<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+											<span class="icon default-bg circle large"><i class="fa fa-heart"></i></span>
+											<div class="separator"></div>
+											<h3>Lives Impacted</h3>
+											<span class="counter" data-to="80" data-speed="5000"></span>
+										</div>
+									</div>
+									<div class="col-md-4 col-xs-12 text-center">
+										<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+											<span class="icon default-bg circle large"><i class="fa fa-users"></i></span>
+											<div class="separator"></div>
+											<h3>Jobs Created</h3>
+											<span class="counter" data-to="20" data-speed="5000"></span>
+										</div>
+									</div>
+									<div class="col-md-4 col-xs-12 text-center">
+										<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+											<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
+											<div class="separator"></div>
+											<h3>Ventures Accelerated</h3>
+											<span class="counter" data-to=<?php echo  '"' . $ventures . '"' ?> data-speed="5000"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- main end -->
+					</div>
+				</div>
+			</section>
+			<!-- section end - accomplishments -->
+			<!-- section start - accordion start -->
+			<!-- ================ -->
+			<section id="contact-us" class="main-container pv-40 clearfix">
+				<div class="container">
+					<div class="row">
+						<h2 class="text-center">Contact <strong>Us</strong></h2>
+						<div class="separator"></div>
+						<div class="row text-danger">
+							<?php echo $this->session->flashdata('errors');?>
+						</div>
+						<div class="panel-group collapse-style-2" id="accordion-2">
+							<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+								<div class="panel-heading">
+									<h4 class="panel-title ">
+									<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseOne-2" class="collapsed">
+										<i class="fa fa-lightbulb-o pr-10"></i>I have a social venture idea
+									</a>
+									</h4>
+								</div>
+								<div id="collapseOne-2" class="panel-collapse collapse">
+									<div class="panel-body">
+										<form action="/Form/founder" method="POST">
+											<div class="form-group">
+												<label>My name is...</label>
+												<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
+												<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
+											</div>
+											<div class="form-group">
+												<label>I can be reached at...</label>
+												<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
+												<input type="text" class="form-control" name="phone_number" placeholder="06 12 34 56 78">
+											</div>
+											<div class="form-group">
+												<label>I was born on...</label>
+												<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
+											</div>
+											<div class="form-group">
+												<label>I study...</label>
+												<select name="study" class="form-control">
+													<option></option>
+													<option value="IBA">IBA</option>
+													<option value="IBEB">IBEB</option>
+													<option value="IBCOM">IBCOM</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>I have this amazing idea...</label>
+												<input type="text" class="form-control" name="title" placeholder="Give your idea a catchy name" style="margin-bottom: 1rem;">
+												<textarea class="form-control" rows="5" name="idea" placeholder="Tell us about your idea in a few sentences"></textarea>
+											</div>
+											<div class="form-group">
+												<label>My motivation is...</label>
+												<textarea class="form-control" rows="5" name="motivation" placeholder="Tell us about why you want to pursue this idea in a few sentences"></textarea>
+											</div>
+											<div class="form-group">
+												<button type="submit" class="btn btn-default">Submit</button>
+											</div>
+											<input type="hidden" name="status" value="founder"/>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseTwo-2" class="collapsed">
+										<i class="fa fa-users pr-10"></i>I want to be part of a social venture
+									</a>
+									</h4>
+								</div>
+								<div id="collapseTwo-2" class="panel-collapse collapse">
+									<div class="panel-body">
+										<form action="/Form/cofounder" method="POST">
+											<div class="form-group">
+												<label>My name is...</label>
+												<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
+												<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
+											</div>
+											<div class="form-group">
+												<label>I can be reached at...</label>
+												<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
+												<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
+											</div>
+											<div class="form-group">
+												<label>I was born on...</label>
+												<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
+											</div>
+											<div class="form-group">
+												<label>I study...</label>
+												<select name="study" class="form-control">
+													<option></option>
+													<option value="IBA">IBA</option>
+													<option value="IBEB">IBEB</option>
+													<option value="IBCOM">IBCOM</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>I want to join the venture...</label>
+												<select name="project_preference" class="form-control">
+													<option></option>
+													<option value="sMaaK">sMaaK</option>
+													<option value="Klik">Klik</option>
+													<option value="WhW">WhW</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>Because...</label>
+												<textarea class="form-control" name="motivation" rows="5" placeholder="I want to help others help themselves."></textarea>
+											</div>
+											<div class="form-group">
+												<button type="submit" class="btn btn-default">Submit</button>
+											</div>
+											<input type="hidden" name="status" value="cofounder"/>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseThree-2" class="collapsed">
+										<i class="fa fa-paper-plane pr-10"></i>I want to stay up to date on what Enactus is up to
+									</a>
+									</h4>
+								</div>
+								<div id="collapseThree-2" class="panel-collapse collapse">
+									<div class="panel-body">
+										<form action="/Form/passive" method="POST">
+											<div class="form-group">
+												<label>My name is...</label>
+												<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
+												<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
+											</div>
+											<div class="form-group">
+												<label>I can be reached at...</label>
+												<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
+												<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
+											</div>
+											<div class="form-group">
+												<label>I was born on...</label>
+												<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
+											</div>
+											<div class="form-group">
+												<label>I study...</label>
+												<select name="study" class="form-control">
+													<option></option>
+													<option value="IBA">IBA</option>
+													<option value="IBEB">IBEB</option>
+													<option value="IBCOM">IBCOM</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label>I want to stay up to date because...</label>
+												<textarea class="form-control" rows="5" name="motivation" placeholder="I am interested in social entrepreneurship"></textarea>
+											</div>
+											<div class="form-group">
+												<button type="submit" class="btn btn-default">Submit</button>
+											</div>
+											<input type="hidden" name="status" value="passive"/>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFour-2" class="collapsed">
+										<i class="fa fa-building pr-10"></i>I want to become a business partner
+									</a>
+									</h4>
+								</div>
+								<div id="collapseFour-2" class="panel-collapse collapse">
+									<div class="panel-body">
+										<form action="/Form/partner" method="POST">
+											<div class="form-group">
+												<label>My name is...</label>
+												<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
+												<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
+											</div>
+											<div class="form-group">
+												<label>I can be reached at...</label>
+												<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
+												<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
+											</div>
+											<div class="form-group">
+												<label>I represent...</label>
+												<input type="text" class="form-control" name="organization" placeholder="HappyWorld plc."></input>
+											</div>
+											<div class="form-group">
+												<label>I want to become a business partner because...</label>
+												<textarea class="form-control" rows="5" name="motivation" placeholder="I am interested in social entrepreneurship"></textarea>
+											</div>
+											<div class="form-group">
+												<button type="submit" class="btn btn-default">Submit</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section end - accordion -->
+			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
+			<!-- ================ -->
+			<footer id="footer" class="clearfix dark">
+				<!-- .footer start -->
+				<!-- ================ -->
+				<div class="footer">
+					<div class="container">
+						<div class="footer-inner">
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2">
+									<div class="footer-content text-center padding-ver-clear">
+										<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
+										<ul class="social-links circle animated-effect-1">
+											<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+											<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+											<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
+											<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+										</ul>
+										<ul class="list-inline mb-20">
+											<li><a href="https://www.google.nl/maps/place/Erasmus+Universiteit+Rotterdam/@51.9179782,4.5239854,17z/data=!3m1!4b1!4m5!3m4!1s0x47c4332163e239dd:0x589a97af738b9969!8m2!3d51.9179749!4d4.5261741?hl=en" class="link-dark"><i class="text-default fa fa-map-marker pr-5"></i>Burgemeester Oudlaan 50, 3062PA</li>
+											<li><a href="tel:+00 1234567890" class="link-dark"><i class="text-default fa fa-phone pl-10 pr-5"></i>+00 1234567890</a></li>
+											<li><a href="mailto:info@enactus-eur.nl" class="link-dark"><i class="text-default fa fa-envelope-o pl-10 pr-5"></i>info@enactus-eur.nl</a></li>
+										</ul>
+										<div class="separator"></div>
+										<p class="text-center margin-clear">Copyright © 2016 Enactus EUR by <a target="_blank" href="http://www.tsociety.io">Turing Society</a>. All Rights Reserved</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- .footer end -->
+			</footer>
+			<!-- footer end -->
+		</div>
+		<!-- page-wrapper end -->
+		<!-- JavaScript files placed at the end of the document so the pages load faster -->
+		<!-- ================================================== -->
+		<!-- Jquery and Bootstap core js files -->
+		<script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+		<!-- Modernizr javascript -->
+		<script type="text/javascript" src="/assets/plugins/modernizr.js"></script>
+		<!-- jQuery Revolution Slider  -->
+		<script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+		<script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+		<!-- Jasny Bootstrap  -->
+		<script type="text/javascript" src="/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
+		<!-- Isotope javascript -->
+		<script type="text/javascript" src="/assets/plugins/isotope/isotope.pkgd.min.js"></script>
+		<!-- Magnific Popup javascript -->
+		<script type="text/javascript" src="/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<!-- Appear javascript -->
+		<script type="text/javascript" src="/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+		<!-- Count To javascript -->
+		<script type="text/javascript" src="/assets/plugins/jquery.countTo.js"></script>
+		<!-- Parallax javascript -->
+		<script src="/assets/plugins/jquery.parallax-1.1.3.js"></script>
+		<!-- Contact form -->
+		<script src="/assets/plugins/jquery.validate.js"></script>
+		<!-- Morphext -->
+		<script type="text/javascript" src="/assets/plugins/morphext/morphext.min.js"></script>
+		<!-- Pace javascript -->
+		<script type="text/javascript" src="/assets/plugins/pace/pace.min.js"></script>
+		<!-- Owl carousel javascript -->
+		<script type="text/javascript" src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
+		<!-- SmoothScroll javascript -->
+		<script type="text/javascript" src="/assets/plugins/jquery.browser.js"></script>
+		<script type="text/javascript" src="/assets/plugins/SmoothScroll.js"></script>
+		<!-- Initialization of Plugins -->
+		<script type="text/javascript" src="/assets/js/template.js"></script>
+		<!-- Background Video -->
+		<script src="/assets/plugins/vide/jquery.vide.js"></script>
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="/assets/js/custom.js"></script>
+	</body>
+	<!-- page wrapper end -->
+</html>

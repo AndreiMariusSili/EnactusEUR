@@ -42,7 +42,7 @@ class Admin extends CI_Controller
 			if($password <> $auth_password)
 			{
 				$this->session->set_flashdata('errors', "Username and password don't match.");
-				redirect("/Admin/login_fail");
+				redirect("/Admin");
 			}
 			else
 			{
@@ -51,20 +51,24 @@ class Admin extends CI_Controller
 						'password' => $password,
 					);
 				$this->session->set_userdata($data);
-				redirect('/Admin/login_success');
+				redirect('/Admin/landing_admin');
 			}
 		}
 	}
 
-	public function login_fail()
+	public function landing_admin()
 	{
-		$this->load->view('login');
+		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+		{
+			$this->session->set_flashdata('errors', "Nice try. Please login first.");
+			redirect('/Admin');
+		}
+		else
+		{
+			$this->load->view('landing-admin');
+		}
 	}
 
-	public function login_success()
-	{
-		$this->load->view('panel');
-	}
 }
 
 ?>

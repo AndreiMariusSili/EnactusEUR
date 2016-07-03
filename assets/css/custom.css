@@ -56,6 +56,11 @@ footer.dark {
 
 }
 
+.panel-default{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 /*animate.css '@keyframes swing' comment*/
 .animation_loop {
     animation-name:swing;
