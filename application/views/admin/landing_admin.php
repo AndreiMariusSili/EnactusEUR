@@ -39,6 +39,8 @@
 		<link href="/assets/css/skins/enactus_colors.css" rel="stylesheet">
 		<!-- Custom css -->
 		<link href="/assets/css/custom.css" rel="stylesheet">
+
+		<?php $this->load->helper('form'); ?>
 	</head>
 	<body class="no-trans  transparent-header  ">
 		
@@ -224,16 +226,15 @@
 					<div class="col-xs-10 col-xs-offset-1">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-								<h3 class="panel-title">Use this form to modify the video overlay text</h3>
+								<h3 class="panel-title">Use this form to modify the background video section</h3>
 						</div>
 						<div class="panel-body">
-							<div class="col-xs-10 col-xs-offset-1">
-								<form action="/Admin/video-edit" method="POST">
-									<textarea class="form-control" rows="2" name="title" placeholder="Input here the title to be shown on top of the video..."></textarea>
+							<form action="/Admin_edit/videoEdit" method="POST">
+									<textarea class="form-control" rows="2" name="video_title" placeholder="Input here the title to be shown on top of the video..."><?php echo set_value('video_title', $video_title); ?></textarea>
 									<div class="separator clearfix"></div>
-									<textarea class="form-control" rows="2" name="subtitle" placeholder="Input here the subtitle to be shown on top of the video..."></textarea>
-								</form>
-							</div>
+									<textarea class="form-control" rows="2" name="video_subtitle" placeholder="Input here the subtitle to be shown on top of the video..."><?php echo set_value('video_subtitle', $video_subtitle) ?></textarea>
+									<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
+							</form>
 						</div>
 					</div>
 					</div>
@@ -249,28 +250,28 @@
 									<div class="col-xs-4 ">
 										<div class="ph-20 feature-box text-center">
 											<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
-											<h3>Ventures</h3>
+											<input type="text" name="block_left_title" class="form-control" placeholder="Input here the title of the leftmost block..." />
 											<div class="separator clearfix"></div>
-											<textarea class="form-control" rows="3" name="ventures" placeholder="Input here new text to be displayed under the Ventures feature..."></textarea>
+											<textarea class="form-control" rows="3" name="block_left_content" placeholder="Input here content of the leftmost block..."></textarea>
 										</div>
 									</div>
 									<div class="col-xs-4 ">
 										<div class="ph-20 feature-box text-center">
 											<span class="icon default-bg circle large"><i class="fa fa-thumbs-o-up"></i></span>
-											<h3>Teams</h3>
+											<input type="text" name="block_center_title" class="form-control" placeholder="Input here the title of the center block..." />
 											<div class="separator clearfix"></div>
-											<textarea class="form-control" rows="3" name="teams" placeholder="Input here new text to be displayed under the Teams feature..."></textarea>
+											<textarea class="form-control" rows="3" name="block_center_content" placeholder="Input here content of the center block..."></textarea>
 										</div>
 									</div>
 									<div class="col-xs-4 ">
 										<div class="ph-20 feature-box text-center">
 											<span class="icon default-bg circle large"><i class="icon-snow"></i></span>
-											<h3>Lorem Ipsum</h3>
+											<input type="text" name="block_right_title" class="form-control" placeholder="Input here the title of the right block..." />
 											<div class="separator clearfix"></div>
-											<textarea class="form-control" rows="3" name="lorem" placeholder="Input here new text to be displayed under the Lorem Ipsum feature..."></textarea>
+											<textarea class="form-control" rows="3" name="block_right_content" placeholder="Input here content of the rightmost block..."></textarea>
 										</div>
 									</div>
-									<button type="button" class="btn btn-default btn-lg btn-block">Submit</button>
+									<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
 								</form>
 							</div>
 						</div>
@@ -285,32 +286,32 @@
 								<h3 class="panel-title">Use this form to modify the '<strong>Our</strong> Accomplishments' section</h3>
 							</div>
 							<div class="panel-body">
-								<form action="/Admin/accomplishments-edit" method="POST">
+								<form action="/Admin/accomp-edit" method="POST">
 									<div class="col-xs-4 ">
-										<div class="feature-box pv-20 text-center">
+										<div class="feature-box ph-20 text-center">
 											<span class="icon default-bg circle large"><i class="fa fa-heart"></i></span>
+											<input type="text" name="block_left_title" class="form-control" placeholder="Input here the title for the leftmost block..." />
 											<div class="separator"></div>
-											<h3>Lives Impacted</h3>
-											<input class="form-control" type="text" name="lives" placeholder="Input here the number of lives impacted...">
+											<input class="form-control" type="text" name="block_left_content" placeholder="Input here the content for the leftmost block...">
 										</div>
 									</div>
 									<div class="col-xs-4 ">
-										<div class="feature-box pv-20 text-center">
+										<div class="feature-box ph-20 text-center">
 											<span class="icon default-bg circle large"><i class="fa fa-users"></i></span>
+											<input type="text" name="block_center_title" class="form-control" placeholder="Input here the title for the center block..."/>
 											<div class="separator"></div>
-											<h3>Jobs Created</h3>
-											<input class="form-control" type="text" name="jobs" placeholder="Input here the number of jobs created...">
+											<input class="form-control" type="text" name="block_center_content" placeholder="Input here the content for the center block...">
 										</div>
 									</div>
 									<div class="col-xs-4 ">
-										<div class="feature-box pv-20 text-center">
+										<div class="feature-box ph-20 text-center">
 											<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
+											<input type="text" name="block_right_title" class="form-control" placeholder="Input here the title for the rightmost block..." />
 											<div class="separator"></div>
-											<h3>Ventures Accelerated</h3>
-											<input class="form-control" type="text" name="ventures" placeholder="Input here the number of  ventures accelerated...">
+											<input class="form-control" type="text" name="block_right_content" placeholder="Input here the content for the rightmost block...">
 										</div>
 									</div>
-									<button type="button" class="btn btn-default btn-lg btn-block">Submit</button>
+									<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
 								</form>
 							</div>
 						</div>

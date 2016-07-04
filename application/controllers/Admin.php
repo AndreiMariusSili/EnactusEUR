@@ -5,7 +5,7 @@ class Admin extends CI_Controller
 {
 	public function index()
 	{
-		$this->load->view('login');
+		$this->load->view('/admin/login');
 	}
 
 	public function login()
@@ -30,7 +30,7 @@ class Admin extends CI_Controller
 		if($this->form_validation->run() == FALSE)
 		{
 			$this->session->set_flashdata('errors', validation_errors());
-			redirect("/Admin/");
+			redirect("/Admin");
 		}
 		else
 		{
@@ -65,7 +65,10 @@ class Admin extends CI_Controller
 		}
 		else
 		{
-			$this->load->view('landing-admin');
+			$this->load->model('Admin_model');
+
+			$viewdata = $this->Admin_model->landing_admin();			
+			$this->load->view('/admin/landing_admin', $viewdata);
 		}
 	}
 

@@ -152,26 +152,26 @@
 							<div class="stats">
 								<div class="row">
 									<div class="col-md-4 col-xs-12 text-center">
-										<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+										<div class="feature-box ph-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 											<span class="icon default-bg circle large"><i class="fa fa-heart"></i></span>
-											<div class="separator"></div>
 											<h3>Lives Impacted</h3>
+											<div class="separator"></div>
 											<span class="counter" data-to="80" data-speed="5000"></span>
 										</div>
 									</div>
 									<div class="col-md-4 col-xs-12 text-center">
-										<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+										<div class="feature-box ph-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 											<span class="icon default-bg circle large"><i class="fa fa-users"></i></span>
-											<div class="separator"></div>
 											<h3>Jobs Created</h3>
+											<div class="separator"></div>
 											<span class="counter" data-to="20" data-speed="5000"></span>
 										</div>
 									</div>
 									<div class="col-md-4 col-xs-12 text-center">
-										<div class="feature-box pv-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+										<div class="feature-box ph-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 											<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
-											<div class="separator"></div>
 											<h3>Ventures Accelerated</h3>
+											<div class="separator"></div>											
 											<span class="counter" data-to=<?php echo  '"' . $ventures . '"' ?> data-speed="5000"></span>
 										</div>
 									</div>
