@@ -68,7 +68,7 @@ class Form extends CI_Controller
 		{
 			$this->load->model("Form_model");
 			$post = $this->input->post(NULL, TRUE);
-			$this->Form_model->founder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["title"], $post["idea"],$post["motivation"]);
+			$this->Form_model->founder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["title"], $post["idea"], $post["status"], $post["motivation"]);
 			redirect ("/Main/success");
 		}
 	}
@@ -133,7 +133,7 @@ class Form extends CI_Controller
 		{
 			$this->load->model("Form_model");
 			$post = $this->input->post(NULL, TRUE);
-			$this->Form_model->cofounder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["project_preference"],$post["motivation"]);
+			$this->Form_model->cofounder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["project_preference"], $post["status"], $post["motivation"]);
 			redirect ("/Main/success");
 		}
 	}
@@ -188,7 +188,7 @@ class Form extends CI_Controller
 		{
 			$this->load->model("Form_model");
 			$post = $this->input->post(NULL, TRUE);
-			$this->Form_model->passive($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"],$post["motivation"]);
+			$this->Form_model->passive($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["status"], $post["motivation"]);
 			redirect ("/Main/success");
 		}
 	}
@@ -246,7 +246,7 @@ class Form extends CI_Controller
 		}
 	}
 
-	//Custom validation functions
+	//custom validation functions
 	public function title_check($title)
 	{
 		if(strlen($title) == 0)

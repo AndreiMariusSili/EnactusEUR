@@ -4,75 +4,51 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Form_model extends CI_Model
 {
 	
-	public function founder($first_name, $last_name, $email, $phone_number, $dob, $study, $title, $idea, $motivation)
+	public function founder($first_name, $last_name, $email, $phone_number, $dob, $study, $title, $idea, $status, $motivation)
 	{
 		//insert data for new member
-		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, updated_at) VALUES (?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, status, updated_at) VALUES (?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $status, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 
 		//retrieve new member id
 		$query = $this->db->query("SELECT id FROM members ORDER BY id DESC LIMIT 1");
 		$result = $query->row_array();
 
-		//register new member as founder
-		$query = "INSERT INTO founders (members_id) VALUES(?)";
-		$this->db->query($query, $result['id']);
-
-		//retrieve founder id
-		$query = $this->db->query("SELECT id FROM founders ORDER BY id DESC LIMIT 1");
-		$result = $query->row_array();
-
 		//register new project
-		$query = "INSERT INTO projects (founders_id, project_title, project_description, project_motivation, updated_at) VALUES (?,?,?,?,?)";
+		$query = "INSERT INTO projects (members_id, project_title, project_description, project_motivation, updated_at) VALUES (?,?,?,?,?)";
 		$values = array($result['id'], $title, $idea, $motivation, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 	}
 
-	public function cofounder($first_name, $last_name, $email, $phone_number, $dob, $study, $preference, $motivation)
+	public function cofounder($first_name, $last_name, $email, $phone_number, $dob, $study, $preference, $status ,$motivation)
 	{
 		//insert data for new member
-		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, updated_at) VALUES (?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, status, updated_at) VALUES (?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $status, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 
 		//retrieve new member id
 		$query = $this->db->query("SELECT id FROM members ORDER BY id DESC LIMIT 1");
-		$result = $query->row_array();
-
-		//register new member as cofounder
-		$query = "INSERT INTO cofounders (members_id) VALUES(?)";
-		$this->db->query($query, $result['id']);
-
-		//retrieve cofounder id
-		$query = $this->db->query("SELECT id FROM cofounders ORDER BY id DESC LIMIT 1");
-		$cofounder = $query->row_array();
+		$member = $query->row_array();
 
 		//retrieve project id
 		$query = $this->db->query("SELECT id FROM projects WHERE project_title = '{$preference}'");
 		$project = $query->row_array();
 
 		// register new application
-		$query = "INSERT INTO applications (cofounders_id, projects_id, project_preference, apply_motivation, updated_at) VALUES (?,?,?,?,?)";
-		$values = array($cofounder['id'], $project['id'], $preference, $motivation,  date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO applications (members_id, projects_id, project_preference, apply_motivation, updated_at) VALUES (?,?,?,?,?)";
+		$values = array($member['id'], $project['id'], $preference, $motivation, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 	}
 
-	public function passive($first_name, $last_name, $email, $phone_number, $dob, $study, $motivation)
+	public function passive($first_name, $last_name, $email, $phone_number, $dob, $study, $status ,$motivation)
 	{
 		//insert data for new member
-		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, updated_at) VALUES (?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, status, updated_at) VALUES (?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $status, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 
-		//retrieve new member id
-		$query = $this->db->query("SELECT id FROM members ORDER BY id DESC LIMIT 1");
-		$result = $query->row_array();
-
-		//register new member as passive member
-		$query = "INSERT INTO passives (members_id, motivation) VALUES(?,?)";
-		$values = array($result['id'], $motivation);
-		$this->db->query($query, $values);
 	}
 
 	public function partner($first_name, $last_name, $email, $phone_number, $organization, $motivation)
