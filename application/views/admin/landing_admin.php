@@ -246,29 +246,29 @@
 								<h3 class="panel-title">Use this form to modify the 'About <strong>Us</strong>' section</h3>
 							</div>
 							<div class="panel-body">
-								<form action="/Admin/aboutus-edit" method="POST">
+								<form action="/Admin_edit/aboutusEdit" method="POST">
 									<div class="col-xs-4 ">
 										<div class="ph-20 feature-box text-center">
 											<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
-											<input type="text" name="block_left_title" class="form-control" placeholder="Input here the title of the leftmost block..." />
+											<input type="text" name="block_left_title" class="form-control" placeholder="Input here the title of the left block..." / value="<?php echo set_value('block_left_title', $aboutus_left_title); ?>">
 											<div class="separator clearfix"></div>
-											<textarea class="form-control" rows="3" name="block_left_content" placeholder="Input here content of the leftmost block..."></textarea>
+											<textarea class="form-control" rows="3" name="block_left_content" placeholder="Input here content of the left block..."><?php echo set_value('block_left_content', $aboutus_left_content); ?></textarea>
 										</div>
 									</div>
 									<div class="col-xs-4 ">
 										<div class="ph-20 feature-box text-center">
 											<span class="icon default-bg circle large"><i class="fa fa-thumbs-o-up"></i></span>
-											<input type="text" name="block_center_title" class="form-control" placeholder="Input here the title of the center block..." />
+											<input type="text" name="block_center_title" class="form-control" placeholder="Input here the title of the center block..." value = "<?php echo set_value('block_center_title', $aboutus_center_title); ?>" />
 											<div class="separator clearfix"></div>
-											<textarea class="form-control" rows="3" name="block_center_content" placeholder="Input here content of the center block..."></textarea>
+											<textarea class="form-control" rows="3" name="block_center_content" placeholder="Input here content of the center block..."><?php echo set_value('block_center_content', $aboutus_center_content); ?></textarea>
 										</div>
 									</div>
 									<div class="col-xs-4 ">
 										<div class="ph-20 feature-box text-center">
 											<span class="icon default-bg circle large"><i class="icon-snow"></i></span>
-											<input type="text" name="block_right_title" class="form-control" placeholder="Input here the title of the right block..." />
+											<input type="text" name="block_right_title" class="form-control" placeholder="Input here the title of the right block..." value = "<?php echo set_value('block_right_title', $aboutus_right_title); ?>" />
 											<div class="separator clearfix"></div>
-											<textarea class="form-control" rows="3" name="block_right_content" placeholder="Input here content of the rightmost block..."></textarea>
+											<textarea class="form-control" rows="3" name="block_right_content" placeholder="Input here content of the right block..."><?php echo set_value('block_right_content', $aboutus_right_content); ?></textarea>
 										</div>
 									</div>
 									<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
@@ -286,29 +286,29 @@
 								<h3 class="panel-title">Use this form to modify the '<strong>Our</strong> Accomplishments' section</h3>
 							</div>
 							<div class="panel-body">
-								<form action="/Admin/accomp-edit" method="POST">
+								<form action="/Admin_edit/accompEdit" method="POST">
 									<div class="col-xs-4 ">
 										<div class="feature-box ph-20 text-center">
 											<span class="icon default-bg circle large"><i class="fa fa-heart"></i></span>
-											<input type="text" name="block_left_title" class="form-control" placeholder="Input here the title for the leftmost block..." />
+											<input type="text" name="block_left_title" class="form-control" placeholder="Input here the title for the left block..." value="<?php echo set_value('block_left_title', $accomp_left_title); ?>" />
 											<div class="separator"></div>
-											<input class="form-control" type="text" name="block_left_content" placeholder="Input here the content for the leftmost block...">
+											<textarea class="form-control" rows="3" name="block_left_content" placeholder="Input here the content for the left block..." ><?php echo set_value('block_left_content', $accomp_left_content); ?></textarea>
 										</div>
 									</div>
 									<div class="col-xs-4 ">
 										<div class="feature-box ph-20 text-center">
 											<span class="icon default-bg circle large"><i class="fa fa-users"></i></span>
-											<input type="text" name="block_center_title" class="form-control" placeholder="Input here the title for the center block..."/>
+											<input type="text" name="block_center_title" class="form-control" placeholder="Input here the title for the center block..." value="<?php echo set_value('block_center_title', $accomp_center_title); ?>" />
 											<div class="separator"></div>
-											<input class="form-control" type="text" name="block_center_content" placeholder="Input here the content for the center block...">
+											<textarea class="form-control" rows="3" name="block_center_content" placeholder="Input here the content for the center block..." ><?php echo set_value('block_center_content', $accomp_center_content); ?></textarea>
 										</div>
 									</div>
 									<div class="col-xs-4 ">
 										<div class="feature-box ph-20 text-center">
 											<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
-											<input type="text" name="block_right_title" class="form-control" placeholder="Input here the title for the rightmost block..." />
+											<input type="text" name="block_right_title" class="form-control" placeholder="Input here the title for the right block..." value="<?php echo set_value('block_right_title', $accomp_right_title); ?>" />
 											<div class="separator"></div>
-											<input class="form-control" type="text" name="block_right_content" placeholder="Input here the content for the rightmost block...">
+											<textarea class="form-control" rows="3" name="block_right_content" placeholder="Input here the content for the right block..." ><?php echo set_value('block_right_content', $accomp_right_content); ?></textarea>
 										</div>
 									</div>
 									<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>

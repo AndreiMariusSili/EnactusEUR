@@ -47,7 +47,6 @@
 	<!-- "gradient-background-header": applies gradient background to header -->
 	<!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
 	<body class="no-trans page-loader-1">
-		
 		<!-- page wrapper start -->
 		<!-- ================ -->
 		<div class="page-wrapper">
@@ -88,9 +87,9 @@
 				<div class="container video_text_c">
 					<div class="row video_text_r">
 						<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-							<h2 class="text-center object-non-visible video-title" data-animation-effect="zoomIn" data-effect-delay="100">Europe's fastest social business accelerator</h2>
+							<h2 class="text-center object-non-visible video-title" data-animation-effect="zoomIn" data-effect-delay="100"><?php echo $video_title ?></h2>
 							<div class="separator object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100"></div>
-							<p class="large text-center object-non-visible video-subtitle" data-animation-effect="zoomIn" data-effect-delay="300">Run by students</p>
+							<p class="large text-center object-non-visible video-subtitle" data-animation-effect="zoomIn" data-effect-delay="300"><?php echo $video_subtitle ?></p>
 							<p><button type="button" class="video-button btn btn-lg btn-gray-transparent object-non-visible scrollDownAboutUs" data-animation-effect="zoomIn" data-effect-delay="500">Learn More</button></p>
 						</div>
 					</div>
@@ -109,27 +108,27 @@
 								<div class="col-md-4 ">
 									<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">
 										<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
-										<h3>Ventures</h3>
+										<h3><?php echo $aboutus_left_title ?></h3>
 										<div class="separator clearfix"></div>
-										<p>Voluptatem ad provident non repudiandae beatae cupiditate amet reiciendis lorem ipsum dolor sit amet, consectetur.</p>
+										<p><?php echo $aboutus_left_content ?></p>
 										<a href="/Main/ventures">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 									</div>
 								</div>
 								<div class="col-md-4 ">
 									<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">
 										<span class="icon default-bg circle large"><i class="fa fa-thumbs-o-up"></i></span>
-										<h3>Teams</h3>
+										<h3><?php echo $aboutus_center_title ?></h3>
 										<div class="separator clearfix"></div>
-										<p>Iure sequi unde hic. Sapiente quaerat sequi inventore veritatis cumque lorem ipsum dolor sit amet, consectetur.</p>
+										<p><?php echo $aboutus_center_content ?></p>
 										<a href="/Main/teams">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 									</div>
 								</div>
 								<div class="col-md-4 ">
 									<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">
 										<span class="icon default-bg circle large"><i class="icon-snow"></i></span>
-										<h3>Lorem Ipsum</h3>
+										<h3><?php echo $aboutus_right_title ?></h3>
 										<div class="separator clearfix"></div>
-										<p>Inventore dolores aut laboriosam cum consequuntur delectus sequi lorem ipsum dolor sit amet, consectetur.</p>
+										<p><?php echo $aboutus_right_content ?></p>
 										<a href="page-services.html">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 									</div>
 								</div>
@@ -154,25 +153,25 @@
 									<div class="col-md-4 col-xs-12 text-center">
 										<div class="feature-box ph-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 											<span class="icon default-bg circle large"><i class="fa fa-heart"></i></span>
-											<h3>Lives Impacted</h3>
+											<h3><?php echo $accomp_left_title ?></h3>
 											<div class="separator"></div>
-											<span class="counter" data-to="80" data-speed="5000"></span>
+											<span class="counter" data-to="<?php echo $accomp_left_content ?>" data-speed="5000"></span>
 										</div>
 									</div>
 									<div class="col-md-4 col-xs-12 text-center">
 										<div class="feature-box ph-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 											<span class="icon default-bg circle large"><i class="fa fa-users"></i></span>
-											<h3>Jobs Created</h3>
+											<h3><?php echo $accomp_center_title ?></h3>
 											<div class="separator"></div>
-											<span class="counter" data-to="20" data-speed="5000"></span>
+											<span class="counter" data-to="<?php echo $accomp_center_content ?>" data-speed="5000"></span>
 										</div>
 									</div>
 									<div class="col-md-4 col-xs-12 text-center">
 										<div class="feature-box ph-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
 											<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
-											<h3>Ventures Accelerated</h3>
+											<h3><?php echo $accomp_right_title ?></h3>
 											<div class="separator"></div>											
-											<span class="counter" data-to=<?php echo  '"' . $ventures . '"' ?> data-speed="5000"></span>
+											<span class="counter" data-to="<?php echo $accomp_right_content ?>" data-speed="5000"></span>
 										</div>
 									</div>
 								</div>
