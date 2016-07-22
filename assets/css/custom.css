@@ -23,7 +23,6 @@ vertical-align: middle;
 .video-background,
 .video-background-banner {
   height: 100vh;
-  width: 100vw;
 }
 
 footer.dark {
@@ -55,6 +54,11 @@ footer.dark {
 .video-button:focus{
 	outline: none !important;
 
+}
+
+.panel-default{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*animate.css '@keyframes swing' comment*/
