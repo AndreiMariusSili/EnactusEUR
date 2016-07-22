@@ -10,6 +10,13 @@ class Main_model extends CI_Model
 		return $this->db->query($query)->row_array();
 	}
 
+    public function landing()
+    {
+        $query = $this->db->get('landing_admin');
+        $data = $query->row();
+        return $data;
+    }
+
 }
 
 ?>

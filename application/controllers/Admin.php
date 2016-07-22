@@ -72,6 +72,20 @@ class Admin extends CI_Controller
 		}
 	}
 
+	public function project_admin()
+	{
+		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+		{
+			$this->session->set_flashdata('errors', "Nice try. Please login first.");
+			redirect('/Admin');
+		}
+		else
+		{
+			$this->load->model('Admin_model');
+			
+			$this->load->view('/admin/project_admin');
+		}	}
+
 }
 
 ?>
