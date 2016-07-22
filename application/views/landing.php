@@ -107,7 +107,7 @@
 							<div class="row">
 								<div class="col-md-4 ">
 									<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">
-										<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
+										<span class="icon default-bg circle large"><i class="<?php echo $aboutus_left_icon ?>"></i></span>
 										<h3><?php echo $aboutus_left_title ?></h3>
 										<div class="separator clearfix"></div>
 										<p><?php echo $aboutus_left_content ?></p>
@@ -116,7 +116,7 @@
 								</div>
 								<div class="col-md-4 ">
 									<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">
-										<span class="icon default-bg circle large"><i class="fa fa-thumbs-o-up"></i></span>
+										<span class="icon default-bg circle large"><i class="<?php echo $aboutus_center_icon ?>"></i></span>
 										<h3><?php echo $aboutus_center_title ?></h3>
 										<div class="separator clearfix"></div>
 										<p><?php echo $aboutus_center_content ?></p>
@@ -125,7 +125,7 @@
 								</div>
 								<div class="col-md-4 ">
 									<div class="ph-20 feature-box text-center object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">
-										<span class="icon default-bg circle large"><i class="icon-snow"></i></span>
+										<span class="icon default-bg circle large"><i class="<?php echo $aboutus_right_icon ?>"></i></span>
 										<h3><?php echo $aboutus_right_title ?></h3>
 										<div class="separator clearfix"></div>
 										<p><?php echo $aboutus_right_content ?></p>
@@ -152,7 +152,7 @@
 								<div class="row">
 									<div class="col-md-4 col-xs-12 text-center">
 										<div class="feature-box ph-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
-											<span class="icon default-bg circle large"><i class="fa fa-heart"></i></span>
+											<span class="icon default-bg circle large"><i class="<?php echo $accomp_left_icon ?>"></i></span>
 											<h3><?php echo $accomp_left_title ?></h3>
 											<div class="separator"></div>
 											<span class="counter" data-to="<?php echo $accomp_left_content ?>" data-speed="5000"></span>
@@ -160,7 +160,7 @@
 									</div>
 									<div class="col-md-4 col-xs-12 text-center">
 										<div class="feature-box ph-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
-											<span class="icon default-bg circle large"><i class="fa fa-users"></i></span>
+											<span class="icon default-bg circle large"><i class="<?php echo $accomp_center_icon ?>"></i></span>
 											<h3><?php echo $accomp_center_title ?></h3>
 											<div class="separator"></div>
 											<span class="counter" data-to="<?php echo $accomp_center_content ?>" data-speed="5000"></span>
@@ -168,7 +168,7 @@
 									</div>
 									<div class="col-md-4 col-xs-12 text-center">
 										<div class="feature-box ph-20 object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
-											<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
+											<span class="icon default-bg circle large"><i class="<?php echo $accomp_right_icon ?>"></i></span>
 											<h3><?php echo $accomp_right_title ?></h3>
 											<div class="separator"></div>											
 											<span class="counter" data-to="<?php echo $accomp_right_content ?>" data-speed="5000"></span>

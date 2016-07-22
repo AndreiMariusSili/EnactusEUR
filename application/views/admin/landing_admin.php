@@ -188,22 +188,16 @@
 													<!-- main-menu -->
 													<ul class="nav navbar-nav ">
 														<li>
-															<a href="http://google.com">Landing</a>
+															<a href="/Admin/landing_admin">Landing</a>
 														</li>
 														<li>
-															<a href="http://google.com">Ventures</a>
+															<a href="#ventures">Ventures</a>
 														</li>
 														<li>
-															<a href="http://google.com">Teams</a>
+															<a href="#teams">Teams</a>
 														</li>
-														<li class="dropdown ">
-															<a href="index-shop.html" class="dropdown-toggle" data-toggle="dropdown">Other functionalities</a>
-															<ul class="dropdown-menu">
-																<li ><a href="index-shop.html">Functioanity 1</a></li>
-																<li ><a href="index-shop-2.html">Functioanity 2</a></li>
-																<li ><a href="shop-listing-4col.html">Functioanity 3</a></li>
-																<li ><a href="shop-listing-3col.html">Functioanity 4</a></li>
-															</ul>
+														<li>
+															<a href="/Admin/project_admin">Project Admin</a>
 														</li>
 													</ul>
 													<!-- main-menu end -->
@@ -220,10 +214,14 @@
 						</div>
 					</div>
 				</header>
+			</div>
+			<!-- header-container end -->
+			<!-- content-container start -->
+			<div class="container">
 				<!-- header end -->
-				<!-- about us section modifier start -->
+				<!-- background video section modifier start -->
 				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1">
+					<div class="col-xs-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
 								<h3 class="panel-title">Use this form to modify the background video section</h3>
@@ -239,8 +237,10 @@
 					</div>
 					</div>
 				</div>
+				<!-- background video section modifier end -->
+				<!-- about us section modifier start -->
 				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1">
+					<div class="col-xs-12">
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h3 class="panel-title">Use this form to modify the 'About <strong>Us</strong>' section</h3>
@@ -249,15 +249,19 @@
 								<form action="/Admin_edit/aboutusEdit" method="POST">
 									<div class="col-xs-4 ">
 										<div class="ph-20 feature-box text-center">
-											<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
-											<input type="text" name="block_left_title" class="form-control" placeholder="Input here the title of the left block..." / value="<?php echo set_value('block_left_title', $aboutus_left_title); ?>">
+											<span class="icon default-bg circle large"><i class="<?php echo $aboutus_left_icon ?>"></i></span>
+											<input type="text" name="block_left_icon" class="form-control" placeholder="Input here the icon of the left block..." value="<?php echo set_value('block_left_icon', $aboutus_left_icon) ?>" />
+											<div class="separator"></div>
+											<input type="text" name="block_left_title" class="form-control" placeholder="Input here the title of the left block..." value="<?php echo set_value('block_left_title', $aboutus_left_title); ?>" />
 											<div class="separator clearfix"></div>
 											<textarea class="form-control" rows="3" name="block_left_content" placeholder="Input here content of the left block..."><?php echo set_value('block_left_content', $aboutus_left_content); ?></textarea>
 										</div>
 									</div>
 									<div class="col-xs-4 ">
 										<div class="ph-20 feature-box text-center">
-											<span class="icon default-bg circle large"><i class="fa fa-thumbs-o-up"></i></span>
+											<span class="icon default-bg circle large"><i class="<?php echo $aboutus_center_icon ?>"></i></span>
+											<input type="text" name="block_center_icon" class="form-control" placeholder="Input here the icon of the center block..." value="<?php echo set_value('block_center_icon', $aboutus_center_icon) ?>" />
+											<div class="separator"></div>
 											<input type="text" name="block_center_title" class="form-control" placeholder="Input here the title of the center block..." value = "<?php echo set_value('block_center_title', $aboutus_center_title); ?>" />
 											<div class="separator clearfix"></div>
 											<textarea class="form-control" rows="3" name="block_center_content" placeholder="Input here content of the center block..."><?php echo set_value('block_center_content', $aboutus_center_content); ?></textarea>
@@ -265,7 +269,9 @@
 									</div>
 									<div class="col-xs-4 ">
 										<div class="ph-20 feature-box text-center">
-											<span class="icon default-bg circle large"><i class="icon-snow"></i></span>
+											<span class="icon default-bg circle large"><i class="<?php echo $aboutus_right_icon ?>"></i></span>
+											<input type="text" name="block_right_icon" class="form-control" placeholder="Input here the icon of the right block..." value="<?php echo set_value('block_right_icon', $aboutus_right_icon) ?>" />
+											<div class="separator"></div>
 											<input type="text" name="block_right_title" class="form-control" placeholder="Input here the title of the right block..." value = "<?php echo set_value('block_right_title', $aboutus_right_title); ?>" />
 											<div class="separator clearfix"></div>
 											<textarea class="form-control" rows="3" name="block_right_content" placeholder="Input here content of the right block..."><?php echo set_value('block_right_content', $aboutus_right_content); ?></textarea>
@@ -280,7 +286,7 @@
 				<!-- about us section modifier end -->
 				<!-- accomplishments section modifier start -->
 				<div class="row">
-					<div class="col-xs-10 col-xs-offset-1">
+					<div class="col-xs-12">
 						<div class="panel panel-default">
 							<div class="panel-heading">
 								<h3 class="panel-title">Use this form to modify the '<strong>Our</strong> Accomplishments' section</h3>
@@ -289,7 +295,9 @@
 								<form action="/Admin_edit/accompEdit" method="POST">
 									<div class="col-xs-4 ">
 										<div class="feature-box ph-20 text-center">
-											<span class="icon default-bg circle large"><i class="fa fa-heart"></i></span>
+											<span class="icon default-bg circle large"><i class="<?php echo $accomp_left_icon ?>"></i></span>
+											<input type="text" name="block_left_icon" class="form-control" placeholder="Input here the icon of the left block..." value="<?php echo set_value('block_left_icon', $accomp_left_icon) ?>" />
+											<div class="separator"></div>
 											<input type="text" name="block_left_title" class="form-control" placeholder="Input here the title for the left block..." value="<?php echo set_value('block_left_title', $accomp_left_title); ?>" />
 											<div class="separator"></div>
 											<textarea class="form-control" rows="3" name="block_left_content" placeholder="Input here the content for the left block..." ><?php echo set_value('block_left_content', $accomp_left_content); ?></textarea>
@@ -297,7 +305,9 @@
 									</div>
 									<div class="col-xs-4 ">
 										<div class="feature-box ph-20 text-center">
-											<span class="icon default-bg circle large"><i class="fa fa-users"></i></span>
+											<span class="icon default-bg circle large"><i class="<?php echo $accomp_center_icon ?>"></i></span>
+											<input type="text" name="block_center_icon" class="form-control" placeholder="Input here the icon of the center block..." value="<?php echo set_value('block_center_icon', $accomp_center_icon) ?>" />
+											<div class="separator"></div>
 											<input type="text" name="block_center_title" class="form-control" placeholder="Input here the title for the center block..." value="<?php echo set_value('block_center_title', $accomp_center_title); ?>" />
 											<div class="separator"></div>
 											<textarea class="form-control" rows="3" name="block_center_content" placeholder="Input here the content for the center block..." ><?php echo set_value('block_center_content', $accomp_center_content); ?></textarea>
@@ -305,7 +315,9 @@
 									</div>
 									<div class="col-xs-4 ">
 										<div class="feature-box ph-20 text-center">
-											<span class="icon default-bg circle large"><i class="fa fa-cog"></i></span>
+											<span class="icon default-bg circle large"><i class="<?php echo $accomp_right_icon ?>"></i></span>
+											<input type="text" name="block_right_icon" class="form-control" placeholder="Input here the icon of the right block..." value="<?php echo set_value('block_right_icon', $accomp_right_icon) ?>" />
+											<div class="separator"></div>
 											<input type="text" name="block_right_title" class="form-control" placeholder="Input here the title for the right block..." value="<?php echo set_value('block_right_title', $accomp_right_title); ?>" />
 											<div class="separator"></div>
 											<textarea class="form-control" rows="3" name="block_right_content" placeholder="Input here the content for the right block..." ><?php echo set_value('block_right_content', $accomp_right_content); ?></textarea>
@@ -319,7 +331,9 @@
 				</div>
 				<!-- accomplishments section modifier end -->
 			</div>
-			<!-- header-container end -->
+			<!-- content-container end -->
+		</div>
+		<!-- page wrapper end -->
 			<!-- JavaScript files placed at the end of the document so the pages load faster -->
 			<!-- ================================================== -->
 			<!-- Jquery and Bootstap core js files -->
@@ -361,5 +375,5 @@
 			<script src="/assets/plugins/vide/jquery.vide.js"></script>
 			<!-- Custom Scripts -->
 			<script type="text/javascript" src="/assets/js/custom.js"></script>
-		</body>
-	</html>
+	</body>
+</html>
