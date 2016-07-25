@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Admin | Landing</title>
+        <title>Admin | Projects</title>
         <meta name="Enactus | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
         <meta name="author" content="htmlcoder.me">
         <!-- Mobile Meta -->
@@ -217,22 +217,74 @@
             <!-- header-container end -->
 
             <!-- content-container start -->
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-2">
                         <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3>Navigation</h3>
-                            </div>
+                            <div class="panel-heading">Viewing</div>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="#viewRunningProjects">View Projects</a></li>
+                                <li class="list-group-item"><a href="#viewApplicants">View Founders</a></li>
+                                <li class="list-group-item"><a href="#viewApplicants">View Cofounders</a></li>
+                                <li class="list-group-item"><a href="#viewApplicants">View Passive Members</a></li>
+                                <li class="list-group-item"><a href="#viewApplicants">View Partners</a></li>
+                            </ul>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Creating</div>
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="#createProject">Add New Project (Founder)</a></li>
+                                <li class="list-group-item"><a href="#createCofounder">Add New Cofounder</a></li>
+                                <li class="list-group-item"><a href="#createPassiveMember">Add New Passive Member</a></li>
+                                <li class="list-group-item"><a href="#createPartner">Add New Partner</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-10">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Use this form to create a new project</div>
                             <div class="panel-body">
-                                <table class="table-hover">
-                                    <tbody>
-                                        <tr>View Projects</tr>
-                                        <tr>Create New Project</tr>
-                                        <tr></tr>
-                                    </tbody>
-                                </table>
+                                <form action="/Admin_edit/newCofounder" method="POST">
+                                            <div class="form-group">
+                                                <label>Input name of founder:</label>
+                                                <input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
+                                                <input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Input contact details of founder:</label>
+                                                <input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
+                                                <input type="text" class="form-control" name="phone_number" placeholder="06 12 34 56 78">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Input founder date of birth:</label>
+                                                <input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Input founder study:</label>
+                                                <select name="study" class="form-control">
+                                                    <option></option>
+                                                    <option value="IBA">IBA</option>
+                                                    <option value="IBEB">IBEB</option>
+                                                    <option value="IBCOM">IBCOM</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Input the project idea: </label>
+                                                <input type="text" class="form-control" name="title" placeholder="Give your idea a catchy name" style="margin-bottom: 1rem;">
+                                                <textarea class="form-control" rows="5" name="idea" placeholder="Tell us about your idea in a few sentences"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Input the project motivation</label>
+                                                <textarea class="form-control" rows="5" name="motivation" placeholder="Tell us about why you want to pursue this idea in a few sentences"></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-default">Submit</button>
+                                            </div>
+                                            <input type="hidden" name="statusMember" value="founder"/>
+                                            <input type="hidden" name="statusProject" value="concept">
+                                </form>
                             </div>
+
                         </div>
                     </div>
                 </div>

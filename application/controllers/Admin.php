@@ -72,7 +72,7 @@ class Admin extends CI_Controller
 		}
 	}
 
-	public function project_admin()
+	public function founder_admin()
 	{
 		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
 		{
@@ -83,8 +83,24 @@ class Admin extends CI_Controller
 		{
 			$this->load->model('Admin_model');
 			
-			$this->load->view('/admin/project_admin');
-		}	}
+			$this->load->view('/admin/founder_admin');
+		}	
+	}
+
+	public function projects_admin()
+	{
+		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+		{
+			$this->session->set_flashdata('errors', "Nice try. Please login first.");
+			redirect('/Admin');
+		}
+		else
+		{
+			$this->load->model('Admin_model');
+			$viewdata= $this->Admin_model->viewProjects();
+			$this->load->view('/Admin/projects_admin', $viewdata);
+		}	
+	}
 
 }
 

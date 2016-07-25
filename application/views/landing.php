@@ -239,7 +239,8 @@
 											<div class="form-group">
 												<button type="submit" class="btn btn-default">Submit</button>
 											</div>
-											<input type="hidden" name="status" value="founder"/>
+											<input type="hidden" name="statusMember" value="founder"/>
+											<input type="hidden" name="statusProject" value="concept"/>
 										</form>
 									</div>
 								</div>

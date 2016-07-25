@@ -197,7 +197,7 @@
 															<a href="#teams">Teams</a>
 														</li>
 														<li>
-															<a href="/Admin/project_admin">Project Admin</a>
+															<a href="/Admin/founder_admin">Project Admin</a>
 														</li>
 													</ul>
 													<!-- main-menu end -->
