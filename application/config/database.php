@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'root',
-	'database' => 'EnactusDB',
+	'hostname' => 'sql7.freesqldatabase.com',
+	'username' => 'sql7128807',
+	'password' => 'e2KQxQ4l7W',
+	'database' => 'sql7128807',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
