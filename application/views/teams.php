@@ -708,8 +708,8 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			
+			</section>
 
 		<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
 		<!-- ================ -->

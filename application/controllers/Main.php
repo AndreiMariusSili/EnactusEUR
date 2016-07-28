@@ -37,5 +37,10 @@ class Main extends CI_Controller
 	{
 		$this->load->view('success');
 	}
+
+	public function teamsbeta()
+	{
+		$this->load->view('teamsbeta');
+	}
 }
 ?>
