@@ -141,8 +141,24 @@ footer.dark {
   transform: rotateY(180deg);
 }
 
+.title_teams_page{
+  color: #FFFFFF !important;
+}
+
 .team_member_text{
-  margin-top: 11px;
+  margin-top: 1rem;
   color: #333333 !important;
-  background-color: #FEFEFE !important;
+}
+
+.container_teams{
+  height: 120rem;
+  padding-top: 2rem;
+}
+
+.container_teams_team{
+  margin-top: 28rem;
+}
+
+.container_team_member{
+  margin: 1rem;
 }
