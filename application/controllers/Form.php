@@ -68,7 +68,7 @@ class Form extends CI_Controller
 		{
 			$this->load->model("Form_model");
 			$post = $this->input->post(NULL, TRUE);
-			$this->Form_model->founder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["title"], $post["idea"], $post["status"], $post["motivation"]);
+			$this->Form_model->founder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["title"], $post["idea"], $post["statusMember"], $post["statusProject"], $post["motivation"]);
 			redirect ("/Main/success");
 		}
 	}

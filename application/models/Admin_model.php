@@ -15,7 +15,10 @@ class Admin_model extends CI_Model
 	    $data = $query->row();
 	    return $data;
 	}
-
+	public function viewProjects()
+	{
+		return $this->db->get('projects')->result_array();
+	}
 }
 
 ?>

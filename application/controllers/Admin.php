@@ -72,7 +72,7 @@ class Admin extends CI_Controller
 		}
 	}
 
-	public function project_admin()
+	public function dashboard()
 	{
 		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
 		{
@@ -81,11 +81,134 @@ class Admin extends CI_Controller
 		}
 		else
 		{
-			$this->load->model('Admin_model');
-			
-			$this->load->view('/admin/project_admin');
-		}	}
+			$this->load->view('/admin/dashboard');
+		}	
+	}
 
+    public function projects_view()
+    {
+		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+		{
+			$this->session->set_flashdata('errors', "Nice try. Please login first.");
+			redirect('/Admin');
+		}
+		else
+		{
+			$this->load->view('/admin/projects_view');
+		}
+    }
+
+    public function founders_view()
+    {
+		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+		{
+			$this->session->set_flashdata('errors', "Nice try. Please login first.");
+			redirect('/Admin');
+		}
+		else
+		{
+			$this->load->view('/admin/founders_view');
+		}
+    }
+
+    public function cofounders_view()
+    {
+		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+		{
+			$this->session->set_flashdata('errors', "Nice try. Please login first.");
+			redirect('/Admin');
+		}
+		else
+		{
+			$this->load->view('/admin/cofounders_view');
+		}
+    }
+
+    public function passives_view()
+    {
+		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+		{
+			$this->session->set_flashdata('errors', "Nice try. Please login first.");
+			redirect('/Admin');
+		}
+		else
+		{
+			$this->load->view('/admin/passives_view');
+		}
+    }
+
+    public function partners_view()
+    {
+		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+		{
+			$this->session->set_flashdata('errors', "Nice try. Please login first.");
+			redirect('/Admin');
+		}
+		else
+		{
+			$this->load->view('/admin/partners_view');
+		}
+    }
+
+    public function founders_create()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+            
+            $this->load->view('/admin/founders_create');
+        }   
+    }
+
+    public function cofounders_create()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+            
+            $this->load->view('/admin/cofounders_create');
+        }   
+    }
+
+    public function passives_create()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+            
+            $this->load->view('/admin/passives_create');
+        }   
+    }
+
+    public function partners_create()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+            
+            $this->load->view('/admin/partners_create');
+        }   
+    }
 }
 
 ?>

@@ -71,4 +71,57 @@ class Admin_edit_model extends CI_Model
 	    );
 	    $this->db->update('landing_admin', $data);
 	}
+	public function newFounder($first_name, $last_name, $email, $phone_number, $dob, $study, $title, $idea, $statusMember, $statusProject, $motivation)
+	{
+		//insert data for new member
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, status, updated_at) VALUES (?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $statusMember, date("Y-m-d, H:i:s"));
+		$this->db->query($query, $values);
+
+		//retrieve new member id
+		$query = $this->db->query("SELECT id FROM members ORDER BY id DESC LIMIT 1");
+		$result = $query->row_array();
+
+		//register new project
+		$query = "INSERT INTO projects (members_id, project_title, project_description, project_motivation, status,  updated_at) VALUES (?,?,?,?,?,?)";
+		$values = array($result['id'], $title, $idea, $motivation, $statusProject, date("Y-m-d, H:i:s"));
+		$this->db->query($query, $values);
+	}
+
+	public function newCofounder($first_name, $last_name, $email, $phone_number, $dob, $study, $preference, $status ,$motivation)
+	{
+		//insert data for new member
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, status, updated_at) VALUES (?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $status, date("Y-m-d, H:i:s"));
+		$this->db->query($query, $values);
+
+		//retrieve new member id
+		$query = $this->db->query("SELECT id FROM members ORDER BY id DESC LIMIT 1");
+		$member = $query->row_array();
+
+		//retrieve project id
+		$query = $this->db->query("SELECT id FROM projects WHERE project_title = '{$preference}'");
+		$project = $query->row_array();
+
+		// register new application
+		$query = "INSERT INTO applications (members_id, projects_id, project_preference, apply_motivation, updated_at) VALUES (?,?,?,?,?)";
+		$values = array($member['id'], $project['id'], $preference, $motivation, date("Y-m-d, H:i:s"));
+		$this->db->query($query, $values);	
+	}
+
+    public function newPassive($first_name, $last_name, $email, $phone_number, $dob, $study, $status ,$motivation)
+    {
+        //insert data for new member
+        $query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, status, updated_at) VALUES (?,?,?,?,?,?,?,?)";
+        $values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $status, date("Y-m-d, H:i:s"));
+        $this->db->query($query, $values);
+    }
+
+	public function newPartner($first_name, $last_name, $email, $phone_number, $organization, $motivation)
+	{
+		//insert data for new member
+		$query = "INSERT INTO partners (first_name, last_name, email, phone, organization, interest, updated_at) VALUES (?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $organization, $motivation, date("Y-m-d, H:i:s"));
+		$this->db->query($query, $values);
+	}
 }
