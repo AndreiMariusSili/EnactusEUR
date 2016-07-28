@@ -42,7 +42,8 @@
 
         <?php $this->load->helper('form'); ?>
     </head>
-    <body>
+    <body class="no-trans  transparent-header  ">
+        
         <!-- page wrapper start -->
         <!-- ================ -->
         <div class="page-wrapper">
@@ -196,7 +197,7 @@
                                                             <a href="/Admin/teams_admin">Teams</a>
                                                         </li>
                                                         <li>
-                                                            <a href="/Admin/projects_view">Project Admin</a>
+                                                            <a href="/Admin/dashboard">Project Admin</a>
                                                         </li>
                                                     </ul>
                                                     <!-- main-menu end -->
@@ -215,35 +216,3 @@
                 </header>
             </div>
             <!-- header-container end -->
-
-            <!-- content-container start -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-2">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Viewing</div>
-                            <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
-                                <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>
-                            </ul>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Creating</div>
-                            <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/founders_create">Add New Founder</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_create">Add New Cofounder</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_create">Add New Passive Member</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_create">Add New Partner</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xs-10">
-                        <h1>This is the Passives view.</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
