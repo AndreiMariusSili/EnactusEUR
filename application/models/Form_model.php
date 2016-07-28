@@ -4,11 +4,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Form_model extends CI_Model
 {
 	
-	public function founder($first_name, $last_name, $email, $phone_number, $dob, $study, $title, $idea, $status, $motivation)
+	public function founder($first_name, $last_name, $email, $phone_number, $dob, $study, $title, $idea, $statusMember, $statusProject, $motivation)
 	{
 		//insert data for new member
 		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, status, updated_at) VALUES (?,?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $status, date("Y-m-d, H:i:s"));
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $statusMember, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 
 		//retrieve new member id
@@ -16,8 +16,8 @@ class Form_model extends CI_Model
 		$result = $query->row_array();
 
 		//register new project
-		$query = "INSERT INTO projects (members_id, project_title, project_description, project_motivation, updated_at) VALUES (?,?,?,?,?)";
-		$values = array($result['id'], $title, $idea, $motivation, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO projects (members_id, project_title, project_description, project_motivation, status,  updated_at) VALUES (?,?,?,?,?,?)";
+		$values = array($result['id'], $title, $idea, $motivation, $statusProject, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 	}
 

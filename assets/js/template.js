@@ -1262,9 +1262,9 @@
 				});
 			} else {
 				$(".video-background").vide({
-					mp4: "/assets/videos/background-video-2.mp4",
-					webm: "/assets/videos/background-video-2.webm",
-					poster: "/assets/videos/video-poster-2.jpg"
+					mp4: "/assets/videos/background-video.mp4",
+					webm: "/assets/videos/background-video.webm",
+					poster: "/assets/videos/video-poster.jpg"
 				}, {
 					volume: 1,
 					playbackRate: 1,
@@ -1277,39 +1277,6 @@
 				});
 			};
 
-		};
-		if($(".video-background-banner").length>0) {
-			if (Modernizr.touch) {
-				$(".video-background-banner").vide({
-					mp4: "/assets/videos/background-video-banner-.mp4",
-					webm: "/assets/videos/background-video-banner.webm",
-					poster: "/assets/videos/video-fallback.jpg"
-				}, {
-					volume: 1,
-					playbackRate: 1,
-					muted: true,
-					loop: true,
-					autoplay: true,
-					position: "50% 50%", // Similar to the CSS `background-position` property.
-					posterType: "jpg", // Poster image type. "detect" — auto-detection; "none" — no poster; "jpg", "png", "gif",... - extensions.
-					resizing: true
-				});
-			} else {
-				$(".video-background-banner").vide({
-					mp4: "/assets/videos/background-video-banner.mp4",
-					webm: "/assets/videos/background-video-banner.webm",
-					poster: "/assets/videos/video-banner-poster.jpg"
-				}, {
-					volume: 1,
-					playbackRate: 1,
-					muted: true,
-					loop: true,
-					autoplay: true,
-					position: "50% 50%", // Similar to the CSS `background-position` property.
-					posterType: "jpg", // Poster image type. "detect" — auto-detection; "none" — no poster; "jpg", "png", "gif",... - extensions.
-					resizing: true
-				});
-			};
 		};
 		//Scroll totop
 		//-----------------------------------------------
