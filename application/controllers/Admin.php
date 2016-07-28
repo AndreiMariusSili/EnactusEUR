@@ -72,6 +72,19 @@ class Admin extends CI_Controller
 		}
 	}
 
+    public function teams_admin()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {       
+            $this->load->view('/admin/teams_admin');
+        }
+    }
+
 	public function dashboard()
 	{
 		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
