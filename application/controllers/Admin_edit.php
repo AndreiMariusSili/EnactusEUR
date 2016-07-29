@@ -90,4 +90,54 @@ class Admin_edit extends CI_Controller
         $this->Admin_edit_model->newPartner($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["organization"], $post["motivation"]);
         redirect('/Admin/passives_create');
     }
+
+    public function teams_create()
+    {
+        $this->load->model('Admin_edit_model');
+
+        $post=$this->input->post(NULL, TRUE);
+        $this->Admin_edit_model->teams_create($post['title']);
+        redirect('/Admin/teams_admin_teams');
+    }
+
+    public function teams_delete()
+    {
+        $team = $this->uri->segment(3);
+        $this->load->model('Admin_edit_model');
+        $this->Admin_edit_model->teams_delete($team);
+
+        redirect('/Admin/teams_admin_teams');
+    }
+
+    public function members_create()
+    {
+        $this->load->helper('url');
+        $this->load->library('upload');
+        $this->load->model('Admin_edit_model');
+
+        $post=$this->input->post(NULL, TRUE);
+        $photo_path = '/Users/Andrei/Sites/GitHub/EnactusMVC/assets/images/members/' . $post["first_name"] . "_" . $post["last_name"] . '_' . $post["team"];
+        $this->Admin_edit_model->members_create($post["first_name"], $post["last_name"], $post["function"], $post["linkedin"], $post["mail"], $post["quote"], $post["team"], $photo_path);
+
+        $config['upload_path'] = '/Users/Andrei/Sites/GitHub/EnactusMVC/assets/images/members/';
+        $config['allowed_types'] = 'jpg|tif|png|gif';
+        $config['file_name'] = $post["first_name"] . '_' . $post["last_name"] . "_" . $post["team"];
+        $config['overwrite'] = TRUE;
+
+        $this->upload->initialize($config);
+        $this->upload->do_upload('photo');
+
+        redirect('/Admin/teams_admin_members');
+    }
+
+    public function members_delete()
+    {
+        $team = $this->uri->segment(3);
+        $this->load->model('Admin_edit_model');
+        $this->Admin_edit_model->members_delete($team);
+
+        redirect('/Admin/teams_admin_members');
+    }
+
+
 }

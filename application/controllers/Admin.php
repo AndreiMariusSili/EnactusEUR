@@ -72,7 +72,7 @@ class Admin extends CI_Controller
 		}
 	}
 
-    public function teams_admin()
+    public function teams_admin_teams()
     {
         if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
         {
@@ -81,7 +81,26 @@ class Admin extends CI_Controller
         }
         else
         {       
-            $this->load->view('/admin/teams_admin');
+            $this->load->model('Admin_edit_model');
+
+            $data['teams']=$this->Admin_edit_model->teams_get();
+            $this->load->view('/admin/teams_admin_teams', $data);
+        }
+    }
+
+    public function teams_admin_members()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_edit_model');
+            $data['teams']=$this->Admin_edit_model->teams_get();
+            $data['members']=$this->Admin_edit_model->members_get();
+            $this->load->view('/admin/teams_admin_members', $data);
         }
     }
 
