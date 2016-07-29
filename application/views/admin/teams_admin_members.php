@@ -225,8 +225,8 @@
                                 <h3 class="panel-title">Navigation</h3>
                             </div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/teams_admin_teams">Add new team</a></li>
-                                <li class="list-group-item"><a href="/Admin/teams_admin_members">Add a new team member</a></li>
+                                <li class="list-group-item"><a href="/Admin/teams_admin_teams">Manage teams</a></li>
+                                <li class="list-group-item"><a href="/Admin/teams_admin_members">Manage team members</a></li>
                             </ul>
                         </div>
                     </div>

@@ -10,7 +10,6 @@ class Admin extends CI_Controller
 
 	public function login()
 	{
-		$this->load->library('encrypt');
 		$this->load->helper('security');
 		$this->load->library('form_validation');
 
@@ -39,7 +38,7 @@ class Admin extends CI_Controller
 			$password = $this->input->post('password');
 			$auth = $this->Admin_model->login($username);
 			$auth_password = $auth['password'];
-			if($password <> $auth_password)
+            if(!password_verify($password, $auth_password))
 			{
 				$this->session->set_flashdata('errors', "Username and password don't match.");
 				redirect("/Admin");
