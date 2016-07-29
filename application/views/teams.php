@@ -73,12 +73,12 @@
 					</ul>
 					<div class="separator mt-10"></div>
 					<ul class="nav navbar-nav text-center">
-						<li><a href="/">Home</a></li>
+						<li><a href="/Main/landing">Home</a></li>
 						<li><a href="/Main/ventures">Ventures</a></li>
 						<li class="dropdown active">
 							<a href="/Main/teams" class="dropdown-toggle" data-toggle="dropdown">Teams</a>
 							<ul class="dropdown-menu">
-								<li class="active"><a href="/Main/teams">2016/2017</a></li>
+								<li class="active"><a href="#">2016/2017</a></li>
 								<li><a href="#">Previous Years</a></li>
 							</ul>
 						</li>
