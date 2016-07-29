@@ -148,17 +148,19 @@ footer.dark {
 .team_member_text{
   margin-top: 1rem;
   color: #333333 !important;
+  font-size: 1.1em;
+}
+
+.fix_teams_container{
+  margin-top: -2rem;
+  margin-bottom: 1rem;
 }
 
 .container_teams{
-  height: 120rem;
-  padding-top: 2rem;
-}
-
-.container_teams_team{
-  margin-top: 28rem;
+  margin-bottom: 25rem;
 }
 
 .container_team_member{
-  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
