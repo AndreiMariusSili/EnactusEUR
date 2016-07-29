@@ -113,24 +113,31 @@
 
 			<!-- section start - year with separator -->
 			<!-- ================ -->
-			<section class="main-container container_teams pv-40 clearfix">
-				<div class="container">
-					<div class="row">
+			<section class="main-container pv-40 clearfix">
+				<div class="container fix_teams_container">
+					<div class="row" style="margin-bottom: 2rem;">
 						<div class="main col-md-12">
 							<h2 class="text-center"><strong>2016/2017</strong></h2>
 								<div class="separator"></div>
+						</div>
+					</div>
 					
 			<!-- section end - year with separator -->
 
 			<!-- Enactus members start-->
 			<!-- ================ -->
 				<!-- Enactus board start -->
-				<h3 class="page-title">The board</h3>
-					<div class="row grid-space-10">
-
+			<div class="container_teams">
+				<div class="row">
+					<div class="main col-md-12">
+						<h3 class="page-title">The board</h3>
+					</div>
+				</div>
+					
+				<div class="row">
 						<!-- Person 1 - start -->
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
 						<div class="container_team_member">
-						<div class="col-sm-6 col-md-3">
 							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  									<div class="flipper">
@@ -157,8 +164,8 @@
 						<!-- Person 1 - end -->
 						
 						<!-- Person 2 - start -->
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
 						<div class="container_team_member">
-						<div class="col-sm-6 col-md-3">
 							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  									<div class="flipper">
@@ -185,8 +192,8 @@
 						<!-- Person 2 - end -->
 						
 						<!-- Person 3 - start -->
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
 						<div class="container_team_member">
-						<div class="col-sm-6 col-md-3">
 							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  									<div class="flipper">
@@ -213,8 +220,8 @@
 						<!-- Person 3 - end -->
 						
 						<!-- Person 4 - start -->
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
 						<div class="container_team_member">
-						<div class="col-sm-6 col-md-3">
 							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  									<div class="flipper">
@@ -241,8 +248,8 @@
 						<!-- Person 4 - end -->
 						
 						<!-- Person 5 - start -->
-						<div class="container_team_member">
-							<div class="col-sm-6 col-md-3">
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
+							<div class="container_team_member">
 								<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  										<div class="flipper">
@@ -267,18 +274,22 @@
 							</div>
 						</div>
 						<!-- Person 5 - end -->
-
-					</div>
-								
+				</div>	
+			</div>
 				<!-- Enactus board end -->
 				
 				<!-- Team 1 start -->
-				<div class="container_teams_team">
-				<h3 class="page-title">Team Alfa</h3>
-					<div class="row grid-space-10">
+			<div class="container_teams">
+				<div class="row">
+					<div class="main col-md-12">
+						<h3 class="page-title">Team Alfa</h3>
+					</div>
+				</div>
 
+				<div class="row">
 						<!-- Person 1 - start -->
-						<div class="col-sm-6 col-md-3">
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
+						<div class="container_team_member">
 							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  									<div class="flipper">
@@ -301,10 +312,12 @@
 								</div>
 							</div>
 						</div>
+						</div>
 						<!-- Person 1 - end -->
 						
 						<!-- Person 2 - start -->
-						<div class="col-sm-6 col-md-3">
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
+						<div class="container_team_member">
 							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  									<div class="flipper">
@@ -327,10 +340,12 @@
 								</div>
 							</div>
 						</div>
+						</div>
 						<!-- Person 2 - end -->
 						
 						<!-- Person 3 - start -->
-						<div class="col-sm-6 col-md-3">
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
+						<div class="container_team_member">
 							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  									<div class="flipper">
@@ -353,10 +368,12 @@
 								</div>
 							</div>
 						</div>
+						</div>
 						<!-- Person 3 - end -->
 						
 						<!-- Person 4 - start -->
-						<div class="col-sm-6 col-md-3">
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
+						<div class="container_team_member">
 							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  									<div class="flipper">
@@ -379,19 +396,25 @@
 								</div>
 							</div>
 						</div>
-						<!-- Person 4 - end -->
-					
-					</div>
-				</div>				
+						</div>
+						<!-- Person 4 - end -->					
+				</div>	
+			</div>		
 				<!-- Team 1 end -->
 				
 				<!-- Team 2 start -->
-				<div class="container_teams_team">
-				<h3 class="page-title">Team Beta</h3>
-					<div class="row grid-space-10">
+			<div class="container_teams">
+				<div class="row">
+					<div class="main col-md-12">
+						<h3 class="page-title">Team Beta</h3>
+					</div>
+				</div>
+				
+				<div class="row">
 
 						<!-- Person 1 - start -->
-						<div class="col-sm-6 col-md-3">
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
+						<div class="container_team_member">
 							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  									<div class="flipper">
@@ -414,10 +437,12 @@
 								</div>
 							</div>
 						</div>
+						</div>
 						<!-- Person 1 - end -->
 						
 						<!-- Person 2 - start -->
-						<div class="col-sm-6 col-md-3">
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
+						<div class="container_team_member">
 							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  									<div class="flipper">
@@ -440,10 +465,12 @@
 								</div>
 							</div>
 						</div>
+						</div>
 						<!-- Person 2 - end -->
 						
 						<!-- Person 3 - start -->
-						<div class="col-sm-6 col-md-3">
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
+						<div class="container_team_member">
 							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  									<div class="flipper">
@@ -466,10 +493,12 @@
 								</div>
 							</div>
 						</div>
+						</div>
 						<!-- Person 3 - end -->
 						
 						<!-- Person 4 - start -->
-						<div class="col-sm-6 col-md-3">
+						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
+						<div class="container_team_member">
 							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
 								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
  									<div class="flipper">
@@ -492,16 +521,14 @@
 								</div>
 							</div>
 						</div>
-						<!-- Person 4 - end -->
-					
-					</div>
-				</div>				
+						</div>
+						<!-- Person 4 - end -->					
+				</div>
+			</div>
 				<!-- Team 2 end -->
 								
 			<!-- Enactus members end -->		
 
-						</div>
-					</div>
 				</div>
 			</section>
 
