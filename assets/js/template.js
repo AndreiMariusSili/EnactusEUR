@@ -1264,7 +1264,7 @@
 				$(".video-background").vide({
 					mp4: "/assets/videos/background-video.mp4",
 					webm: "/assets/videos/background-video.webm",
-					poster: "/assets/videos/video-poster.jpg"
+					poster: "/assets/videos/background-video-poster.jpg"
 				}, {
 					volume: 1,
 					playbackRate: 1,
