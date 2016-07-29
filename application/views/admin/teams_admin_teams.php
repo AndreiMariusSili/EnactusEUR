@@ -42,7 +42,8 @@
 
         <?php $this->load->helper('form'); ?>
     </head>
-    <body>
+    <body class="no-trans  transparent-header  ">
+        
         <!-- page wrapper start -->
         <!-- ================ -->
         <div class="page-wrapper">
@@ -196,7 +197,7 @@
                                                             <a href="/Admin/teams_admin_teams">Teams</a>
                                                         </li>
                                                         <li>
-                                                            <a href="/Admin/projects_view">Project Admin</a>
+                                                            <a href="/Admin/dashboard">Project Admin</a>
                                                         </li>
                                                     </ul>
                                                     <!-- main-menu end -->
@@ -215,35 +216,109 @@
                 </header>
             </div>
             <!-- header-container end -->
-
             <!-- content-container start -->
-            <div class="container-fluid">
+            <div class="container">
+                <!-- new tema register start -->
                 <div class="row">
                     <div class="col-xs-2">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Viewing</div>
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Navigation</h3>
+                            </div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
-                                <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>
-                            </ul>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Creating</div>
-                            <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/founders_create">Add New Founder</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_create">Add New Cofounder</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_create">Add New Passive Member</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_create">Add New Partner</a></li>
+                                <li class="list-group-item"><a href="/Admin/teams_admin_teams">Add new team</a></li>
+                                <li class="list-group-item"><a href="/Admin/teams_admin_members">Add a new team member</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xs-10">
-                        <h1>This is the Dashboard.</h1>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Use this form to register a new team.</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form action="/Admin_edit/teams_create" method="POST">
+                                    <input type="text" name="title" class="form-control" placeholder="Register new team..." />
+                                    <button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <!-- new team register end -->
+                <!-- display teams start -->
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-2">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">This panel shows all teams created so far.</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul class="list-group">
+                                    <?php foreach($teams as $row) { ?>
+                                        <form id="team" class="form-inline" action="/Admin_edit/teams_delete/<?php echo $row['title']; ?>" method="POST"></form>
+                                            <li class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-xs-9">
+                                                        <?php echo $row['title']; ?>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                         <button type="submit" form="team" class="btn btn-danger" >Delete</button>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                    <?php } ?>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- display teams end -->
             </div>
+            <!-- content-container end -->
         </div>
+        <!-- page wrapper end -->
+            <!-- JavaScript files placed at the end of the document so the pages load faster -->
+            <!-- ================================================== -->
+            <!-- Jquery and Bootstap core js files -->
+            <script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
+            <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+            <!-- Modernizr javascript -->
+            <script type="text/javascript" src="/assets/plugins/modernizr.js"></script>
+            <!-- jQuery Revolution Slider  -->
+            <script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+            <script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+            <script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+            <script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+            <!-- Jasny Bootstrap  -->
+            <script type="text/javascript" src="/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
+            <!-- Isotope javascript -->
+            <script type="text/javascript" src="/assets/plugins/isotope/isotope.pkgd.min.js"></script>
+            <!-- Magnific Popup javascript -->
+            <script type="text/javascript" src="/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+            <!-- Appear javascript -->
+            <script type="text/javascript" src="/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+            <!-- Count To javascript -->
+            <script type="text/javascript" src="/assets/plugins/jquery.countTo.js"></script>
+            <!-- Parallax javascript -->
+            <script src="/assets/plugins/jquery.parallax-1.1.3.js"></script>
+            <!-- Contact form -->
+            <script src="/assets/plugins/jquery.validate.js"></script>
+            <!-- Morphext -->
+            <script type="text/javascript" src="/assets/plugins/morphext/morphext.min.js"></script>
+            <!-- Pace javascript -->
+            <script type="text/javascript" src="/assets/plugins/pace/pace.min.js"></script>
+            <!-- Owl carousel javascript -->
+            <script type="text/javascript" src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
+            <!-- SmoothScroll javascript -->
+            <script type="text/javascript" src="/assets/plugins/jquery.browser.js"></script>
+            <script type="text/javascript" src="/assets/plugins/SmoothScroll.js"></script>
+            <!-- Initialization of Plugins -->
+            <script type="text/javascript" src="/assets/js/template.js"></script>
+            <!-- Background Video -->
+            <script src="/assets/plugins/vide/jquery.vide.js"></script>
+            <!-- Custom Scripts -->
+            <script type="text/javascript" src="/assets/js/custom.js"></script>
     </body>
+</html>

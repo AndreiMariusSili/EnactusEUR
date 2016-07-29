@@ -124,4 +124,51 @@ class Admin_edit_model extends CI_Model
 		$values = array($first_name, $last_name, $email, $phone_number, $organization, $motivation, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 	}
+
+	public function teams_create($title)
+	{
+	    $query = "INSERT INTO teams_admin_teams (title, updated_at) VALUES(?,?)";
+	    $values = array($title, date("Y-m-d, H:i:s"));
+	    $this->db->query($query, $values);
+	}
+
+	public function teams_get()
+	{
+	   $query ="SELECT title FROM teams_admin_teams";
+	   $result = $this->db->query($query)->result_array();
+	   return $result;
+	}
+
+	public function teams_delete($title)
+	{
+		$team_id = $this->db->query("SELECT id FROM teams_admin_teams WHERE title='{$title}'")->row_array();
+	    $this->db->delete('teams_admin_teams', array('title' => $title ));
+	    $this->db->delete('teams_admin_members', array('teams_admin_team_id' => $team_id['id']));
+	}
+
+	public function members_create($first_name, $last_name, $function, $linkedin, $mail, $quote, $team, $photo_path)
+	{
+	    $team_id = $this->db->query("SELECT id FROM teams_admin_teams WHERE title='{$team}'")->row_array();
+
+	    $query = "INSERT INTO teams_admin_members (teams_admin_team_id, first_name, last_name, function, linkedin, mail, quote, photo_path, updated_at) VALUES(?,?,?,?,?,?,?,?,?);";
+	    $values= array($team_id['id'], $first_name, $last_name, $function, $linkedin, $mail, $quote, $photo_path, date("Y-m-d, H:i:s"));
+
+	    $this->db->query($query, $values);
+	}
+
+	public function members_get()
+	{
+	    $query ="SELECT teams_admin_members.id, teams_admin_members.first_name, teams_admin_members.last_name, teams_admin_teams.title AS team
+					FROM teams_admin_members
+					INNER JOIN teams_admin_teams
+					ON teams_admin_teams.id = teams_admin_members.teams_admin_team_id
+					ORDER BY teams_admin_teams.title ASC, teams_admin_members.updated_at DESC;";
+		$result = $this->db->query($query)->result_array();
+		return $result;
+	}
+
+	public function members_delete($id)
+	{
+	    $this->db->delete('teams_admin_members', array('id' => $id ));
+	}
 }

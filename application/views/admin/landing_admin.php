@@ -194,7 +194,7 @@
 															<a href="#ventures">Ventures</a>
 														</li>
 														<li>
-															<a href="/Admin/teams_admin">Teams</a>
+															<a href="/Admin/teams_admin_teams">Teams</a>
 														</li>
 														<li>
 															<a href="/Admin/dashboard">Project Admin</a>
