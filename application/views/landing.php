@@ -73,7 +73,13 @@
 					<ul class="nav navbar-nav text-center">
 						<li class="active"><a href="/">Home</a></li>
 						<li><a href="/Main/ventures">Ventures</a></li>
-						<li><a href="/Main/teams">Teams</a></li>
+						<li class="dropdown">
+							<a href="/Main/teams" class="dropdown-toggle" data-toggle="dropdown">Teams</a>
+							<ul class="dropdown-menu">
+								<li><a href="/Main/teams">2016/2017</a></li>
+								<li><a href="#">Previous Years</a></li>
+							</ul>
+						</li>
 					</ul>
 				</nav>
 				<button type="button" class="offcanvas-toggle-left navbar-toggle animation_loop" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
