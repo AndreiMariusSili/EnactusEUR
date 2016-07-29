@@ -194,7 +194,7 @@
 															<a href="#ventures">Ventures</a>
 														</li>
 														<li>
-															<a href="#teams">Teams</a>
+															<a href="/Admin/teams_admin_teams">Teams</a>
 														</li>
 														<li>
 															<a href="/Admin/dashboard">Project Admin</a>
@@ -224,7 +224,7 @@
 					<div class="col-xs-12">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-								<h3 class="panel-title">Use this form to uplaod a new packground video and poster</h3>
+								<h3 class="panel-title">Use this form to uplaod a new background video and poster</h3>
 						</div>
 						<div class="panel-body">
 							<?php echo form_open_multipart('/Admin_edit/videoPosterUpload');?>

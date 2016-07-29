@@ -193,7 +193,7 @@
                                                             <a href="#ventures">Ventures</a>
                                                         </li>
                                                         <li>
-                                                            <a href="#teams">Teams</a>
+                                                            <a href="/Admin/teams_admin_teams">Teams</a>
                                                         </li>
                                                         <li>
                                                             <a href="/Admin/project_admin">Project Admin</a>
