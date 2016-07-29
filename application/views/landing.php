@@ -46,12 +46,10 @@
 	<!-- "transparent-header": makes the header transparent and pulls the banner to top -->
 	<!-- "gradient-background-header": applies gradient background to header -->
 	<!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
-	<body class="no-trans page-loader-1">
+	<body class="no-trans">
 		<!-- page wrapper start -->
 		<!-- ================ -->
 		<div class="page-wrapper">
-			
-			<div id="page-start"></div>
 			<!-- section start - offcanvas side -->
 			<!-- ================ -->
 			<section class="offcanvas-container">
@@ -452,8 +450,6 @@
 		<!-- Morphext -->
 		<script type="text/javascript" src="/assets/plugins/morphext/morphext.min.js"></script>
 		<!-- Pace javascript -->
-		<script type="text/javascript" src="/assets/plugins/pace/pace.min.js"></script>
-		<!-- Owl carousel javascript -->
 		<script type="text/javascript" src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
 		<!-- SmoothScroll javascript -->
 		<script type="text/javascript" src="/assets/plugins/jquery.browser.js"></script>
