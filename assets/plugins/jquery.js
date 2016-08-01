@@ -6,7 +6,7 @@
  * http://sizzlejs.com/
  *
  * Copyright jQuery Foundation and other contributors
- * Released under the MIT license
+ * Released under the MIT licensea
  * http://jquery.org/license
  *
  * Date: 2016-03-17T17:44Z
