@@ -14,6 +14,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 		<!-- Bootstrap core CSS -->
 		<link href="/assets/css/bootstrap.css" rel="stylesheet">
 		<!-- Font Awesome CSS -->
@@ -93,14 +94,14 @@
 			<header id="footer" class="clearfix dark">
 				<!-- .header start - background color-->
 				<!-- ================ -->
-				<div class="footer">
+				<div class="footer br-5">
 					<div class="container">
 						<div class="footer-inner">
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2">
 									<div class="footer-content text-center padding-ver-clear">
 										<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
-										<h1 class="title_teams_page page-title">Meet the Enactus people</h1>
+										<h1 class="title_teams_page large"><strong>Meet the  <span class="highlight-text">Enactus</span> people</strong></h1>
 									</div>
 								</div>
 							</div>
@@ -111,433 +112,56 @@
 			</header>
 			<!-- header end -->
 
-				<!-- section start - year with separator -->
+				<!-- section start - Enactus members -->
 				<!-- ================ -->
-				<section class="main-container pv-40 clearfix">
-					<div class="container fix_teams_container">
-						<div class="row" style="margin-bottom: 2rem;">
-							<div class="main col-md-12">
-								<h2 class="text-center"><strong>2016/2017</strong></h2>
-									<div class="separator"></div>
-							</div>
-						</div>
-					
-			<!-- section end - year with separator -->
-
-			<!-- Enactus members start-->
-			<!-- ================ -->
-				<!-- Enactus board start -->
-			<div class="container_teams">
-				<div class="row">
-					<div class="main col-md-12">
-						<h3 class="page-title">The board</h3>
-					</div>
-				</div>
-					
-				<div class="row">
-						<!-- Person 1 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-						<div class="container_team_member">
-							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 									<div class="flipper">
-    									<div class="front">
-											<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    									</div>
-    									<div class="back">
-    										<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-											<div class="body">
-												<h3 class="team_member_text">Alex Alex</h3>
-												<small class="team_member_text">CEO</small>
-													<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-												</ul>
-											</div>
-    									</div>
-  									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<!-- Person 1 - end -->
-						
-						<!-- Person 2 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-						<div class="container_team_member">
-							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 									<div class="flipper">
-    									<div class="front">
-											<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    									</div>
-    									<div class="back">
-    										<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-											<div class="body">
-												<h3 class="team_member_text">Bogdan Bogdan</h3>
-												<small class="team_member_text">CFO</small>
-													<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-												</ul>
-											</div>
-    									</div>
-  									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<!-- Person 2 - end -->
-						
-						<!-- Person 3 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-						<div class="container_team_member">
-							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 									<div class="flipper">
-    									<div class="front">
-											<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    									</div>
-    									<div class="back">
-    										<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-											<div class="body">
-												<h3 class="team_member_text">Chris Chris</h3>
-												<small class="team_member_text">CTO</small>
-													<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-												</ul>
-											</div>
-    									</div>
-  									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<!-- Person 3 - end -->
-						
-						<!-- Person 4 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-						<div class="container_team_member">
-							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 									<div class="flipper">
-    									<div class="front">
-											<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    									</div>
-    									<div class="back">
-    										<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-											<div class="body">
-												<h3 class="team_member_text">Dan Dan</h3>
-												<small class="team_member_text">HR</small>
-													<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-												</ul>
-											</div>
-    									</div>
-  									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<!-- Person 4 - end -->
-						
-						<!-- Person 5 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-							<div class="container_team_member">
-								<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-									<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 										<div class="flipper">
-    										<div class="front">
-												<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    										</div>
-    										<div class="back">
-    											<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-												<div class="body">
-													<h3 class="team_member_text">Ella Ella</h3>
-													<small class="team_member_text">Marketing & Sales</small>
-														<div class="separator mt-10"></div>
-													<ul class="social-links circle dark margin-clear">
-														<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-														<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-													</ul>
-												</div>
-    										</div>
-  										</div>
+				<!-- Team start -->
+				<?php $i=0; foreach($teams as $team) { ?>
+					<section class="container-teams main-container br-5 pv-40 clearfix <?php if($i % 2 === 0) { echo 'highlight-background'; } ?>">
+									<div class="row">
+										<div class="main col-xs-12">
+											<div class="separator"></div>
+											<h2 class="text-center"><strong><?php echo $team['title']; ?></strong></h2>
+											<div class="separator"></div>
+										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Person 5 - end -->
-				</div>	
-			</div>
-				<!-- Enactus board end -->
-				
-				<!-- Team 1 start -->
-			<div class="container_teams">
-				<div class="row">
-					<div class="main col-md-12">
-						<h3 class="page-title">Team Alfa</h3>
-					</div>
-				</div>
+									<div class="row">
+										<?php foreach($members as $member) { 
+											if($team['id'] === $member['teams_admin_team_id']) { ?>
+										<div class="col-sm-4">
+											<div class="image-box style-2 mb-20 br-5 dark-bg text-center object-non-visible" data-animation-effect="fadeIn" data-animation-duration='1s'>
+												<div class="overlay-container">
+													<img src="<?php echo $member['photo_path']; ?>" alt="<?php echo $member['first_name'] . ' ' . $member['last_name'] . 'Photo'; ?>">
+													<div class="overlay-top">
+														<h4><?php echo "{$member['first_name']} {$member['last_name']}"; ?></h4>
+														<h5><?php echo $member['function']; ?></h5>
+													</div>
+													<div class="overlay-bottom">
+														<ul class="social-links circle dark margin-clear">
+															<li class="linkedin"><a target="_blank" href="<?php echo $member['linkedin']; ?>"><i class="fa fa-linkedin"></i></a></li>
+															<li class="email"><a target="_blank" href="mailto: <?php echo $member['mail']; ?>"><i class="fa fa-envelope-o"></i></a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="body">
+													<p><?php echo $member['quote'] ?></p>
+												</div>
+											</div>
+										</div>
+										<?php 
+											};
+										}; ?>
+									</div>
+					</section>
+					<?php $i++; }; ?>
+					<!-- Team end -->
 
-				<div class="row">
-						<!-- Person 1 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-						<div class="container_team_member">
-							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 									<div class="flipper">
-    									<div class="front">
-											<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    									</div>
-    									<div class="back">
-    										<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-											<div class="body">
-												<h3 class="team_member_text">Alex Alex</h3>
-												<small class="team_member_text">CEO</small>
-													<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-												</ul>
-											</div>
-    									</div>
-  									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<!-- Person 1 - end -->
-						
-						<!-- Person 2 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-						<div class="container_team_member">
-							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 									<div class="flipper">
-    									<div class="front">
-											<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    									</div>
-    									<div class="back">
-    										<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-											<div class="body">
-												<h3 class="team_member_text">Bogdan Bogdan</h3>
-												<small class="team_member_text">CFO</small>
-													<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-												</ul>
-											</div>
-    									</div>
-  									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<!-- Person 2 - end -->
-						
-						<!-- Person 3 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-						<div class="container_team_member">
-							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 									<div class="flipper">
-    									<div class="front">
-											<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    									</div>
-    									<div class="back">
-    										<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-											<div class="body">
-												<h3 class="team_member_text">Chris Chris</h3>
-												<small class="team_member_text">CTO</small>
-													<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-												</ul>
-											</div>
-    									</div>
-  									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<!-- Person 3 - end -->
-						
-						<!-- Person 4 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-						<div class="container_team_member">
-							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 									<div class="flipper">
-    									<div class="front">
-											<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    									</div>
-    									<div class="back">
-    										<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-											<div class="body">
-												<h3 class="team_member_text">Dan Dan</h3>
-												<small class="team_member_text">HR</small>
-													<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-												</ul>
-											</div>
-    									</div>
-  									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<!-- Person 4 - end -->					
-				</div>	
-			</div>		
-				<!-- Team 1 end -->
-				
-				<!-- Team 2 start -->
-			<div class="container_teams">
-				<div class="row">
-					<div class="main col-md-12">
-						<h3 class="page-title">Team Beta</h3>
-					</div>
-				</div>
-				
-				<div class="row">
-
-						<!-- Person 1 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-						<div class="container_team_member">
-							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 									<div class="flipper">
-    									<div class="front">
-											<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    									</div>
-    									<div class="back">
-    										<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-											<div class="body">
-												<h3 class="team_member_text">Alex Alex</h3>
-												<small class="team_member_text">CEO</small>
-													<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-												</ul>
-											</div>
-    									</div>
-  									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<!-- Person 1 - end -->
-						
-						<!-- Person 2 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-						<div class="container_team_member">
-							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 									<div class="flipper">
-    									<div class="front">
-											<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    									</div>
-    									<div class="back">
-    										<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-											<div class="body">
-												<h3 class="team_member_text">Bogdan Bogdan</h3>
-												<small class="team_member_text">CFO</small>
-													<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-												</ul>
-											</div>
-    									</div>
-  									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<!-- Person 2 - end -->
-						
-						<!-- Person 3 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-						<div class="container_team_member">
-							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 									<div class="flipper">
-    									<div class="front">
-											<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    									</div>
-    									<div class="back">
-    										<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-											<div class="body">
-												<h3 class="team_member_text">Chris Chris</h3>
-												<small class="team_member_text">CTO</small>
-													<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-												</ul>
-											</div>
-    									</div>
-  									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<!-- Person 3 - end -->
-						
-						<!-- Person 4 - start -->
-						<div class="clearfix col-xs-12 col-sm-6 col-md-3">
-						<div class="container_team_member">
-							<div class="image-box team-member style-2 bordered dark-bg mb-20 text-center">
-								<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
- 									<div class="flipper">
-    									<div class="front">
-											<img src="/assets/images/team-member-1.jpg" alt="profile_picture">
-    									</div>
-    									<div class="back">
-    										<p class="team_member_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
-											<div class="body">
-												<h3 class="team_member_text">Dan Dan</h3>
-												<small class="team_member_text">HR</small>
-													<div class="separator mt-10"></div>
-												<ul class="social-links circle dark margin-clear">
-													<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
-													<li class="email"><a target="_blank" href="mailto:test@test.com"><i class="fa fa-envelope-o"></i></a></li>
-												</ul>
-											</div>
-    									</div>
-  									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-						<!-- Person 4 - end -->					
-				</div>
-			</div>
-				<!-- Team 2 end -->
-								
-			<!-- Enactus members end -->		
-
-					</div>
-				</section>
 
 			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
 			<!-- ================ -->
 			<footer id="footer" class="clearfix dark">
 				<!-- .footer start -->
 				<!-- ================ -->
-				<div class="footer">
+				<div class="footer br-5">
 					<div class="container">
 						<div class="footer-inner">
 							<div class="row">
