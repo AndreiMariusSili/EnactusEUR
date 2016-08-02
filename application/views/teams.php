@@ -50,6 +50,7 @@
 	<body class="no-trans">
 		<!-- page wrapper start -->
 		<!-- ================ -->
+		<div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
 		<div class="page-wrapper">
 			<div id="page-start"></div>
 			
@@ -91,17 +92,17 @@
 
 			<!-- header start (Add "dark" class to #footer in order to enable dark footer) -->
 			<!-- ================ -->
-			<header id="footer" class="clearfix dark">
+			<header id="header" class="clearfix fixed dark">
 				<!-- .header start - background color-->
 				<!-- ================ -->
-				<div class="footer br-5">
+				<div class="header">
 					<div class="container">
-						<div class="footer-inner">
+						<div class="header-inner">
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2">
 									<div class="footer-content text-center padding-ver-clear">
-										<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
-										<h1 class="title_teams_page large"><strong>Meet the  <span class="highlight-text">Enactus</span> people</strong></h1>
+										<div class="logo-header"><img id="logo-header" class="center-block" src="/assets/images/Logo_origami_white.png" alt="Logo_Enactus_Origami_White"></div>
+										<h1 class="title_teams_page page-title">Meet the Enactus people</h1>
 									</div>
 								</div>
 							</div>
