@@ -25,7 +25,10 @@ class Main extends CI_Controller
 
 	public function teams()
 	{
-		$this->load->view('teams');
+		$this->load->model('Main_model');
+		$data = $this->Main_model->teams();
+
+		$this->load->view('teams', $data);
 	}
 
 	public function ventures()
