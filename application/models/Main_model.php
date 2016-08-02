@@ -17,6 +17,15 @@ class Main_model extends CI_Model
         return $data;
     }
 
+    public function teams()
+    {
+        $data['teams'] = $this->db->get('teams_admin_teams')->result_array();
+
+        $data['members'] = $this->db->get('teams_admin_members') ->result_array();
+
+
+        return $data;
+    }
 }
 
 ?>
