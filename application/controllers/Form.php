@@ -8,6 +8,7 @@ class Form extends CI_Controller
 	{
 		$this->load->library('form_validation');
 		$this->load->helper('security');
+		$this->load->helper('form');
 
 		$this->load->library('email');
 		$this->load->helper('url');
@@ -57,9 +58,20 @@ class Form extends CI_Controller
 				'field' => 'motivation',
 				'label' => 'motivation',
 				'rules' => 'callback_motivation_check|xss_clean'
+			),
+			array(
+				'field' => 'statusMember',
+				'label' => 'status',
+				'rules' => 'in_list[founder]'
+			),
+			array(
+				'field' => 'statusProject',
+				'label' => 'status',
+				'rules' => 'in_list[pending]'
 			)
 		);
 		$this->form_validation->set_message('required', "Please fill in your %s");
+		$this->form_validation->set_message('in_list', 'Something went wrong. Please try again.');
 		$this->form_validation->set_rules($config);
 
 		if($this->form_validation->run() == FALSE)
@@ -133,6 +145,7 @@ class Form extends CI_Controller
 	{
 		$this->load->library('form_validation');
 		$this->load->helper('security');
+		$this->load->helper('form');
 
 		$this->load->helper("url");
 		$this->load->library('email');
@@ -177,15 +190,21 @@ class Form extends CI_Controller
 				'field' => 'motivation',
 				'label' => 'motivation',
 				'rules' => 'callback_motivation_check|xss_clean'
-			)
+			),
+			array(
+				'field' => 'status',
+				'label' => 'status',
+				'rules' => 'in_list[cofounder]'
+			),
 		);
 		$this->form_validation->set_message('required', "Please fill in your %s");
+		$this->form_validation->set_message('in_list', 'Something went wrong. Please try again.');
 		$this->form_validation->set_rules($config);
 
 		if($this->form_validation->run() == FALSE)
 		{
 			$this->session->set_flashdata('errors', validation_errors());
-			redirect("/");
+			redirect("/#contact-us");
 		}
 		else
 		{
@@ -251,6 +270,7 @@ class Form extends CI_Controller
 	{
 		$this->load->library('form_validation');
 		$this->load->helper('security');
+		$this->load->helper('form');
 
 		$this->load->helper('url');
 		$this->load->library('email');
@@ -285,15 +305,21 @@ class Form extends CI_Controller
 				'field' => 'motivation',
 				'label' => 'motivation',
 				'rules' => 'callback_motivation_check|xss_clean'
-			)
+			),
+			array(
+				'field' => 'status',
+				'label' => 'status',
+				'rules' => 'in_list[passive]'
+			),
 		);
 		$this->form_validation->set_message('required', "Please fill in your %s");
+		$this->form_validation->set_message('in_list', 'Something went wrong. Please try again.');
 		$this->form_validation->set_rules($config);
 
 		if($this->form_validation->run() == FALSE)
 		{
 			$this->session->set_flashdata('errors', validation_errors());
-			redirect("/");
+			redirect("/#contact-us");
 		}
 		else
 		{
@@ -352,6 +378,7 @@ class Form extends CI_Controller
 	{
 		$this->load->library('form_validation');
 		$this->load->helper('security');
+		$this->load->helper('form');
 
 		$this->load->library('email');
 		$this->load->helper('url');
@@ -394,7 +421,7 @@ class Form extends CI_Controller
 		if($this->form_validation->run() == FALSE)
 		{
 			$this->session->set_flashdata('errors', validation_errors());
-			redirect("/");
+			redirect("/#contact-us");
 		}
 		else
 		{

@@ -10,7 +10,7 @@ class Admin_edit_model extends CI_Model
 
 		//update video title and subtitle in database
 	    $data = array(
-	    	'id' => 0,
+	    	'id' => 1,
 	    	'video_title' => $title,
 	    	'video_subtitle' => $subtitle,
 	   	);
@@ -31,7 +31,7 @@ class Admin_edit_model extends CI_Model
 
 
 	    $data = array (
-	    	'id' => 0,
+	    	'id' => 1,
 	    	'aboutus_left_icon' => $block_left_icon,
 	    	'aboutus_left_title' => $block_left_title,
 	    	'aboutus_left_content' => $block_left_content,
@@ -58,7 +58,7 @@ class Admin_edit_model extends CI_Model
 
 
 	    $data = array (
-	    	'id' => 0,
+	    	'id' => 1,
 	    	'accomp_left_icon' => $block_left_icon,
 	    	'accomp_left_title' => $block_left_title,
 	    	'accomp_left_content' => $block_left_content,
@@ -170,5 +170,19 @@ class Admin_edit_model extends CI_Model
 	public function members_delete($id)
 	{
 	    $this->db->delete('teams_admin_members', array('id' => $id ));
+	}
+
+	public function projects_update($id, $status)
+	{
+		$data=array(
+			'status' => $status,
+		);
+	    $this->db->where('id', $id);
+	    $this->db->update('projects', $data);
+	}
+
+	public function projects_delete($id)
+	{
+	    $this->db->delete('projects', array('id' => $id));
 	}
 }

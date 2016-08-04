@@ -96,7 +96,7 @@
                                                             <a href="/Admin/landing_admin">Landing</a>
                                                         </li>
                                                         <li>
-                                                            <a href="#ventures">Ventures</a>
+                                                            <a href="/Admin/ventures_admin">Ventures</a>
                                                         </li>
                                                         <li>
                                                             <a href="/Admin/teams_admin_teams">Teams</a>
@@ -147,7 +147,47 @@
                         </div>
                     </div>
                     <div class="col-xs-10">
-                        <h1>This is the Projects View.</h1>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Below are all the projects registered in your database so far.</div>
+                            <table class="table table-hover table-condensed">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Project</th>
+                                    <th>Founder</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Change Status</th>
+                                    <th>Delete Project</th>
+                                </tr>
+                                <?php $i=1; foreach($projects as $project) { ?>
+                                <tr>
+                                    <td><?php echo $i; ?></td>
+                                    <td><?php echo $project['project_title']; ?></td>
+                                    <td><?php echo "{$project['first_name']} {$project['last_name']}"?></td>
+                                    <td><?php echo substr($project['updated_at'], 0, 10); ?></td>
+                                    <td><?php echo $project['status'] ?></td>
+                                    <td>
+                                        <form class="form-inline mg-0" action="/Admin_edit/projects_update/<?php echo $project['id']; ?>" method="POST">
+                                            <select name="status" class="form-control">
+                                                <option value="">Choose...</option>
+                                                <option value="pending">Pending</option>
+                                                <option value="recruitment">Recruitment</option>
+                                                <option value="running">Running</option>
+                                                <option value="handover">Handed Over</option>
+                                                <option value="hold">On Hold</option>
+                                            </select>
+                                            <button type="submit" class="btn btn-default mg-0">Change</button>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form class="form-inline mg-0" action="/Admin_edit/projects_delete/<?php echo $project['id']; ?>" method="POST">
+                                            <button type="submit" class="btn btn-danger mg-0">Delete</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <?php $i++; }; ?>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
