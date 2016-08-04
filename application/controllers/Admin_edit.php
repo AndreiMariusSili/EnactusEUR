@@ -125,8 +125,6 @@ class Admin_edit extends CI_Controller
             $this->session->set_flashdata('success', TRUE);
             redirect('/Admin/founders_create');
         }
-
-
     }
 
     public function newCofounder()
@@ -357,6 +355,27 @@ class Admin_edit extends CI_Controller
         $this->Admin_edit_model->members_delete($team);
 
         redirect('/Admin/teams_admin_members');
+    }
+
+    public function projects_update()
+    {
+        $this->load->model('Admin_edit_model');
+        $post=$this->input->post(NULL, TRUE);
+        $project_id=$this->uri->segment(3);
+        $this->Admin_edit_model->projects_update($project_id, $post['status']);
+
+        $this->session->set_flashdata('update', TRUE);
+        redirect('/Admin/projects_view');
+    }
+
+    public function projects_delete()
+    {
+        $this->load->model('Admin_edit_model');
+        $project_id=$this->uri->segment(3);
+        $this->Admin_edit_model->projects_delete($project_id);
+
+        $this->session->set_flashdata('delete', TRUE);
+        redirect('Admin/projects_view');
     }
 
     //custom validation functions

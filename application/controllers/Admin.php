@@ -65,9 +65,8 @@ class Admin extends CI_Controller
 		else
 		{
 			$this->load->model('Admin_model');
-
-			$viewdata = $this->Admin_model->landing_admin();			
-			$this->load->view('/admin/landing_admin', $viewdata);
+			$viewdata = $this->Admin_model->landing_admin();
+			$this->load->view('/admin/landing_admin', $viewdata[0]);
 		}
 	}
 
@@ -103,6 +102,19 @@ class Admin extends CI_Controller
         }
     }
 
+    public function ventures_admin()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->view('/admin/ventures_admin');
+        }
+    }
+
 	public function dashboard()
 	{
 		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
@@ -125,7 +137,10 @@ class Admin extends CI_Controller
 		}
 		else
 		{
-			$this->load->view('/admin/projects_view');
+            $this->load->model('Admin_model');
+
+            $viewdata['projects']=$this->Admin_model->viewProjects();
+			$this->load->view('/admin/projects_view',$viewdata);
 		}
     }
 

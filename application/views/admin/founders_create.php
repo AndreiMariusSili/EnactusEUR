@@ -95,7 +95,7 @@
                                                             <a href="/Admin/landing_admin">Landing</a>
                                                         </li>
                                                         <li>
-                                                            <a href="#ventures">Ventures</a>
+                                                            <a href="/Admin/ventures_admin">Ventures</a>
                                                         </li>
                                                         <li>
                                                             <a href="/Admin/teams_admin_teams">Teams</a>
@@ -194,7 +194,7 @@
                                                 <button type="submit" class="btn btn-default">Submit</button>
                                             </div>
                                             <input type="hidden" name="statusMember" value="founder"/>
-                                            <input type="hidden" name="statusProject" value="concept">
+                                            <input type="hidden" name="statusProject" value="pending">
                                 </form>
                             </div>
                         </div>

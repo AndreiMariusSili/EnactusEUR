@@ -117,7 +117,7 @@
 				<!-- ================ -->
 				<!-- Team start -->
 				<?php $i=0; foreach($teams as $team) { ?>
-					<section class="container-teams main-container br-5 pv-40 clearfix <?php if($i % 2 === 0) { echo 'highlight-background'; } ?>">
+					<section class="container-teams main-container pv-40 clearfix <?php if($i % 2 === 0) { echo 'highlight-background'; } ?>">
 									<div class="row">
 										<div class="main col-xs-12">
 											<div class="separator"></div>
@@ -129,7 +129,7 @@
 										<?php foreach($members as $member) { 
 											if($team['id'] === $member['teams_admin_team_id']) { ?>
 										<div class="col-sm-4">
-											<div class="image-box style-2 mb-20 br-5 dark-bg text-center object-non-visible" data-animation-effect="fadeIn" data-animation-duration='1s'>
+											<div class="image-box style-2 mb-20 dark-bg text-center object-non-visible" data-animation-effect="fadeIn" data-animation-duration='1s'>
 												<div class="overlay-container">
 													<img src="<?php echo $member['photo_path']; ?>" alt="<?php echo $member['first_name'] . ' ' . $member['last_name'] . 'Photo'; ?>">
 													<div class="overlay-top">
@@ -162,7 +162,7 @@
 			<footer id="footer" class="clearfix dark">
 				<!-- .footer start -->
 				<!-- ================ -->
-				<div class="footer br-5">
+				<div class="footer">
 					<div class="container">
 						<div class="footer-inner">
 							<div class="row">

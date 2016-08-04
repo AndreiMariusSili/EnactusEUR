@@ -55,4 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['Admin_edit/teams_delete/(:any)'] = 'Admin_edit/teams_delete';
 $route['Admin_edit/members_delete/(:any)'] = 'Admin_edit/members_delete';
-$route['test'] = 'Main/teams';
+$route['Admin_edit/projects_update/(:any)'] = 'Admin_edit/projects_update';
+$route['Admin_edit/projects_delete/(:any)'] = 'Admin_edit/projects_delete';
+
