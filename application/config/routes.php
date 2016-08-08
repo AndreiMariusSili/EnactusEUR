@@ -53,6 +53,9 @@ $route['default_controller'] = 'Main';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['teams'] = 'Main/teams';
+$route['ventures'] = 'Main/ventures';
+
 $route['Admin_edit/teams_delete/(:any)'] = 'Admin_edit/teams_delete';
 $route['Admin_edit/members_delete/(:any)'] = 'Admin_edit/members_delete';
 
