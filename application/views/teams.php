@@ -68,22 +68,22 @@
 					</div>
 					<div class="separator"></div>
 					<ul class="social-links circle small clearfix margin-clear text-center animated-effect-1">
-						<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-						<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-						<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
 						<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+						<li class="facebook"><a target="_blank" href=" https://www.facebook.com/EUREnactus/"><i class="fa fa-facebook"></i></a></li>
+						<li class="instagram"><a target="_blank" href=" http://instagram.com/enactus_eur"><i class="fa fa-instagram"></i></a></li>
 					</ul>
 					<div class="separator mt-10"></div>
 					<ul class="nav navbar-nav text-center">
-						<li><a href="/Main/landing">Home</a></li>
-						<li><a href="/Main/ventures">Ventures</a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="/ventures">Ventures</a></li>
 						<li class="dropdown active">
-							<a href="/Main/teams" class="dropdown-toggle" data-toggle="dropdown">Teams</a>
+							<a href="/teams" class="dropdown-toggle" data-toggle="dropdown">Teams</a>
 							<ul class="dropdown-menu">
-								<li class="active"><a href="#">2016/2017</a></li>
-								<li><a href="#">Previous Years</a></li>
+								<li class="active"><a href="/teams">2016/2017</a></li>
+								<!-- <li><a href="#">Previous Years</a></li> -->
 							</ul>
 						</li>
+						<li><a href="/#contact-us">Contact Us</a></li>
 					</ul>
 				</nav>
 				<button type="button" class="offcanvas-toggle-left navbar-toggle animation_loop" data-toggle="offcanvas" data-target="#offcanvas" style="background-color: transparent; !important"></button>
@@ -170,10 +170,9 @@
 									<div class="footer-content text-center padding-ver-clear">
 										<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
 										<ul class="social-links circle animated-effect-1">
-											<li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-											<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-											<li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
 											<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+											<li class="facebook"><a target="_blank" href=" https://www.facebook.com/EUREnactus/"><i class="fa fa-facebook"></i></a></li>
+											<li class="instagram"><a target="_blank" href=" http://instagram.com/enactus_eur"><i class="fa fa-instagram"></i></a></li>
 										</ul>
 										<ul class="list-inline mb-20">
 											<li><a href="https://www.google.nl/maps/place/Erasmus+Universiteit+Rotterdam/@51.9179782,4.5239854,17z/data=!3m1!4b1!4m5!3m4!1s0x47c4332163e239dd:0x589a97af738b9969!8m2!3d51.9179749!4d4.5261741?hl=en" class="link-dark"><i class="text-default fa fa-map-marker pr-5"></i>Burgemeester Oudlaan 50, 3062PA</li>
