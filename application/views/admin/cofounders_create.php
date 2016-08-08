@@ -128,6 +128,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
                                 <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
+                                <li class="list-group-item"><a href="/Admin/applications_view">View Applications</a></li>
                                 <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
                                 <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
                                 <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>
@@ -183,9 +184,9 @@
                                                 <label>Input cofounder venture:</label>
                                                 <select name="project_preference" class="form-control">
                                                     <option></option>
-                                                    <option value="sMaaK">sMaaK</option>
-                                                    <option value="Klik">Klik</option>
-                                                    <option value="WhW">WhW</option>
+                                                    <?php foreach($options as $option) { ?>
+                                                    <option value="<?php echo $option['project_title'] ?>"><?php echo $option['project_title']; ?></option>
+                                                    <?php }; ?>
                                                 </select>
                                             </div>
                                             <div class="form-group">
@@ -195,7 +196,9 @@
                                             <div class="form-group">
                                                 <button type="submit" class="btn btn-default">Submit</button>
                                             </div>
-                                            <input type="hidden" name="status" value="cofounder"/>
+                                            <input type="hidden" name="type" value="cofounder"/>
+                                            <input type="hidden" name="statusMember" value="pending"/>
+                                            <input type="hidden" name="statusApplication" value="pending"/>
                                         </form>
                             </div>
                         </div>

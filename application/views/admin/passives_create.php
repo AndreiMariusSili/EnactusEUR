@@ -129,6 +129,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
                                 <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
+                                <li class="list-group-item"><a href="/Admin/applications_view">View Applications</a></li>
                                 <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
                                 <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
                                 <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>
@@ -150,7 +151,7 @@
                             <div class="panel-body">
                                         <?php if($this->session->flashdata('success') === TRUE) { ?>
                                             <div class="alert alert-success">
-                                                <strong>Success!</strong> the cofounder has been added to the database.
+                                                <strong>Success!</strong> the passive member has been added to the database.
                                             </div>
                                         <?php }; ?>
                                         <div class="row text-danger">
@@ -187,7 +188,8 @@
                                             <div class="form-group">
                                                 <button type="submit" class="btn btn-default">Submit</button>
                                             </div>
-                                            <input type="hidden" name="status" value="passive"/>
+                                            <input type="hidden" name="type" value="passive"/>
+                                            <input type="hidden" name="status" value="accepted"/>
                                         </form>
                             </div>
                         </div>

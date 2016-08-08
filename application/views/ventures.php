@@ -49,6 +49,7 @@
 	<body class="no-trans">
 		<!-- page wrapper start -->
 		<!-- ================ -->
+		<div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
 		<div class="page-wrapper">
 			<!-- section start - offcanvas side -->
 			<!-- ================ -->

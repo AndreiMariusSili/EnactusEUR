@@ -147,28 +147,24 @@
                     </div>
                     <div class="col-xs-10">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Below are all the cofounders registered in your database so far.</div>
+                            <div class="panel-heading">Below are all the applications registered in your database so far.</div>
                             <table class="table table-hover table-condensed">
                                 <tr>
                                     <th>#</th>
-                                    <th>Name</th>
                                     <th>Project Preference</th>
-                                    <th>Study</th>
-                                    <th>Date of Birth</th>
+                                    <th>Applicant Name</th>
                                     <th>Status</th>
                                     <th>Change Status</th>
-                                    <th>Delete Cofounder</th>
+                                    <th>Delete application</th>
                                 </tr>
-                                <?php $i=1; foreach($cofounders as $cofounder) { ?>
+                                <?php $i=1; foreach($applications as $application) { ?>
                                 <tr>
                                     <td><?php echo $i; ?></td>
-                                    <td><?php echo "{$cofounder['first_name']} {$cofounder['last_name']}"?></td>
-                                    <td><?php echo $cofounder['project_preference'] ?></td>
-                                    <td><?php echo $cofounder['study'] ?></td>
-                                    <td><?php echo $cofounder['dob']; ?></td>
-                                    <td><?php echo $cofounder['status'] ?></td>
+                                    <td><?php echo $application['project_preference'] ?></td>
+                                    <td><?php echo "{$application['first_name']} {$application['last_name']}"?></td>
+                                    <td><?php echo $application['status'] ?></td>
                                     <td>
-                                        <form class="form-inline mg-0" action="/Admin_edit/cofounders_update/<?php echo $cofounder['id']; ?>" method="POST">
+                                        <form class="form-inline mg-0" action="/Admin_edit/applications_update/<?php echo $application['id']; ?>" method="POST">
                                             <select name="status" class="form-control">
                                                 <option value="">Choose...</option>
                                                 <option value="pending">Pending</option>
@@ -179,7 +175,7 @@
                                         </form>
                                     </td>
                                     <td>
-                                        <form class="form-inline mg-0" action="/Admin_edit/cofounders_delete/<?php echo $cofounder['id']; ?>" method="POST">
+                                        <form class="form-inline mg-0" action="/Admin_edit/applications_delete/<?php echo $application['id']; ?>" method="POST">
                                             <button type="submit" class="btn btn-danger mg-0">Delete</button>
                                         </form>
                                     </td>
@@ -187,7 +183,7 @@
                                 <?php $i++; }; ?>
                             </table>
                         </div>
-                        <form class="form" action="/Admin/cofounders_export" method="POST">
+                        <form class="form" action="/Admin/applications_export" method="POST">
                             <button type="submit" class="btn btn-lg btn-default pull-right">Export</button>
                         </form>
                     </div>

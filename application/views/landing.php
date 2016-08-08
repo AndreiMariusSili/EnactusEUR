@@ -49,6 +49,7 @@
 	<body class="no-trans">
 		<!-- page wrapper start -->
 		<!-- ================ -->
+		<div class="scrollToTop circle"><i class="icon-up-open-big"></i></div>
 		<div class="page-wrapper">
 
 			<!-- section start - offcanvas side -->
@@ -244,8 +245,9 @@
 												<label>My motivation is...</label>
 												<textarea class="form-control" rows="5" name="motivation" placeholder="Tell us about why you want to pursue this idea in a few sentences"></textarea>
 											</div>
-											<input type="hidden" name="statusMember" value="founder"/>
+											<input type="hidden" name="type" value="founder"/>
 											<input type="hidden" name="statusProject" value="pending"/>
+											<input type="hidden" name="statusMember" value="pending"/>
 											<div class="form-group">
 												<button type="submit" class="btn btn-default">Submit</button>
 											</div>
@@ -292,7 +294,7 @@
 												<select name="project_preference" class="form-control">
 													<option></option>
 													<?php foreach($options as $option) { ?>
-													<option value="sMaaK"><?php echo $option['project_title']; ?></option>
+													<option value="<?php echo $option['project_title'] ?>"><?php echo $option['project_title']; ?></option>
 													<?php }; ?>
 												</select>
 											</div>
@@ -303,7 +305,9 @@
 											<div class="form-group">
 												<button type="submit" class="btn btn-default">Submit</button>
 											</div>
-											<input type="hidden" name="status" value="cofounder"/>
+											<input type="hidden" name="type" value="cofounder"/>
+											<input type="hidden" name="statusMember" value="pending"/>
+											<input type="hidden" name="statusApplication" value = "pending" />
 										</form>
 									</div>
 								</div>
@@ -349,7 +353,8 @@
 											<div class="form-group">
 												<button type="submit" class="btn btn-default">Submit</button>
 											</div>
-											<input type="hidden" name="status" value="passive"/>
+											<input type="hidden" name="type" value="passive"/>
+											<input type="hidden" name="status" value="accepted"/>
 										</form>
 									</div>
 								</div>
@@ -386,6 +391,7 @@
 											<div class="form-group">
 												<button type="submit" class="btn btn-default">Submit</button>
 											</div>
+											<input type="hidden" name="status" value="pending">
 										</form>
 									</div>
 								</div>

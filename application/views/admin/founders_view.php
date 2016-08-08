@@ -129,6 +129,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
                                 <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
+                                <li class="list-group-item"><a href="/Admin/applications_view">View Applications</a></li>
                                 <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
                                 <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
                                 <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>
@@ -145,7 +146,50 @@
                         </div>
                     </div>
                     <div class="col-xs-10">
-                        <h1>This is the Founders View.</h1>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Below are all the founders registered in your database so far.</div>
+                            <table class="table table-hover table-condensed">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Project Founded</th>
+                                    <th>Study</th>
+                                    <th>Date of Birth</th>
+                                    <th>Status</th>
+                                    <th>Change Status</th>
+                                    <th>Delete Founder</th>
+                                </tr>
+                                <?php $i=1; foreach($founders as $founder) { ?>
+                                <tr>
+                                    <td><?php echo $i; ?></td>
+                                    <td><?php echo "{$founder['first_name']} {$founder['last_name']}"?></td>
+                                    <td><?php echo $founder['project_title'] ?></td>
+                                    <td><?php echo $founder['study'] ?></td>
+                                    <td><?php echo $founder['dob']; ?></td>
+                                    <td><?php echo $founder['status'] ?></td>
+                                    <td>
+                                        <form class="form-inline mg-0" action="/Admin_edit/founders_update/<?php echo $founder['id']; ?>" method="POST">
+                                            <select name="status" class="form-control">
+                                                <option value="">Choose...</option>
+                                                <option value="pending">Pending</option>
+                                                <option value="accepted">Accepted</option>
+                                                <option value="rejected">Rejected</option>
+                                            </select>
+                                            <button type="submit" class="btn btn-default mg-0">Change</button>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form class="form-inline mg-0" action="/Admin_edit/founders_delete/<?php echo $founder['id']; ?>" method="POST">
+                                            <button type="submit" class="btn btn-danger mg-0">Delete</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <?php $i++; }; ?>
+                            </table>
+                        </div>
+                        <form class="form" action="/Admin/founders_export" method="POST">
+                            <button type="submit" class="btn btn-lg btn-default pull-right">Export</button>
+                        </form>
                     </div>
                 </div>
             </div>
