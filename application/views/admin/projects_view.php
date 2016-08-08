@@ -131,6 +131,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
                                 <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
+                                <li class="list-group-item"><a href="/Admin/applications_view">View Applications</a></li>
                                 <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
                                 <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
                                 <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>
@@ -188,6 +189,9 @@
                                 <?php $i++; }; ?>
                             </table>
                         </div>
+                        <form class="form" action="/Admin/projects_export" method="POST">
+                            <button type="submit" class="btn btn-lg btn-default pull-right">Export</button>
+                        </form>
                     </div>
                 </div>
             </div>

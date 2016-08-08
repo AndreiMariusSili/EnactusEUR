@@ -102,7 +102,7 @@
                                                             <a href="/Admin/teams_admin_teams">Teams</a>
                                                         </li>
                                                         <li>
-                                                            <a href="/Admin/projects_view">Project Admin</a>
+                                                            <a href="/Admin/dashboard">Project Admin</a>
                                                         </li>
                                                     </ul>
                                                     <!-- main-menu end -->
@@ -131,6 +131,7 @@
                             <ul class="list-group">
                                 <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
                                 <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
+                                <li class="list-group-item"><a href="/Admin/applications_view">View Applications</a></li>
                                 <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
                                 <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
                                 <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>

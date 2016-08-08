@@ -60,7 +60,7 @@ class Form extends CI_Controller
 				'rules' => 'callback_motivation_check|xss_clean'
 			),
 			array(
-				'field' => 'statusMember',
+				'field' => 'type',
 				'label' => 'status',
 				'rules' => 'in_list[founder]'
 			),
@@ -68,7 +68,12 @@ class Form extends CI_Controller
 				'field' => 'statusProject',
 				'label' => 'status',
 				'rules' => 'in_list[pending]'
-			)
+			),
+			array(
+				'field' => 'statusMember',
+				'label' => 'status',
+				'rules' => 'in_list[pending]'
+			),
 		);
 		$this->form_validation->set_message('required', "Please fill in your %s");
 		$this->form_validation->set_message('in_list', 'Something went wrong. Please try again.');
@@ -83,7 +88,7 @@ class Form extends CI_Controller
 		{
 			$this->load->model("Form_model");
 			$post = $this->input->post(NULL, TRUE);
-			$this->Form_model->founder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["title"], $post["idea"], $post["statusMember"], $post["statusProject"], $post["motivation"]);
+			$this->Form_model->founder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["title"], $post["idea"], $post["type"], $post["statusProject"], $post['statusMember'], $post["motivation"]);
 
 			$config = array(
 				'protocol' => 'smtp',
@@ -192,9 +197,14 @@ class Form extends CI_Controller
 				'rules' => 'callback_motivation_check|xss_clean'
 			),
 			array(
-				'field' => 'status',
+				'field' => 'type',
 				'label' => 'status',
 				'rules' => 'in_list[cofounder]'
+			),
+			array(
+				'field' => 'status',
+				'label' => 'status',
+				'rules' => 'in_list[pending]'
 			),
 		);
 		$this->form_validation->set_message('required', "Please fill in your %s");
@@ -210,7 +220,7 @@ class Form extends CI_Controller
 		{
 			$this->load->model("Form_model");
 			$post = $this->input->post(NULL, TRUE);
-			$this->Form_model->cofounder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["project_preference"], $post["status"], $post["motivation"]);
+			$this->Form_model->cofounder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["project_preference"], $post["type"], $post['statusMember'], $post['statusApplication'], $post["motivation"]);
 
 			$config = array(
 				'protocol' => 'smtp',
@@ -307,9 +317,14 @@ class Form extends CI_Controller
 				'rules' => 'callback_motivation_check|xss_clean'
 			),
 			array(
-				'field' => 'status',
+				'field' => 'type',
 				'label' => 'status',
 				'rules' => 'in_list[passive]'
+			),
+			array(
+				'field' => 'status',
+				'label' => 'status',
+				'rules' => 'in_list[accepted]'
 			),
 		);
 		$this->form_validation->set_message('required', "Please fill in your %s");
@@ -325,7 +340,7 @@ class Form extends CI_Controller
 		{
 			$this->load->model("Form_model");
 			$post = $this->input->post(NULL, TRUE);
-			$this->Form_model->passive($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["status"], $post["motivation"]);
+			$this->Form_model->passive($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post['type'], $post["status"], $post["motivation"]);
 
 			$config = array(
 				'protocol' => 'smtp',
@@ -413,9 +428,15 @@ class Form extends CI_Controller
 				'field' => 'motivation',
 				'label' => 'motivation',
 				'rules' => 'callback_interest_check|xss_clean'
+			),
+			array(
+				'field' => 'status',
+				'label' => 'status',
+				'rules' => 'in_list[pending]'
 			)
 		);
 		$this->form_validation->set_message('required', "Please fill in your %s");
+		$this->form_validation->set_message('in_list', 'Something went wrong. Please try again.');
 		$this->form_validation->set_rules($config);
 
 		if($this->form_validation->run() == FALSE)
@@ -427,7 +448,7 @@ class Form extends CI_Controller
 		{
 			$this->load->model("Form_model");
 			$post = $this->input->post(NULL, TRUE);
-			$this->Form_model->partner($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["organization"],$post["motivation"]);
+			$this->Form_model->partner($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["organization"],$post["motivation"], $post['status']);
 
 			$config = array(
 				'protocol' => 'smtp',
