@@ -192,23 +192,20 @@
                             <div class="panel-heading">
                                 <h3 class="panel-title">This panel shows all members created so far.</h3>
                             </div>
-                            <div class="panel-body">
-                                <ul class="list-group">
-                                    <?php foreach($members as $row) { ?>
-                                        <form id="member" class="form-inline" action="/Admin_edit/members_delete/<?php echo $row['id']; ?>" method="POST"></form>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col-xs-9">
-                                                    <p><?php echo $row['first_name'] . " " . $row['last_name'] . " - " . $row['team']; ?></p>
-                                                </div>
-                                                <div class="col-xs-3">
-                                                    <button form="member" type="submit" class="btn btn-danger text-right">Delete</button>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    <?php } ?>
-                                </ul>
-                            </div>
+                                <table class="table table-condensed table-hover">
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Team</th>
+                                    <th>Delete Member</th>
+                                    <?php $i=1; foreach($members as $row) { ?>
+                                        <tr>
+                                            <td><?php echo $i; ?></td>
+                                            <td><?php echo $row['first_name'] . " " . $row['last_name']; ?></td>
+                                            <td><?php echo $row['team']; ?></td>
+                                            <td><a class="mg-0" href="/Admin_edit/members_delete/<?php echo $row['id']; ?>"> <button type="submit" class="btn btn-danger mg-0">Delete</button></a></td>
+                                        </tr>
+                                    <?php $i++; } ?>
+                                </table>
                         </div>
                     </div>
                 </div>
