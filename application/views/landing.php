@@ -66,7 +66,7 @@
 					</div>
 					<div class="separator"></div>
 					<ul class="social-links circle small clearfix margin-clear text-center animated-effect-1">
-						<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+						<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/enactus-erasmus-university-rotterdam"><i class="fa fa-linkedin"></i></a></li>
 						<li class="facebook"><a target="_blank" href=" https://www.facebook.com/EUREnactus/"><i class="fa fa-facebook"></i></a></li>
 						<li class="instagram"><a target="_blank" href=" http://instagram.com/enactus_eur"><i class="fa fa-instagram"></i></a></li>
 					</ul>
@@ -414,7 +414,7 @@
 									<div class="footer-content text-center padding-ver-clear">
 										<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
 										<ul class="social-links circle animated-effect-1">
-											<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+											<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/enactus-erasmus-university-rotterdam"><i class="fa fa-linkedin"></i></a></li>
 											<li class="facebook"><a target="_blank" href=" https://www.facebook.com/EUREnactus/"><i class="fa fa-facebook"></i></a></li>
 											<li class="instagram"><a target="_blank" href=" http://instagram.com/enactus_eur"><i class="fa fa-instagram"></i></a></li>
 										</ul>
