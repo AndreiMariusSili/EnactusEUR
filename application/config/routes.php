@@ -53,28 +53,28 @@ $route['default_controller'] = 'Main';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['teams'] = 'Main/teams';
-$route['ventures'] = 'Main/ventures';
+$route['teams'] = '/Main/teams';
+$route['ventures'] = '/Main/ventures';
 
-$route['Admin_edit/teams_delete/(:any)'] = 'Admin_edit/teams_delete';
-$route['Admin_edit/members_delete/(:any)'] = 'Admin_edit/members_delete';
+$route['Admin_edit/teams_delete/(:any)'] = '/Admin_edit/teams_delete';
+$route['Admin_edit/members_delete/(:any)'] = '/Admin_edit/members_delete';
 
-$route['Admin_edit/projects_update/(:any)'] = 'Admin_edit/projects_update';
-$route['Admin_edit/projects_delete/(:any)'] = 'Admin_edit/projects_delete';
+$route['Admin_edit/projects_update/(:any)'] = '/Admin_edit/projects_update';
+$route['Admin_edit/projects_delete/(:any)'] = '/Admin_edit/projects_delete';
 
-$route['Admin_edit/founders_update/(:any)'] = 'Admin_edit/founders_update';
-$route['Admin_edit/founders_delete/(:any)'] = 'Admin_edit/founders_delete';
+$route['Admin_edit/founders_update/(:any)'] = '/Admin_edit/founders_update';
+$route['Admin_edit/founders_delete/(:any)'] = '/Admin_edit/founders_delete';
 
-$route['Admin_edit/applications_update/(:any)'] = 'Admin_edit/applications_update';
-$route['Admin_edit/applications_delete/(:any)'] = 'Admin_edit/applications_delete';
+$route['Admin_edit/applications_update/(:any)'] = '/Admin_edit/applications_update';
+$route['Admin_edit/applications_delete/(:any)'] = '/Admin_edit/applications_delete';
 
-$route['Admin_edit/cofounders_update/(:any)'] = 'Admin_edit/cofounders_update';
-$route['Admin_edit/cofounders_delete/(:any)'] = 'Admin_edit/cofounders_delete';
+$route['Admin_edit/cofounders_update/(:any)'] = '/Admin_edit/cofounders_update';
+$route['Admin_edit/cofounders_delete/(:any)'] = '/Admin_edit/cofounders_delete';
 
-$route['Admin_edit/passives_update/(:any)'] = 'Admin_edit/passives_update';
-$route['Admin_edit/passives_delete/(:any)'] = 'Admin_edit/passives_delete';
+$route['Admin_edit/passives_update/(:any)'] = '/Admin_edit/passives_update';
+$route['Admin_edit/passives_delete/(:any)'] = '/Admin_edit/passives_delete';
 
-$route['Admin_edit/partners_update/(:any)'] = 'Admin_edit/partners_update';
-$route['Admin_edit/partners_delete/(:any)'] = 'Admin_edit/partners_delete';
+$route['Admin_edit/partners_update/(:any)'] = '/Admin_edit/partners_update';
+$route['Admin_edit/partners_delete/(:any)'] = '/Admin_edit/partners_delete';
 
 
