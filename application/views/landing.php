@@ -15,23 +15,23 @@
 		<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 		<!-- Bootstrap core CSS -->
-		<link href="<?php base_url('assets/css/bootstrap.css') ?>" rel="stylesheet">
+		<link href="/assets/css/bootstrap.css" rel="stylesheet">
 		<!-- Font Awesome CSS -->
-		<link href="<?php base_url('assets/fonts/font-awesome/css/font-awesome.css') ?>" rel="stylesheet">
+		<link href="/assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
 		<!-- Fontello CSS -->
-		<link href="<?php base_url('assets/fonts/fontello/css/fontello.css') ?>" rel="stylesheet">
+		<link href="/assets/fonts/fontello/css/fontello.css" rel="stylesheet">
 		<!-- Plugins -->
-		<link href="<?php base_url('assets/plugins/magnific-popup/magnific-popup.css') ?>" rel="stylesheet">
-		<link href="<?php base_url('assets/plugins/rs-plugin/css/settings.css') ?>" rel="stylesheet">
-		<link href="<?php base_url('assets/plugins/rs-plugin-5/css/layers.css') ?>" rel="stylesheet">
-		<link href="<?php base_url('assets/plugins/rs-plugin-5/css/navigation.css') ?>" rel="stylesheet">
-		<link href="<?php base_url('assets/css/animate.css') ?>" rel="stylesheet">
-		<link href="<?php base_url('assets/css/animations.css') ?>" rel="stylesheet">
-		<link href="<?php base_url('assets/plugins/owl-carousel/owl.carousel.css') ?>" rel="stylesheet">
-		<link href="<?php base_url('assets/plugins/owl-carousel/owl.transitions.css') ?>" rel="stylesheet">
-		<link href="<?php base_url('assets/plugins/hover/hover-min.css') ?>" rel="stylesheet">
-		<link href="<?php base_url('assets/plugins/morphext/morphext.css') ?>" rel="stylesheet">
-		<link href="<?php base_url('assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css') ?>" rel="stylesheet">
+		<link href="/assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+		<link href="/assets/plugins/rs-plugin/css/settings.css" rel="stylesheet">
+		<link href="/assets/plugins/rs-plugin-5/css/layers.css" rel="stylesheet">
+		<link href="/assets/plugins/rs-plugin-5/css/navigation.css" rel="stylesheet">
+		<link href="/assets/css/animate.css" rel="stylesheet">
+		<link href="/assets/css/animations.css" rel="stylesheet">
+		<link href="/assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+		<link href="/assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+		<link href="/assets/plugins/hover/hover-min.css" rel="stylesheet">
+		<link href="/assets/plugins/morphext/morphext.css" rel="stylesheet">
+		<link href="/assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
 		
 		<!-- The Project core CSS file -->
 		<link href="<?php base_url('assets/css/style.css') ?>" rel="stylesheet" >
