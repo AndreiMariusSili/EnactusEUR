@@ -8,7 +8,7 @@
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Crane Logo -->
-		<link rel="shortcut icon" href="<?php base_url('assets/images/Logo_crane.png') ?>">
+		<link rel="shortcut icon" href="assets/images/Logo_crane.png">
 		<!-- Web Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
@@ -34,11 +34,11 @@
 		<link href="/assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
 		
 		<!-- The Project core CSS file -->
-		<link href="<?php base_url('assets/css/style.css') ?>" rel="stylesheet" >
+		<link href="assets/css/style.css" rel="stylesheet" >
 		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
-		<link href="<?php base_url('assets/css/skins/enactus_colors.css') ?>" rel="stylesheet">
+		<link href="assets/css/skins/enactus_colors.css" rel="stylesheet">
 		<!-- Custom css -->
-		<link href="<?php base_url('assets/css/custom.css') ?>" rel="stylesheet">
+		<link href="assets/css/custom.css" rel="stylesheet">
 	</head>
 	<!-- body classes:  -->
 	<!-- "boxed": boxed layout mode e.g. <body class="boxed"> -->
