@@ -95,7 +95,7 @@
                                                             <a href="/Admin/landing_admin">Landing</a>
                                                         </li>
                                                         <li>
-                                                            <a href="#ventures">Ventures</a>
+                                                            <a href="/Admin/ventures_admin">Ventures</a>
                                                         </li>
                                                         <li>
                                                             <a href="/Admin/teams_admin_teams">Teams</a>
@@ -157,24 +157,20 @@
                             <div class="panel-heading">
                                 <h3 class="panel-title">This panel shows all teams created so far.</h3>
                             </div>
-                            <div class="panel-body">
-                                <ul class="list-group">
-                                    <?php foreach($teams as $row) { ?>
-                                        <form id="team" class="form-inline" action="/Admin_edit/teams_delete/<?php echo $row['title']; ?>" method="POST"></form>
-                                            <li class="list-group-item">
-                                                <div class="row">
-                                                    <div class="col-xs-9">
-                                                        <?php echo $row['title']; ?>
-                                                    </div>
-                                                    <div class="col-xs-3">
-                                                         <button type="submit" form="team" class="btn btn-danger" >Delete</button>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                    <?php } ?>
-
-                                </ul>
-                            </div>
+                            <table class="table table-condensed table-hover">
+                                <th>#</th>
+                                <th>Team</th>
+                                <th>Delete Team</th>
+                                <?php $i=1; foreach($teams as $row) { ?>
+                                    <tr>
+                                        <td><?php echo $i; ?></td>
+                                        <td><?php echo $row['title']; ?></td>
+                                        <td>
+                                            <a href="/Admin_edit/teams_delete/<?php echo $row['title']; ?>"><button type="submit" class="btn btn-danger mg-0">Delete</button></a>
+                                        </td>
+                                    </tr>
+                                <?php $i++; } ?>
+                            </table>
                         </div>
                     </div>
                 </div>

@@ -7,19 +7,20 @@ class Main extends CI_Controller
 	public function index()
 	{
 			$this->load->model("Main_model");
-			$this->load->model('Main_model');
 
-			$venturesdata = $this->Main_model->ventureCount();
-			$contentdata = $this->Main_model->landing();
-			$this->load->view('landing', $contentdata, $venturesdata);
+			$data['count'] = $this->Main_model->ventureCount();
+			$data['options'] = $this->Main_model->options_get();
+			$data['content'] = $this->Main_model->landing();
+			$this->load->view('landing', $data);
 	}
 
 	public function landing()
 	{
 		$this->load->model("Main_model");
-		$viewdata = $this->Main_model->ventureCount();
+		$viewdata['count'] = $this->Main_model->ventureCount();
 		$this->load->model('Main_model');
-		$viewdata = $this->Main_model->landing();
+		$viewdata['content'] = $this->Main_model->landing();
+		$viewdata['options']= $this->Main_model->options_get();
 		$this->load->view('landing', $viewdata);
 	}
 

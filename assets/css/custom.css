@@ -82,7 +82,7 @@ footer.dark {
 }
 
 .title_teams_page{
-  color: #333333 !important;
+  color: #000000 !important;
 }
 
 .highlight-background {
@@ -91,10 +91,6 @@ footer.dark {
 
 .highlight-text {
   color: #FFC222;
-}
-
-.br-5 {
-  border-radius: 5px;
 }
 
 .team_member_text{
@@ -122,4 +118,15 @@ footer.dark {
 .dark.social-links li a:hover
 {
   background-color: #FFC222;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  vertical-align: middle !important;
+}
+.mg-0 { 
+  margin: 0;
 }

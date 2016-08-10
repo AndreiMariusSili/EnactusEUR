@@ -105,9 +105,25 @@ class Admin_edit extends CI_Controller
                 'field' => 'motivation',
                 'label' => 'motivation',
                 'rules' => 'callback_motivation_check|xss_clean'
-            )
+            ),
+            array(
+                'field' => 'type',
+                'label' => 'status',
+                'rules' => 'in_list[founder]'
+            ),
+            array(
+                'field' => 'statusProject',
+                'label' => 'status',
+                'rules' => 'in_list[pending]'
+            ),
+            array(
+                'field' => 'statusMember',
+                'label' => 'status',
+                'rules' => 'in_list[pending]'
+            ),
         );
         $this->form_validation->set_message('required', "Please fill in your %s");
+        $this->form_validation->set_message('in_list', 'Something went wrong. Please try again.');
         $this->form_validation->set_rules($config);
 
         if($this->form_validation->run() == FALSE)
@@ -120,13 +136,11 @@ class Admin_edit extends CI_Controller
             $this->load->model('Admin_edit_model');
 
             $post = $this->input->post(NULL, TRUE);
-            $this->Admin_edit_model->newFounder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["title"], $post["idea"], $post["statusMember"], $post["statusProject"], $post["motivation"]);
+            $this->Admin_edit_model->newFounder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["title"], $post["idea"], $post["type"], $post["statusProject"], $post['statusMember'], $post["motivation"]);
 
             $this->session->set_flashdata('success', TRUE);
             redirect('/Admin/founders_create');
         }
-
-
     }
 
     public function newCofounder()
@@ -174,9 +188,25 @@ class Admin_edit extends CI_Controller
                 'field' => 'motivation',
                 'label' => 'motivation',
                 'rules' => 'callback_motivation_check|xss_clean'
-            )
+            ),
+            array(
+                'field' => 'status',
+                'label' => 'status',
+                'rules' => 'in_list[cofounder]'
+            ),
+            array(
+                'field' => 'type',
+                'label' => 'status',
+                'rules' => 'in_list[cofounder]'
+            ),
+            array(
+                'field' => 'status',
+                'label' => 'status',
+                'rules' => 'in_list[pending]'
+            ),
         );
         $this->form_validation->set_message('required', "Please fill in your %s");
+        $this->form_validation->set_message('in_list', 'Something went wrong. Please try again.');
         $this->form_validation->set_rules($config);
 
         if($this->form_validation->run() == FALSE)
@@ -189,7 +219,7 @@ class Admin_edit extends CI_Controller
             $this->load->model('Admin_edit_model');
 
             $post= $this->input->post(NULL, TRUE);
-            $this->Admin_edit_model->newCofounder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["project_preference"], $post["status"], $post["motivation"]);
+            $this->Admin_edit_model->newCofounder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["project_preference"], $post["type"], $post['statusMember'], $post['statusApplication'], $post["motivation"]);
 
             $this->session->set_flashdata('success', TRUE);
             redirect('/Admin/cofounders_create');
@@ -231,9 +261,20 @@ class Admin_edit extends CI_Controller
                 'field' => 'motivation',
                 'label' => 'motivation',
                 'rules' => 'callback_motivation_check|xss_clean'
-            )
+            ),
+            array(
+                'field' => 'type',
+                'label' => 'status',
+                'rules' => 'in_list[passive]'
+            ),
+            array(
+                'field' => 'status',
+                'label' => 'status',
+                'rules' => 'in_list[accepted]'
+            ),
         );
         $this->form_validation->set_message('required', "Please fill in your %s");
+        $this->form_validation->set_message('in_list', 'Something went wrong. Please try again.');
         $this->form_validation->set_rules($config);
 
         if($this->form_validation->run() == FALSE)
@@ -246,7 +287,7 @@ class Admin_edit extends CI_Controller
         $this->load->model('Admin_edit_model');
 
         $post= $this->input->post(NULL, TRUE);
-        $this->Admin_edit_model->newPassive($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["status"], $post["motivation"]);
+        $this->Admin_edit_model->newPassive($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post['type'], $post["status"], $post["motivation"]);
 
         $this->session->set_flashdata('success', TRUE);
         redirect('/Admin/passives_create');
@@ -289,9 +330,15 @@ class Admin_edit extends CI_Controller
                 'field' => 'motivation',
                 'label' => 'motivation',
                 'rules' => 'callback_interest_check|xss_clean'
-            )
+            ),
+            array(
+                'field' => 'status',
+                'label' => 'status',
+                'rules' => 'in_list[pending]'
+            ),
         );
         $this->form_validation->set_message('required', "Please fill in your %s");
+        $this->form_validation->set_message('in_list', 'Something went wrong. Please try again.');
         $this->form_validation->set_rules($config);
 
         if($this->form_validation->run() == FALSE)
@@ -304,7 +351,7 @@ class Admin_edit extends CI_Controller
             $this->load->model('Admin_edit_model');
 
             $post= $this->input->post(NULL, TRUE);
-            $this->Admin_edit_model->newPartner($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["organization"], $post["motivation"]);
+            $this->Admin_edit_model->newPartner($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["organization"],$post["motivation"], $post['status']);
 
             $this->session->set_flashdata('success', TRUE);
             redirect('/Admin/partners_create');
@@ -357,6 +404,132 @@ class Admin_edit extends CI_Controller
         $this->Admin_edit_model->members_delete($team);
 
         redirect('/Admin/teams_admin_members');
+    }
+
+    public function projects_update()
+    {
+        $this->load->model('Admin_edit_model');
+        $post=$this->input->post(NULL, TRUE);
+        $project_id=$this->uri->segment(3);
+        $this->Admin_edit_model->projects_update($project_id, $post['status']);
+
+        $this->session->set_flashdata('update', TRUE);
+        redirect('/Admin/projects_view');
+    }
+
+    public function projects_delete()
+    {
+        $this->load->model('Admin_edit_model');
+        $project_id=$this->uri->segment(3);
+        $this->Admin_edit_model->projects_delete($project_id);
+
+        $this->session->set_flashdata('delete', TRUE);
+        redirect('Admin/projects_view');
+    }
+
+    public function founders_update()
+    {
+        $this->load->model('Admin_edit_model');
+        $post=$this->input->post(NULL, TRUE);
+        $founder_id=$this->uri->segment(3);
+        $this->Admin_edit_model->founders_update($founder_id, $post['status']);
+
+        $this->session->set_flashdata('update', TRUE);
+        redirect('/Admin/founders_view');
+    }
+
+    public function founders_delete()
+    {
+        $this->load->model('Admin_edit_model');
+        $founder_id=$this->uri->segment(3);
+        $this->Admin_edit_model->founders_delete($founder_id);
+
+        $this->session->set_flashdata('delete', TRUE);
+        redirect('Admin/founders_view');
+    }
+
+    public function applications_update()
+    {
+        $this->load->model('Admin_edit_model');
+        $post=$this->input->post(NULL, TRUE);
+        $founder_id=$this->uri->segment(3);
+        $this->Admin_edit_model->applications_update($founder_id, $post['status']);
+
+        $this->session->set_flashdata('update', TRUE);
+        redirect('/Admin/applications_view');
+    }
+
+    public function applications_delete()
+    {
+        $this->load->model('Admin_edit_model');
+        $founder_id=$this->uri->segment(3);
+        $this->Admin_edit_model->applications_delete($founder_id);
+
+        $this->session->set_flashdata('delete', TRUE);
+        redirect('Admin/applications_view');
+    }
+
+    public function cofounders_update()
+    {
+        $this->load->model('Admin_edit_model');
+        $post=$this->input->post(NULL, TRUE);
+        $cofounder_id=$this->uri->segment(3);
+        $this->Admin_edit_model->cofounders_update($cofounder_id, $post['status']);
+
+        $this->session->set_flashdata('update', TRUE);
+        redirect('/Admin/cofounders_view');
+    }
+
+    public function cofounders_delete()
+    {
+        $this->load->model('Admin_edit_model');
+        $cofounder_id=$this->uri->segment(3);
+        $this->Admin_edit_model->cofounders_delete($cofounder_id);
+
+        $this->session->set_flashdata('delete', TRUE);
+        redirect('Admin/cofounders_view');
+    }
+
+    public function passives_update()
+    {
+        $this->load->model('Admin_edit_model');
+        $post=$this->input->post(NULL, TRUE);
+        $passive_id=$this->uri->segment(3);
+        $this->Admin_edit_model->passives_update($passive_id, $post['status']);
+
+        $this->session->set_flashdata('update', TRUE);
+        redirect('/Admin/passives_view');
+    }
+
+    public function passives_delete()
+    {
+        $this->load->model('Admin_edit_model');
+        $passive_id=$this->uri->segment(3);
+        $this->Admin_edit_model->passives_delete($passive_id);
+
+        $this->session->set_flashdata('delete', TRUE);
+        redirect('Admin/passives_view');
+    }
+
+    public function partners_update()
+    {
+        $this->load->model('Admin_edit_model');
+        $post=$this->input->post(NULL, TRUE);
+        $partner_id=$this->uri->segment(3);
+        $this->Admin_edit_model->partners_update($partner_id, $post['status']);
+
+        $this->session->set_flashdata('update', TRUE);
+        redirect('/Admin/partners_view');
+    }
+
+    public function partners_delete()
+    {
+        $this->load->model('Admin_edit_model');
+        $partner_id=$this->uri->segment(3);
+        $this->Admin_edit_model->partners_delete($partner_id);
+
+        $this->session->set_flashdata('delete', TRUE);
+        redirect('Admin/partners_view');
     }
 
     //custom validation functions

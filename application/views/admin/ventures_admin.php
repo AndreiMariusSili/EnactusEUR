@@ -42,7 +42,8 @@
 
         <?php $this->load->helper('form'); ?>
     </head>
-    <body>
+    <body class="no-trans  transparent-header  ">
+        
         <!-- page wrapper start -->
         <!-- ================ -->
         <div class="page-wrapper">
@@ -100,7 +101,7 @@
                                                             <a href="/Admin/teams_admin_teams">Teams</a>
                                                         </li>
                                                         <li>
-                                                            <a href="/Admin/projects_view">Project Admin</a>
+                                                            <a href="/Admin/dashboard">Project Admin</a>
                                                         </li>
                                                     </ul>
                                                     <!-- main-menu end -->
@@ -119,79 +120,53 @@
                 </header>
             </div>
             <!-- header-container end -->
-
             <!-- content-container start -->
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-2">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Viewing</div>
-                            <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
-                                <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
-                                <li class="list-group-item"><a href="/Admin/applications_view">View Applications</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>
-                            </ul>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Creating</div>
-                            <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/founders_create">Add New Founder</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_create">Add New Cofounder</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_create">Add New Passive Member</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_create">Add New Partner</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xs-10">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">Below are all the cofounders registered in your database so far.</div>
-                            <table class="table table-hover table-condensed">
-                                <tr>
-                                    <th>#</th>
-                                    <th>Name</th>
-                                    <th>Project Preference</th>
-                                    <th>Study</th>
-                                    <th>Date of Birth</th>
-                                    <th>Status</th>
-                                    <th>Change Status</th>
-                                    <th>Delete Cofounder</th>
-                                </tr>
-                                <?php $i=1; foreach($cofounders as $cofounder) { ?>
-                                <tr>
-                                    <td><?php echo $i; ?></td>
-                                    <td><?php echo "{$cofounder['first_name']} {$cofounder['last_name']}"?></td>
-                                    <td><?php echo $cofounder['project_preference'] ?></td>
-                                    <td><?php echo $cofounder['study'] ?></td>
-                                    <td><?php echo $cofounder['dob']; ?></td>
-                                    <td><?php echo $cofounder['status'] ?></td>
-                                    <td>
-                                        <form class="form-inline mg-0" action="/Admin_edit/cofounders_update/<?php echo $cofounder['id']; ?>" method="POST">
-                                            <select name="status" class="form-control">
-                                                <option value="">Choose...</option>
-                                                <option value="pending">Pending</option>
-                                                <option value="accepted">Accepted</option>
-                                                <option value="rejected">Rejected</option>
-                                            </select>
-                                            <button type="submit" class="btn btn-default mg-0">Change</button>
-                                        </form>
-                                    </td>
-                                    <td>
-                                        <form class="form-inline mg-0" action="/Admin_edit/cofounders_delete/<?php echo $cofounder['id']; ?>" method="POST">
-                                            <button type="submit" class="btn btn-danger mg-0">Delete</button>
-                                        </form>
-                                    </td>
-                                </tr>
-                                <?php $i++; }; ?>
-                            </table>
-                        </div>
-                        <form class="form" action="/Admin/cofounders_export" method="POST">
-                            <button type="submit" class="btn btn-lg btn-default pull-right">Export</button>
-                        </form>
-                    </div>
-                </div>
+            <div class="container">
+                <h1>This is the ventures admin.</h1>
             </div>
+            <!-- content-container end -->
         </div>
+        <!-- page wrapper end -->
+            <!-- JavaScript files placed at the end of the document so the pages load faster -->
+            <!-- ================================================== -->
+            <!-- Jquery and Bootstap core js files -->
+            <script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
+            <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+            <!-- Modernizr javascript -->
+            <script type="text/javascript" src="/assets/plugins/modernizr.js"></script>
+            <!-- jQuery Revolution Slider  -->
+            <script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+            <script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+            <script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+            <script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+            <!-- Jasny Bootstrap  -->
+            <script type="text/javascript" src="/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
+            <!-- Isotope javascript -->
+            <script type="text/javascript" src="/assets/plugins/isotope/isotope.pkgd.min.js"></script>
+            <!-- Magnific Popup javascript -->
+            <script type="text/javascript" src="/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+            <!-- Appear javascript -->
+            <script type="text/javascript" src="/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+            <!-- Count To javascript -->
+            <script type="text/javascript" src="/assets/plugins/jquery.countTo.js"></script>
+            <!-- Parallax javascript -->
+            <script src="/assets/plugins/jquery.parallax-1.1.3.js"></script>
+            <!-- Contact form -->
+            <script src="/assets/plugins/jquery.validate.js"></script>
+            <!-- Morphext -->
+            <script type="text/javascript" src="/assets/plugins/morphext/morphext.min.js"></script>
+            <!-- Pace javascript -->
+            <script type="text/javascript" src="/assets/plugins/pace/pace.min.js"></script>
+            <!-- Owl carousel javascript -->
+            <script type="text/javascript" src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
+            <!-- SmoothScroll javascript -->
+            <script type="text/javascript" src="/assets/plugins/jquery.browser.js"></script>
+            <script type="text/javascript" src="/assets/plugins/SmoothScroll.js"></script>
+            <!-- Initialization of Plugins -->
+            <script type="text/javascript" src="/assets/js/template.js"></script>
+            <!-- Background Video -->
+            <script src="/assets/plugins/vide/jquery.vide.js"></script>
+            <!-- Custom Scripts -->
+            <script type="text/javascript" src="/assets/js/custom.js"></script>
     </body>
+</html>

@@ -10,10 +10,9 @@
 
 $(document).ready(function(){
 
-$(".scrollDownAboutUs").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#about-us").offset().top},
-        'slow');
-});
-
+    $(".scrollDownAboutUs").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#about-us").offset().top},
+            'slow');
+    });
 });

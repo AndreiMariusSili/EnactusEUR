@@ -10,7 +10,7 @@ class Admin_edit_model extends CI_Model
 
 		//update video title and subtitle in database
 	    $data = array(
-	    	'id' => 0,
+	    	'id' => 1,
 	    	'video_title' => $title,
 	    	'video_subtitle' => $subtitle,
 	   	);
@@ -31,7 +31,7 @@ class Admin_edit_model extends CI_Model
 
 
 	    $data = array (
-	    	'id' => 0,
+	    	'id' => 1,
 	    	'aboutus_left_icon' => $block_left_icon,
 	    	'aboutus_left_title' => $block_left_title,
 	    	'aboutus_left_content' => $block_left_content,
@@ -58,7 +58,7 @@ class Admin_edit_model extends CI_Model
 
 
 	    $data = array (
-	    	'id' => 0,
+	    	'id' => 1,
 	    	'accomp_left_icon' => $block_left_icon,
 	    	'accomp_left_title' => $block_left_title,
 	    	'accomp_left_content' => $block_left_content,
@@ -71,11 +71,11 @@ class Admin_edit_model extends CI_Model
 	    );
 	    $this->db->update('landing_admin', $data);
 	}
-	public function newFounder($first_name, $last_name, $email, $phone_number, $dob, $study, $title, $idea, $statusMember, $statusProject, $motivation)
+	public function newFounder($first_name, $last_name, $email, $phone_number, $dob, $study, $title, $idea, $type, $statusProject, $statusMember, $motivation)
 	{
 		//insert data for new member
-		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, status, updated_at) VALUES (?,?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $statusMember, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, updated_at) VALUES (?,?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $statusMember, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 
 		//retrieve new member id
@@ -88,11 +88,11 @@ class Admin_edit_model extends CI_Model
 		$this->db->query($query, $values);
 	}
 
-	public function newCofounder($first_name, $last_name, $email, $phone_number, $dob, $study, $preference, $status ,$motivation)
+	public function newCofounder($first_name, $last_name, $email, $phone_number, $dob, $study, $preference, $type, $statusMember, $statusApplication ,$motivation)
 	{
 		//insert data for new member
-		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, status, updated_at) VALUES (?,?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $status, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, updated_at) VALUES (?,?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $statusMember, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 
 		//retrieve new member id
@@ -104,24 +104,33 @@ class Admin_edit_model extends CI_Model
 		$project = $query->row_array();
 
 		// register new application
-		$query = "INSERT INTO applications (members_id, projects_id, project_preference, apply_motivation, updated_at) VALUES (?,?,?,?,?)";
-		$values = array($member['id'], $project['id'], $preference, $motivation, date("Y-m-d, H:i:s"));
-		$this->db->query($query, $values);	
+		$query = "INSERT INTO applications (members_id, projects_id, project_preference, apply_motivation, status, updated_at) VALUES (?,?,?,?,?,?)";
+		$values = array($member['id'], $project['id'], $preference, $motivation, $statusApplication, date("Y-m-d, H:i:s"));
+		$this->db->query($query, $values);
 	}
 
-    public function newPassive($first_name, $last_name, $email, $phone_number, $dob, $study, $status ,$motivation)
+    public function newPassive($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $status ,$motivation)
     {
-        //insert data for new member
-        $query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, status, updated_at) VALUES (?,?,?,?,?,?,?,?)";
-        $values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $status, date("Y-m-d, H:i:s"));
-        $this->db->query($query, $values);
+		//insert data for new member
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, updated_at) VALUES (?,?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $status, date("Y-m-d, H:i:s"));
+		$this->db->query($query, $values);
+
+		//retrieve new member id
+		$query = $this->db->query("SELECT id FROM members ORDER BY id DESC LIMIT 1");
+		$member = $query->row_array();
+
+		// register new application
+		$query = "INSERT INTO passives_motivation(members_id, motivation, updated_at) VALUES (?,?,?)";
+		$values = array($member['id'], $motivation, date("Y-m-d, H:i:s"));
+		$this->db->query($query, $values);
     }
 
-	public function newPartner($first_name, $last_name, $email, $phone_number, $organization, $motivation)
+	public function newPartner($first_name, $last_name, $email, $phone_number, $organization, $motivation, $status)
 	{
 		//insert data for new member
-		$query = "INSERT INTO partners (first_name, last_name, email, phone, organization, interest, updated_at) VALUES (?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $organization, $motivation, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO partners (first_name, last_name, email, phone, organization, interest, status,  updated_at) VALUES (?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $organization, $motivation, $status, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 	}
 
@@ -170,5 +179,91 @@ class Admin_edit_model extends CI_Model
 	public function members_delete($id)
 	{
 	    $this->db->delete('teams_admin_members', array('id' => $id ));
+	}
+
+	public function projects_update($id, $status)
+	{
+		$data=array(
+			'status' => $status,
+		);
+	    $this->db->where('id', $id);
+	    $this->db->update('projects', $data);
+	}
+
+	public function projects_delete($id)
+	{
+	    $this->db->delete('projects', array('id' => $id));
+	}
+
+	public function founders_update($id, $status)
+	{
+		$data=array(
+			'status' => $status,
+		);
+	    $this->db->where('id', $id);
+	    $this->db->update('members', $data);
+	}
+
+	public function founders_delete($id)
+	{
+	    $this->db->delete('members', array('id' => $id));
+	    $this->db->delete('projects', array('members_id' => $id));
+	}
+
+	public function applications_update($id, $status)
+	{
+		$data=array(
+			'status' => $status,
+		);
+	    $this->db->where('id', $id);
+	    $this->db->update('applications', $data);
+	}
+
+	public function applications_delete($id)
+	{
+	    $this->db->delete('applications', array('id' => $id));
+	}
+
+	public function cofounders_update($id, $status)
+	{
+		$data=array(
+			'status' => $status,
+		);
+	    $this->db->where('id', $id);
+	    $this->db->update('members', $data);
+	}
+
+	public function cofounders_delete($id)
+	{
+	    $this->db->delete('members', array('id' => $id));
+	    $this->db->delete('applications', array('members_id' => $id));
+	}
+
+	public function passives_update($id, $status)
+	{
+		$data=array(
+			'status' => $status,
+		);
+	    $this->db->where('id', $id);
+	    $this->db->update('members', $data);
+	}
+
+	public function passives_delete($id)
+	{
+	    $this->db->delete('members', array('id' => $id));
+	}
+
+	public function partners_update($id, $status)
+	{
+		$data=array(
+			'status' => $status,
+		);
+	    $this->db->where('id', $id);
+	    $this->db->update('partners', $data);
+	}
+
+	public function partners_delete($id)
+	{
+	    $this->db->delete('partners', array('id' => $id));
 	}
 }

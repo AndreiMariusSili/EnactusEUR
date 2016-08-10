@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentallela Alela! | </title>
+    <title>Login | EnactusEUR</title>
+
+    <link rel="shortcut icon" href="assets/images/Logo_crane.png">
 
     <!-- Bootstrap -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
