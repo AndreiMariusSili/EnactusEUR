@@ -123,12 +123,6 @@
 						<!-- ================ -->
 						<div class="main col-md-8">
 
-							<!-- page-title start -->
-							<!-- ================ -->
-							<h1 class="page-title">Modals</h1>
-							<div class="separator-2"></div>
-							<!-- page-title end -->
-
 			<!-- Venture | Urban Rotterdam | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
