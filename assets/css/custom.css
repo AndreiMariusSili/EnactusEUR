@@ -133,8 +133,9 @@ footer.dark {
 }
 
 .ventures_logos_fix{
-  height: 17em;
-  width: 17em;
+  height: 19em;
+  width: 19em;
+  margin: 1em;
   background: none;
   padding: 0;
   border: none;

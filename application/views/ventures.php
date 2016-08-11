@@ -117,11 +117,11 @@
 			<section class="main-container">
 
 				<div class="container">
+					
+					<!-- row 1 start -->
+					<!-- ================ -->
 					<div class="row">
-
-						<!-- main start -->
-						<!-- ================ -->
-						<div class="main col-md-8">
+						<div class="main col-md-6">
 
 			<!-- Venture | Urban Rotterdam | start -->
 			<!-- ============================================================================== -->
@@ -174,7 +174,16 @@
 				</div>
 			<!-- ============================================================================== -->
 			<!-- Venture | Buurt | end -->
-			
+
+						</div>
+					</div>
+					<!-- row 1 end -->
+
+					<!-- row 2 start -->
+					<!-- ================ -->
+					<div class="row">
+						<div class="main col-md-6">
+
 			<!-- Venture | Klik | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
@@ -226,6 +235,15 @@
 				</div>
 			<!-- ============================================================================== -->
 			<!-- Venture | Organo Bike | end -->
+
+						</div>
+					</div>
+					<!-- row 2 end -->
+
+					<!-- row 3 start -->
+					<!-- ================ -->
+					<div class="row">
+						<div class="main col-md-6">
 
 			<!-- Venture | Smaak | start -->
 			<!-- ============================================================================== -->
@@ -280,12 +298,14 @@
 			<!-- Venture | Women Helping Women | end -->
 
 						</div>
-						<!-- main end -->
-	
 					</div>
+					<!-- row 3 end -->
+	
 				</div>
+
 			</section>
 			<!-- main-container end -->
+			
 			<!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
 			<!-- ================ -->
 			<footer id="footer" class="clearfix dark">
