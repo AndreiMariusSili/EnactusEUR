@@ -139,4 +139,15 @@ footer.dark {
   background: none;
   padding: 0;
   border: none;
+
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.ventures_logos_fix:hover {
+  width: 21em;
+  height: 21em;
 }
