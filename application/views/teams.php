@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<title>Teams 2016/2017 | Enactus EUR</title>
 		<meta name="Teams 2016/2017 | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
-		<meta name="author" content="htmlcoder.me">
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Crane Logo -->
