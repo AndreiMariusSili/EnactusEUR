@@ -23,7 +23,7 @@
 		if ((platform.indexOf('win') == 0 || platform.indexOf('linux') == 0) && !Modernizr.touch) {
 			if ($.browser.webkit) {
 				$.webkitSmoothScroll();
-				console.log("hello webkit");
+				console.log("Hello, fellow developer! We at Turing Society hope you like what we've done. You can contact us at http://tsociety.io !");
 			}
 		};
 		//Show dropdown on hover only for desktop devices
@@ -1247,9 +1247,9 @@
 		if($(".video-background").length>0) {
 			if (Modernizr.touch) {
 				$(".video-background").vide({
-					mp4: "/assets/videos/background-video-2.mp4",
-					webm: "/assets/videos/background-video-2.webm",
-					poster: "/assets/videos/video-fallback-2.jpg"
+					mp4: "/assets/videos/background-video.mp4",
+					webm: "/assets/videos/background-video.webm",
+					poster: "/assets/videos/background-video-poster.jpg"
 				}, {
 					volume: 1,
 					playbackRate: 1,
