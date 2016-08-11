@@ -23,7 +23,7 @@
 		if ((platform.indexOf('win') == 0 || platform.indexOf('linux') == 0) && !Modernizr.touch) {
 			if ($.browser.webkit) {
 				$.webkitSmoothScroll();
-				console.log("Hello, fellow developer! We at Turing Society hope you like what we've done. You can contact us at http://tsociety.io !");
+				console.log("Hello, fellow developer! You can contact us at http://tsociety.io! Andrei Sili & Victor Rebei");
 			}
 		};
 		//Show dropdown on hover only for desktop devices
