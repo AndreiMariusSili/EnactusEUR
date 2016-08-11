@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<title>Ventures | Enactus EUR</title>
 		<meta name="Enactus | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
-		<meta name="author" content="htmlcoder.me">
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Crane Logo -->
@@ -126,7 +125,7 @@
 			<!-- Venture | Urban Rotterdam | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/urbanrotterdamlogo.png" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_one"/>
+			<input type="image" src="/assets/images/ventures_logos/urbanrotterdamlogo.png" alt="Urban_Rotterdam" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_one"/>
 
 				<!-- Modal -->
 				<div class="modal fade" id="venture_one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_one" aria-hidden="true">
@@ -156,7 +155,7 @@
 			<!-- Venture | Buurt | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/buurt.jpg" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_two"/>
+			<input type="image" src="/assets/images/ventures_logos/buurt.jpg" alt="Buurt" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_two"/>
 
 				<!-- Modal -->
 				<div class="modal fade" id="venture_two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_two" aria-hidden="true">
@@ -191,7 +190,7 @@
 			<!-- Venture | Klik | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/klik.png" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_three"/>
+			<input type="image" src="/assets/images/ventures_logos/klik.png" alt="Klik" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_three"/>
 
 				<!-- Modal -->
 				<div class="modal fade" id="venture_three" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_three" aria-hidden="true">
@@ -221,7 +220,7 @@
 			<!-- Venture | Organo Bike | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/organobike.jpg" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_four"/>
+			<input type="image" src="/assets/images/ventures_logos/organobike.jpg" alt="Organo_Bike" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_four"/>
 
 				<!-- Modal -->
 				<div class="modal fade" id="venture_four" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_four" aria-hidden="true">
@@ -256,7 +255,7 @@
 			<!-- Venture | Smaak | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/smaak.png" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_five"/>
+			<input type="image" src="/assets/images/ventures_logos/smaak.png" alt="Smaak" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_five"/>
 
 				<!-- Modal -->
 				<div class="modal fade" id="venture_five" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_five" aria-hidden="true">
@@ -286,7 +285,7 @@
 			<!-- Venture | Women Helping Women | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/whw.jpg" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_six"/>
+			<input type="image" src="/assets/images/ventures_logos/whw.jpg" alt="Women_Helping_Women" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_six"/>
 
 				<!-- Modal -->
 				<div class="modal fade" id="venture_six" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_six" aria-hidden="true">
