@@ -123,24 +123,18 @@
 						<!-- ================ -->
 						<div class="main col-md-8">
 
-							<!-- page-title start -->
-							<!-- ================ -->
-							<h1 class="page-title">Modals</h1>
-							<div class="separator-2"></div>
-							<!-- page-title end -->
-
-			<!-- Venture 1 start -->
+			<!-- Venture | Urban Rotterdam | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<button class="btn btn-lg btn-default" data-toggle="modal" data-target="#venture_one">Venture 1</button>
+			<input type="image" src="/assets/images/ventures_logos/urbanrotterdamlogo.png" class="btn btn-lg btn-default" data-toggle="modal" data-target="#venture_one"/>
 
 				<!-- Modal -->
-				<div class="modal fade" id="venture_one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal fade" id="venture_one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_one" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-									<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+									<h4 class="modal-title" id="myModalLabel_one">Urban Rotterdam</h4>
 							</div>
 							<div class="modal-body">
 								<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
@@ -153,20 +147,20 @@
 					</div>
 				</div>
 			<!-- ============================================================================== -->
-			<!-- Venture 1 end -->
+			<!-- Venture | Urban Rotterdam | end -->
 			
-			<!-- Venture 2 start -->
+			<!-- Venture | Buurt | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<button class="btn btn-lg btn-default" data-toggle="modal" data-target="#venture_two">Venture 2</button>
+			<input type="image" src="/assets/images/ventures_logos/buurt.jpg" class="btn btn-lg btn-default" data-toggle="modal" data-target="#venture_two"/>
 
 				<!-- Modal -->
-				<div class="modal fade" id="venture_two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal fade" id="venture_two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_two" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-									<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+									<h4 class="modal-title" id="myModalLabel_two">Buurt</h4>
 							</div>
 							<div class="modal-body">
 								<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
@@ -179,20 +173,20 @@
 					</div>
 				</div>
 			<!-- ============================================================================== -->
-			<!-- Venture 2 end -->
+			<!-- Venture | Buurt | end -->
 			
-			<!-- Venture 3 start -->
+			<!-- Venture | Klik | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<button class="btn btn-lg btn-default" data-toggle="modal" data-target="#venture_three">Venture 3</button>
+			<input type="image" src="/assets/images/ventures_logos/klik.png" class="btn btn-lg btn-default" data-toggle="modal" data-target="#venture_three"/>
 
 				<!-- Modal -->
-				<div class="modal fade" id="venture_three" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal fade" id="venture_three" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_three" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-									<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+									<h4 class="modal-title" id="myModalLabel_three">Klik</h4>
 							</div>
 							<div class="modal-body">
 								<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
@@ -205,20 +199,20 @@
 					</div>
 				</div>
 			<!-- ============================================================================== -->
-			<!-- Venture 3 end -->
+			<!-- Venture | Klik | end -->
 
-			<!-- Venture 4 start -->
+			<!-- Venture | Organo Bike | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<button class="btn btn-lg btn-default" data-toggle="modal" data-target="#venture_four">Venture 4</button>
+			<input type="image" src="/assets/images/ventures_logos/organobike.jpg" class="btn btn-lg btn-default" data-toggle="modal" data-target="#venture_four"/>
 
 				<!-- Modal -->
-				<div class="modal fade" id="venture_four" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal fade" id="venture_four" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_four" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-									<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+									<h4 class="modal-title" id="myModalLabel_four">Organo Bike</h4>
 							</div>
 							<div class="modal-body">
 								<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
@@ -231,7 +225,59 @@
 					</div>
 				</div>
 			<!-- ============================================================================== -->
-			<!-- Venture 4 end -->
+			<!-- Venture | Organo Bike | end -->
+
+			<!-- Venture | Smaak | start -->
+			<!-- ============================================================================== -->
+			<!-- Button trigger modal -->
+			<input type="image" src="/assets/images/ventures_logos/smaak.png" class="btn btn-lg btn-default" data-toggle="modal" data-target="#venture_five"/>
+
+				<!-- Modal -->
+				<div class="modal fade" id="venture_five" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_five" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="myModalLabel_five">Smaak</h4>
+							</div>
+							<div class="modal-body">
+								<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
+								<p>Culpa expedita! Quisquam, itaque officiis nisi nam doloribus explicabo possimus, dolorum alias provident maxime temporibus, enim voluptatibus! Molestias, accusantium cum impedit sint velit exercitationem deserunt, corporis magni provident earum, ullam iusto voluptatem iste animi inventore ab cupiditate quod laborum quasi libero doloremque obcaecati eius. Ut, reprehenderit optio unde accusantium quia qui! Debitis delectus corporis aspernatur nemo aut, odio harum ea repellendus quidem, saepe, incidunt? Assumenda deserunt unde minima aspernatur ducimus velit molestiae, minus eius inventore, dolore temporibus odio distinctio optio.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- ============================================================================== -->
+			<!-- Venture | Smaak | end -->
+
+			<!-- Venture | Women Helping Women | start -->
+			<!-- ============================================================================== -->
+			<!-- Button trigger modal -->
+			<input type="image" src="/assets/images/ventures_logos/whw.jpg" class="btn btn-lg btn-default" data-toggle="modal" data-target="#venture_six"/>
+
+				<!-- Modal -->
+				<div class="modal fade" id="venture_six" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_six" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="myModalLabel_six">Women Helping Women</h4>
+							</div>
+							<div class="modal-body">
+								<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
+								<p>Culpa expedita! Quisquam, itaque officiis nisi nam doloribus explicabo possimus, dolorum alias provident maxime temporibus, enim voluptatibus! Molestias, accusantium cum impedit sint velit exercitationem deserunt, corporis magni provident earum, ullam iusto voluptatem iste animi inventore ab cupiditate quod laborum quasi libero doloremque obcaecati eius. Ut, reprehenderit optio unde accusantium quia qui! Debitis delectus corporis aspernatur nemo aut, odio harum ea repellendus quidem, saepe, incidunt? Assumenda deserunt unde minima aspernatur ducimus velit molestiae, minus eius inventore, dolore temporibus odio distinctio optio.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- ============================================================================== -->
+			<!-- Venture | Women Helping Women | end -->
 
 						</div>
 						<!-- main end -->
