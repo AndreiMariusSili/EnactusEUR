@@ -60,6 +60,9 @@ class Admin_edit extends CI_Controller
         $this->load->library('form_validation');
         $this->load->helper('security');
 
+        $this->load->library('email');
+        $this->load->helper('url');
+
         $config = array(
             array(
                 'field' => "first_name",
@@ -182,6 +185,9 @@ class Admin_edit extends CI_Controller
         $this->load->library('form_validation');
         $this->load->helper('security');
 
+        $this->load->library('email');
+        $this->load->helper('url');
+
         $config = array(
             array(
                 'field' => "first_name",
@@ -298,6 +304,9 @@ class Admin_edit extends CI_Controller
         $this->load->library('form_validation');
         $this->load->helper('security');
 
+        $this->load->library('email');
+        $this->load->helper('url');
+
         $config = array(
             array(
                 'field' => "first_name",
@@ -397,6 +406,9 @@ class Admin_edit extends CI_Controller
     {
         $this->load->library('form_validation');
         $this->load->helper('security');
+
+        $this->load->library('email');
+        $this->load->helper('url');
 
         $config = array(
             array(
