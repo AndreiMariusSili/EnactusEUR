@@ -107,37 +107,21 @@ class Form extends CI_Controller
 			$this->email->to("contact@enactuseur.nl");
 			$this->email->subject("New founder application - {$post['first_name']} {$post['last_name']}");
 			$this->email->message(
-				"Dear Enactus Administrator," .
+				"<h2>Dear Enactus Administrator,</h2>" . "<br>" .
+				"<p>A potential founder has just applied on your website. You can review his details below.</p>" . "<br>" .
+				"<p><strong>First Name:</strong> {$post['first_name']} " . "<br>" .
+				"<strong>Last Name:</strong> {$post['last_name']} " . "<br>" .
+				"<strong>Email:</strong> {$post['email']} " . "<br>" .
+				"<strong>Telephone:</strong> {$post['phone_number']}" . "<br>" .
+				"<strong>Date of Birth:</strong> {$post['dob']}" . "<br>" . 
+				"<strong>Study:</strong> {$post['study']}" . "<br>" . 
+				"<strong>Idea Title:</strong> {$post['title']}" . "<br>" .
+				"<strong>Idea Description:</strong> {$post['idea']}" ."<br>" .
+				"<strong>Motivation:</strong> {$post['motivation']}</p>" ."<br>" .
+				"<p>You can also review his application in the Enactus Admin Panel at: " . "<a href='" . site_url() . "admin'>" . site_url() . "</a></p>" . "<br>" . 
 				"<br>" .
-				"<br>" .
-				"A potential founder has just applied on your website. You can review his details below." .
-				"<br>" .
-				"<br>" .
-				"<strong>First Name:</strong> {$post['first_name']} " . 
-				"<br>" .
-				"<strong>Last Name:</strong> {$post['last_name']} " . 
-				"<br>" .
-				"<strong>Email:</strong> {$post['email']} " . 
-				"<br>" .
-				"<strong>Telephone:</strong> {$post['phone_number']}" . 
-				"<br>" .
-				"<strong>Date of Birth:</strong> {$post['dob']}" . 
-				"<br>" . 
-				"<strong>Study:</strong> {$post['study']}" . 
-				"<br>" . 
-				"<strong>Idea Title:</strong> {$post['title']}" . 
-				"<br>" .
-				"<strong>Idea Description:</strong> {$post['idea']}" .
-				"<br>" .
-				"<strong>Motivation:</strong> {$post['motivation']}" .
-				"<br>" .
-				"<br>" . 
-				"You can also review his application in the Enactus Admin Panel at: " . "<a href='" . site_url() . "admin'>" . site_url() . "</a>" .
-				"<br>" . 
-				"<br>" .
-				"Best," .
-				"<br>" .
-				"The Enactus Robot"
+				"<p>Best," . "<br>" .
+				"The Enactus Robot</p>"
 			);
 			$this->email->send();
 
@@ -158,7 +142,7 @@ class Form extends CI_Controller
 				"<br>" .
 				"<p>Best," . "<br>" . 
 				"The EnactusEUR Family </p>" . "<br>" .
-				"<img src='/assets/images/logo_enactus_eur.png' stye='width: 60px; height: 100%;'>"
+				"<img src='/assets/images/logo_enactus_eur.png' stye='width: 60px; height: 100%;' alt='Enactus Eramus University Rotterdam'>"
 			);
 			$this->email->send();
 
