@@ -95,7 +95,7 @@
 							<h2 class="text-center object-non-visible video-title" data-animation-effect="zoomIn" data-effect-delay="100"><?php echo $content['video_title'] ?></h2>
 							<div class="separator object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100"></div>
 							<p class="large text-center object-non-visible video-subtitle" data-animation-effect="zoomIn" data-effect-delay="300"><?php echo $content['video_subtitle'] ?></p>
-							<p><button type="button" class="video-button btn btn-lg btn-gray-transparent object-non-visible scrollDownAboutUs" data-animation-effect="zoomIn" data-effect-delay="500">Learn More</button></p>
+							<p><button type="button" id="scrollDownAboutUs" class="video-button btn btn-lg btn-gray-transparent object-non-visible" data-animation-effect="zoomIn" data-effect-delay="500">Learn More</button></p>
 						</div>
 					</div>
 				</div>
@@ -116,7 +116,7 @@
 										<h3><?php echo $content['aboutus_left_title'] ?></h3>
 										<div class="separator clearfix"></div>
 										<p><?php echo $content['aboutus_left_content'] ?></p>
-										<a href="/ventures">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+										<a href="/ventures">Explore our ventures<i class="pl-5 fa fa-angle-double-right"></i></a>
 									</div>
 								</div>
 								<div class="col-md-4 ">
@@ -125,7 +125,7 @@
 										<h3><?php echo $content['aboutus_center_title'] ?></h3>
 										<div class="separator clearfix"></div>
 										<p><?php echo $content['aboutus_center_content'] ?></p>
-										<a href="/teams">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+										<a href="/teams">Meet our team<i class="pl-5 fa fa-angle-double-right"></i></a>
 									</div>
 								</div>
 								<div class="col-md-4 ">
@@ -134,7 +134,7 @@
 										<h3><?php echo $content['aboutus_right_title'] ?></h3>
 										<div class="separator clearfix"></div>
 										<p><?php echo $content['aboutus_right_content'] ?></p>
-										<a href="/#contact-us">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+										<a id="ScrollDownContactUs" href="/#contact-us">Contact us<i class="pl-5 fa fa-angle-double-right"></i></a>
 									</div>
 								</div>
 							</div>

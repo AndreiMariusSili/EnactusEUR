@@ -15,4 +15,10 @@ $(document).ready(function(){
             scrollTop: $("#about-us").offset().top},
             'slow');
     });
+
+    $("#scrollDownContactUs").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#contact-us").offset().top},
+            'slow');
+    });
 });
