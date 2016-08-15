@@ -10,7 +10,7 @@
 
 $(document).ready(function(){
 
-    $(".scrollDownAboutUs").click(function() {
+    $("#scrollDownAboutUs").click(function() {
         $('html,body').animate({
             scrollTop: $("#about-us").offset().top},
             'slow');
