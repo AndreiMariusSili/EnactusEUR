@@ -134,7 +134,7 @@
 										<h3><?php echo $content['aboutus_right_title'] ?></h3>
 										<div class="separator clearfix"></div>
 										<p><?php echo $content['aboutus_right_content'] ?></p>
-										<a id="scrollDownContactUs" href="#" target="_blank">Contact us<i class="pl-5 fa fa-angle-double-right"></i></a>
+										<a id="scrollDownContactUs" href="#">Contact us<i class="pl-5 fa fa-angle-double-right"></i></a>
 									</div>
 								</div>
 							</div>
