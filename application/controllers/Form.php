@@ -128,13 +128,10 @@ class Form extends CI_Controller
 			$this->email->to($post["email"]);
 			$this->email->subject("A warm welcome from EnactusEUR!");
 			$this->email->message(
-				"<h2 style='color: #FFC222;'>Hey, {$post["first_name"]}!</h2>" . "<br>" .
-				"<br>" .
-				"<p> Thank you for your interest in EnactusEUR. Together we challenge the status-quo of business to make Rotterdam and our planet a better, fairer, and more hopeful place to live in." . "<br>" .
-				"<br>" .
-				"<p>Your will receive more information on recruitment activities and entrepreneurial events in the comming week!" . "<br>" .
-				"<br>" . 
-				"<h4 style='color: #FFC222;'>Stay in touch:</h2>" . "<br>" .
+				"<h2 style='color: #FFC222;'>Hey, {$post["first_name"]}!</h2>" .
+				"<p> Thank you for your interest in EnactusEUR. Together we challenge the status-quo of business to make Rotterdam and our planet a better, fairer, and more hopeful place to live in.</p>" .
+				"<p>You will receive more information on recruitment activities and entrepreneurial events in the comming week!</p>" . "<br>" . 
+				"<h4 style='color: #FFC222;'>Stay in touch:</h2>" . 
 				"<a href='http://facebook.com/EUREnactus'>http://facebook.com/EUREnactus</a>" . "<br>" .
 				"<a href='mailto:info@enactus-eur.nl'>info@enactus-eur.nl</a>" . "<br>" .
 				"<a href='http://instagram.com/enactus_eur'>http://instagram.com/enactus_eur</a>" . "<br>" .
