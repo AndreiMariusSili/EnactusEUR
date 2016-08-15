@@ -117,7 +117,7 @@ class Form extends CI_Controller
 				"<strong>Study:</strong> {$post['study']}" . "<br>" . 
 				"<strong>Idea Title:</strong> {$post['title']}" . "<br>" .
 				"<strong>Idea Description:</strong> {$post['idea']}" ."<br>" .
-				"<strong>Motivation:</strong> {$post['motivation']}</p>" ."<br>" .
+				"<strong>Motivation:</strong> {$post['motivation']}</p>" . 
 				"<p>You can also review his application in the Enactus Admin Panel at: " . "<a href='" . site_url() . "admin'>" . site_url() . "</a></p>" . 
 				"<p>Best," . "<br>" .
 				"The Enactus Robot</p>"
@@ -141,7 +141,7 @@ class Form extends CI_Controller
 				"<br>" .
 				"<p>Best," . "<br>" . 
 				"The EnactusEUR Family </p>" . "<br>" .
-				"<img src='/assets/images/Logo_enactus_eur.png' stye='width: 60px; height: 100%;' alt='Enactus Eramus University Rotterdam'>"
+				'<img src="site_url()" . "/assets/images/Logo_enactus_eur.png" stye="width: 60px; height: 100%;" alt="Enactus Eramus University Rotterdam">'
 			);
 			$this->email->send();
 
