@@ -125,7 +125,7 @@
 										<h3><?php echo $content['aboutus_center_title'] ?></h3>
 										<div class="separator clearfix"></div>
 										<p><?php echo $content['aboutus_center_content'] ?></p>
-										<a href="/Main/teams">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+										<a href="/teams">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 									</div>
 								</div>
 								<div class="col-md-4 ">
@@ -134,7 +134,7 @@
 										<h3><?php echo $content['aboutus_right_title'] ?></h3>
 										<div class="separator clearfix"></div>
 										<p><?php echo $content['aboutus_right_content'] ?></p>
-										<a href="page-services.html">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
+										<a href="/#contact-us">Read More<i class="pl-5 fa fa-angle-double-right"></i></a>
 									</div>
 								</div>
 							</div>
