@@ -19,7 +19,7 @@ class Main_model extends CI_Model
 
     public function options_get()
     {
-        $query = "SELECT project_title FROM projects WHERE status='pending'";
+        $query = "SELECT project_title FROM projects WHERE status='recruitment'";
         $result = $this->db->query($query)->result_array();
         return $result;
     }
