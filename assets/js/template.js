@@ -1263,7 +1263,8 @@
 				});
 			} else {
 				$(".video-background").vide({
-					mp4: "/assets/videos/background-video.mp4",
+					mp4: src("https://www.youtube.com/watch?v=0wCC3aLXdOw"),
+					// mp4: "/assets/videos/background-video.mp4",
 					webm: "/assets/videos/background-video.webm",
 					poster: "/assets/videos/background-video-poster.jpg"
 				}, {
