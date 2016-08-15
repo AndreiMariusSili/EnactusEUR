@@ -140,7 +140,7 @@
 								<p>We believe in the positive impact we can have on individuals, both our tour guide but also our tour attendees.</p>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-sm btn-default pull-left">Explore</button>
+								<a href="https://www.facebook.com/Urban-Rotterdam-1522985207988426/?fref=ts"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
 								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
 							</div>
 						</div>
@@ -181,7 +181,7 @@
 								unemployed to ensure that they are more connected to society</p>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-sm btn-default pull-left">Explore</button>
+								<a href="https://www.facebook.com/BuurtBoodschappen/info/?section=hours&tab=page_info"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
 								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
 							</div>
 						</div>
@@ -217,7 +217,7 @@
 								<p>In addition to the iPad lessons, the elderly interact with students and other elderly, as well as getting in touch with relatives and their family, especially their children and grandchildren. The lessons at Klik last an hour and are given over a period of four weeks. If decided upon, the elderly can choose to continue with more advanced lessons. The lessons are provided at five different locations, including a Spanish elderly home in Rotterdam. Due to the help of sponsors and partnerships, Klik was able to buy its own iPads to provide even more lessons</p>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-sm btn-default pull-left">Explore</button>
+								<a href="https://www.facebook.com/klikrotterdam/?fref=ts"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
 								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
 							</div>
 						</div>
@@ -247,10 +247,9 @@
 								<p>OrganoBike delivers organic fruit baskets to businesses in Rotterdam. These deliveries are done by individuals with a distance to the job market. We have two goals at OrganoBike: empowering jobless people on their way to a new and promoting sustainability and a healthy lifestyle</p>
 								<p>We will achieve our first goal through providing our employees with job training next to their delivery job and helping them with their application. Using e-bikes instead of scooters and only delivering organic fruits, that are mostly grown locally promotes our commitment to sustainability.</p>
 								<p>The project has achieved some great things this year already. We had the honor to be selected for two accelerator program: the “Social Startup” by Enactus Netherlands and the “Get started” program by the Erasmus centre of Entrepreneurship. Also, we were selected to participate in the Clinton Global Initiative University 2016 in Berkeley. Lastly, we acquired 9 customers for our pilot in February.</p>
-</p>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-sm btn-default pull-left">Explore</button>
+								<a href="http://www.organobike.nl/"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
 								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
 							</div>
 						</div>
@@ -297,7 +296,7 @@
 								achieve the same goal.</p>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-sm btn-default pull-left">Explore</button>
+								<a href=""><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
 								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
 							</div>
 						</div>
@@ -328,7 +327,7 @@
 								<p>In order to accomplish this, we built a project in cooperation with Leger des Heils Rotterdam. The project consists of designing canvas bags and selling them in shops and online platforms by the team members. Apart from providing a steady income, this project will allow them to develop new and existing talents and become more extroverted by working together. As a team of five young women, we commit ourselves to create an opportunity that would help women of our age participate and reintegrate themselves into society. We want to help build the bridge between their personal goals and self-esteem. In short, we will see the possibilities, take action and enable progress.</p>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-sm btn-default pull-left">Explore</button>
+								<a href="https://www.facebook.com/whwenactus/?fref=ts"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
 								<button type="button" class="btn btn-sm btn-default pull-right" data-dismiss="modal">Close</button>
 							</div>
 						</div>
