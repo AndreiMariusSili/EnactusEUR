@@ -141,7 +141,7 @@ class Form extends CI_Controller
 				"<br>" .
 				"<p>Best," . "<br>" . 
 				"The EnactusEUR Family </p>" . "<br>" .
-				"<img src='/assets/images/logo_enactus_eur.png' stye='width: 60px; height: 100%;' alt='Enactus Eramus University Rotterdam'>"
+				"<img src='/assets/images/Logo_enactus_eur.png' stye='width: 60px; height: 100%;' alt='Enactus Eramus University Rotterdam'>"
 			);
 			$this->email->send();
 
