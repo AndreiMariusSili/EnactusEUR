@@ -315,7 +315,7 @@
 								<div class="panel-heading">
 									<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseThree-2" class="collapsed">
-										<i class="fa fa-paper-plane pr-10"></i>Become and ambassador
+										<i class="fa fa-paper-plane pr-10"></i>Become an ambassador
 									</a>
 									</h4>
 								</div>
