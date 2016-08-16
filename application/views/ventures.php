@@ -121,75 +121,71 @@
 					<!-- ================ -->
 					<div class="row">
 						<div class="col-md-6 col-xs-12">
+							<!-- Venture | Urban Rotterdam | start -->
+							<!-- ============================================================================== -->
+							<!-- Button trigger modal -->
+							<input type="image" src="/assets/images/ventures_logos/urbanrotterdamlogo.png" alt="Urban_Rotterdam" class="img-responsive ventures_logos_fix" data-toggle="modal" data-target="#venture_one"/>
 
-			<!-- Venture | Urban Rotterdam | start -->
-			<!-- ============================================================================== -->
-			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/urbanrotterdamlogo.png" alt="Urban_Rotterdam" class="img-responsive ventures_logos_fix" data-toggle="modal" data-target="#venture_one"/>
-
-				<!-- Modal -->
-				<div class="modal fade" id="venture_one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_one" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-									<h4 class="modal-title" id="myModalLabel_one">Urban Rotterdam</h4>
+							<!-- Modal -->
+							<div class="modal fade" id="venture_one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_one" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+												<h4 class="modal-title" id="myModalLabel_one">Urban Rotterdam</h4>
+										</div>
+										<div class="modal-body">
+											<p>Rotterdam: an international, vibrant city combining Berlin edginess with authentic Dutch vibes. Let yourself get immersed by the younger, lively sibling of Amsterdam and its colourful mix of architecture and flair. Urban Rotterdam takes backpackers, tourists, expats and international students to the streets of the ‘Dutch Manhattan’ so they can explore her unseen sides. Together with a local tour guide, a homeless person in Rotterdam,  they discover the urban legends of Rotterdam in a way no guide book could make it possible. We believe in empowerment, that’s why Urban Rotterdam tours are guided by long-term unemployed, giving them responsibility, financial resources and an interesting social context to work in.</p>
+											<p>We believe in the positive impact we can have on individuals, both our tour guide but also our tour attendees.</p>
+										</div>
+										<div class="modal-footer">
+											<a href="https://www.facebook.com/Urban-Rotterdam-1522985207988426/?fref=ts"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
+											<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="modal-body">
-								<p>Rotterdam: an international, vibrant city combining Berlin edginess with authentic Dutch vibes. Let yourself get immersed by the younger, lively sibling of Amsterdam and its colourful mix of architecture and flair. Urban Rotterdam takes backpackers, tourists, expats and international students to the streets of the ‘Dutch Manhattan’ so they can explore her unseen sides. Together with a local tour guide, a homeless person in Rotterdam,  they discover the urban legends of Rotterdam in a way no guide book could make it possible. We believe in empowerment, that’s why Urban Rotterdam tours are guided by long-term unemployed, giving them responsibility, financial resources and an interesting social context to work in.</p>
-								<p>We believe in the positive impact we can have on individuals, both our tour guide but also our tour attendees.</p>
-							</div>
-							<div class="modal-footer">
-								<a href="https://www.facebook.com/Urban-Rotterdam-1522985207988426/?fref=ts"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
-								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			<!-- ============================================================================== -->
-			<!-- Venture | Urban Rotterdam | end -->
-
+							<!-- ============================================================================== -->
+							<!-- Venture | Urban Rotterdam | end -->
 						</div>
 
 						<div class="col-md-6 col-xs-12">
-			
-			<!-- Venture | Buurt | start -->
-			<!-- ============================================================================== -->
-			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/buurt.jpg" alt="Buurt" class="img-responsive ventures_logos_fix" data-toggle="modal" data-target="#venture_two"/>
+							<!-- Venture | Buurt | start -->
+							<!-- ============================================================================== -->
+							<!-- Button trigger modal -->
+							<input type="image" src="/assets/images/ventures_logos/buurt.jpg" alt="Buurt" class="img-responsive ventures_logos_fix" data-toggle="modal" data-target="#venture_two"/>
 
-				<!-- Modal -->
-				<div class="modal fade" id="venture_two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_two" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-									<h4 class="modal-title" id="myModalLabel_two">Buurt</h4>
-							</div>
-							<div class="modal-body">
-								<p>At BB we strive to reduce loneliness within Rotterdam by focusing on he elderly and currently
-								unemployed people. These groups often feel lonely because of their reduced connections and
-								we want to bring them together by letting the unemployed do groceries for the elderly. Prior to
-								or after grocery shopping, the unemployed can have a chat with the elderly, thus inspiring them
-								to connection with each other.</p>
-								<p>The groceries will primarily consist of basic products that can be purchases at the local
-								supermarket. When we have established this we would like to collaborate with other Enactus
-								projects to form a synergy. For instance, Organo Bike could contribute by delivering organic
-								fruits and vegetables of great quality. Currently, we are trying to assess the needs of the
-								elderly, and son we aim to pursue contact with the unemployed for another needs assessment.
-								Eventually, we aim to improve the livelihoods of both the elderly as well as those who are
-								unemployed to ensure that they are more connected to society</p>
-							</div>
-							<div class="modal-footer">
-								<a href="https://www.facebook.com/BuurtBoodschappen/info/?section=hours&tab=page_info"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
-								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			<!-- ============================================================================== -->
-			<!-- Venture | Buurt | end -->
-
+								<!-- Modal -->
+								<div class="modal fade" id="venture_two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_two" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+													<h4 class="modal-title" id="myModalLabel_two">Buurt</h4>
+											</div>
+											<div class="modal-body">
+												<p>At BB we strive to reduce loneliness within Rotterdam by focusing on he elderly and currently
+												unemployed people. These groups often feel lonely because of their reduced connections and
+												we want to bring them together by letting the unemployed do groceries for the elderly. Prior to
+												or after grocery shopping, the unemployed can have a chat with the elderly, thus inspiring them
+												to connection with each other.</p>
+												<p>The groceries will primarily consist of basic products that can be purchases at the local
+												supermarket. When we have established this we would like to collaborate with other Enactus
+												projects to form a synergy. For instance, Organo Bike could contribute by delivering organic
+												fruits and vegetables of great quality. Currently, we are trying to assess the needs of the
+												elderly, and son we aim to pursue contact with the unemployed for another needs assessment.
+												Eventually, we aim to improve the livelihoods of both the elderly as well as those who are
+												unemployed to ensure that they are more connected to society</p>
+											</div>
+											<div class="modal-footer">
+												<a href="https://www.facebook.com/BuurtBoodschappen/info/?section=hours&tab=page_info"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
+												<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							<!-- ============================================================================== -->
+							<!-- Venture | Buurt | end -->
 						</div>
 					</div>
 					<!-- row 1 end -->
