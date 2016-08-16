@@ -23,7 +23,11 @@
 		if ((platform.indexOf('win') == 0 || platform.indexOf('linux') == 0) && !Modernizr.touch) {
 			if ($.browser.webkit) {
 				$.webkitSmoothScroll();
+<<<<<<< HEAD
 				console.log("Hello, fellow developer! You can contact us at http://tsociety.io! Andrei Sili & Victor Rebei");
+=======
+				console.log("Hello, fellow developer! This website was made by Andrei Sili & Victor Rebei. You can contact us at http://tsociety.io!");
+>>>>>>> refs/remotes/origin/master
 			}
 		};
 		//Show dropdown on hover only for desktop devices
