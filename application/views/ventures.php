@@ -125,7 +125,7 @@
 			<!-- Venture | Urban Rotterdam | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/urbanrotterdamlogo.png" alt="Urban_Rotterdam" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_one"/>
+			<input type="image" src="/assets/images/ventures_logos/urbanrotterdamlogo.png" alt="Urban_Rotterdam" class="img-responsive ventures_logos_fix" data-toggle="modal" data-target="#venture_one"/>
 
 				<!-- Modal -->
 				<div class="modal fade" id="venture_one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_one" aria-hidden="true">
@@ -136,10 +136,11 @@
 									<h4 class="modal-title" id="myModalLabel_one">Urban Rotterdam</h4>
 							</div>
 							<div class="modal-body">
-								<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
-								<p>Culpa expedita! Quisquam, itaque officiis nisi nam doloribus explicabo possimus, dolorum alias provident maxime temporibus, enim voluptatibus! Molestias, accusantium cum impedit sint velit exercitationem deserunt, corporis magni provident earum, ullam iusto voluptatem iste animi inventore ab cupiditate quod laborum quasi libero doloremque obcaecati eius. Ut, reprehenderit optio unde accusantium quia qui! Debitis delectus corporis aspernatur nemo aut, odio harum ea repellendus quidem, saepe, incidunt? Assumenda deserunt unde minima aspernatur ducimus velit molestiae, minus eius inventore, dolore temporibus odio distinctio optio.</p>
+								<p>Rotterdam: an international, vibrant city combining Berlin edginess with authentic Dutch vibes. Let yourself get immersed by the younger, lively sibling of Amsterdam and its colourful mix of architecture and flair. Urban Rotterdam takes backpackers, tourists, expats and international students to the streets of the ‘Dutch Manhattan’ so they can explore her unseen sides. Together with a local tour guide, a homeless person in Rotterdam,  they discover the urban legends of Rotterdam in a way no guide book could make it possible. We believe in empowerment, that’s why Urban Rotterdam tours are guided by long-term unemployed, giving them responsibility, financial resources and an interesting social context to work in.</p>
+								<p>We believe in the positive impact we can have on individuals, both our tour guide but also our tour attendees.</p>
 							</div>
 							<div class="modal-footer">
+								<a href="https://www.facebook.com/Urban-Rotterdam-1522985207988426/?fref=ts"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
 								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
 							</div>
 						</div>
@@ -155,7 +156,7 @@
 			<!-- Venture | Buurt | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/buurt.jpg" alt="Buurt" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_two"/>
+			<input type="image" src="/assets/images/ventures_logos/buurt.jpg" alt="Buurt" class="img-responsive ventures_logos_fix" data-toggle="modal" data-target="#venture_two"/>
 
 				<!-- Modal -->
 				<div class="modal fade" id="venture_two" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_two" aria-hidden="true">
@@ -166,10 +167,21 @@
 									<h4 class="modal-title" id="myModalLabel_two">Buurt</h4>
 							</div>
 							<div class="modal-body">
-								<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
-								<p>Culpa expedita! Quisquam, itaque officiis nisi nam doloribus explicabo possimus, dolorum alias provident maxime temporibus, enim voluptatibus! Molestias, accusantium cum impedit sint velit exercitationem deserunt, corporis magni provident earum, ullam iusto voluptatem iste animi inventore ab cupiditate quod laborum quasi libero doloremque obcaecati eius. Ut, reprehenderit optio unde accusantium quia qui! Debitis delectus corporis aspernatur nemo aut, odio harum ea repellendus quidem, saepe, incidunt? Assumenda deserunt unde minima aspernatur ducimus velit molestiae, minus eius inventore, dolore temporibus odio distinctio optio.</p>
+								<p>At BB we strive to reduce loneliness within Rotterdam by focusing on he elderly and currently
+								unemployed people. These groups often feel lonely because of their reduced connections and
+								we want to bring them together by letting the unemployed do groceries for the elderly. Prior to
+								or after grocery shopping, the unemployed can have a chat with the elderly, thus inspiring them
+								to connection with each other.</p>
+								<p>The groceries will primarily consist of basic products that can be purchases at the local
+								supermarket. When we have established this we would like to collaborate with other Enactus
+								projects to form a synergy. For instance, Organo Bike could contribute by delivering organic
+								fruits and vegetables of great quality. Currently, we are trying to assess the needs of the
+								elderly, and son we aim to pursue contact with the unemployed for another needs assessment.
+								Eventually, we aim to improve the livelihoods of both the elderly as well as those who are
+								unemployed to ensure that they are more connected to society</p>
 							</div>
 							<div class="modal-footer">
+								<a href="https://www.facebook.com/BuurtBoodschappen/info/?section=hours&tab=page_info"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
 								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
 							</div>
 						</div>
@@ -190,7 +202,7 @@
 			<!-- Venture | Klik | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/klik.png" alt="Klik" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_three"/>
+			<input type="image" src="/assets/images/ventures_logos/klik.png" alt="Klik" class="img-responsive ventures_logos_fix" data-toggle="modal" data-target="#venture_three"/>
 
 				<!-- Modal -->
 				<div class="modal fade" id="venture_three" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_three" aria-hidden="true">
@@ -201,10 +213,11 @@
 									<h4 class="modal-title" id="myModalLabel_three">Klik</h4>
 							</div>
 							<div class="modal-body">
-								<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
-								<p>Culpa expedita! Quisquam, itaque officiis nisi nam doloribus explicabo possimus, dolorum alias provident maxime temporibus, enim voluptatibus! Molestias, accusantium cum impedit sint velit exercitationem deserunt, corporis magni provident earum, ullam iusto voluptatem iste animi inventore ab cupiditate quod laborum quasi libero doloremque obcaecati eius. Ut, reprehenderit optio unde accusantium quia qui! Debitis delectus corporis aspernatur nemo aut, odio harum ea repellendus quidem, saepe, incidunt? Assumenda deserunt unde minima aspernatur ducimus velit molestiae, minus eius inventore, dolore temporibus odio distinctio optio.</p>
+								<p>Klik is a social organization which gives elderly the opportunity to cope with all the new technologies and make them feel less lonely. The elderly gets personal iPad lessons from students where they learn how to use the device as well as how to send emails, browse the internet, download and use apps like Skype and even how to order groceries and transfer money online. At Klik, we strongly believe that the elderly should be part of our modern tech society as much as everyone else!</p>
+								<p>In addition to the iPad lessons, the elderly interact with students and other elderly, as well as getting in touch with relatives and their family, especially their children and grandchildren. The lessons at Klik last an hour and are given over a period of four weeks. If decided upon, the elderly can choose to continue with more advanced lessons. The lessons are provided at five different locations, including a Spanish elderly home in Rotterdam. Due to the help of sponsors and partnerships, Klik was able to buy its own iPads to provide even more lessons</p>
 							</div>
 							<div class="modal-footer">
+								<a href="https://www.facebook.com/klikrotterdam/?fref=ts"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
 								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
 							</div>
 						</div>
@@ -220,7 +233,7 @@
 			<!-- Venture | Organo Bike | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/organobike.jpg" alt="Organo_Bike" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_four"/>
+			<input type="image" src="/assets/images/ventures_logos/organobike.jpg" alt="Organo_Bike" class="img-responsive ventures_logos_fix" data-toggle="modal" data-target="#venture_four"/>
 
 				<!-- Modal -->
 				<div class="modal fade" id="venture_four" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_four" aria-hidden="true">
@@ -231,10 +244,12 @@
 									<h4 class="modal-title" id="myModalLabel_four">Organo Bike</h4>
 							</div>
 							<div class="modal-body">
-								<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
-								<p>Culpa expedita! Quisquam, itaque officiis nisi nam doloribus explicabo possimus, dolorum alias provident maxime temporibus, enim voluptatibus! Molestias, accusantium cum impedit sint velit exercitationem deserunt, corporis magni provident earum, ullam iusto voluptatem iste animi inventore ab cupiditate quod laborum quasi libero doloremque obcaecati eius. Ut, reprehenderit optio unde accusantium quia qui! Debitis delectus corporis aspernatur nemo aut, odio harum ea repellendus quidem, saepe, incidunt? Assumenda deserunt unde minima aspernatur ducimus velit molestiae, minus eius inventore, dolore temporibus odio distinctio optio.</p>
+								<p>OrganoBike delivers organic fruit baskets to businesses in Rotterdam. These deliveries are done by individuals with a distance to the job market. We have two goals at OrganoBike: empowering jobless people on their way to a new and promoting sustainability and a healthy lifestyle</p>
+								<p>We will achieve our first goal through providing our employees with job training next to their delivery job and helping them with their application. Using e-bikes instead of scooters and only delivering organic fruits, that are mostly grown locally promotes our commitment to sustainability.</p>
+								<p>The project has achieved some great things this year already. We had the honor to be selected for two accelerator program: the “Social Startup” by Enactus Netherlands and the “Get started” program by the Erasmus centre of Entrepreneurship. Also, we were selected to participate in the Clinton Global Initiative University 2016 in Berkeley. Lastly, we acquired 9 customers for our pilot in February.</p>
 							</div>
 							<div class="modal-footer">
+								<a href="http://www.organobike.nl/"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
 								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
 							</div>
 						</div>
@@ -255,7 +270,7 @@
 			<!-- Venture | Smaak | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/smaak.png" alt="Smaak" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_five"/>
+			<input type="image" src="/assets/images/ventures_logos/smaak.png" alt="Smaak" class="img-responsive ventures_logos_fix" data-toggle="modal" data-target="#venture_five"/>
 
 				<!-- Modal -->
 				<div class="modal fade" id="venture_five" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_five" aria-hidden="true">
@@ -266,10 +281,22 @@
 									<h4 class="modal-title" id="myModalLabel_five">Smaak</h4>
 							</div>
 							<div class="modal-body">
-								<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
-								<p>Culpa expedita! Quisquam, itaque officiis nisi nam doloribus explicabo possimus, dolorum alias provident maxime temporibus, enim voluptatibus! Molestias, accusantium cum impedit sint velit exercitationem deserunt, corporis magni provident earum, ullam iusto voluptatem iste animi inventore ab cupiditate quod laborum quasi libero doloremque obcaecati eius. Ut, reprehenderit optio unde accusantium quia qui! Debitis delectus corporis aspernatur nemo aut, odio harum ea repellendus quidem, saepe, incidunt? Assumenda deserunt unde minima aspernatur ducimus velit molestiae, minus eius inventore, dolore temporibus odio distinctio optio.</p>
+								<p>A fresh food catering service run by women from immigrant origins and led by a group of
+								entrepreneurial students! Welcome to sMaak! This social venture focuses on helping women
+								integrate into Rotterdam’s society. sMaak currently works in association with the primary
+								school ‘t Meesterwerk in Schiedam, where the children of the women attend their classes.
+								Here, the women also have access to a professional kitchen in which they prepare their
+								delicious meals with modern pans and kitchen utensils, offered to us by Tefal as part of our
+								sponsorship deal.</p>
+								<p>In a city so multicultural as Rotterdam, sMaak fits perfectly with its wide variety of international
+								women from all over the world. Nationalities vary from Somalian, Turkish, Sudanese and
+								Moroccan to Iraqi and even Syria immigrants. Despite the variety of nationalities and cultural
+								backgrounds at sMaak, the passion and talent for cooking has become a common language for
+								all, enabling them to go beyond their differences and unite as a group of colleagues, trying to
+								achieve the same goal.</p>
 							</div>
 							<div class="modal-footer">
+								<a href=""><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
 								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
 							</div>
 						</div>
@@ -285,7 +312,7 @@
 			<!-- Venture | Women Helping Women | start -->
 			<!-- ============================================================================== -->
 			<!-- Button trigger modal -->
-			<input type="image" src="/assets/images/ventures_logos/whw.jpg" alt="Women_Helping_Women" class="btn btn-lg btn-default ventures_logos_fix" data-toggle="modal" data-target="#venture_six"/>
+			<input type="image" src="/assets/images/ventures_logos/whw.jpg" alt="Women_Helping_Women" class="img-responsive ventures_logos_fix" data-toggle="modal" data-target="#venture_six"/>
 
 				<!-- Modal -->
 				<div class="modal fade" id="venture_six" tabindex="-1" role="dialog" aria-labelledby="myModalLabel_six" aria-hidden="true">
@@ -296,11 +323,12 @@
 									<h4 class="modal-title" id="myModalLabel_six">Women Helping Women</h4>
 							</div>
 							<div class="modal-body">
-								<p>Consectetur adipisicing elit. Nemo architecto debitis dolorum ullam in ut sint, odit maiores eaque explicabo, repellendus minima soluta sunt! Nisi minima blanditiis voluptate, ut atque.</p>
-								<p>Culpa expedita! Quisquam, itaque officiis nisi nam doloribus explicabo possimus, dolorum alias provident maxime temporibus, enim voluptatibus! Molestias, accusantium cum impedit sint velit exercitationem deserunt, corporis magni provident earum, ullam iusto voluptatem iste animi inventore ab cupiditate quod laborum quasi libero doloremque obcaecati eius. Ut, reprehenderit optio unde accusantium quia qui! Debitis delectus corporis aspernatur nemo aut, odio harum ea repellendus quidem, saepe, incidunt? Assumenda deserunt unde minima aspernatur ducimus velit molestiae, minus eius inventore, dolore temporibus odio distinctio optio.</p>
+								<p>WhW aims to empower teenage mothers in our community by creating a sustainable business model with and for them. Besides the business model, our main purpose is to enhance their self-esteem and talents by providing various workshops.</p>
+								<p>In order to accomplish this, we built a project in cooperation with Leger des Heils Rotterdam. The project consists of designing canvas bags and selling them in shops and online platforms by the team members. Apart from providing a steady income, this project will allow them to develop new and existing talents and become more extroverted by working together. As a team of five young women, we commit ourselves to create an opportunity that would help women of our age participate and reintegrate themselves into society. We want to help build the bridge between their personal goals and self-esteem. In short, we will see the possibilities, take action and enable progress.</p>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+								<a href="https://www.facebook.com/whwenactus/?fref=ts"><button type="button" class="btn btn-sm btn-default pull-left">Explore</button></a>
+								<button type="button" class="btn btn-sm btn-default pull-right" data-dismiss="modal">Close</button>
 							</div>
 						</div>
 					</div>
@@ -380,13 +408,6 @@
 			<script type="text/javascript" src="/assets/plugins/SmoothScroll.js"></script>
 			<!-- Initialization of Plugins -->
 			<script type="text/javascript" src="/assets/js/template.js"></script>
-			<!-- jQuery Revolution Slider  -->
-			<script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-			<script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-			<script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/extensions/revolution.extension.video.min.js"></script>
-			<script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/extensions/revolution.extension.slideanims.min.js"></script>
-			<script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/extensions/revolution.extension.layeranimation.min.js"></script>
-			<script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/extensions/revolution.extension.navigation.min.js"></script>
 			<!-- Jasny Bootstrap  -->
 			<script type="text/javascript" src="/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
 			<!-- Custom Scripts -->

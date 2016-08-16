@@ -60,6 +60,9 @@ class Admin_edit extends CI_Controller
         $this->load->library('form_validation');
         $this->load->helper('security');
 
+        $this->load->library('email');
+        $this->load->helper('url');
+
         $config = array(
             array(
                 'field' => "first_name",
@@ -138,6 +141,40 @@ class Admin_edit extends CI_Controller
             $post = $this->input->post(NULL, TRUE);
             $this->Admin_edit_model->newFounder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["title"], $post["idea"], $post["type"], $post["statusProject"], $post['statusMember'], $post["motivation"]);
 
+            $config = array(
+                'protocol' => 'smtp',
+                'smtp_host' => 'mailtrap.io',
+                'smtp_port' => 2525,
+                'smtp_user' => 'ac339ee871b149',
+                'smtp_pass' => '85f0e7b2f21fbc',
+                'crlf' => "\r\n",
+                'newline' => "\r\n",
+                'mailtype' => 'html'
+            );
+
+            $this->email->initialize($config);
+
+            $this->email->from("robots@enactuseur.nl","Enactus Robots");
+            $this->email->to("contact@enactuseur.nl");
+            $this->email->subject("New founder registration - {$post['first_name']} {$post['last_name']}");
+            $this->email->message(
+                "<h2>Dear Enactus Administrator,</h2>" .
+                "<p>You have just registered a new potential founder. You can review his details below.</p>" .
+                "<p><strong>First Name:</strong> {$post['first_name']} " . "<br>" .
+                "<strong>Last Name:</strong> {$post['last_name']} " . "<br>" .
+                "<strong>Email:</strong> {$post['email']} " . "<br>" .
+                "<strong>Telephone:</strong> {$post['phone_number']}" . "<br>" .
+                "<strong>Date of Birth:</strong> {$post['dob']}" . "<br>" . 
+                "<strong>Study:</strong> {$post['study']}" . "<br>" . 
+                "<strong>Idea Title:</strong> {$post['title']}" . "<br>" .
+                "<strong>Idea Description:</strong> {$post['idea']}" ."<br>" .
+                "<strong>Motivation:</strong> {$post['motivation']}</p>" . 
+                "<p>You can also review his application in the Enactus Admin Panel at: " . "<a href='" . site_url() . "admin'>" . site_url() . "</a></p>" . 
+                "<p>Best," . "<br>" .
+                "The Enactus Robot</p>"
+            );
+            $this->email->send();
+
             $this->session->set_flashdata('success', TRUE);
             redirect('/Admin/founders_create');
         }
@@ -147,6 +184,9 @@ class Admin_edit extends CI_Controller
     {
         $this->load->library('form_validation');
         $this->load->helper('security');
+
+        $this->load->library('email');
+        $this->load->helper('url');
 
         $config = array(
             array(
@@ -221,6 +261,39 @@ class Admin_edit extends CI_Controller
             $post= $this->input->post(NULL, TRUE);
             $this->Admin_edit_model->newCofounder($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post["project_preference"], $post["type"], $post['statusMember'], $post['statusApplication'], $post["motivation"]);
 
+            $config = array(
+                'protocol' => 'smtp',
+                'smtp_host' => 'mailtrap.io',
+                'smtp_port' => 2525,
+                'smtp_user' => 'ac339ee871b149',
+                'smtp_pass' => '85f0e7b2f21fbc',
+                'crlf' => "\r\n",
+                'newline' => "\r\n",
+                'mailtype' => 'html'
+            );
+
+            $this->email->initialize($config);
+
+            $this->email->from("robots@enactuseur.nl","Enactus Robots");
+            $this->email->to("contact@enactuseur.nl");
+            $this->email->subject("New cofounder registration - {$post['first_name']} {$post['last_name']}");
+            $this->email->message(
+                "<h2>Dear Enactus Administrator,</h2>" .
+                "<p>You have just registered a new potential cofounder. You can review his details below.</p>" .
+                "<p><strong>First Name:</strong> {$post['first_name']} " . "<br>" .
+                "<strong>Last Name:</strong> {$post['last_name']} " . "<br>" .
+                "<strong>Email:</strong> {$post['email']} " . "<br>" .
+                "<strong>Telephone:</strong> {$post['phone_number']}" . "<br>" .
+                "<strong>Date of Birth:</strong> {$post['dob']}" . "<br>" . 
+                "<strong>Study:</strong> {$post['study']}" . "<br>" . 
+                "<strong>Project preference:</strong> {$post['project_preference']}" . "<br>" .
+                "<strong>Motivation:</strong> {$post['motivation']}</p>" .
+                "<p>You can also review his application in the Enactus Admin Panel at: " . "<a href='" . site_url() . "admin'>" . site_url() . "</a></p>" .
+                "<p>Best," . "<br>" .
+                "The Enactus Robot</p>"
+            );
+            $this->email->send();
+
             $this->session->set_flashdata('success', TRUE);
             redirect('/Admin/cofounders_create');
         }
@@ -230,6 +303,9 @@ class Admin_edit extends CI_Controller
     {
         $this->load->library('form_validation');
         $this->load->helper('security');
+
+        $this->load->library('email');
+        $this->load->helper('url');
 
         $config = array(
             array(
@@ -289,6 +365,37 @@ class Admin_edit extends CI_Controller
         $post= $this->input->post(NULL, TRUE);
         $this->Admin_edit_model->newPassive($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["dob"], $post["study"], $post['type'], $post["status"], $post["motivation"]);
 
+            $config = array(
+                'protocol' => 'smtp',
+                'smtp_host' => 'mailtrap.io',
+                'smtp_port' => 2525,
+                'smtp_user' => 'ac339ee871b149',
+                'smtp_pass' => '85f0e7b2f21fbc',
+                'crlf' => "\r\n",
+                'newline' => "\r\n",
+                'mailtype' => 'html'
+            );
+
+            $this->email->initialize($config);
+
+            $this->email->from("robots@enactuseur.nl","Enactus Robots");
+            $this->email->to("contact@enactuseur.nl");
+            $this->email->subject("New passive member registration - {$post['first_name']} {$post['last_name']}");
+            $this->email->message(
+                "<h2>Dear Enactus Administrator,</h2>" .
+                "<p>You have just registered a new potential passive member. You can review his details below.</p>" .
+                "<p><strong>First Name:</strong> {$post['first_name']} " . "<br>" .
+                "<strong>Last Name:</strong> {$post['last_name']} " . "<br>" .
+                "<strong>Email:</strong> {$post['email']} " . "<br>" .
+                "<strong>Telephone:</strong> {$post['phone_number']}" . "<br>" .
+                "<strong>Date of Birth:</strong> {$post['dob']}" . "<br>" . 
+                "<strong>Study:</strong> {$post['study']}" . "<br>" . 
+                "<strong>Motivation:</strong> {$post['motivation']}</p>" .
+                "<p>Best," . "<br>" .
+                "The Enactus Robot</p>"
+            );
+            $this->email->send();
+
         $this->session->set_flashdata('success', TRUE);
         redirect('/Admin/passives_create');
         }
@@ -299,6 +406,9 @@ class Admin_edit extends CI_Controller
     {
         $this->load->library('form_validation');
         $this->load->helper('security');
+
+        $this->load->library('email');
+        $this->load->helper('url');
 
         $config = array(
             array(
@@ -352,6 +462,36 @@ class Admin_edit extends CI_Controller
 
             $post= $this->input->post(NULL, TRUE);
             $this->Admin_edit_model->newPartner($post["first_name"], $post["last_name"], $post["email"], $post["phone_number"], $post["organization"],$post["motivation"], $post['status']);
+
+            $config = array(
+                'protocol' => 'smtp',
+                'smtp_host' => 'mailtrap.io',
+                'smtp_port' => 2525,
+                'smtp_user' => 'ac339ee871b149',
+                'smtp_pass' => '85f0e7b2f21fbc',
+                'crlf' => "\r\n",
+                'newline' => "\r\n",
+                'mailtype' => 'html'
+            );
+
+            $this->email->initialize($config);
+
+            $this->email->from("robots@enactuseur.nl","Enactus Robots");
+            $this->email->to("contact@enactuseur.nl");
+            $this->email->subject("New partner registration - {$post['first_name']} {$post['last_name']}");
+            $this->email->message(
+                "<h2>Dear Enactus Administrator,</h2>" .
+                "<p>You have just registered a new potential partner. You can review his details below.</p>" .
+                "<p><strong>First Name:</strong> {$post['first_name']} " . "<br>" .
+                "<strong>Last Name:</strong> {$post['last_name']} " . "<br>" .
+                "<strong>Email:</strong> {$post['email']} " . "<br>" .
+                "<strong>Telephone:</strong> {$post['phone_number']}" . "<br>" .
+                "<strong>Organization:</strong> {$post['organization']}" . "<br>" . 
+                "<strong>Motivation:</strong> {$post['motivation']}</p>" .
+                "<p>Best," . "<br>" .
+                "The Enactus Robot</p>"
+            );
+            $this->email->send();
 
             $this->session->set_flashdata('success', TRUE);
             redirect('/Admin/partners_create');

@@ -107,37 +107,38 @@ class Form extends CI_Controller
 			$this->email->to("contact@enactuseur.nl");
 			$this->email->subject("New founder application - {$post['first_name']} {$post['last_name']}");
 			$this->email->message(
-				"Dear Enactus Administrator," .
+				"<h2>Dear Enactus Administrator,</h2>" .
+				"<p>A potential founder has just applied on your website. You can review his details below.</p>" .
+				"<p><strong>First Name:</strong> {$post['first_name']} " . "<br>" .
+				"<strong>Last Name:</strong> {$post['last_name']} " . "<br>" .
+				"<strong>Email:</strong> {$post['email']} " . "<br>" .
+				"<strong>Telephone:</strong> {$post['phone_number']}" . "<br>" .
+				"<strong>Date of Birth:</strong> {$post['dob']}" . "<br>" . 
+				"<strong>Study:</strong> {$post['study']}" . "<br>" . 
+				"<strong>Idea Title:</strong> {$post['title']}" . "<br>" .
+				"<strong>Idea Description:</strong> {$post['idea']}" ."<br>" .
+				"<strong>Motivation:</strong> {$post['motivation']}</p>" . 
+				"<p>You can also review his application in the Enactus Admin Panel at: " . "<a href='" . site_url() . "admin'>" . site_url() . "</a></p>" . 
+				"<p>Best," . "<br>" .
+				"The Enactus Robot</p>"
+			);
+			$this->email->send();
+
+			$this->email->from("robots@enactus-eur.nl","Enactus Robots");
+			$this->email->to($post["email"]);
+			$this->email->subject("A warm welcome from EnactusEUR!");
+			$this->email->message(
+				"<h2 style='color: #FFC222;'>Hey, {$post["first_name"]}!</h2>" .
+				"<p> Thank you for your interest in EnactusEUR. Together we challenge the status-quo of business to make Rotterdam and our planet a better, fairer, and more hopeful place to live in.</p>" .
+				"<p>You will receive more information on recruitment activities and entrepreneurial events in the comming week!</p>" . 
+				"<h4 style='color: #FFC222;'>Stay in touch:</h2>" . 
+				"<a href='http://facebook.com/EUREnactus'>http://facebook.com/EUREnactus</a>" . "<br>" .
+				"<a href='mailto:info@enactus-eur.nl'>info@enactus-eur.nl</a>" . "<br>" .
+				"<a href='http://instagram.com/enactus_eur'>http://instagram.com/enactus_eur</a>" . "<br>" .
 				"<br>" .
-				"<br>" .
-				"A potential founder has just applied on your website. You can review his details below." .
-				"<br>" .
-				"<br>" .
-				"<strong>First Name:</strong> {$post['first_name']} " . 
-				"<br>" .
-				"<strong>Last Name:</strong> {$post['last_name']} " . 
-				"<br>" .
-				"<strong>Email:</strong> {$post['email']} " . 
-				"<br>" .
-				"<strong>Telephone:</strong> {$post['phone_number']}" . 
-				"<br>" .
-				"<strong>Date of Birth:</strong> {$post['dob']}" . 
-				"<br>" . 
-				"<strong>Study:</strong> {$post['study']}" . 
-				"<br>" . 
-				"<strong>Idea Title:</strong> {$post['title']}" . 
-				"<br>" .
-				"<strong>Idea Description:</strong> {$post['idea']}" .
-				"<br>" .
-				"<strong>Motivation:</strong> {$post['motivation']}" .
-				"<br>" .
-				"<br>" . 
-				"You can also review his application in the Enactus Admin Panel at: " . "<a href='" . site_url() . "admin'>" . site_url() . "</a>" .
-				"<br>" . 
-				"<br>" .
-				"Best," .
-				"<br>" .
-				"The Enactus Robot"
+				"<p>Best," . "<br>" . 
+				"The EnactusEUR Family </p>" . "<br>" .
+				"<img src='" . site_url() . "assets/images/Logo_enactus_eur.png'" . "style='width: 200px; height: auto;' alt='Enactus Eramus University Rotterdam'>"
 			);
 			$this->email->send();
 
@@ -239,35 +240,37 @@ class Form extends CI_Controller
 			$this->email->to("contact@enactuseur.nl");
 			$this->email->subject("New cofounder application - {$post['first_name']} {$post['last_name']}");
 			$this->email->message(
-				"Dear Enactus Administrator," .
+				"<h2>Dear Enactus Administrator,</h2>" .
+				"<p>A potential cofounder has just applied on your website. You can review his details below.</p>" .
+				"<p><strong>First Name:</strong> {$post['first_name']} " . "<br>" .
+				"<strong>Last Name:</strong> {$post['last_name']} " . "<br>" .
+				"<strong>Email:</strong> {$post['email']} " . "<br>" .
+				"<strong>Telephone:</strong> {$post['phone_number']}" . "<br>" .
+				"<strong>Date of Birth:</strong> {$post['dob']}" . "<br>" . 
+				"<strong>Study:</strong> {$post['study']}" . "<br>" . 
+				"<strong>Project preference:</strong> {$post['project_preference']}" . "<br>" .
+				"<strong>Motivation:</strong> {$post['motivation']}</p>" .
+				"<p>You can also review his application in the Enactus Admin Panel at: " . "<a href='" . site_url() . "admin'>" . site_url() . "</a></p>" .
+				"<p>Best," . "<br>" .
+				"The Enactus Robot</p>"
+			);
+			$this->email->send();
+
+			$this->email->from("robots@enactus-eur.nl","Enactus Robots");
+			$this->email->to($post["email"]);
+			$this->email->subject("A warm welcome from EnactusEUR!");
+			$this->email->message(
+				"<h2 style='color: #FFC222;'>Hey, {$post["first_name"]}!</h2>" .
+				"<p> Thank you for your interest in EnactusEUR. Together we challenge the status-quo of business to make Rotterdam and our planet a better, fairer, and more hopeful place to live in.</p>" .
+				"<p>You will receive more information on recruitment activities and entrepreneurial events in the comming week!</p>" . 
+				"<h4 style='color: #FFC222;'>Stay in touch:</h2>" . 
+				"<a href='http://facebook.com/EUREnactus'>http://facebook.com/EUREnactus</a>" . "<br>" .
+				"<a href='mailto:info@enactus-eur.nl'>info@enactus-eur.nl</a>" . "<br>" .
+				"<a href='http://instagram.com/enactus_eur'>http://instagram.com/enactus_eur</a>" . "<br>" .
 				"<br>" .
-				"<br>" .
-				"A potential cofounder has just applied on your website. You can review his details below." .
-				"<br>" .
-				"<br>" .
-				"<strong>First Name:</strong> {$post['first_name']} " . 
-				"<br>" .
-				"<strong>Last Name:</strong> {$post['last_name']} " . 
-				"<br>" .
-				"<strong>Email:</strong> {$post['email']} " . 
-				"<br>" .
-				"<strong>Telephone:</strong> {$post['phone_number']}" . 
-				"<br>" .
-				"<strong>Date of Birth:</strong> {$post['dob']}" . 
-				"<br>" . 
-				"<strong>Study:</strong> {$post['study']}" . 
-				"<br>" . 
-				"<strong>Project preference:</strong> {$post['project_preference']}" . 
-				"<br>" .
-				"<strong>Motivation:</strong> {$post['motivation']}" .
-				"<br>" .
-				"<br>" . 
-				"You can also review his application in the Enactus Admin Panel at: " . "<a href='" . site_url() . "admin'>" . site_url() . "</a>" .
-				"<br>" . 
-				"<br>" .
-				"Best," .
-				"<br>" .
-				"The Enactus Robot"
+				"<p>Best," . "<br>" . 
+				"The EnactusEUR Family </p>" . "<br>" .
+				"<img src='" . site_url() . "assets/images/Logo_enactus_eur.png'" . "style='width: 200px; height: auto;' alt='Enactus Eramus University Rotterdam'>"
 			);
 			$this->email->send();
 
@@ -359,30 +362,35 @@ class Form extends CI_Controller
 			$this->email->to("contact@enactuseur.nl");
 			$this->email->subject("New passive member application - {$post['first_name']} {$post['last_name']}");
 			$this->email->message(
-				"Dear Enactus Administrator," .
+				"<h2>Dear Enactus Administrator,</h2>" .
+				"<p>A new passive member has just applied on your website. You can review his details below.</p>" .
+				"<p><strong>First Name:</strong> {$post['first_name']} " . "<br>" .
+				"<strong>Last Name:</strong> {$post['last_name']} " . "<br>" .
+				"<strong>Email:</strong> {$post['email']} " . "<br>" .
+				"<strong>Telephone:</strong> {$post['phone_number']}" . "<br>" .
+				"<strong>Date of Birth:</strong> {$post['dob']}" . "<br>" . 
+				"<strong>Study:</strong> {$post['study']}" . "<br>" . 
+				"<strong>Motivation:</strong> {$post['motivation']}</p>" .
+				"<p>Best," . "<br>" .
+				"The Enactus Robot</p>"
+			);
+			$this->email->send();
+
+			$this->email->from("robots@enactus-eur.nl","Enactus Robots");
+			$this->email->to($post["email"]);
+			$this->email->subject("A warm welcome from EnactusEUR!");
+			$this->email->message(
+				"<h2 style='color: #FFC222;'>Hey, {$post["first_name"]}!</h2>" .
+				"<p> Thank you for your interest in EnactusEUR. Together we challenge the status-quo of business to make Rotterdam and our planet a better, fairer, and more hopeful place to live in.</p>" .
+				"<p>You will receive more information on recruitment activities and entrepreneurial events in the comming week!</p>" . 
+				"<h4 style='color: #FFC222;'>Stay in touch:</h2>" . 
+				"<a href='http://facebook.com/EUREnactus'>http://facebook.com/EUREnactus</a>" . "<br>" .
+				"<a href='mailto:info@enactus-eur.nl'>info@enactus-eur.nl</a>" . "<br>" .
+				"<a href='http://instagram.com/enactus_eur'>http://instagram.com/enactus_eur</a>" . "<br>" .
 				"<br>" .
-				"<br>" .
-				"A new passive member has just applied on your website. You can review his details below." .
-				"<br>" .
-				"<br>" .
-				"<strong>First Name:</strong> {$post['first_name']} " . 
-				"<br>" .
-				"<strong>Last Name:</strong> {$post['last_name']} " . 
-				"<br>" .
-				"<strong>Email:</strong> {$post['email']} " . 
-				"<br>" .
-				"<strong>Telephone:</strong> {$post['phone_number']}" . 
-				"<br>" .
-				"<strong>Date of Birth:</strong> {$post['dob']}" . 
-				"<br>" . 
-				"<strong>Study:</strong> {$post['study']}" . 
-				"<br>" . 
-				"<strong>Motivation:</strong> {$post['motivation']}" .
-				"<br>" .
-				"<br>" . 
-				"Best," .
-				"<br>" .
-				"The Enactus Robot"
+				"<p>Best," . "<br>" . 
+				"The EnactusEUR Family </p>" . "<br>" .
+				"<img src='" . site_url() . "assets/images/Logo_enactus_eur.png'" . "style='width: 200px; height: auto;' alt='Enactus Eramus University Rotterdam'>"
 			);
 			$this->email->send();
 
@@ -467,28 +475,34 @@ class Form extends CI_Controller
 			$this->email->to("contact@enactuseur.nl");
 			$this->email->subject("New partner application - {$post['first_name']} {$post['last_name']}");
 			$this->email->message(
-				"Dear Enactus Administrator," .
+				"<h2>Dear Enactus Administrator,</h2>" .
+				"<p>A potential partner has just applied on your website. You can review his details below.</p>" .
+				"<p><strong>First Name:</strong> {$post['first_name']} " . "<br>" .
+				"<strong>Last Name:</strong> {$post['last_name']} " . "<br>" .
+				"<strong>Email:</strong> {$post['email']} " . "<br>" .
+				"<strong>Telephone:</strong> {$post['phone_number']}" . "<br>" .
+				"<strong>Organization:</strong> {$post['organization']}" . "<br>" . 
+				"<strong>Motivation:</strong> {$post['motivation']}</p>" .
+				"<p>Best," . "<br>" .
+				"The Enactus Robot</p>"
+			);
+			$this->email->send();
+
+			$this->email->from("robots@enactus-eur.nl","Enactus Robots");
+			$this->email->to($post["email"]);
+			$this->email->subject("A warm welcome from EnactusEUR!");
+			$this->email->message(
+				"<h2 style='color: #FFC222;'>Hey, {$post["first_name"]}!</h2>" .
+				"<p> Thank you for your interest in EnactusEUR. Together we challenge the status-quo of business to make Rotterdam and our planet a better, fairer, and more hopeful place to live in.</p>" .
+				"<p>You will receive more information on recruitment activities and entrepreneurial events in the comming week!</p>" . 
+				"<h4 style='color: #FFC222;'>Stay in touch:</h2>" . 
+				"<a href='http://facebook.com/EUREnactus'>http://facebook.com/EUREnactus</a>" . "<br>" .
+				"<a href='mailto:info@enactus-eur.nl'>info@enactus-eur.nl</a>" . "<br>" .
+				"<a href='http://instagram.com/enactus_eur'>http://instagram.com/enactus_eur</a>" . "<br>" .
 				"<br>" .
-				"<br>" .
-				"A potential partner has just applied on your website. You can review his details below." .
-				"<br>" .
-				"<br>" .
-				"<strong>First Name:</strong> {$post['first_name']} " . 
-				"<br>" .
-				"<strong>Last Name:</strong> {$post['last_name']} " . 
-				"<br>" .
-				"<strong>Email:</strong> {$post['email']} " . 
-				"<br>" .
-				"<strong>Telephone:</strong> {$post['phone_number']}" . 
-				"<br>" .
-				"<strong>Organization:</strong> {$post['organization']}" . 
-				"<br>" . 
-				"<strong>Motivation:</strong> {$post['motivation']}" .
-				"<br>" .
-				"<br>" . 
-				"Best," .
-				"<br>" .
-				"The Enactus Robot"
+				"<p>Best," . "<br>" . 
+				"The EnactusEUR Family </p>" . "<br>" .
+				"<img src='" . site_url() . "assets/images/Logo_enactus_eur.png'" . "style='width: 200px; height: auto;' alt='Enactus Eramus University Rotterdam'>"
 			);
 			$this->email->send();
 

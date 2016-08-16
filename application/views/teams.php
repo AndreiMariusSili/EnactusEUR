@@ -130,7 +130,7 @@
 										<div class="col-sm-4">
 											<div class="image-box style-2 mb-20 dark-bg text-center object-non-visible" data-animation-effect="fadeIn" data-animation-duration='1s'>
 												<div class="overlay-container">
-													<img src="<?php echo $member['photo_path']; ?>" alt="<?php echo $member['first_name'] . ' ' . $member['last_name'] . 'Photo'; ?>">
+													<img src="<?php echo $member['photo_path']; ?>" alt="/assets/images/members/avatar.jpg">
 													<div class="overlay-top">
 														<h4><?php echo "{$member['first_name']} {$member['last_name']}"; ?></h4>
 														<h5><?php echo $member['function']; ?></h5>

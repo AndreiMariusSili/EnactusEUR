@@ -68,7 +68,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="logo-footer"><img id="logo-footer" class="center-block" src="/assets/images/Logo_origami.png" alt="Logo_Enactus_Origami"></div>
-									<h3 class="text-center">Thank <strong>You</strong> for reaching out to us. We will come back to you as soon as possible.</h3>
+									<h3 class="text-center">Thank <strong>You</strong> for reaching out to us. You should receive an email from us in a few minutes.</h3>
 									<div class="separator"></div>
 									<a href="/" style="text-decoration: none; color: #FFFFFF"><button type="button" class="btn btn-lg btn-block" style="background-color: #FFC222;">Back to homepage</button></a>
 								</div>
