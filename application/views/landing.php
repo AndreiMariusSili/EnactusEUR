@@ -205,7 +205,7 @@
 								<div class="panel-heading">
 									<h4 class="panel-title ">
 									<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseOne-2" class="collapsed">
-										<i class="fa fa-lightbulb-o pr-10"></i>I have a social venture idea
+										<i class="fa fa-lightbulb-o pr-10"></i>Become a founder
 									</a>
 									</h4>
 								</div>
@@ -258,7 +258,7 @@
 								<div class="panel-heading">
 									<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseTwo-2" class="collapsed">
-										<i class="fa fa-users pr-10"></i>I want to be part of a social venture
+										<i class="fa fa-users pr-10"></i>Become a team leader
 									</a>
 									</h4>
 								</div>
@@ -315,7 +315,7 @@
 								<div class="panel-heading">
 									<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseThree-2" class="collapsed">
-										<i class="fa fa-paper-plane pr-10"></i>I want to stay up to date on what Enactus is up to
+										<i class="fa fa-paper-plane pr-10"></i>Become and ambassador
 									</a>
 									</h4>
 								</div>
@@ -362,7 +362,7 @@
 								<div class="panel-heading">
 									<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFour-2" class="collapsed">
-										<i class="fa fa-building pr-10"></i>I want to become a business partner
+										<i class="fa fa-building pr-10"></i>Become a partner
 									</a>
 									</h4>
 								</div>
