@@ -152,7 +152,7 @@
 									<h3 class="panel-title">Use this form to uplaod a new background poster</h3>
 							</div>
 							<div class="panel-body">
-								<?php echo form_open_multipart('/Admin_edit/posterUpload');?>
+								<form action="/Admin_edit/posterUpload" enctype="multipart/formdata" method="POST" accept-charset="utf-8">
 									<div class="form-group">
 										<label>Upload Poster</label>
 										<input type="file" name="poster" size="20">

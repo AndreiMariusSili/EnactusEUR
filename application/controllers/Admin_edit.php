@@ -33,7 +33,7 @@ class Admin_edit extends CI_Controller
         $this->load->library('upload');
         $this->load->helper('url');
 
-        $config['upload_path'] = APPPATH . 'assets/videos/';
+        $config['upload_path'] = './assets/videos/';
         $config['allowed_types'] = 'jpg';
         $config['file_name'] = 'background-video-poster';
         $config['overwrite'] = TRUE;
