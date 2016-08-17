@@ -12,8 +12,9 @@ class Admin_edit extends CI_Controller
 		redirect('/Admin/landing_admin');
 	}
 
-    public function videoPosterUpload()
+    public function videoUpload()
     {
+        $this->load->library('upload');
         $this->load->helper('url');
 
         $config['upload_path'] = site_url('assets/videos/');
@@ -21,10 +22,16 @@ class Admin_edit extends CI_Controller
         $config['file_name'] = 'background-video';
         $config['overwrite'] = TRUE;
 
-        $this->load->library('upload');
-
         $this->upload->initialize($config);
         $this->upload->do_upload('video');
+
+        redirect('/Admin/landing_admin');
+    }
+
+    public function posterUpload()
+    {
+        $this->load->library('upload');
+        $this->load->helper('url');
 
         $config['upload_path'] = site_url('assets/videos/');
         $config['allowed_types'] = 'jpg';

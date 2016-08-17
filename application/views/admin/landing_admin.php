@@ -127,27 +127,43 @@
 				<!-- background video file upload start -->
 				<div class="row">
 					<div class="col-xs-12">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-								<h3 class="panel-title">Use this form to uplaod a new background video and poster</h3>
+						<div class="panel panel-default">
+							<div class="panel-heading">
+									<h3 class="panel-title">Use this form to uplaod a new background video</h3>
+							</div>
+							<div class="panel-body">
+								<?php echo form_open_multipart('/Admin_edit/videoUpload');?>
+									<div class="form-group">
+										<label>Upload Video</label>
+										<input type="file" name="video" size="20">
+									</div>
+									<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
+								</form>
+							</div>
 						</div>
-						<div class="panel-body">
-							<?php echo form_open_multipart('/Admin_edit/videoPosterUpload');?>
-								<div class="form-group">
-									<label>Upload Video</label>
-									<input type="file" name="video" size="20">
-								</div>
-								<div class="form-group">
-									<label>Upload Poster</label>
-									<input type="file" name="poster" size="20">
-								</div>
-								<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
-							</form>
-						</div>
-					</div>
 					</div>
 				</div>
 				<!-- background video file upload end -->
+				<!-- background poster file upload start -->
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+									<h3 class="panel-title">Use this form to uplaod a new background poster</h3>
+							</div>
+							<div class="panel-body">
+								<?php echo form_open_multipart('/Admin_edit/posterUpload');?>
+									<div class="form-group">
+										<label>Upload Poster</label>
+										<input type="file" name="poster" size="20">
+									</div>
+									<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- background poster file upload end -->
 				<!-- background video section modifier start -->
 				<div class="row">
 					<div class="col-xs-12">
