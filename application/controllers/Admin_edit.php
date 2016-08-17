@@ -16,7 +16,7 @@ class Admin_edit extends CI_Controller
     {
         $this->load->helper('url');
 
-        $config['upload_path'] = site_url('assets/videos/');
+        $config['upload_path'] = './assets/videos/';
         $config['allowed_types'] = 'mp4|webm';
         $config['file_name'] = 'background-video';
         $config['overwrite'] = TRUE;
@@ -26,9 +26,9 @@ class Admin_edit extends CI_Controller
         $this->upload->initialize($config);
         $this->upload->do_upload('video');
 
-        $config['upload_path'] = site_url('assets/videos/');
+        $config['upload_path'] = './assets/videos/';
         $config['allowed_types'] = 'jpg';
-        $config['file_name'] = 'background-video-poster';
+        $config['file_name'] = 'background-video-poster-test';
         $config['overwrite'] = TRUE;
 
         $this->upload->initialize($config);
