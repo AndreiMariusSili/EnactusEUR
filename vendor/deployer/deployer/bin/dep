@@ -1,0 +1,64 @@
+#!/usr/bin/env php
+<?php
+/* (c) Anton Medvedev <anton@medv.io>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+// Deployer constants
+define('DEPLOYER', true);
+define('DEPLOYER_BIN', __FILE__);
+
+$loaded = false;
+
+foreach ([__DIR__ . '/../../../autoload.php', __DIR__ . '/../vendor/autoload.php'] as $file) {
+    if (file_exists($file)) {
+        require $file;
+        $loaded = true;
+        break;
+    }
+}
+
+if (!$loaded) {
+    die(
+        'You need to set up the project dependencies using the following commands:' . PHP_EOL .
+        'wget http://getcomposer.org/composer.phar' . PHP_EOL .
+        'php composer.phar install' . PHP_EOL
+    );
+}
+
+// Recipe include path
+set_include_path(__DIR__ . '/../' . PATH_SEPARATOR . get_include_path());
+
+// Include function declarations
+require_once 'src/functions.php';
+
+// Init Deployer
+$console = new \Deployer\Console\Application('Deployer', 'master');
+$input = new \Symfony\Component\Console\Input\ArgvInput();
+$output = new \Symfony\Component\Console\Output\ConsoleOutput();
+$deployer = new \Deployer\Deployer($console, $input, $output);
+
+// Require deploy.php script
+$options = getopt('f::', ['file::']);
+$userSpecifiedFile = null;
+
+if (isset($options['f'])) {
+    $userSpecifiedFile = $options['f'];
+} elseif (isset($options['file'])) {
+    $userSpecifiedFile = $options['file'];
+}
+
+if (empty($userSpecifiedFile)) {
+    $deployFile = getcwd() . '/deploy.php';
+} else {
+    $deployFile = ($userSpecifiedFile[0] === '/' ? '' : getcwd() . '/') . $userSpecifiedFile;
+}
+
+if (is_file($deployFile) && is_readable($deployFile)) {
+    require $deployFile;
+}
+
+// Run Deployer
+$deployer->run();
