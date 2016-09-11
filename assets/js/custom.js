@@ -21,4 +21,8 @@ $(document).ready(function(){
             scrollTop: $("#contact-us").offset().top},
             'slow');
     });
+
+    $('.selectpicker').selectpicker({
+      noneSelectedText: "Sorry, we are not recruiting at the moment."
+    });
 });

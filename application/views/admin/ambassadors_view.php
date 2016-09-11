@@ -32,8 +32,7 @@
         <link href="/assets/plugins/hover/hover-min.css" rel="stylesheet">
         <link href="/assets/plugins/morphext/morphext.css" rel="stylesheet">
         <link href="/assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
-        <!-- Bootstrap Select -->
-        <link href="/assets/css/bootstrap-select.min.css" rel="stylesheet">
+        
         <!-- The Project core CSS file -->
         <link href="/assets/css/style.css" rel="stylesheet" >
         <!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
@@ -152,72 +151,53 @@
                     </div>
                     <div class="col-xs-10">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Use this form to create a new founder</div>
-                            <div class="panel-body">
-                                        <?php if($this->session->flashdata('success') === TRUE) { ?>
-                                            <div class="alert alert-success">
-                                                <strong>Success!</strong> the founder has been added to the database.
-                                            </div>
-                                        <?php }; ?>
-                                        <div class="row text-danger">
-                                            <?php echo $this->session->flashdata('errors'); ?>
-                                        </div>
-                                <form action="/Admin_edit/newFounder" method="POST" enctype="multipart/form-data">
-                                            <div class="form-group">
-                                                <label><span class="text-danger">*</span>My name is...</label>
-                                                <input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
-                                                <input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
-                                            </div>
-                                            <div class="form-group">
-                                                <label><span class="text-danger">*</span>I can be reached at...</label>
-                                                <input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
-                                                <input type="text" class="form-control" name="phone_number" placeholder="06 12 34 56 78">
-                                            </div>
-                                            <div class="form-group">
-                                                <label><span class="text-danger">*</span>I was born on...</label>
-                                                <input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
-                                            </div>
-                                            <div class="form-group">
-                                                <label><span class="text-danger">*</span>I study...</label>
-                                                <input type="text" class="form-control" name="study" placeholder="Some Erasmus Degree...">
-                                            </div>
-                                            <div class="form-group">
-                                                <label><span class="text-danger">*</span>I have this amazing idea...</label>
-                                                <input type="text" class="form-control" name="title" placeholder="Give your idea a catchy name" style="margin-bottom: 1rem;">
-                                                <textarea class="form-control" rows="5" name="idea" placeholder="Tell us about your idea in a few sentences"></textarea>
-                                            </div>
-                                            <div class="form-group">
-                                                <label><span class="text-danger">*</span>My motivation is...</label>
-                                                <textarea class="form-control" rows="5" name="motivation" placeholder="Tell us about why you want to pursue this idea in a few sentences"></textarea>
-                                            </div>
-                                            <div class="fileinput fileinput-new input-group" data-provides="fileinput">
-                                                <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
-                                                <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload CV</span><span class="fileinput-exists">Change</span><input type="file" name="founderCV"></span>
-                                                <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
-                                            </div>
-                                            <label><span class="text-danger">*</span>Please upload the CV as .pdf</label>
-                                            <input type="hidden" name="type" value="founder"/>
-                                            <input type="hidden" name="statusProject" value="pending"/>
-                                            <input type="hidden" name="statusMember" value="pending"/>
-                                            <div class="form-group">
-                                                <button type="submit" class="btn btn-default">Submit</button>
-                                            </div>
-                                </form>
-                            </div>
+                            <div class="panel-heading">Below are all the cofounders registered in your database so far.</div>
+                            <table class="table table-hover table-condensed">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Change Status</th>
+                                    <th>Download CV</th>
+                                    <th>Delete</th>
+                                </tr>
+                                <?php $i=1; foreach($ambassadors as $ambassador) { ?>
+                                <tr>
+                                    <td><?php echo $i; ?></td>
+                                    <td><?php echo "{$ambassador['first_name']} {$ambassador['last_name']}"?></td>
+                                    <td><?php echo $ambassador['email'] ?></td>
+                                    <td><?php echo $ambassador['status'] ?></td>
+                                    <td>
+                                        <form class="form-inline mg-0" action="/Admin_edit/ambassadors_update/<?php echo $ambassador['id']; ?>" method="POST">
+                                            <select name="status" class="form-control">
+                                                <option value="">Choose...</option>
+                                                <option value="accepted">Accepted</option>
+                                                <option value="pending">Pending</option>
+                                                <option value="rejected">Rejected</option>
+                                            </select>
+                                            <button type="submit" class="btn btn-default mg-0"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form class="form-inline mg-0" action="/Admin/ambassadors_cv/<?php echo $ambassador['id']; ?>" method="POST">
+                                        <button type="submit" class="btn btn-default mg-0"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form class="form-inline mg-0" action="/Admin_edit/ambassadors_delete/<?php echo $ambassador['id']; ?>" method="POST">
+                                            <button type="submit" class="btn btn-danger mg-0"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <?php $i++; }; ?>
+                            </table>
                         </div>
+                        <form class="form" action="/Admin/ambassadors_export" method="POST">
+                            <button type="submit" class="btn btn-lg btn-default pull-right">Export</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- JavaScript files placed at the end of the document so the pages load faster -->
-        <!-- ================================================== -->
-        <!-- Jquery and Bootstap core js files -->
-        <script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
-        <!-- Jasny Bootstrap  -->
-        <script type="text/javascript" src="/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
-        <!-- Bootstrap Select -->
-        <script type="text/javascript" src="/assets/js/bootstrap-select.min.js"></script>
-        <!-- Custom Scripts -->
-        <script type="text/javascript" src="/assets/js/custom.js"></script>
     </body>

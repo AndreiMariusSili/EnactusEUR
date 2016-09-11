@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Admin | Landing</title>
 		<meta name="Enactus | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
-		<meta name="author" content="htmlcoder.me">
+		
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Crane Logo -->
@@ -33,6 +33,8 @@
 		<link href="/assets/plugins/morphext/morphext.css" rel="stylesheet">
 		<link href="/assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
 		
+		<!-- Bootstrap Select -->
+		<link href="/assets/css/bootstrap-select.min.css" rel="stylesheet">
 		<!-- The Project core CSS file -->
 		<link href="/assets/css/style.css" rel="stylesheet" >
 		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
@@ -44,7 +46,6 @@
 
 	</head>
 	<body class="no-trans  transparent-header  ">
-		
 		<!-- page wrapper start -->
 		<!-- ================ -->
 		<div class="page-wrapper">
@@ -134,12 +135,18 @@
 						<div class="panel-body">
 							<?php echo form_open_multipart('/Admin_edit/videoPosterUpload');?>
 								<div class="form-group">
-									<label>Upload Video</label>
-									<input type="file" name="video" size="20">
+									<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                        <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                        <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload Video</span><span class="fileinput-exists">Change</span><input type="file" name="video"></span>
+                                        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                    </div>
 								</div>
 								<div class="form-group">
-									<label>Upload Poster</label>
-									<input type="file" name="poster" size="20">
+									<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                        <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                        <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload Poster</span><span class="fileinput-exists">Change</span><input type="file" name="poster"></span>
+                                        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                    </div>
 								</div>
 								<button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
 							</form>
@@ -300,6 +307,8 @@
 			<script type="text/javascript" src="/assets/plugins/SmoothScroll.js"></script>
 			<!-- Initialization of Plugins -->
 			<script type="text/javascript" src="/assets/js/template.js"></script>
+			<!-- Bootstrap Select -->
+			<script type="text/javascript" src="/assets/js/bootstrap-select.min.js"></script>
 			<!-- Background Video -->
 			<script src="/assets/plugins/vide/jquery.vide.js"></script>
 			<!-- Custom Scripts -->

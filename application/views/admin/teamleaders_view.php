@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Admin | Landing</title>
         <meta name="Enactus | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
-        <meta name="author" content="htmlcoder.me">
+        
         <!-- Mobile Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Crane Logo -->
@@ -100,7 +100,7 @@
                                                             <a href="/Admin/teams_admin_teams">Teams</a>
                                                         </li>
                                                         <li>
-                                                            <a href="/Admin/projects_view">Project Admin</a>
+                                                            <a href="/Admin/dashboard">Project Admin</a>
                                                         </li>
                                                     </ul>
                                                     <!-- main-menu end -->
@@ -125,69 +125,87 @@
                 <div class="row">
                     <div class="col-xs-2">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Viewing</div>
+                            <div class="panel-heading">View:</div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
-                                <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
-                                <li class="list-group-item"><a href="/Admin/applications_view">View Applications</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>
+                                <li class="list-group-item"><a href="/Admin/projects_view">Projects</a></li>
+                                <li class="list-group-item"><a href="/Admin/founders_view">Founders</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleader_applications_view">Teamleader Applications</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleaders_view">Teamleaders</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammember_applications_view">Teammember Applications</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammembers_view">Teammembers</a></li>
+                                <li class="list-group-item"><a href="/Admin/ambassadors_view">Ambassadors</a></li>
+                                <li class="list-group-item"><a href="/Admin/partners_view">Partners</a></li>
                             </ul>
                         </div>
                         <div class="panel panel-default">
-                            <div class="panel-heading">Creating</div>
+                            <div class="panel-heading">Create New:</div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/founders_create">Add New Founder</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_create">Add New Cofounder</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_create">Add New Passive Member</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_create">Add New Partner</a></li>
+                                <li class="list-group-item"><a href="/Admin/founders_create">Founder</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleaders_create">Teamleader</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammembers_create">Teammember</a></li>
+                                <li class="list-group-item"><a href="/Admin/ambassadors_create">Ambassador</a></li>
+                                <li class="list-group-item"><a href="/Admin/partners_create">Partner</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xs-10">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Below are all the applications registered in your database so far.</div>
+                            <div class="panel-heading">Below are all the teamleaders registered in your database so far.</div>
                             <table class="table table-hover table-condensed">
                                 <tr>
                                     <th>#</th>
+                                    <th>Name</th>
                                     <th>Project Preference</th>
-                                    <th>Applicant Name</th>
+                                    <th>Email</th>
                                     <th>Status</th>
                                     <th>Change Status</th>
-                                    <th>Delete application</th>
+                                    <th>Download CV</th>
+                                    <th>Delete</th>
                                 </tr>
-                                <?php $i=1; foreach($applications as $application) { ?>
+                                <?php $i=1; foreach($teamleaders as $teamleader) { ?>
                                 <tr>
                                     <td><?php echo $i; ?></td>
-                                    <td><?php echo $application['project_preference'] ?></td>
-                                    <td><?php echo "{$application['first_name']} {$application['last_name']}"?></td>
-                                    <td><?php echo $application['status'] ?></td>
+                                    <td><?php echo "{$teamleader['first_name']} {$teamleader['last_name']}"?></td>
+                                    <td><?php echo $teamleader['project_preference'] ?></td>
+                                    <td><?php echo $teamleader['email'] ?></td>
+                                    <td><?php echo $teamleader['status'] ?></td>
                                     <td>
-                                        <form class="form-inline mg-0" action="/Admin_edit/applications_update/<?php echo $application['id']; ?>" method="POST">
+                                        <form class="form-inline mg-0" action="/Admin_edit/teamleaders_update/<?php echo $teamleader['id']; ?>" method="POST">
                                             <select name="status" class="form-control">
                                                 <option value="">Choose...</option>
                                                 <option value="pending">Pending</option>
                                                 <option value="accepted">Accepted</option>
                                                 <option value="rejected">Rejected</option>
                                             </select>
-                                            <button type="submit" class="btn btn-default mg-0">Change</button>
+                                            <button type="submit" class="btn btn-default mg-0"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
                                         </form>
                                     </td>
                                     <td>
-                                        <form class="form-inline mg-0" action="/Admin_edit/applications_delete/<?php echo $application['id']; ?>" method="POST">
-                                            <button type="submit" class="btn btn-danger mg-0">Delete</button>
+                                        <form class="form-inline mg-0" action="/Admin/teamleaders_cv/<?php echo $teamleader['id']; ?>" method="POST">
+                                        <button type="submit" class="btn btn-default mg-0"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form class="form-inline mg-0" action="/Admin_edit/teamleaders_delete/<?php echo $teamleader['id']; ?>" method="POST">
+                                            <button type="submit" class="btn btn-danger mg-0"><i class="fa fa-trash" aria-hidden="true"></i></button>
                                         </form>
                                     </td>
                                 </tr>
                                 <?php $i++; }; ?>
                             </table>
                         </div>
-                        <form class="form" action="/Admin/applications_export" method="POST">
+                        <form class="form" action="/Admin/teamleaders_export" method="POST">
                             <button type="submit" class="btn btn-lg btn-default pull-right">Export</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- JavaScript files placed at the end of the document so the pages load faster -->
+        <!-- ================================================== -->
+        <!-- Jquery and Bootstap core js files -->
+        <script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+        <!-- Custom Scripts -->
+        <script type="text/javascript" src="/assets/js/custom.js"></script>
     </body>

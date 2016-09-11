@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Admin | Landing</title>
         <meta name="Enactus | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
-        <meta name="author" content="htmlcoder.me">
+        
         <!-- Mobile Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Crane Logo -->
@@ -32,7 +32,8 @@
         <link href="/assets/plugins/hover/hover-min.css" rel="stylesheet">
         <link href="/assets/plugins/morphext/morphext.css" rel="stylesheet">
         <link href="/assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
-        
+        <!-- Bootstrap Select -->
+        <link href="/assets/css/bootstrap-select.min.css" rel="stylesheet">
         <!-- The Project core CSS file -->
         <link href="/assets/css/style.css" rel="stylesheet" >
         <!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
@@ -172,12 +173,14 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Member quote:</label>
-                                        <input type="text" name="quote" class="form-control" placeholder="Quote...">
+                                        <textarea name="quote" rows="3" class="form-control" placeholder="Quote..."></textarea>
                                     </div>
-                                    <div class="form-group">
-                                        <label>Member photo:</label>
-                                        <input type="file" class="form-control-file" name="photo">
+                                    <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                        <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                        <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload Photo</span><span class="fileinput-exists">Change</span><input type="file" name="photo"></span>
+                                        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
                                     </div>
+                                    <label>Accepted file format is .jpg</label>
                                     <button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>
                                 </form>
                             </div>
@@ -202,7 +205,7 @@
                                             <td><?php echo $i; ?></td>
                                             <td><?php echo $row['first_name'] . " " . $row['last_name']; ?></td>
                                             <td><?php echo $row['team']; ?></td>
-                                            <td><a class="mg-0" href="/Admin_edit/members_delete/<?php echo $row['id']; ?>"> <button type="submit" class="btn btn-danger mg-0">Delete</button></a></td>
+                                            <td><a class="mg-0" href="/Admin_edit/members_delete/<?php echo $row['id']; ?>"> <button type="submit" class="btn btn-danger mg-0"><i class="fa fa-trash" aria-hidden="true"></i></button></a></td>
                                         </tr>
                                     <?php $i++; } ?>
                                 </table>
@@ -214,46 +217,16 @@
             <!-- content-container end -->
         </div>
         <!-- page wrapper end -->
-            <!-- JavaScript files placed at the end of the document so the pages load faster -->
-            <!-- ================================================== -->
-            <!-- Jquery and Bootstap core js files -->
-            <script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
-            <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
-            <!-- Modernizr javascript -->
-            <script type="text/javascript" src="/assets/plugins/modernizr.js"></script>
-            <!-- jQuery Revolution Slider  -->
-            <script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-            <script type="text/javascript" src="/assets/plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-            <script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
-            <script type="text/javascript" src="/assets/plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
-            <!-- Jasny Bootstrap  -->
-            <script type="text/javascript" src="/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
-            <!-- Isotope javascript -->
-            <script type="text/javascript" src="/assets/plugins/isotope/isotope.pkgd.min.js"></script>
-            <!-- Magnific Popup javascript -->
-            <script type="text/javascript" src="/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-            <!-- Appear javascript -->
-            <script type="text/javascript" src="/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
-            <!-- Count To javascript -->
-            <script type="text/javascript" src="/assets/plugins/jquery.countTo.js"></script>
-            <!-- Parallax javascript -->
-            <script src="/assets/plugins/jquery.parallax-1.1.3.js"></script>
-            <!-- Contact form -->
-            <script src="/assets/plugins/jquery.validate.js"></script>
-            <!-- Morphext -->
-            <script type="text/javascript" src="/assets/plugins/morphext/morphext.min.js"></script>
-            <!-- Pace javascript -->
-            <script type="text/javascript" src="/assets/plugins/pace/pace.min.js"></script>
-            <!-- Owl carousel javascript -->
-            <script type="text/javascript" src="/assets/plugins/owl-carousel/owl.carousel.js"></script>
-            <!-- SmoothScroll javascript -->
-            <script type="text/javascript" src="/assets/plugins/jquery.browser.js"></script>
-            <script type="text/javascript" src="/assets/plugins/SmoothScroll.js"></script>
-            <!-- Initialization of Plugins -->
-            <script type="text/javascript" src="/assets/js/template.js"></script>
-            <!-- Background Video -->
-            <script src="/assets/plugins/vide/jquery.vide.js"></script>
-            <!-- Custom Scripts -->
-            <script type="text/javascript" src="/assets/js/custom.js"></script>
+        <!-- JavaScript files placed at the end of the document so the pages load faster -->
+        <!-- ================================================== -->
+        <!-- Jquery and Bootstap core js files -->
+        <script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+        <!-- Jasny Bootstrap  -->
+        <script type="text/javascript" src="/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
+        <!-- Bootstrap Select -->
+        <script type="text/javascript" src="/assets/js/bootstrap-select.min.js"></script>
+        <!-- Custom Scripts -->
+        <script type="text/javascript" src="/assets/js/custom.js"></script>
     </body>
 </html>

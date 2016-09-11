@@ -186,11 +186,26 @@ class Admin extends CI_Controller
         {
             $this->load->model('Admin_model');
 
-            $this->Admin_model->foundersExport();
+            $this->Admin_model->exportFounders();
         }
     }
 
-    public function applications_view()
+    public function founders_cv()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+            $founder_id = $this->uri->segment(3);
+            $this->Admin_model->cvFounders($founder_id);
+        }
+    }
+
+    public function teamleader_applications_view()
     {
         if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
         {
@@ -208,13 +223,13 @@ class Admin extends CI_Controller
         {
             $this->load->model('Admin_model');
 
-            $viewdata['applications']=$this->Admin_model->viewApplications();
-            $this->load->view('/admin/applications_view', $viewdata);
+            $viewdata['applications']=$this->Admin_model->viewTeamleaderApplications();
+            $this->load->view('/admin/teamleader_applications_view', $viewdata);
         }
         }
     }
 
-    public function applications_export()
+    public function teamleader_applications_export()
     {
         if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
         {
@@ -225,11 +240,50 @@ class Admin extends CI_Controller
         {
             $this->load->model('Admin_model');
 
-            $this->Admin_model->applicationsExport();
+            $this->Admin_model->exportTeamleaderApplications();
         }
     }
 
-    public function cofounders_view()
+    public function teammember_applications_view()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+
+            $viewdata['applications']=$this->Admin_model->viewTeammemberApplications();
+            $this->load->view('/admin/teammember_applications_view', $viewdata);
+        }
+        }
+    }
+
+    public function teammember_applications_export()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+
+            $this->Admin_model->exportTeammemberApplications();
+        }
+    }
+
+    public function teamleaders_view()
     {
 		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
 		{
@@ -240,12 +294,12 @@ class Admin extends CI_Controller
 		{
             $this->load->model('Admin_model');
 
-            $viewdata['cofounders']=$this->Admin_model->viewCofounders();
-            $this->load->view('/admin/cofounders_view', $viewdata);
+            $viewdata['teamleaders']=$this->Admin_model->viewTeamleaders();
+            $this->load->view('/admin/teamleaders_view', $viewdata);
 		}
     }
 
-    public function cofounders_export()
+    public function teamleaders_export()
     {
         if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
         {
@@ -256,11 +310,72 @@ class Admin extends CI_Controller
         {
             $this->load->model('Admin_model');
 
-            $this->Admin_model->cofoundersExport();
+            $this->Admin_model->exportTeamleaders();
         }
     }
 
-    public function passives_view()
+    public function teamleaders_cv()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+            $teamleader_id = $this->uri->segment(3);
+            $this->Admin_model->cvTeamleaders($teamleader_id);
+        }
+    }
+
+    public function teammembers_view()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+
+            $viewdata['teammembers']=$this->Admin_model->viewTeammembers();
+            $this->load->view('/admin/teammembers_view', $viewdata);
+        }
+    }
+
+    public function teammembers_export()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+
+            $this->Admin_model->exportTeammembers();
+        }
+    }
+
+    public function teammembers_cv()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+            $teammember_id = $this->uri->segment(3);
+            $this->Admin_model->cvTeammembers($teammember_id);
+        }
+    }
+
+    public function ambassadors_view()
     {
 		if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
 		{
@@ -271,12 +386,12 @@ class Admin extends CI_Controller
 		{
             $this->load->model('Admin_model');
 
-            $viewdata['passives']=$this->Admin_model->viewPassives();
-            $this->load->view('/admin/passives_view', $viewdata);
+            $viewdata['ambassadors']=$this->Admin_model->viewambassadors();
+            $this->load->view('/admin/ambassadors_view', $viewdata);
 		}
     }
 
-    public function passives_export()
+    public function ambassadors_export()
     {
         if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
         {
@@ -287,7 +402,22 @@ class Admin extends CI_Controller
         {
             $this->load->model('Admin_model');
 
-            $this->Admin_model->passivesExport();
+            $this->Admin_model->ambassadorsExport();
+        }
+    }
+
+    public function ambassadors_cv()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+            $ambassador_id = $this->uri->segment(3);
+            $this->Admin_model->cvAmbassadors($ambassador_id);
         }
     }
 
@@ -345,7 +475,7 @@ class Admin extends CI_Controller
         }   
     }
 
-    public function cofounders_create()
+    public function teamleaders_create()
     {
         if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
         {
@@ -358,11 +488,28 @@ class Admin extends CI_Controller
             $viewdata['options']= $this->Admin_model->options_get();
 
             
-            $this->load->view('/admin/cofounders_create', $viewdata);
+            $this->load->view('/admin/teamleaders_create', $viewdata);
         }   
     }
 
-    public function passives_create()
+    public function teammembers_create()
+    {
+        if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
+        {
+            $this->session->set_flashdata('errors', "Nice try. Please login first.");
+            redirect('/Admin');
+        }
+        else
+        {
+            $this->load->model('Admin_model');
+            $viewdata['options']= $this->Admin_model->options_get();
+
+            
+            $this->load->view('/admin/teammembers_create', $viewdata);
+        }   
+    }
+
+    public function ambassadors_create()
     {
         if (null == $this->session->userdata('username') && null == $this->session->userdata('password'))
         {
@@ -373,7 +520,7 @@ class Admin extends CI_Controller
         {
             $this->load->model('Admin_model');
             
-            $this->load->view('/admin/passives_create');
+            $this->load->view('/admin/ambassadors_create');
         }   
     }
 

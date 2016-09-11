@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Admin | Projects</title>
         <meta name="Enactus | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
-        <meta name="author" content="htmlcoder.me">
+        
         <!-- Mobile Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Crane Logo -->
@@ -32,7 +32,8 @@
         <link href="/assets/plugins/hover/hover-min.css" rel="stylesheet">
         <link href="/assets/plugins/morphext/morphext.css" rel="stylesheet">
         <link href="/assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
-        
+        <!-- Bootstrap Select -->
+        <link href="/assets/css/bootstrap-select.min.css" rel="stylesheet">
         <!-- The Project core CSS file -->
         <link href="/assets/css/style.css" rel="stylesheet" >
         <!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
@@ -124,81 +125,84 @@
                 <div class="row">
                     <div class="col-xs-2">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Viewing</div>
+                            <div class="panel-heading">View:</div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
-                                <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
-                                <li class="list-group-item"><a href="/Admin/applications_view">View Applications</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>
+                                <li class="list-group-item"><a href="/Admin/projects_view">Projects</a></li>
+                                <li class="list-group-item"><a href="/Admin/founders_view">Founders</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleader_applications_view">Teamleader Applications</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleaders_view">Teamleaders</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammember_applications_view">Teammember Applications</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammembers_view">Teammembers</a></li>
+                                <li class="list-group-item"><a href="/Admin/ambassadors_view">Ambassadors</a></li>
+                                <li class="list-group-item"><a href="/Admin/partners_view">Partners</a></li>
                             </ul>
                         </div>
                         <div class="panel panel-default">
-                            <div class="panel-heading">Creating</div>
+                            <div class="panel-heading">Create New:</div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/founders_create">Add New Founder</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_create">Add New Cofounder</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_create">Add New Passive Member</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_create">Add New Partner</a></li>
+                                <li class="list-group-item"><a href="/Admin/founders_create">Founder</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleaders_create">Teamleader</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammembers_create">Teammember</a></li>
+                                <li class="list-group-item"><a href="/Admin/ambassadors_create">Ambassador</a></li>
+                                <li class="list-group-item"><a href="/Admin/partners_create">Partner</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xs-10">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Use this form to create a new cofounder</div>
+                            <div class="panel-heading">Use this form to create a new team leader</div>
                             <div class="panel-body">
                                         <?php if($this->session->flashdata('success') === TRUE) { ?>
                                             <div class="alert alert-success">
-                                                <strong>Success!</strong> the cofounder has been added to the database.
+                                                <strong>Success!</strong> the team leader has been added to the database.
                                             </div>
                                         <?php }; ?>
                                         <div class="row text-danger">
                                             <?php echo $this->session->flashdata('errors'); ?>
                                         </div>
-                                        <form action="/Admin_edit/newCofounder" method="POST">
+                                        <form action="/Admin_edit/newTeamleader" method="POST" enctype="multipart/form-data">
                                             <div class="form-group">
-                                                <label>Input name of cofounder:</label>
+                                                <label><span class="text-danger">*</span>My name is...</label>
                                                 <input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
                                                 <input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
                                             </div>
                                             <div class="form-group">
-                                                <label>Input contact details of cofounder:</label>
+                                                <label><span class="text-danger">*</span>I can be reached at...</label>
                                                 <input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
                                                 <input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
                                             </div>
                                             <div class="form-group">
-                                                <label>Input cofounder date of birth:</label>
+                                                <label><span class="text-danger">*</span>I was born on...</label>
                                                 <input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
                                             </div>
                                             <div class="form-group">
-                                                <label>Input cofounder study:</label>
-                                                <select name="study" class="form-control">
-                                                    <option></option>
-                                                    <option value="IBA">IBA</option>
-                                                    <option value="IBEB">IBEB</option>
-                                                    <option value="IBCOM">IBCOM</option>
-                                                </select>
+                                                <label><span class="text-danger">*</span>I study...</label>
+                                                <input type="text" class="form-control" name="study" placeholder="Some Erasmus Degree...">
                                             </div>
                                             <div class="form-group">
-                                                <label>Input cofounder venture:</label>
-                                                <select name="project_preference" class="form-control">
-                                                    <option></option>
+                                                <label><span class="text-danger">*</span>I want to join the venture...</label>
+                                                <select name="project_preference" class="selectpicker show-tick" data-width="100%">
                                                     <?php foreach($options as $option) { ?>
                                                     <option value="<?php echo $option['project_title'] ?>"><?php echo $option['project_title']; ?></option>
                                                     <?php }; ?>
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label>Input cofounder motivation:</label>
+                                                <label><span class="text-danger">*</span>Because...</label>
                                                 <textarea class="form-control" name="motivation" rows="5" placeholder="I want to help others help themselves."></textarea>
                                             </div>
+                                            <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                                                <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+                                                <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload CV</span><span class="fileinput-exists">Change</span><input type="file" name="teamleaderCV"></span>
+                                                <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                            </div>
+                                            <label><span class="text-danger">*</span>Please upload the CV as .pdf</label>
+                                            <input type="hidden" name="type" value="team leader"/>
+                                            <input type="hidden" name="statusMember" value="pending"/>
+                                            <input type="hidden" name="statusApplication" value = "pending" />
                                             <div class="form-group">
                                                 <button type="submit" class="btn btn-default">Submit</button>
                                             </div>
-                                            <input type="hidden" name="type" value="cofounder"/>
-                                            <input type="hidden" name="statusMember" value="pending"/>
-                                            <input type="hidden" name="statusApplication" value="pending"/>
                                         </form>
                             </div>
                         </div>
@@ -206,4 +210,15 @@
                 </div>
             </div>
         </div>
+        <!-- JavaScript files placed at the end of the document so the pages load faster -->
+        <!-- ================================================== -->
+        <!-- Jquery and Bootstap core js files -->
+        <script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+        <!-- Jasny Bootstrap  -->
+        <script type="text/javascript" src="/assets/plugins/jasny-bootstrap/js/jasny-bootstrap.js"></script>
+        <!-- Bootstrap Select -->
+        <script type="text/javascript" src="/assets/js/bootstrap-select.min.js"></script>
+        <!-- Custom Scripts -->
+        <script type="text/javascript" src="/assets/js/custom.js"></script>
     </body>

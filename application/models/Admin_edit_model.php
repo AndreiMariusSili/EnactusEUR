@@ -71,11 +71,11 @@ class Admin_edit_model extends CI_Model
 	    );
 	    $this->db->update('landing_admin', $data);
 	}
-	public function newFounder($first_name, $last_name, $email, $phone_number, $dob, $study, $title, $idea, $type, $statusProject, $statusMember, $motivation)
+	public function founder($first_name, $last_name, $email, $phone_number, $dob, $study, $title, $idea, $type, $statusProject, $statusMember, $cv, $motivation)
 	{
 		//insert data for new member
-		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, updated_at) VALUES (?,?,?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $statusMember, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, cv, updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $statusMember, $cv , date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 
 		//retrieve new member id
@@ -88,11 +88,11 @@ class Admin_edit_model extends CI_Model
 		$this->db->query($query, $values);
 	}
 
-	public function newCofounder($first_name, $last_name, $email, $phone_number, $dob, $study, $preference, $type, $statusMember, $statusApplication ,$motivation)
+	public function teamleader($first_name, $last_name, $email, $phone_number, $dob, $study, $preference, $type, $statusMember, $cv, $statusApplication ,$motivation)
 	{
 		//insert data for new member
-		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, updated_at) VALUES (?,?,?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $statusMember, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, cv, updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $statusMember, $cv, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 
 		//retrieve new member id
@@ -104,16 +104,37 @@ class Admin_edit_model extends CI_Model
 		$project = $query->row_array();
 
 		// register new application
-		$query = "INSERT INTO applications (members_id, projects_id, project_preference, apply_motivation, status, updated_at) VALUES (?,?,?,?,?,?)";
+		$query = "INSERT INTO teamleader_applications (members_id, projects_id, project_preference, apply_motivation, status, updated_at) VALUES (?,?,?,?,?,?)";
 		$values = array($member['id'], $project['id'], $preference, $motivation, $statusApplication, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 	}
 
-    public function newPassive($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $status ,$motivation)
-    {
+    public function teammember($first_name, $last_name, $email, $phone_number, $dob, $study, $preference, $type, $statusMember, $cv, $statusApplication ,$motivation)
+	{
 		//insert data for new member
-		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, updated_at) VALUES (?,?,?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $status, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, cv, updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $statusMember, $cv, date("Y-m-d, H:i:s"));
+		$this->db->query($query, $values);
+
+		//retrieve new member id
+		$query = $this->db->query("SELECT id FROM members ORDER BY id DESC LIMIT 1");
+		$member = $query->row_array();
+
+		//retrieve project id
+		$query = $this->db->query("SELECT id FROM projects WHERE project_title = '{$preference}'");
+		$project = $query->row_array();
+
+		// register new application
+		$query = "INSERT INTO teammember_applications (members_id, projects_id, project_preference, apply_motivation, status, updated_at) VALUES (?,?,?,?,?,?)";
+		$values = array($member['id'], $project['id'], $preference, $motivation, $statusApplication, date("Y-m-d, H:i:s"));
+		$this->db->query($query, $values);
+	}
+
+	public function ambassador($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $status, $cv, $motivation)
+	{
+		//insert data for new member
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, cv, updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $status, $cv, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 
 		//retrieve new member id
@@ -121,12 +142,12 @@ class Admin_edit_model extends CI_Model
 		$member = $query->row_array();
 
 		// register new application
-		$query = "INSERT INTO passives_motivation(members_id, motivation, updated_at) VALUES (?,?,?)";
+		$query = "INSERT INTO ambassador_motivations(members_id, motivation, updated_at) VALUES (?,?,?)";
 		$values = array($member['id'], $motivation, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
-    }
+	}
 
-	public function newPartner($first_name, $last_name, $email, $phone_number, $organization, $motivation, $status)
+	public function partner($first_name, $last_name, $email, $phone_number, $organization, $motivation, $status)
 	{
 		//insert data for new member
 		$query = "INSERT INTO partners (first_name, last_name, email, phone, organization, interest, status,  updated_at) VALUES (?,?,?,?,?,?,?,?)";
@@ -143,16 +164,15 @@ class Admin_edit_model extends CI_Model
 
 	public function teams_get()
 	{
-	   $query ="SELECT title FROM teams_admin_teams";
+	   $query ="SELECT * FROM teams_admin_teams";
 	   $result = $this->db->query($query)->result_array();
 	   return $result;
 	}
 
-	public function teams_delete($title)
+	public function teams_delete($id)
 	{
-		$team_id = $this->db->query("SELECT id FROM teams_admin_teams WHERE title='{$title}'")->row_array();
-	    $this->db->delete('teams_admin_teams', array('title' => $title ));
-	    $this->db->delete('teams_admin_members', array('teams_admin_team_id' => $team_id['id']));
+	    $this->db->delete('teams_admin_teams', array('id' => $id ));
+	    $this->db->delete('teams_admin_members', array('teams_admin_team_id' => $id));
 	}
 
 	public function members_create($first_name, $last_name, $function, $linkedin, $mail, $quote, $team, $photo_path)
@@ -192,7 +212,22 @@ class Admin_edit_model extends CI_Model
 
 	public function projects_delete($id)
 	{
+		$query = "SELECT members_id FROM teamleader_applications WHERE projects_id = {$id}";
+		$teamleaders = $this->db->query($query)->result_array();
+
+	    foreach ($teamleaders as $teamleader) {
+	    	$this->teamleaders_delete($teamleader['members_id']);
+	    }
+
+		$query = "SELECT members_id FROM teammember_applications WHERE projects_id = {$id}";
+		$teammembers = $this->db->query($query)->result_array();
+
+	    foreach ($teammembers as $teammember) {
+	    	$this->teammembers_delete($teammember['members_id']);
+	    }
+
 	    $this->db->delete('projects', array('id' => $id));
+
 	}
 
 	public function founders_update($id, $status)
@@ -206,25 +241,51 @@ class Admin_edit_model extends CI_Model
 
 	public function founders_delete($id)
 	{
+		$this->load->helper('file');
+
+		$query = "SELECT cv FROM members WHERE id = {$id}";
+	    $path = $this->db->query($query)->row_array();
+
+	    unlink($path['cv']);
+
+	    $query = "SELECT id from projects WHERE members_id = {$id}";
+	    $project = $this->db->query($query)->row_array();
+
+	    $this->projects_delete($project['id']);
+
 	    $this->db->delete('members', array('id' => $id));
-	    $this->db->delete('projects', array('members_id' => $id));
+
 	}
 
-	public function applications_update($id, $status)
+	public function teamleader_applications_update($id, $status)
 	{
 		$data=array(
 			'status' => $status,
 		);
 	    $this->db->where('id', $id);
-	    $this->db->update('applications', $data);
+	    $this->db->update('teamleader_applications', $data);
 	}
 
-	public function applications_delete($id)
+	public function teamleader_applications_delete($id)
 	{
-	    $this->db->delete('applications', array('id' => $id));
+	    $this->db->delete('teamleader_applications', array('id' => $id));
 	}
 
-	public function cofounders_update($id, $status)
+	public function teammember_applications_update($id, $status)
+	{
+		$data=array(
+			'status' => $status,
+		);
+	    $this->db->where('id', $id);
+	    $this->db->update('teammember_applications', $data);
+	}
+
+	public function teammember_applications_delete($id)
+	{
+	    $this->db->delete('teammember_applications', array('id' => $id));
+	}
+
+	public function teamleaders_update($id, $status)
 	{
 		$data=array(
 			'status' => $status,
@@ -233,13 +294,27 @@ class Admin_edit_model extends CI_Model
 	    $this->db->update('members', $data);
 	}
 
-	public function cofounders_delete($id)
+	public function teamleaders_delete($id)
 	{
+		$this->load->helper('file');
+
+		$query = "SELECT cv FROM members WHERE id = {$id}";
+	    $path = $this->db->query($query)->row_array();
+
+	    unlink($path['cv']);
+
+	    $query = "SELECT id FROM teamleader_applications WHERE members_id = {$id}";
+	    $applications = $this->db->query($query)->result_array();
+
+	    foreach ($applications as $application) {
+	    	$this->teamleader_applications_delete($application['id']);
+	    }
+
 	    $this->db->delete('members', array('id' => $id));
-	    $this->db->delete('applications', array('members_id' => $id));
+
 	}
 
-	public function passives_update($id, $status)
+	public function teammembers_update($id, $status)
 	{
 		$data=array(
 			'status' => $status,
@@ -248,9 +323,45 @@ class Admin_edit_model extends CI_Model
 	    $this->db->update('members', $data);
 	}
 
-	public function passives_delete($id)
+	public function teammembers_delete($id)
 	{
+		$this->load->helper('file');
+
+		$query = "SELECT cv FROM members WHERE id = {$id}";
+	    $path = $this->db->query($query)->row_array();
+
+	    unlink($path['cv']);
+
+	    $query= "SELECT id FROM teammember_applications WHERE members_id = {$id}";
+	    $applications = $this->db->query($query)->result_array();
+
+	    foreach ($applications as $application) {
+	    	$this->teammember_applications_delete($application['id']);
+	    }
+
 	    $this->db->delete('members', array('id' => $id));
+
+	}
+
+	public function ambassadors_update($id, $status)
+	{
+		$data=array(
+			'status' => $status,
+		);
+	    $this->db->where('id', $id);
+	    $this->db->update('members', $data);
+	}
+
+	public function ambassadors_delete($id)
+	{
+		$this->load->helper('file');
+
+		$query = "SELECT cv FROM members WHERE id = {$id}";
+	    $path = $this->db->query($query)->row_array();
+
+	    $this->db->delete('members', array('id' => $id));
+
+	    unlink($path['cv']);
 	}
 
 	public function partners_update($id, $status)

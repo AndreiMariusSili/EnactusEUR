@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Admin | Landing</title>
         <meta name="Enactus | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
-        <meta name="author" content="htmlcoder.me">
+        
         <!-- Mobile Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Crane Logo -->
@@ -100,7 +100,7 @@
                                                             <a href="/Admin/teams_admin_teams">Teams</a>
                                                         </li>
                                                         <li>
-                                                            <a href="/Admin/projects_view">Project Admin</a>
+                                                            <a href="/Admin/dashboard">Project Admin</a>
                                                         </li>
                                                     </ul>
                                                     <!-- main-menu end -->
@@ -125,76 +125,79 @@
                 <div class="row">
                     <div class="col-xs-2">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Viewing</div>
+                            <div class="panel-heading">View:</div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
-                                <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
-                                <li class="list-group-item"><a href="/Admin/applications_view">View Applications</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>
+                                <li class="list-group-item"><a href="/Admin/projects_view">Projects</a></li>
+                                <li class="list-group-item"><a href="/Admin/founders_view">Founders</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleader_applications_view">Teamleader Applications</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleaders_view">Teamleaders</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammember_applications_view">Teammember Applications</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammembers_view">Teammembers</a></li>
+                                <li class="list-group-item"><a href="/Admin/ambassadors_view">Ambassadors</a></li>
+                                <li class="list-group-item"><a href="/Admin/partners_view">Partners</a></li>
                             </ul>
                         </div>
                         <div class="panel panel-default">
-                            <div class="panel-heading">Creating</div>
+                            <div class="panel-heading">Create New:</div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/founders_create">Add New Founder</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_create">Add New Cofounder</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_create">Add New Passive Member</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_create">Add New Partner</a></li>
+                                <li class="list-group-item"><a href="/Admin/founders_create">Founder</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleaders_create">Teamleader</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammembers_create">Teammember</a></li>
+                                <li class="list-group-item"><a href="/Admin/ambassadors_create">Ambassador</a></li>
+                                <li class="list-group-item"><a href="/Admin/partners_create">Partner</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xs-10">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Use this form to create a new passive member</div>
-                            <div class="panel-body">
-                                        <?php if($this->session->flashdata('success') === TRUE) { ?>
-                                            <div class="alert alert-success">
-                                                <strong>Success!</strong> the passive member has been added to the database.
-                                            </div>
-                                        <?php }; ?>
-                                        <div class="row text-danger">
-                                            <?php echo $this->session->flashdata('errors'); ?>
-                                        </div>
-                                        <form action="/Admin_edit/newPassive" method="POST">
-                                            <div class="form-group">
-                                                <label>Input name of passive member:</label>
-                                                <input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
-                                                <input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Input contact details of passive member:</label>
-                                                <input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
-                                                <input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Input passive member date of birth:</label>
-                                                <input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Input passive member study:</label>
-                                                <select name="study" class="form-control">
-                                                    <option></option>
-                                                    <option value="IBA">IBA</option>
-                                                    <option value="IBEB">IBEB</option>
-                                                    <option value="IBCOM">IBCOM</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Input motivation of passive member:</label>
-                                                <textarea class="form-control" rows="5" name="motivation" placeholder="I am interested in social entrepreneurship"></textarea>
-                                            </div>
-                                            <div class="form-group">
-                                                <button type="submit" class="btn btn-default">Submit</button>
-                                            </div>
-                                            <input type="hidden" name="type" value="passive"/>
-                                            <input type="hidden" name="status" value="accepted"/>
+                            <div class="panel-heading">Below are all the teamleader applications registered in your database so far.</div>
+                            <table class="table table-hover table-condensed">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Project Preference</th>
+                                    <th>Applicant Name</th>
+                                    <th>Status</th>
+                                    <th>Change Status</th>
+                                    <th>Delete</th>
+                                </tr>
+                                <?php $i=1; foreach($applications as $application) { ?>
+                                <tr>
+                                    <td><?php echo $i; ?></td>
+                                    <td><?php echo $application['project_preference'] ?></td>
+                                    <td><?php echo "{$application['first_name']} {$application['last_name']}"?></td>
+                                    <td><?php echo $application['status'] ?></td>
+                                    <td>
+                                        <form class="form-inline mg-0" action="/Admin_edit/teamleader_applications_update/<?php echo $application['id']; ?>" method="POST">
+                                            <select name="status" class="form-control">
+                                                <option value="">Choose...</option>
+                                                <option value="pending">Pending</option>
+                                                <option value="accepted">Accepted</option>
+                                                <option value="rejected">Rejected</option>
+                                            </select>
+                                            <button type="submit" class="btn btn-default mg-0"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
                                         </form>
-                            </div>
+                                    </td>
+                                    <td>
+                                        <form class="form-inline mg-0" action="/Admin_edit/teamleader_applications_delete/<?php echo $application['id']; ?>" method="POST">
+                                            <button type="submit" class="btn btn-danger mg-0"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <?php $i++; }; ?>
+                            </table>
                         </div>
+                        <form class="form" action="/Admin/teamleader_applications_export" method="POST">
+                            <button type="submit" class="btn btn-lg btn-default pull-right">Export</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- JavaScript files placed at the end of the document so the pages load faster -->
+        <!-- ================================================== -->
+        <!-- Jquery and Bootstap core js files -->
+        <script type="text/javascript" src="/assets/plugins/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+        <!-- Custom Scripts -->
+        <script type="text/javascript" src="/assets/js/custom.js"></script>
     </body>

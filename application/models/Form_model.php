@@ -4,11 +4,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Form_model extends CI_Model
 {
 	
-	public function founder($first_name, $last_name, $email, $phone_number, $dob, $study, $title, $idea, $type, $statusProject, $statusMember, $motivation)
+	public function founder($first_name, $last_name, $email, $phone_number, $dob, $study, $title, $idea, $type, $statusProject, $statusMember, $cv, $motivation)
 	{
 		//insert data for new member
-		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, updated_at) VALUES (?,?,?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $statusMember, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, cv, updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $statusMember, $cv , date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 
 		//retrieve new member id
@@ -21,11 +21,11 @@ class Form_model extends CI_Model
 		$this->db->query($query, $values);
 	}
 
-	public function cofounder($first_name, $last_name, $email, $phone_number, $dob, $study, $preference, $type, $statusMember, $statusApplication ,$motivation)
+	public function teamleader($first_name, $last_name, $email, $phone_number, $dob, $study, $preference, $type, $statusMember, $cv, $statusApplication ,$motivation)
 	{
 		//insert data for new member
-		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, updated_at) VALUES (?,?,?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $statusMember, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, cv, updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $statusMember, $cv, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 
 		//retrieve new member id
@@ -37,16 +37,37 @@ class Form_model extends CI_Model
 		$project = $query->row_array();
 
 		// register new application
-		$query = "INSERT INTO applications (members_id, projects_id, project_preference, apply_motivation, status, updated_at) VALUES (?,?,?,?,?,?)";
+		$query = "INSERT INTO teamleader_applications (members_id, projects_id, project_preference, apply_motivation, status, updated_at) VALUES (?,?,?,?,?,?)";
 		$values = array($member['id'], $project['id'], $preference, $motivation, $statusApplication, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 	}
 
-	public function passive($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $status ,$motivation)
+	public function teammember($first_name, $last_name, $email, $phone_number, $dob, $study, $preference, $type, $statusMember, $cv, $statusApplication ,$motivation)
 	{
 		//insert data for new member
-		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, updated_at) VALUES (?,?,?,?,?,?,?,?,?)";
-		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $status, date("Y-m-d, H:i:s"));
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, cv, updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $statusMember, $cv, date("Y-m-d, H:i:s"));
+		$this->db->query($query, $values);
+
+		//retrieve new member id
+		$query = $this->db->query("SELECT id FROM members ORDER BY id DESC LIMIT 1");
+		$member = $query->row_array();
+
+		//retrieve project id
+		$query = $this->db->query("SELECT id FROM projects WHERE project_title = '{$preference}'");
+		$project = $query->row_array();
+
+		// register new application
+		$query = "INSERT INTO teammember_applications (members_id, projects_id, project_preference, apply_motivation, status, updated_at) VALUES (?,?,?,?,?,?)";
+		$values = array($member['id'], $project['id'], $preference, $motivation, $statusApplication, date("Y-m-d, H:i:s"));
+		$this->db->query($query, $values);
+	}
+
+	public function ambassador($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $status, $cv, $motivation)
+	{
+		//insert data for new member
+		$query = "INSERT INTO members (first_name, last_name, email, phone, dob, study, type, status, cv, updated_at) VALUES (?,?,?,?,?,?,?,?,?,?)";
+		$values = array($first_name, $last_name, $email, $phone_number, $dob, $study, $type, $status, $cv, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 
 		//retrieve new member id
@@ -54,7 +75,7 @@ class Form_model extends CI_Model
 		$member = $query->row_array();
 
 		// register new application
-		$query = "INSERT INTO passives_motivation(members_id, motivation, updated_at) VALUES (?,?,?)";
+		$query = "INSERT INTO ambassador_motivations(members_id, motivation, updated_at) VALUES (?,?,?)";
 		$values = array($member['id'], $motivation, date("Y-m-d, H:i:s"));
 		$this->db->query($query, $values);
 	}

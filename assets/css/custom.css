@@ -18,6 +18,12 @@ text-align: center;
 .offcanvas-toggle-left {
   width: 50px;
   height: 50px;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 50% !important;
+}
+
+.scrollToTop {
+  color: #FFC222;
 }
 
 .video_text_r {
@@ -150,4 +156,17 @@ footer.dark {
 .ventures_logos_fix:hover {
   width: 21em;
   height: 21em;
+}
+
+.dropzone{
+  border-style: dashed;
+  border-radius: 5px;
+}
+
+.table td {
+  text-align: center;
+}
+
+.table th {
+  text-align: center;
 }

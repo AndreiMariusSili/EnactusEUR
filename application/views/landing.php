@@ -32,6 +32,8 @@
 		<link href="/assets/plugins/morphext/morphext.css" rel="stylesheet">
 		<link href="/assets/plugins/jasny-bootstrap/css/jasny-bootstrap.css" rel="stylesheet">
 		
+		<!-- Bootstrap Select -->
+		<link href="/assets/css/bootstrap-select.min.css" rel="stylesheet">
 		<!-- The Project core CSS file -->
 		<link href="assets/css/style.css" rel="stylesheet" >
 		<!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
@@ -211,39 +213,40 @@
 								</div>
 								<div id="collapseOne-2" class="panel-collapse collapse">
 									<div class="panel-body">
-										<form action="/Form/founder" method="POST">
+										<form action="/Form/founder" method="POST" enctype="multipart/form-data">
 											<div class="form-group">
-												<label>My name is...</label>
+												<label><span class="text-danger">*</span>My name is...</label>
 												<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
 												<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
 											</div>
 											<div class="form-group">
-												<label>I can be reached at...</label>
+												<label><span class="text-danger">*</span>I can be reached at...</label>
 												<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
 												<input type="text" class="form-control" name="phone_number" placeholder="06 12 34 56 78">
 											</div>
 											<div class="form-group">
-												<label>I was born on...</label>
+												<label><span class="text-danger">*</span>I was born on...</label>
 												<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
 											</div>
 											<div class="form-group">
-												<label>I study...</label>
-												<select name="study" class="form-control">
-													<option></option>
-													<option value="IBA">International Business Administration</option>
-													<option value="IBEB">International Bachelor in Business Administration</option>
-													<option value="IBCOM">International Bachelor in Communication</option>
-												</select>
+												<label><span class="text-danger">*</span>I study...</label>
+												<input type="text" class="form-control" name="study" placeholder="Some Erasmus Degree...">
 											</div>
 											<div class="form-group">
-												<label>I have this amazing idea...</label>
+												<label><span class="text-danger">*</span>I have this amazing idea...</label>
 												<input type="text" class="form-control" name="title" placeholder="Give your idea a catchy name" style="margin-bottom: 1rem;">
 												<textarea class="form-control" rows="5" name="idea" placeholder="Tell us about your idea in a few sentences"></textarea>
 											</div>
 											<div class="form-group">
-												<label>My motivation is...</label>
+												<label><span class="text-danger">*</span>My motivation is...</label>
 												<textarea class="form-control" rows="5" name="motivation" placeholder="Tell us about why you want to pursue this idea in a few sentences"></textarea>
 											</div>
+											<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+												<div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+												<span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload CV</span><span class="fileinput-exists">Change</span><input type="file" name="founderCV"></span>
+												<a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+											</div>
+											<label><span class="text-danger">*</span>Please upload your CV as .pdf</label>
 											<input type="hidden" name="type" value="founder"/>
 											<input type="hidden" name="statusProject" value="pending"/>
 											<input type="hidden" name="statusMember" value="pending"/>
@@ -264,49 +267,49 @@
 								</div>
 								<div id="collapseTwo-2" class="panel-collapse collapse">
 									<div class="panel-body">
-										<form action="/Form/cofounder" method="POST">
+										<form action="/Form/teamleader" method="POST" enctype="multipart/form-data">
 											<div class="form-group">
-												<label>My name is...</label>
+												<label><span class="text-danger">*</span>My name is...</label>
 												<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
 												<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
 											</div>
 											<div class="form-group">
-												<label>I can be reached at...</label>
+												<label><span class="text-danger">*</span>I can be reached at...</label>
 												<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
 												<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
 											</div>
 											<div class="form-group">
-												<label>I was born on...</label>
+												<label><span class="text-danger">*</span>I was born on...</label>
 												<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
 											</div>
 											<div class="form-group">
-												<label>I study...</label>
-												<select name="study" class="form-control">
-													<option></option>
-													<option value="IBA">IBA</option>
-													<option value="IBEB">IBEB</option>
-													<option value="IBCOM">IBCOM</option>
-												</select>
+												<label><span class="text-danger">*</span>I study...</label>
+												<input type="text" class="form-control" name="study" placeholder="Some Erasmus Degree...">
 											</div>
 											<div class="form-group">
-												<label>I want to join the venture...</label>
-												<select name="project_preference" class="form-control">
-													<option></option>
+												<label><span class="text-danger">*</span>I want to join the venture...</label>
+												<select name="project_preference" class="selectpicker show-tick" data-width="100%">
 													<?php foreach($options as $option) { ?>
 													<option value="<?php echo $option['project_title'] ?>"><?php echo $option['project_title']; ?></option>
 													<?php }; ?>
 												</select>
 											</div>
 											<div class="form-group">
-												<label>Because...</label>
+												<label><span class="text-danger">*</span>Because...</label>
 												<textarea class="form-control" name="motivation" rows="5" placeholder="I want to help others help themselves."></textarea>
 											</div>
+											<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+												<div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+												<span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload CV</span><span class="fileinput-exists">Change</span><input type="file" name="teamleaderCV"></span>
+												<a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+											</div>
+											<label><span class="text-danger">*</span>Please upload your CV as .pdf</label>
+											<input type="hidden" name="type" value="team leader"/>
+											<input type="hidden" name="statusMember" value="pending"/>
+											<input type="hidden" name="statusApplication" value = "pending" />
 											<div class="form-group">
 												<button type="submit" class="btn btn-default">Submit</button>
 											</div>
-											<input type="hidden" name="type" value="cofounder"/>
-											<input type="hidden" name="statusMember" value="pending"/>
-											<input type="hidden" name="statusApplication" value = "pending" />
 										</form>
 									</div>
 								</div>
@@ -315,45 +318,55 @@
 								<div class="panel-heading">
 									<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseThree-2" class="collapsed">
-										<i class="fa fa-paper-plane pr-10"></i>Become an ambassador
+										<i class="fa fa-thumbs-up pr-10"></i>Become a team member
 									</a>
 									</h4>
 								</div>
 								<div id="collapseThree-2" class="panel-collapse collapse">
 									<div class="panel-body">
-										<form action="/Form/passive" method="POST">
+										<form action="/Form/teammember" method="POST" enctype="multipart/form-data">
 											<div class="form-group">
-												<label>My name is...</label>
+												<label><span class="text-danger">*</span>My name is...</label>
 												<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
 												<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
 											</div>
 											<div class="form-group">
-												<label>I can be reached at...</label>
+												<label><span class="text-danger">*</span>I can be reached at...</label>
 												<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
 												<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
 											</div>
 											<div class="form-group">
-												<label>I was born on...</label>
+												<label><span class="text-danger">*</span>I was born on...</label>
 												<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
 											</div>
 											<div class="form-group">
-												<label>I study...</label>
-												<select name="study" class="form-control">
-													<option></option>
-													<option value="IBA">IBA</option>
-													<option value="IBEB">IBEB</option>
-													<option value="IBCOM">IBCOM</option>
+												<label><span class="text-danger">*</span>I study...</label>
+												<input type="text" class="form-control" name="study" placeholder="Some Erasmus Degree...">
+											</div>
+											<div class="form-group">
+												<label><span class="text-danger">*</span>I want to join the venture...</label>
+												<select name="project_preference" class="selectpicker show-tick" data-width="100%">
+													<?php foreach($options as $option) { ?>
+													<option value="<?php echo $option['project_title'] ?>"><?php echo $option['project_title']; ?></option>
+													<?php }; ?>
 												</select>
 											</div>
 											<div class="form-group">
-												<label>I want to stay up to date because...</label>
-												<textarea class="form-control" rows="5" name="motivation" placeholder="I am interested in social entrepreneurship"></textarea>
+												<label><span class="text-danger">*</span>Because...</label>
+												<textarea class="form-control" name="motivation" rows="5" placeholder="I want to help others help themselves."></textarea>
 											</div>
+											<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+												<div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+												<span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload CV</span><span class="fileinput-exists">Change</span><input type="file" name="teammemberCV"></span>
+												<a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+											</div>
+											<label><span class="text-danger">*</span>Please upload your CV as .pdf</label>
+											<input type="hidden" name="type" value="team member"/>
+											<input type="hidden" name="statusMember" value="pending"/>
+											<input type="hidden" name="statusApplication" value = "pending" />
 											<div class="form-group">
 												<button type="submit" class="btn btn-default">Submit</button>
 											</div>
-											<input type="hidden" name="type" value="passive"/>
-											<input type="hidden" name="status" value="accepted"/>
 										</form>
 									</div>
 								</div>
@@ -362,29 +375,77 @@
 								<div class="panel-heading">
 									<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFour-2" class="collapsed">
-										<i class="fa fa-building pr-10"></i>Become a partner
+										<i class="fa fa-paper-plane pr-10"></i>Become an ambassador
 									</a>
 									</h4>
 								</div>
 								<div id="collapseFour-2" class="panel-collapse collapse">
 									<div class="panel-body">
-										<form action="/Form/partner" method="POST">
+										<form action="/Form/ambassador" method="POST" enctype="multipart/form-data">
 											<div class="form-group">
-												<label>My name is...</label>
+												<label><span class="text-danger">*</span>My name is...</label>
 												<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
 												<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
 											</div>
 											<div class="form-group">
-												<label>I can be reached at...</label>
+												<label><span class="text-danger">*</span>I can be reached at...</label>
 												<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
 												<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
 											</div>
 											<div class="form-group">
-												<label>I represent...</label>
+												<label><span class="text-danger">*</span>I was born on...</label>
+												<input type="date" class="form-control" name="dob" placeholder="dd/mm/yyyy"></input>
+											</div>
+											<div class="form-group">
+												<label><span class="text-danger">*</span>I study...</label>
+												<input type="text" class="form-control" name="study" placeholder="Some Erasmus Degree...">
+											</div>
+											<div class="form-group">
+												<label><span class="text-danger">*</span>I want to be part of Enactus because...</label>
+												<textarea class="form-control" rows="5" name="motivation" placeholder="I am interested in social entrepreneurship"></textarea>
+											</div>
+											<div class="fileinput fileinput-new input-group" data-provides="fileinput">
+												<div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
+												<span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload CV</span><span class="fileinput-exists">Change</span><input type="file" name="ambassadorCV"></span>
+												<a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+											</div>
+											<label><span class="text-danger">*</span>Please upload your CV as .pdf</label>
+											<input type="hidden" name="type" value="ambassador"/>
+											<input type="hidden" name="status" value="pending"/>
+											<div class="form-group">
+												<button type="submit" class="btn btn-default">Submit</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default object-non-visible" data-animation-effect="zoomIn" data-effect-delay="100">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion-2" href="#collapseFive-2" class="collapsed">
+										<i class="fa fa-building pr-10"></i>Become a partner
+									</a>
+									</h4>
+								</div>
+								<div id="collapseFive-2" class="panel-collapse collapse">
+									<div class="panel-body">
+										<form action="/Form/partner" method="POST">
+											<div class="form-group">
+												<label><span class="text-danger">*</span>My name is...</label>
+												<input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
+												<input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
+											</div>
+											<div class="form-group">
+												<label><span class="text-danger">*</span>I can be reached at...</label>
+												<input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
+												<input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
+											</div>
+											<div class="form-group">
+												<label><span class="text-danger">*</span>I represent...</label>
 												<input type="text" class="form-control" name="organization" placeholder="HappyWorld plc."></input>
 											</div>
 											<div class="form-group">
-												<label>I want to become a business partner because...</label>
+												<label><span class="text-danger">*</span>I want to become a business partner because...</label>
 												<textarea class="form-control" rows="5" name="motivation" placeholder="I am interested in social entrepreneurship"></textarea>
 											</div>
 											<div class="form-group">
@@ -472,6 +533,8 @@
 		<script type="text/javascript" src="/assets/js/template.js"></script>
 		<!-- Background Video -->
 		<script src="/assets/plugins/vide/jquery.vide.js"></script>
+		<!-- Bootstrap Select -->
+		<script type="text/javascript" src="/assets/js/bootstrap-select.min.js"></script>
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="/assets/js/custom.js"></script>
 	</body>

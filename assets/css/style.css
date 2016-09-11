@@ -5555,9 +5555,7 @@ header.full-width .animated.main-navigation .dropdown-menu .open .dropdown-menu.
   text-align: center;
   color: #000000;
 }
-#offcanvas.in + .offcanvas-toggle-left:after {
-  content: url("/assets/images/Logo_crane_black.png");
-}
+
 .offcanvas-toggle-right {
   display: block;
   padding: 0;

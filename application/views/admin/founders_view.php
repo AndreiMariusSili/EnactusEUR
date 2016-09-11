@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Admin | Landing</title>
         <meta name="Enactus | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
-        <meta name="author" content="htmlcoder.me">
+        
         <!-- Mobile Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Crane Logo -->
@@ -100,7 +100,7 @@
                                                             <a href="/Admin/teams_admin_teams">Teams</a>
                                                         </li>
                                                         <li>
-                                                            <a href="/Admin/projects_view">Project Admin</a>
+                                                            <a href="/Admin/dashboard">Project Admin</a>
                                                         </li>
                                                     </ul>
                                                     <!-- main-menu end -->
@@ -125,23 +125,26 @@
                 <div class="row">
                     <div class="col-xs-2">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Viewing</div>
+                            <div class="panel-heading">View:</div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
-                                <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
-                                <li class="list-group-item"><a href="/Admin/applications_view">View Applications</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>
+                                <li class="list-group-item"><a href="/Admin/projects_view">Projects</a></li>
+                                <li class="list-group-item"><a href="/Admin/founders_view">Founders</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleader_applications_view">Teamleader Applications</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleaders_view">Teamleaders</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammember_applications_view">Teammember Applications</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammembers_view">Teammembers</a></li>
+                                <li class="list-group-item"><a href="/Admin/ambassadors_view">Ambassadors</a></li>
+                                <li class="list-group-item"><a href="/Admin/partners_view">Partners</a></li>
                             </ul>
                         </div>
                         <div class="panel panel-default">
-                            <div class="panel-heading">Creating</div>
+                            <div class="panel-heading">Create New:</div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/founders_create">Add New Founder</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_create">Add New Cofounder</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_create">Add New Passive Member</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_create">Add New Partner</a></li>
+                                <li class="list-group-item"><a href="/Admin/founders_create">Founder</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleaders_create">Teamleader</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammembers_create">Teammember</a></li>
+                                <li class="list-group-item"><a href="/Admin/ambassadors_create">Ambassador</a></li>
+                                <li class="list-group-item"><a href="/Admin/partners_create">Partner</a></li>
                             </ul>
                         </div>
                     </div>
@@ -153,10 +156,10 @@
                                     <th>#</th>
                                     <th>Name</th>
                                     <th>Project Founded</th>
-                                    <th>Study</th>
-                                    <th>Date of Birth</th>
+                                    <th>Email</th>
                                     <th>Status</th>
                                     <th>Change Status</th>
+                                    <th>Download CV</th>
                                     <th>Delete Founder</th>
                                 </tr>
                                 <?php $i=1; foreach($founders as $founder) { ?>
@@ -164,8 +167,7 @@
                                     <td><?php echo $i; ?></td>
                                     <td><?php echo "{$founder['first_name']} {$founder['last_name']}"?></td>
                                     <td><?php echo $founder['project_title'] ?></td>
-                                    <td><?php echo $founder['study'] ?></td>
-                                    <td><?php echo $founder['dob']; ?></td>
+                                    <td><?php echo $founder['email'] ?></td>
                                     <td><?php echo $founder['status'] ?></td>
                                     <td>
                                         <form class="form-inline mg-0" action="/Admin_edit/founders_update/<?php echo $founder['id']; ?>" method="POST">
@@ -175,12 +177,18 @@
                                                 <option value="accepted">Accepted</option>
                                                 <option value="rejected">Rejected</option>
                                             </select>
-                                            <button type="submit" class="btn btn-default mg-0">Change</button>
+                                            <button type="submit" class="btn btn-default mg-0"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+</button>
+                                        </form>
+                                    </td>
+                                    <td>
+                                        <form class="form-inline mg-0" action="/Admin/founders_cv/<?php echo $founder['id']; ?>" method="POST">
+                                        <button type="submit" class="btn btn-default mg-0"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>
                                         </form>
                                     </td>
                                     <td>
                                         <form class="form-inline mg-0" action="/Admin_edit/founders_delete/<?php echo $founder['id']; ?>" method="POST">
-                                            <button type="submit" class="btn btn-danger mg-0">Delete</button>
+                                            <button type="submit" class="btn btn-danger mg-0"><i class="fa fa-trash" aria-hidden="true"></i></button>
                                         </form>
                                     </td>
                                 </tr>

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Admin | Landing</title>
+        <title>Admin | Projects</title>
         <meta name="Enactus | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
         
         <!-- Mobile Meta -->
@@ -49,9 +49,7 @@
         <div class="page-wrapper">
             
             <!-- header-container start -->
-            <div class="header-container">
-                
-                
+            <div class="header-container">            
                 <!-- header start -->
                 <!-- classes:  -->
                 <!-- "fixed": enables fixed navigation mode (sticky menu) e.g. class="header fixed clearfix" -->
@@ -102,7 +100,7 @@
                                                             <a href="/Admin/teams_admin_teams">Teams</a>
                                                         </li>
                                                         <li>
-                                                            <a href="/Admin/dashboard">Project Admin</a>
+                                                            <a href="/Admin/project_admin">Project Admin</a>
                                                         </li>
                                                     </ul>
                                                     <!-- main-menu end -->
@@ -152,17 +150,17 @@
                     </div>
                     <div class="col-xs-10">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Use this form to create a new founder</div>
+                            <div class="panel-heading">Use this form to create a new team member</div>
                             <div class="panel-body">
                                         <?php if($this->session->flashdata('success') === TRUE) { ?>
                                             <div class="alert alert-success">
-                                                <strong>Success!</strong> the founder has been added to the database.
+                                                <strong>Success!</strong> the team member has been added to the database.
                                             </div>
                                         <?php }; ?>
                                         <div class="row text-danger">
                                             <?php echo $this->session->flashdata('errors'); ?>
                                         </div>
-                                <form action="/Admin_edit/newFounder" method="POST" enctype="multipart/form-data">
+                                        <form action="/Admin_edit/newTeammember" method="POST" enctype="multipart/form-data">
                                             <div class="form-group">
                                                 <label><span class="text-danger">*</span>My name is...</label>
                                                 <input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
@@ -171,7 +169,7 @@
                                             <div class="form-group">
                                                 <label><span class="text-danger">*</span>I can be reached at...</label>
                                                 <input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
-                                                <input type="text" class="form-control" name="phone_number" placeholder="06 12 34 56 78">
+                                                <input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
                                             </div>
                                             <div class="form-group">
                                                 <label><span class="text-danger">*</span>I was born on...</label>
@@ -182,27 +180,30 @@
                                                 <input type="text" class="form-control" name="study" placeholder="Some Erasmus Degree...">
                                             </div>
                                             <div class="form-group">
-                                                <label><span class="text-danger">*</span>I have this amazing idea...</label>
-                                                <input type="text" class="form-control" name="title" placeholder="Give your idea a catchy name" style="margin-bottom: 1rem;">
-                                                <textarea class="form-control" rows="5" name="idea" placeholder="Tell us about your idea in a few sentences"></textarea>
+                                                <label><span class="text-danger">*</span>I want to join the venture...</label>
+                                                <select name="project_preference" class="selectpicker show-tick" data-width="100%">
+                                                    <?php foreach($options as $option) { ?>
+                                                    <option value="<?php echo $option['project_title'] ?>"><?php echo $option['project_title']; ?></option>
+                                                    <?php }; ?>
+                                                </select>
                                             </div>
                                             <div class="form-group">
-                                                <label><span class="text-danger">*</span>My motivation is...</label>
-                                                <textarea class="form-control" rows="5" name="motivation" placeholder="Tell us about why you want to pursue this idea in a few sentences"></textarea>
+                                                <label><span class="text-danger">*</span>Because...</label>
+                                                <textarea class="form-control" name="motivation" rows="5" placeholder="I want to help others help themselves."></textarea>
                                             </div>
                                             <div class="fileinput fileinput-new input-group" data-provides="fileinput">
                                                 <div class="form-control" data-trigger="fileinput"><i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div>
-                                                <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload CV</span><span class="fileinput-exists">Change</span><input type="file" name="founderCV"></span>
+                                                <span class="input-group-addon btn btn-default btn-file"><span class="fileinput-new">Upload CV</span><span class="fileinput-exists">Change</span><input type="file" name="teammemberCV"></span>
                                                 <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
                                             </div>
                                             <label><span class="text-danger">*</span>Please upload the CV as .pdf</label>
-                                            <input type="hidden" name="type" value="founder"/>
-                                            <input type="hidden" name="statusProject" value="pending"/>
+                                            <input type="hidden" name="type" value="team member"/>
                                             <input type="hidden" name="statusMember" value="pending"/>
+                                            <input type="hidden" name="statusApplication" value = "pending" />
                                             <div class="form-group">
                                                 <button type="submit" class="btn btn-default">Submit</button>
                                             </div>
-                                </form>
+                                        </form>
                             </div>
                         </div>
                     </div>

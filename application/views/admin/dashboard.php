@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Admin | Landing</title>
         <meta name="Enactus | Erasmus University Rotterdam" content="Europe's fastest start-up incubator">
-        <meta name="author" content="htmlcoder.me">
+        
         <!-- Mobile Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Crane Logo -->
@@ -127,23 +127,26 @@
                 <div class="row">
                     <div class="col-xs-2">
                         <div class="panel panel-default">
-                            <div class="panel-heading">Viewing</div>
+                            <div class="panel-heading">View:</div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/projects_view">View Projects</a></li>
-                                <li class="list-group-item"><a href="/Admin/founders_view">View Founders</a></li>
-                                <li class="list-group-item"><a href="/Admin/applications_view">View Applications</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_view">View Cofounders</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_view">View Passive Members</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_view">View Partners</a></li>
+                                <li class="list-group-item"><a href="/Admin/projects_view">Projects</a></li>
+                                <li class="list-group-item"><a href="/Admin/founders_view">Founders</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleader_applications_view">Teamleader Applications</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleaders_view">Teamleaders</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammember_applications_view">Teammember Applications</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammembers_view">Teammembers</a></li>
+                                <li class="list-group-item"><a href="/Admin/ambassadors_view">Ambassadors</a></li>
+                                <li class="list-group-item"><a href="/Admin/partners_view">Partners</a></li>
                             </ul>
                         </div>
                         <div class="panel panel-default">
-                            <div class="panel-heading">Creating</div>
+                            <div class="panel-heading">Create New:</div>
                             <ul class="list-group">
-                                <li class="list-group-item"><a href="/Admin/founders_create">Add New Founder</a></li>
-                                <li class="list-group-item"><a href="/Admin/cofounders_create">Add New Cofounder</a></li>
-                                <li class="list-group-item"><a href="/Admin/passives_create">Add New Passive Member</a></li>
-                                <li class="list-group-item"><a href="/Admin/partners_create">Add New Partner</a></li>
+                                <li class="list-group-item"><a href="/Admin/founders_create">Founder</a></li>
+                                <li class="list-group-item"><a href="/Admin/teamleaders_create">Teamleader</a></li>
+                                <li class="list-group-item"><a href="/Admin/teammembers_create">Teammember</a></li>
+                                <li class="list-group-item"><a href="/Admin/ambassadors_create">Ambassador</a></li>
+                                <li class="list-group-item"><a href="/Admin/partners_create">Partner</a></li>
                             </ul>
                         </div>
                     </div>
