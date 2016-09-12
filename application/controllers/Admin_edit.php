@@ -893,6 +893,8 @@ class Admin_edit extends CI_Controller
 
                 $config['upload_path'] = "./uploads/teamsAdmin/members/";
                 $config['allowed_types'] = 'jpg';
+                $config['max_width'] = 100;
+                $config['max_height'] = 100;
                 $config['file_name'] = $post["first_name"] . '_' . $post["last_name"] . "_" . $post["team"];
                 $config['overwrite'] = TRUE;
 
