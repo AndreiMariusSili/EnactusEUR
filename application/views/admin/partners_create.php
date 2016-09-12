@@ -163,21 +163,21 @@
                                         </div>
                                         <form action="/Admin_edit/newPartner" method="POST">
                                             <div class="form-group">
-                                                <label>Input name of partner:</label>
+                                                <label><span class="text-danger">*</span>My name is...</label>
                                                 <input type="text" class="form-control" name="first_name" placeholder="John" style="margin-bottom: 1rem;"></input>
                                                 <input type= "text" class="form-control" name="last_name" placeholder="Doe"></input>
                                             </div>
                                             <div class="form-group">
-                                                <label>Input contact details of partner:</label>
+                                                <label><span class="text-danger">*</span>I can be reached at...</label>
                                                 <input type="email" class="form-control" name="email" placeholder="john.doe@example.com" style="margin-bottom: 1rem;">
                                                 <input type="text" class="form-control" name="phone_number" placeholder="+31 6 123 456 78">
                                             </div>
                                             <div class="form-group">
-                                                <label>Input partner organization:</label>
+                                                <label><span class="text-danger">*</span>I represent...</label>
                                                 <input type="text" class="form-control" name="organization" placeholder="HappyWorld plc."></input>
                                             </div>
                                             <div class="form-group">
-                                                <label>Input partner motivation:</label>
+                                                <label><span class="text-danger">*</span>I want to become a business partner because...</label>
                                                 <textarea class="form-control" rows="5" name="motivation" placeholder="I am interested in social entrepreneurship"></textarea>
                                             </div>
                                             <div class="form-group">
