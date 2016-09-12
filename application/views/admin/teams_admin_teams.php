@@ -142,6 +142,16 @@
                                 <h3 class="panel-title">Use this form to register a new team.</h3>
                             </div>
                             <div class="panel-body">
+                                <?php if($this->session->flashdata('success') === TRUE) { ?>
+                                    <div class="alert alert-success">
+                                        <strong>Success!</strong> the founder has been added to the database.
+                                    </div>
+                                <?php }; ?>
+                                <?php if($this->session->flashdata('errors') !== NULL) { ?>
+                                    <div class="alert alert-danger">
+                                        <?php echo $this->session->flashdata('errors'); ?>
+                                    </div>
+                                <?php }; ?>
                                 <form action="/Admin_edit/teams_create" method="POST">
                                     <input type="text" name="title" class="form-control" placeholder="Register new team..." />
                                     <button type="submit" class="btn btn-default btn-lg btn-block">Submit</button>

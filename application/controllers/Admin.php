@@ -402,7 +402,7 @@ class Admin extends CI_Controller
         {
             $this->load->model('Admin_model');
 
-            $this->Admin_model->ambassadorsExport();
+            $this->Admin_model->exportAmbassadors();
         }
     }
 

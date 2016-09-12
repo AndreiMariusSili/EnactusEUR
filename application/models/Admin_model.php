@@ -265,7 +265,7 @@ class Admin_model extends CI_Model
 	    $this->load->helper('file');
 	    $this->load->helper('download');
 
-	    $query = "SELECT members.first_name, members.last_name, members.email, members.phone, members.dob, members.study, members.type, members.status, passives_motivation.motivation
+	    $query = "SELECT members.first_name, members.last_name, members.email, members.phone, members.dob, members.study, members.type, ambassadors_motivation.motivation, members.status
 					FROM members
 					INNER JOIN ambassadors_motivation
 					ON ambassadors_motivation.members_id = members.id

@@ -154,14 +154,16 @@
                         <div class="panel panel-default">
                             <div class="panel-heading">Use this form to create a new founder</div>
                             <div class="panel-body">
-                                        <?php if($this->session->flashdata('success') === TRUE) { ?>
-                                            <div class="alert alert-success">
-                                                <strong>Success!</strong> the founder has been added to the database.
-                                            </div>
-                                        <?php }; ?>
-                                        <div class="row text-danger">
-                                            <?php echo $this->session->flashdata('errors'); ?>
-                                        </div>
+                                <?php if($this->session->flashdata('success') === TRUE) { ?>
+                                    <div class="alert alert-success">
+                                        <strong>Success!</strong> the founder has been added to the database.
+                                    </div>
+                                <?php }; ?>
+                                <?php if($this->session->flashdata('errors') !== NULL) { ?>
+                                    <div class="alert alert-danger">
+                                        <?php echo $this->session->flashdata('errors'); ?>
+                                    </div>
+                                <?php }; ?>
                                 <form action="/Admin_edit/newFounder" method="POST" enctype="multipart/form-data">
                                             <div class="form-group">
                                                 <label><span class="text-danger">*</span>My name is...</label>

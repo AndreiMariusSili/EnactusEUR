@@ -142,12 +142,22 @@
                                 <h3 class="panel-title">Use this form to register a new member.</h3>
                             </div>
                             <div class="panel-body">
+                                <?php if($this->session->flashdata('success') === TRUE) { ?>
+                                    <div class="alert alert-success">
+                                        <strong>Success!</strong> the partner has been added to the database.
+                                    </div>
+                                <?php }; ?>
+                                <?php if($this->session->flashdata('errors') !== NULL) { ?>
+                                    <div class="alert alert-danger">
+                                        <?php echo $this->session->flashdata('errors'); ?>
+                                    </div>
+                                <?php }; ?>
                                 <form class="form" action="/Admin_edit/members_create" enctype="multipart/form-data" accept-charset="utf-8" method="POST">
                                     <div class="form-group">
                                         <label>Member Team:</label>
                                         <select class="form-control" name="team">
-                                        <?php foreach($teams as $row) { ?>
-                                            <option><?php echo $row['title']; ?>
+                                        <?php foreach($teams as $team) { ?>
+                                            <option><?php echo $team['title']; ?>
                                         <?php } ?> 
                                         </select>
                                     </div>
@@ -168,8 +178,8 @@
                                         <input type="text" name="linkedin" class="form-control" placeholder="Link...">
                                     </div>
                                     <div class="form-group">
-                                        <label>Member mail:</label>
-                                        <input type="text" name="mail" class="form-control" placeholder="Mail...">
+                                        <label>Member email:</label>
+                                        <input type="text" name="email" class="form-control" placeholder="Mail...">
                                     </div>
                                     <div class="form-group">
                                         <label>Member quote:</label>
@@ -200,12 +210,12 @@
                                     <th>Name</th>
                                     <th>Team</th>
                                     <th>Delete Member</th>
-                                    <?php $i=1; foreach($members as $row) { ?>
+                                    <?php $i=1; foreach($members as $member) { ?>
                                         <tr>
                                             <td><?php echo $i; ?></td>
-                                            <td><?php echo $row['first_name'] . " " . $row['last_name']; ?></td>
-                                            <td><?php echo $row['team']; ?></td>
-                                            <td><a class="mg-0" href="/Admin_edit/members_delete/<?php echo $row['id']; ?>"> <button type="submit" class="btn btn-danger mg-0"><i class="fa fa-trash" aria-hidden="true"></i></button></a></td>
+                                            <td><?php echo $member['first_name'] . " " . $member['last_name']; ?></td>
+                                            <td><?php echo $member['team']; ?></td>
+                                            <td><a class="mg-0" href="/Admin_edit/members_delete/<?php echo $member['id']; ?>"> <button type="submit" class="btn btn-danger mg-0"><i class="fa fa-trash" aria-hidden="true"></i></button></a></td>
                                         </tr>
                                     <?php $i++; } ?>
                                 </table>

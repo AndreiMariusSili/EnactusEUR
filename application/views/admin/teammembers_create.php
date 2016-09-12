@@ -157,9 +157,11 @@
                                                 <strong>Success!</strong> the team member has been added to the database.
                                             </div>
                                         <?php }; ?>
-                                        <div class="row text-danger">
-                                            <?php echo $this->session->flashdata('errors'); ?>
-                                        </div>
+                                        <?php if($this->session->flashdata('errors') !== NULL) { ?>
+                                            <div class="alert alert-danger">
+                                                <?php echo $this->session->flashdata('errors'); ?>
+                                            </div>
+                                        <?php }; ?>
                                         <form action="/Admin_edit/newTeammember" method="POST" enctype="multipart/form-data">
                                             <div class="form-group">
                                                 <label><span class="text-danger">*</span>My name is...</label>

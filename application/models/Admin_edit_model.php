@@ -175,12 +175,12 @@ class Admin_edit_model extends CI_Model
 	    $this->db->delete('teams_admin_members', array('teams_admin_team_id' => $id));
 	}
 
-	public function members_create($first_name, $last_name, $function, $linkedin, $mail, $quote, $team, $photo_path)
+	public function members_create($first_name, $last_name, $function, $linkedin, $mail, $quote, $team, $relative_path, $absolute_path)
 	{
-	    $team_id = $this->db->query("SELECT id FROM teams_admin_teams WHERE title='{$team}'")->row_array();
+	    $team = $this->db->query("SELECT id FROM teams_admin_teams WHERE title='{$team}'")->row_array();
 
-	    $query = "INSERT INTO teams_admin_members (teams_admin_team_id, first_name, last_name, function, linkedin, mail, quote, photo_path, updated_at) VALUES(?,?,?,?,?,?,?,?,?);";
-	    $values= array($team_id['id'], $first_name, $last_name, $function, $linkedin, $mail, $quote, $photo_path, date("Y-m-d, H:i:s"));
+	    $query = "INSERT INTO teams_admin_members (teams_admin_team_id, first_name, last_name, function, linkedin, mail, quote, relative_path, absolute_path, updated_at) VALUES(?,?,?,?,?,?,?,?,?,?);";
+	    $values= array($team['id'], $first_name, $last_name, $function, $linkedin, $mail, $quote, $relative_path, $absolute_path, date("Y-m-d, H:i:s"));
 
 	    $this->db->query($query, $values);
 	}
@@ -198,6 +198,11 @@ class Admin_edit_model extends CI_Model
 
 	public function members_delete($id)
 	{
+		$query = "SELECT absolute_path FROM teams_admin_members WHERE id = {$id}";
+	    $path = $this->db->query($query)->row_array();
+
+	    unlink($path['absolute_path']);
+
 	    $this->db->delete('teams_admin_members', array('id' => $id ));
 	}
 

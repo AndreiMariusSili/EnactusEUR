@@ -775,11 +775,36 @@ class Admin_edit extends CI_Controller
         }
         else
         {
+            $this->load->library('form_validation');
+            $this->load->helper('security');
+            $this->load->helper('form');
+
+            $config = array(
+                array(
+                    'field' => "title",
+                    'label' => "title",
+                    'rules' => "trim|required|is_unique[teams_admin_teams.title]|xss_clean"
+                )
+            );
+            $this->form_validation->set_message('required', "Please fill in a team name.");
+            $this->form_validation->set_message('is_unique', 'The team name must be unique.');
+            $this->form_validation->set_rules($config);
+
+            if($this->form_validation->run() == FALSE)
+            {
+                $this->session->set_flashdata('errors', validation_errors());
+                redirect('/Admin/teams_admin_teams');
+            }
+            else
+            {
             $this->load->model('Admin_edit_model');
 
             $post=$this->input->post(NULL, TRUE);
             $this->Admin_edit_model->teams_create($post['title']);
+
+             $this->session->set_flashdata('success', TRUE);
             redirect('/Admin/teams_admin_teams');
+            }
         }
     }
 
@@ -809,23 +834,84 @@ class Admin_edit extends CI_Controller
         }
         else
         {
-            $this->load->helper('url');
-            $this->load->library('upload');
-            $this->load->model('Admin_edit_model');
+            $this->load->library('form_validation');
+            $this->load->helper('security');
+            $this->load->helper('form');
 
-            $post=$this->input->post(NULL, TRUE);
-            $photo_path="/assets/images/members/{$post['first_name']}_{$post['last_name']}_{$post['team']}.jpg";
-            $this->Admin_edit_model->members_create($post["first_name"], $post["last_name"], $post["function"], $post["linkedin"], $post["mail"], $post["quote"], $post["team"], $photo_path);
+            $config = array(
+                array(
+                    'field' => "team",
+                    'label' => "team",
+                    'rules' => "trim|required|xss_clean"
+                ),
+                array(
+                    'field' => "first_name",
+                    'label' => "first name",
+                    'rules' => "trim|required|xss_clean"
+                ),
+                array(
+                    'field' => 'last_name',
+                    'label' => 'last name',
+                    'rules' => 'trim|required|xss_clean'
+                ),
+                array(
+                    'field' => 'function',
+                    'label' => 'function',
+                    'rules' => 'trim|required|xss_clean'
+                ),
+                array(
+                    'field' => 'linkedin',
+                    'label' => 'linkedin url',
+                    'rules' => 'callback_validate_url|trim|required|xss_clean'
+                ),
+                array(
+                    'field' => 'email',
+                    'label' => 'email',
+                    'rules' => 'trim|required|valid_email|xss_clean'
+                ),
+                array(
+                    'field' => 'quote',
+                    'label' => 'quote',
+                    'rules' => 'trim|required|xss_clean'
+                )
+            );
+            $this->form_validation->set_message('required', "Please fill in member's %s");
+            $this->form_validation->set_rules($config);
 
-            $config['upload_path'] = "./assets/images/members";
-            $config['allowed_types'] = 'jpg';
-            $config['file_name'] = $post["first_name"] . '_' . $post["last_name"] . "_" . $post["team"];
-            $config['overwrite'] = TRUE;
+            if($this->form_validation->run() == FALSE)
+            {
+                $this->session->set_flashdata('errors', validation_errors());
+                redirect("/Admin/teams_admin_members");
+            }
+            else
+            {
+                $this->load->helper('url');
+                $this->load->library('upload');
+                $this->load->model('Admin_edit_model');
 
-            $this->upload->initialize($config);
-            $this->upload->do_upload('photo');
+                $post=$this->input->post(NULL, TRUE);
 
-            redirect('/Admin/teams_admin_members');
+                $config['upload_path'] = "./uploads/teamsAdmin/members/";
+                $config['allowed_types'] = 'jpg';
+                $config['file_name'] = $post["first_name"] . '_' . $post["last_name"] . "_" . $post["team"];
+                $config['overwrite'] = TRUE;
+
+                $this->upload->initialize($config);
+            
+                if ( ! $this->upload->do_upload('photo')){
+                    $this->session->set_flashdata('errors', $this->upload->display_errors());
+                    redirect("/Admin/teams_admin_members");
+                }
+                else{
+                    $relative_path = "/uploads/teamsAdmin/members/" . $this->upload->data('file_name');
+                    $absolute_path = $this->upload->data('full_path');
+                }
+
+                $this->Admin_edit_model->members_create($post["first_name"], $post["last_name"], $post["function"], $post["linkedin"], $post["email"], $post["quote"], $post["team"], $relative_path, $absolute_path);
+
+                $this->session->set_flashdata('success', TRUE);
+                redirect('/Admin/teams_admin_members');
+            }
         }
     }
 
@@ -1196,11 +1282,24 @@ class Admin_edit extends CI_Controller
         }
     }
 
-        public function interest_check($interest)
+    public function interest_check($interest)
     {
         if(strlen($interest) == 0)
         {
             $this->form_validation->set_message("interest_check", "Please let us know what your interst in Enactus is.");
+            return FALSE;
+        }
+        else
+        {
+            return TRUE;
+        }
+    }
+
+    public function validate_url($url)
+    {
+        if(filter_var($url, FILTER_VALIDATE_URL) === FALSE)
+        {
+            $this->form_validation->set_message("validate_url", "The email field must contain a valid url. (e.g. http://linkedin.com/profile)");
             return FALSE;
         }
         else
