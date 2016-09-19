@@ -217,22 +217,50 @@ class Admin_edit_model extends CI_Model
 
 	public function projects_delete($id)
 	{
-		$query = "SELECT members_id FROM teamleader_applications WHERE projects_id = {$id}";
+		$this->load->helper('file');
+
+		$query = "SELECT members_id AS id FROM projects WHERE id = {$id}";
+		$founders = $this->db->query($query)->result_array();
+
+		foreach($founders as $founder)
+		{
+			$query = "SELECT cv FROM members WHERE id = {$founder['id']}";
+			$path = $this->db->query($query)->row_array();
+			unlink($path['cv']);
+
+			$this->db->delete('members', array('id' => $founder['id']));
+		}
+
+		$query = "SELECT members_id AS id FROM teamleader_applications WHERE projects_id = {$id}";
 		$teamleaders = $this->db->query($query)->result_array();
 
-	    foreach ($teamleaders as $teamleader) {
-	    	$this->teamleaders_delete($teamleader['members_id']);
+	    foreach ($teamleaders as $teamleader)
+	    {
+			$query = "SELECT cv FROM members WHERE id = {$teamleader['id']}";
+		    $path = $this->db->query($query)->row_array();
+
+		    unlink($path['cv']);
+
+		    $this->db->delete('teamleader_applications', array('members_id' => $teamleader['id'], ));
+
+	    	$this->db->delete('members', array('id' => $teamleader['id']));
 	    }
 
-		$query = "SELECT members_id FROM teammember_applications WHERE projects_id = {$id}";
+		$query = "SELECT members_id AS id FROM teammember_applications WHERE projects_id = {$id}";
 		$teammembers = $this->db->query($query)->result_array();
 
 	    foreach ($teammembers as $teammember) {
-	    	$this->teammembers_delete($teammember['members_id']);
+	    	$query = "SELECT cv FROM members WHERE id = {$teammember['id']}";
+		    $path = $this->db->query($query)->row_array();
+
+		    unlink($path['cv']);
+
+		    $this->db->delete('teammember_applications', array('members_id' => $teammember['id'], ));
+
+	    	$this->db->delete('members', array('id' => $teammember['id']));
 	    }
 
 	    $this->db->delete('projects', array('id' => $id));
-
 	}
 
 	public function founders_update($id, $status)
@@ -273,6 +301,18 @@ class Admin_edit_model extends CI_Model
 
 	public function teamleader_applications_delete($id)
 	{
+		$this->load->helper('file');
+
+	    $query = "SELECT members_id AS id FROM teamleader_applications WHERE id = {$id}";
+	    $teamleader = $this->db->query($query)->row_array();
+
+		$query = "SELECT cv FROM members WHERE id = {$teamleader['id']}";
+	    $path = $this->db->query($query)->row_array();
+
+	    unlink($path['cv']);
+
+	    $this->db->delete('members', array('id' => $teamleader['id']));
+
 	    $this->db->delete('teamleader_applications', array('id' => $id));
 	}
 
@@ -287,6 +327,18 @@ class Admin_edit_model extends CI_Model
 
 	public function teammember_applications_delete($id)
 	{
+		$this->load->helper('file');
+
+	    $query = "SELECT members_id AS id FROM teammember_applications WHERE id = {$id}";
+	    $teammember = $this->db->query($query)->row_array();
+
+		$query = "SELECT cv FROM members WHERE id = {$teammember['id']}";
+	    $path = $this->db->query($query)->row_array();
+
+	    unlink($path['cv']);
+
+	    $this->db->delete('members', array('id' => $teammember['id']));
+
 	    $this->db->delete('teammember_applications', array('id' => $id));
 	}
 
@@ -312,7 +364,7 @@ class Admin_edit_model extends CI_Model
 	    $applications = $this->db->query($query)->result_array();
 
 	    foreach ($applications as $application) {
-	    	$this->teamleader_applications_delete($application['id']);
+	    	$this->db->delete('teamleader_applications', array('id' => $application['id']));
 	    }
 
 	    $this->db->delete('members', array('id' => $id));
@@ -341,7 +393,7 @@ class Admin_edit_model extends CI_Model
 	    $applications = $this->db->query($query)->result_array();
 
 	    foreach ($applications as $application) {
-	    	$this->teammember_applications_delete($application['id']);
+	    	$this->db->delete('teammember_applications', array('id' => $application['id']));
 	    }
 
 	    $this->db->delete('members', array('id' => $id));
