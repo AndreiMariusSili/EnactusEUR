@@ -480,7 +480,7 @@
 										</ul>
 										<ul class="list-inline mb-20">
 											<li><a href="https://www.google.nl/maps/place/Erasmus+Universiteit+Rotterdam/@51.9179782,4.5239854,17z/data=!3m1!4b1!4m5!3m4!1s0x47c4332163e239dd:0x589a97af738b9969!8m2!3d51.9179749!4d4.5261741?hl=en" class="link-dark"><i class="text-default fa fa-map-marker pr-5"></i>Burgemeester Oudlaan 50, 3062PA</li>
-											<li><a href="tel:+00 1234567890" class="link-dark"><i class="text-default fa fa-phone pl-10 pr-5"></i>+00 1234567890</a></li>
+											<li><a href="tel:+31 6 24 76 39 69" class="link-dark"><i class="text-default fa fa-phone pl-10 pr-5"></i>+31 6 24 76 39 69</a></li>
 											<li><a href="mailto:chairman@enactus-eur.nl" class="link-dark"><i class="text-default fa fa-envelope-o pl-10 pr-5"></i>chairman@enactus-eur.nl</a></li>
 										</ul>
 										<div class="separator"></div>
