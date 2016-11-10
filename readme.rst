@@ -1,4 +1,13 @@
 ###################
+Project Description
+###################
+The application consists of a presentation website with customizable content and an interface through which the organization can manage recruitment and track project status. It is built in codeigniter 3.
+
+The front-end was developed in collaboration with Maksut Gavaz, Domenica Salaszar and Victor Rebei.
+
+The back-end was developed solely by me.
+
+###################
 What is CodeIgniter
 ###################
 
